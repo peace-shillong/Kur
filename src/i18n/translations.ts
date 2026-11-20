@@ -1,0 +1,212 @@
+export const translations = {
+  en: {
+    appTitle: "Tipkur Tipkha",
+    appSubtitle: "Khasi Clan Genealogy & Kinship Verification",
+    tagline: "Exploring our sacred ancestral bonds through physics and tradition",
+    navSearch: "Clan Explorer",
+    navChecker: "Sang Compatibility Checker",
+    navSettings: "Developer & API Settings",
+
+    // Search View
+    searchTitle: "Wad ki kur jong phi",
+    searchSubtitle: "Explore up to 4 rings of Khasi clan kinship through interactive physics",
+    searchInputPlaceholder: "Enter your surname (e.g. Diengdoh, Nongkynrih, Kharkongor)...",
+    searchButton: "Explore Clan",
+    recentSearches: "Recent clan lookups:",
+    clearHistory: "Clear",
+    mockModeNotice: "Demo Mock Data Mode Active",
+    liveApiNotice: "Live API Connected",
+    noResultsFound: "No clan records found for",
+    noResultsHint: "Try common Khasi surnames like Diengdoh, Nongkynrih, Laloo, Shadap, Kharkongor, Syiemlieh, Marbaniang, Mawlong, Pyngrope.",
+    legendTitle: "Kinship Tiers",
+    resetView: "Reset Camera & Physics",
+    nodeCountLabel: "Clans Visible",
+
+    // Tiers
+    tierOrigin: "Origin Surname",
+    tierOriginDesc: "Your confirmed search query, centered in the simulation.",
+    tierKpoh: "Ka juh ka kpoh",
+    tierKpohSub: "Direct Bloodline (Same Womb)",
+    tierKpohDesc: "Direct maternal branches and closest sub-clans. Direct maternal bloodline with the highest sacred bond.",
+    tierShikur: "Ba ia dei kur",
+    tierShikurSub: "First Linked Clans (Shikur)",
+    tierShikurDesc: "Clans sharing maternal descent from the same primordial ancestress. Intermarriage is strictly taboo (Sang).",
+    tierTehkur: "Ba ia teh kur",
+    tierTehkurSub: "Second Linked Clans (Treaty-Bound)",
+    tierTehkurDesc: "Clans bound through traditional solemn oaths (Teh Kur). Treated as blood relatives; intermarriage prohibited (Sang).",
+    tierDistant: "Ba don jingiadei",
+    tierDistantSub: "Distant Traditional Links",
+    tierDistantDesc: "Extended regional clan branches or historical confederations requiring elder counsel.",
+
+    // Node Detail Card/Modal
+    clanDetails: "Clan Kinship Details",
+    kinshipType: "Kinship Degree",
+    relationshipPath: "Relationship Path from",
+    maternalCluster: "Ancestral Cluster",
+    associatedClans: "Associated Clans in Cluster",
+    shikurClansList: "Shikur Clans (Same Root)",
+    tehkurClansList: "Teh Kur Clans (Pact Bound)",
+    historicalSummary: "Historical Tradition & Oral Lore",
+    citationSource: "Source & Historical Citation",
+    disclaimerTitle: "Sacred Custom Notice",
+    closeButton: "Close Details",
+    focusNode: "Focus & Pull In Network",
+
+    // Compatibility Checker
+    checkerTitle: "Khasi Kinship Compatibility Checker",
+    checkerSubtitle: "Step-by-step verification according to traditional Khasi marriage prohibitions (Ka Sang)",
+    step1Title: "Level 1: Maternal Clan Check (Ka Jait ka Kmie)",
+    step1Desc: "Khasi lineage follows matrilineal descent. Checking if both partners share maternal clan ties or treaty covenants.",
+    person1Label: "Person 1 Surname (Jait)",
+    person2Label: "Person 2 Surname (Jait)",
+    person1Placeholder: "e.g. Diengdoh",
+    person2Placeholder: "e.g. Laloo",
+    checkButton: "Verify Level 1 Compatibility",
+
+    step2Title: "Level 2: Paternal Kinship Check (Ka Jait u Kpa)",
+    step2Desc: "Respectful check of father's lineage to verify paternal connections (Shi Kpa / Kha).",
+    fatherSurnameLabel: "Person 1's Father's Surname (Ka jait u kpa)",
+    fatherSurnamePlaceholder: "e.g. Nongkynrih",
+    checkStep2Button: "Run Deep Level 2 Check",
+    skipStep2: "Finish with Level 1",
+
+    step3Title: "Level 3: Extended Lineage Check",
+    step3ComingSoon: "Coming Soon: Grandparent Lineage & Clan Council Inquiries",
+    step3Desc: "Extensible architecture ready for additional genealogical and elder council validations.",
+
+    // Verdicts
+    verdictSangHeader: "Kinship Match Found — Sang (Forbidden by Custom)",
+    verdictClearHeader: "No Direct Clan Link Found (Level 1 Passed)",
+    verdictKhaHeader: "Paternal Kinship Link (Kha / Shi Kpa)",
+    verdictCautionHeader: "Historical Alliance Noted (Seek Longkñi Advice)",
+    sangWarning: "In Khasi customary law, individuals of these clans belong to the same lineage or bound covenant. Marrying within these clans constitutes 'Ka Sang' and is strictly forbidden.",
+    clearMessage: "No maternal clan links or bound treaties were found between these two surnames in available historical records.",
+    khaMessage: "A paternal kinship connection exists. While not strictly maternal Sang, Khasi tradition acknowledges deep respect for the father's clan (Ki Kha).",
+    resetChecker: "Start New Check",
+    continueToStep2: "Proceed to Level 2 (Paternal Check)",
+
+    // Settings Drawer
+    settingsTitle: "App & API Settings",
+    settingsDesc: "Configure endpoints, API tokens, themes, and test modes.",
+    themeLabel: "Color Scheme / Theme",
+    themeSystem: "System Default",
+    themeLight: "Khasi Light Slate",
+    themeDark: "Ancestral Dark Earth",
+    apiEndpointLabel: "API Endpoint URL",
+    apiTokenLabel: "Bearer Authentication Token",
+    mockToggleLabel: "Enable Mock Data Mode",
+    mockToggleDesc: "Use rich local Khasi clan database when backend server is unavailable or testing UI.",
+    saveSettings: "Save Settings",
+    savedNotice: "Settings saved to localStorage!",
+
+    // Global
+    langToggle: "KHA",
+    disclaimerText: "Final authority on Ka Sang rests with your Longkñi (maternal uncles), Kur elders, and registered Seng Kur."
+  },
+
+  kha: {
+    appTitle: "Tipkur Tipkha",
+    appSubtitle: "Ka Jingwad ia ki Kur bad ka Jingbishar ia ka Sang",
+    tagline: "Wad bad tip ia ki thied ki tnat jong ka jaitbynriew Khasi ryngkat ka buit shna ba thymmai",
+    navSearch: "Wad ki Kur",
+    navChecker: "Bishar ia ka Sang",
+    navSettings: "Ki Jingpynbeit & API",
+
+    // Search View
+    searchTitle: "Wad ki kur jong phi",
+    searchSubtitle: "Peit ia ki thied ki tnat jong ka kur ha ki 4 kyrdan da ka bor physics ba shongkun",
+    searchInputPlaceholder: "Buh ia ka jait jong phi (kumba: Diengdoh, Nongkynrih, Kharkongor)...",
+    searchButton: "Wad Kur",
+    recentSearches: "Ki jait ba dang shu wad shen:",
+    clearHistory: "Pynkut",
+    mockModeNotice: "Dang pyndonkam ia ka Mock Data",
+    liveApiNotice: "La pyniasoh sha ka Live API",
+    noResultsFound: "Ym shem jingthoh shaphang ka jait",
+    noResultsHint: "Pyrshang da ki jait Khasi kiba paw kumba Diengdoh, Nongkynrih, Laloo, Shadap, Kharkongor, Syiemlieh, Marbaniang, Mawlong, Pyngrope.",
+    legendTitle: "Ki Kyrdan Jingiadei Kur",
+    resetView: "Pynbeit biang ia ka View",
+    nodeCountLabel: "Ki Kur ba la paw",
+
+    // Tiers
+    tierOrigin: "Ka Jait ba wad",
+    tierOriginDesc: "Ka jait ba phi la buh ban wad, kaba don ha pdeng.",
+    tierKpoh: "Ka juh ka kpoh",
+    tierKpohSub: "Kawei ka Kpoh (Hiartid na kajuh ka Kmie)",
+    tierKpohDesc: "Ki jait kiba hiar beit na kajuh ka kmie-tymmen. Ka jingiadei ba jan tam bad kaba kyntang tam.",
+    tierShikur: "Ba ia dei kur",
+    tierShikurSub: "Kiba ïadei Kur (Shikur)",
+    tierShikurDesc: "Ki kur kiba mih na ki khun kynthei jong kajuh ka Iawbei. Kim bit ban iashongkha lymne ban iapoikha (Sang).",
+    tierTehkur: "Ba ia teh kur",
+    tierTehkurSub: "Kiba ïateh Kur (Da ka Jingiateh)",
+    tierTehkurDesc: "Ki kur kiba la pyniasoh da ka jingiateh kur ha ki por hyndai. La khein kumba dei kajuh ka kur; ka sang ban iashongkha.",
+    tierDistant: "Ba don jingiadei",
+    tierDistantSub: "Ki Kur ba don jingiadei jngai",
+    tierDistantDesc: "Ki kur kiba don ka jingiadei hyndai lane ki tnat jait ba jngai kiba donkam ka jingbatai ki Tymmen ki San.",
+
+    // Node Detail Card/Modal
+    clanDetails: "Ki Jingbatai shaphang ka Kur",
+    kinshipType: "Ka Kyrdan Jingiadei",
+    relationshipPath: "Ka lynti jingiadei na ka jait",
+    maternalCluster: "Ka Tyngshop / Ka Kpoh bakhraw",
+    associatedClans: "Ki Kur kiba don lang ha kane ka cluster",
+    shikurClansList: "Ki Kur Shikur (Kajuh ka tynrai)",
+    tehkurClansList: "Ki Kur ba ïateh Kur",
+    historicalSummary: "Ka Parom & Ka Jingiathuhpat Hyndai",
+    citationSource: "Ka Kot bad ka Jingpynshisha",
+    disclaimerTitle: "Ka Jingmaham kaba kyntang",
+    closeButton: "Khad ia kane",
+    focusNode: "Pynjan bad Pynleit Jingmut hangne",
+
+    // Compatibility Checker
+    checkerTitle: "Ka Jingbishar ia ka Sang ka Ma",
+    checkerSubtitle: "Bishar step-by-step katkum ka niam ka rukom Tipkur-Tipkha ban tip la bit ne em ban iashongkha",
+    step1Title: "Kyrdan 1: Bishar ia ka Jait ka Kmie (Maternal Clan)",
+    step1Desc: "Ka jaidbynriew Khasi ka bud ia ka kpoh ka kmie. Bishar la ki arngut ki iadei kur, shikur, lane iateh kur.",
+    person1Label: "Ka Jait u/ka Ba-nyngkong",
+    person2Label: "Ka Jait u/ka Ba-ar",
+    person1Placeholder: "kumba: Diengdoh",
+    person2Placeholder: "kumba: Laloo",
+    checkButton: "Bishar ia ka Kyrdan 1",
+
+    step2Title: "Kyrdan 2: Bishar ia ka Jait u Kpa (Paternal Lineage)",
+    step2Desc: "Bishar ia ka jait u kpa ban tip la don ka jingiadei Kha lane Shi Kpa.",
+    fatherSurnameLabel: "Ka jait u kpa jong u/ka Ba-nyngkong",
+    fatherSurnamePlaceholder: "kumba: Nongkynrih",
+    checkStep2Button: "Bishar pynrap ia ka Kyrdan 2",
+    skipStep2: "Kut noh tang ha ka Kyrdan 1",
+
+    step3Title: "Kyrdan 3: Ka Jingbishar Baniai",
+    step3ComingSoon: "Dang Wan Shen: Ka Jingwad jait na ki Kmie-rad bad Kpa-rad",
+    step3Desc: "Buit shna kaba kloi ban pyniasoh bad ki API bniah ha ki sngi kiban wan.",
+
+    // Verdicts
+    verdictSangHeader: "Don Jingiadei Kur — Sang (Kim bit ban iashongkha)",
+    verdictClearHeader: "Ym shem jingiadei kur ha kane ka Kyrdan (Bit)",
+    verdictKhaHeader: "Don ka jingiadei Kha / Shi Kpa (Burom)",
+    verdictCautionHeader: "Don ka jingiadei hyndai (Tylliang na ki Longkñi)",
+    sangWarning: "Katkum ka Dustur Khasi, kine ki kur ki dei kiba iadei kur ne iateh kur. Ka jingiashongkha hapdeng kine ka dei ka Sang ka Ma kaba jur.",
+    clearMessage: "Ym shem ba kine ki ar jait ki don jingiadei shikur ne iateh kur ha ki jingthoh ba don.",
+    khaMessage: "Don ka jingiadei na ka jait u kpa. Wat la kam dei ka Sang kur, hynrei ka dustur Khasi ka burom ia ki Kha.",
+    resetChecker: "Bishar biang thymmai",
+    continueToStep2: "Bteng sha ka Kyrdan 2 (Jait u Kpa)",
+
+    // Settings Drawer
+    settingsTitle: "Ki Jingpynbeit & API",
+    settingsDesc: "Pynbeit ia ki URL, Bearer token, ka rong ka phang, bad ka Mock data.",
+    themeLabel: "Ka Rong ka Phang (Theme)",
+    themeSystem: "Katkum ka Phone/Computer",
+    themeLight: "Khasi Shai (Light Slate)",
+    themeDark: "Khasi Dum (Dark Earth)",
+    apiEndpointLabel: "Ka URL jong ka API",
+    apiTokenLabel: "Ka Bearer Auth Token",
+    mockToggleLabel: "Pyndonkam ia ka Mock Data",
+    mockToggleDesc: "Wad na ki jait Khasi ba la don lypa lada ym pat pyniasoh sha ka server.",
+    saveSettings: "Kynshew ia ki Jingpynbeit",
+    savedNotice: "La kynshew!",
+
+    // Global
+    langToggle: "EN",
+    disclaimerText: "Ka rai kaba khatduh halor ka Sang ka shong ha ki Longkñi, ki Tymmen ki San jong ka Kur, bad ka Seng Kur."
+  }
+};
+
