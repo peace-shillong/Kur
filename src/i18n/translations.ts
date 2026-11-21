@@ -153,7 +153,7 @@ export const translations = {
     tehkurClansList: "Ki Kur ba ïateh Kur",
     historicalSummary: "Ka Jingiathuh pateng",
     citationSource: "Ka Kot bad ka Jingpynshisha",
-    disclaimerTitle: "Ka Jingmaham kaba kyntang",
+    disclaimerTitle: "Ka Jingmaham kaba kyrpang",
     closeButton: "Khad ia kane",
     focusNode: "Pynjan bad Pynleit Jingmut hangne",
 

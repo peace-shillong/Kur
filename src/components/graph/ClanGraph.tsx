@@ -761,7 +761,7 @@ export const ClanGraph: React.FC = () => {
                 />
                 <span className="truncate">
                   {language === 'kha'
-                    ? `Lap ${directLinksCount} tyyli ki kur, ${indirectLinksCount} ki jait ba teh kur`
+                    ? `Lap ${directLinksCount} tylli ki kur, ${indirectLinksCount} ki jait ba teh kur`
                     : `Found ${directLinksCount} direct links, ${indirectLinksCount} indirect links`}
                 </span>
               </div>
