@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useCallback, useState } from 'react';
 import * as d3 from 'd3';
 import { GraphNode, GraphLink } from '../../types';
-import { useClan, SEA_GREEN_PALETTE } from '../../context/ClanContext';
+import { useClan } from '../../context/ClanContext';
 import { useLanguage } from '../../context/LanguageContext';
 import { useTheme } from '../../context/ThemeContext';
 import { KyrdanKurModal } from './KyrdanKurModal';
