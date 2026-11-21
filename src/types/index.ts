@@ -1,8 +1,10 @@
 export type Language = 'en' | 'kha';
 
-export type ThemeMode = 'light' | 'dark' | 'system';
+export type ThemeMode = 'light' | 'dark' | 'earth' | 'system';
 
 export type ClanTier = 'origin' | 'kpoh' | 'shikur' | 'tehkur' | 'distant';
+
+export type ViewMode = 'graph' | 'table';
 
 export interface ClanCluster {
   id: string;
@@ -71,15 +73,26 @@ export interface ApiConfig {
   useMock: boolean;
 }
 
+export interface ClanSubmission {
+  id: string;
+  jait: string;
+  fullName: string;
+  email: string;
+  shikurClans: string;
+  tehKurClans: string;
+  notes: string;
+  submittedAt: string;
+}
+
 // Compatibility Checker Types
 export type KinshipVerdict = 
-  | 'SANG_DIRECT_KPOH'      // Ring 1: Ka juh ka kpoh (Direct bloodline/womb) - STRICT SANG
-  | 'SANG_SHIKUR'           // Ring 2: Ba ia dei kur (Maternal sister clans) - STRICT SANG
-  | 'SANG_TEHKUR'           // Ring 3: Ba ia teh kur (Bound/Allied clan covenant) - STRICT SANG
-  | 'LINKED_DISTANT'        // Ring 4: Ba don jingiadei (Distant link/caution)
-  | 'NO_LINK'               // No direct maternal or paternal kinship identified
-  | 'PATERNAL_KHA'          // Level 2: Person 1's father's clan matches Person 2 (Kha / Shi Kpa - Kinship courtesy & respect)
-  | 'PATERNAL_SANG';        // Level 2: Strict taboo on paternal side if sharing clan
+  | 'SANG_DIRECT_KPOH'
+  | 'SANG_SHIKUR'
+  | 'SANG_TEHKUR'
+  | 'LINKED_DISTANT'
+  | 'NO_LINK'
+  | 'PATERNAL_KHA'
+  | 'PATERNAL_SANG';
 
 export interface CompatibilityCheckStep {
   level: 1 | 2 | 3;
@@ -102,4 +115,3 @@ export interface CompatibilityResult {
   summaryEnglish: string;
   disclaimer: string;
 }
-

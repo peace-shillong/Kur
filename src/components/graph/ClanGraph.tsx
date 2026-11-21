@@ -2,7 +2,11 @@ import React, { useRef, useEffect, useCallback, useState } from 'react';
 import * as d3 from 'd3';
 import { GraphNode, GraphLink } from '../../types';
 import { useClan, SEA_GREEN_PALETTE } from '../../context/ClanContext';
-import { TierLegend } from './TierLegend';
+import { useLanguage } from '../../context/LanguageContext';
+import { KyrdanKurModal } from './KyrdanKurModal';
+import { ClanTableView } from './ClanTableView';
+import { ShareModal } from '../modals/ShareModal';
+import { ClanSubmitModal } from '../forms/ClanSubmitModal';
 import { 
   RotateCcw, 
   ZoomIn, 
@@ -10,9 +14,12 @@ import {
   ArrowLeft, 
   Search, 
   Layers, 
-  ChevronUp, 
-  ChevronDown,
-  Info
+  Table as TableIcon,
+  Network,
+  Share2,
+  AlertCircle,
+  PlusCircle,
+  SlidersHorizontal
 } from 'lucide-react';
 
 export const ClanGraph: React.FC = () => {
@@ -31,13 +38,25 @@ export const ClanGraph: React.FC = () => {
     setIsGraphOpen,
     query,
     searchClan,
-    response
+    response,
+    viewMode,
+    setViewMode,
+    directLinksCount,
+    indirectLinksCount,
+    totalLinksCount,
+    minimalLinks,
+    toggleMinimalLinks,
+    hasMoreThan20
   } = useClan();
 
+  const { language } = useLanguage();
+
   const [hoveredNode, setHoveredNode] = useState<GraphNode | null>(null);
-  const [showLegend, setShowLegend] = useState<boolean>(true);
   const [inlineSearch, setInlineSearch] = useState<string>('');
   const [showSearchBar, setShowSearchBar] = useState<boolean>(false);
+  const [isKyrdanModalOpen, setIsKyrdanModalOpen] = useState<boolean>(false);
+  const [isShareModalOpen, setIsShareModalOpen] = useState<boolean>(false);
+  const [isSubmitModalOpen, setIsSubmitModalOpen] = useState<boolean>(false);
 
   // Filter nodes & links based on active tiers
   const visibleNodes = React.useMemo(() => {
@@ -56,7 +75,7 @@ export const ClanGraph: React.FC = () => {
   // Main Canvas render function in White Theme with Monochromatic Sea Green
   const render = useCallback(() => {
     const canvas = canvasRef.current;
-    if (!canvas) return;
+    if (!canvas || viewMode !== 'graph') return;
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
@@ -191,10 +210,11 @@ export const ClanGraph: React.FC = () => {
     });
 
     ctx.restore();
-  }, [visibleNodes, visibleLinks, selectedNode, hoveredNode]);
+  }, [visibleNodes, visibleLinks, selectedNode, hoveredNode, viewMode]);
 
   // Set up D3 simulation dynamically to window size
   useEffect(() => {
+    if (viewMode !== 'graph') return;
     const canvas = canvasRef.current;
     if (!canvas) return;
 
@@ -210,7 +230,6 @@ export const ClanGraph: React.FC = () => {
     const centerX = width / 2;
     const centerY = height / 2;
 
-    // Center Origin Node locked at center
     const originNode = visibleNodes.find(n => n.tier === 'origin');
     if (originNode) {
       originNode.fx = centerX;
@@ -253,10 +272,11 @@ export const ClanGraph: React.FC = () => {
       sim.stop();
       window.removeEventListener('resize', handleResize);
     };
-  }, [visibleNodes, visibleLinks, render]);
+  }, [visibleNodes, visibleLinks, render, viewMode]);
 
   // D3 Zoom and Pan setup
   useEffect(() => {
+    if (viewMode !== 'graph') return;
     const canvas = canvasRef.current;
     if (!canvas) return;
 
@@ -271,7 +291,6 @@ export const ClanGraph: React.FC = () => {
     const d3Canvas = d3.select(canvas);
     d3Canvas.call(zoom);
 
-    // Initial center transform
     const initialTransform = d3.zoomIdentity.translate(0, 0).scale(1);
     transformRef.current = initialTransform;
     d3Canvas.call(zoom.transform, initialTransform);
@@ -279,23 +298,23 @@ export const ClanGraph: React.FC = () => {
     return () => {
       d3Canvas.on('.zoom', null);
     };
-  }, [render]);
+  }, [render, viewMode]);
 
   // Handle Reset View Trigger
   useEffect(() => {
-    if (resetViewTrigger > 0 && zoomBehaviorRef.current && canvasRef.current) {
+    if (resetViewTrigger > 0 && zoomBehaviorRef.current && canvasRef.current && viewMode === 'graph') {
       const d3Canvas = d3.select(canvasRef.current);
       d3Canvas.transition().duration(600).call(zoomBehaviorRef.current.transform, d3.zoomIdentity);
       if (simulationRef.current) {
         simulationRef.current.alpha(0.6).restart();
       }
     }
-  }, [resetViewTrigger]);
+  }, [resetViewTrigger, viewMode]);
 
   // Smoothly center and focus on a selected node
   const focusOnNode = useCallback((node: GraphNode) => {
     const canvas = canvasRef.current;
-    if (!canvas || !zoomBehaviorRef.current || node.x == null || node.y == null) return;
+    if (!canvas || !zoomBehaviorRef.current || node.x == null || node.y == null || viewMode !== 'graph') return;
 
     const dpr = window.devicePixelRatio || 1;
     const width = canvas.width / dpr;
@@ -315,7 +334,7 @@ export const ClanGraph: React.FC = () => {
     if (simulationRef.current) {
       simulationRef.current.alpha(0.3).restart();
     }
-  }, []);
+  }, [viewMode]);
 
   // Hit-testing helper
   const getNodeAtPoint = (clientX: number, clientY: number): GraphNode | null => {
@@ -345,6 +364,7 @@ export const ClanGraph: React.FC = () => {
 
   // Node Dragging & Pointer Event Handling
   useEffect(() => {
+    if (viewMode !== 'graph') return;
     const canvas = canvasRef.current;
     if (!canvas) return;
 
@@ -417,7 +437,7 @@ export const ClanGraph: React.FC = () => {
       window.removeEventListener('pointermove', onPointerMove);
       window.removeEventListener('pointerup', onPointerUp);
     };
-  }, [visibleNodes, setSelectedNode, focusOnNode]);
+  }, [visibleNodes, setSelectedNode, focusOnNode, viewMode]);
 
   const handleZoom = (factor: number) => {
     const canvas = canvasRef.current;
@@ -437,35 +457,91 @@ export const ClanGraph: React.FC = () => {
     }
   };
 
+  const handleBackToHome = () => {
+    setIsGraphOpen(false);
+  };
+
+  const isFound = response?.found === true;
+
   return (
     <div
       ref={containerRef}
       className="fixed inset-0 z-50 w-screen h-screen bg-white select-none touch-none overflow-hidden animate-in fade-in duration-300"
     >
-      <canvas
-        ref={canvasRef}
-        className="block w-full h-full cursor-grab active:cursor-grabbing bg-radial from-slate-50 via-white to-white"
-      />
+      {/* View Switch: Graph Canvas vs Table View */}
+      {viewMode === 'graph' ? (
+        <canvas
+          ref={canvasRef}
+          className="block w-full h-full cursor-grab active:cursor-grabbing bg-radial from-slate-50 via-white to-white"
+        />
+      ) : (
+        <div className="w-full h-full overflow-y-auto pt-24 pb-20 px-4">
+          <ClanTableView />
+        </div>
+      )}
 
-      {/* Floating Top Bar in Fullscreen */}
-      <div className="absolute top-4 inset-x-4 max-w-5xl mx-auto flex items-center justify-between pointer-events-none z-10 gap-3">
-        {/* Back Button */}
+      {/* Floating Top Navigation Header */}
+      <div className="absolute top-4 inset-x-4 max-w-6xl mx-auto flex items-center justify-between pointer-events-none z-20 gap-2">
+        {/* Back Button (Item 3 in Todo: on physical/UI back press) */}
         <button
           type="button"
-          onClick={() => setIsGraphOpen(false)}
-          className="pointer-events-auto flex items-center gap-2 px-4 py-2.5 rounded-full bg-white/95 text-slate-800 hover:text-emerald-800 hover:bg-emerald-50 border border-slate-200 shadow-md backdrop-blur-md transition font-semibold text-xs sm:text-sm cursor-pointer"
+          onClick={handleBackToHome}
+          className="pointer-events-auto flex items-center gap-2 px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-full bg-white/95 text-slate-800 hover:text-emerald-800 hover:bg-emerald-50 border border-slate-200 shadow-md backdrop-blur-md transition font-semibold text-xs sm:text-sm cursor-pointer"
         >
           <ArrowLeft className="w-4 h-4 text-emerald-700" />
-          <span>Wad da kawei pat ka jait</span>
+          <span className="hidden sm:inline">Wad da kawei pat ka jait</span>
+          <span className="sm:hidden">Wad pat</span>
         </button>
 
-        {/* Current Surname Badge & Quick Search Trigger */}
+        {/* Center Top Result Banner (Item 5-7 in Todo) */}
+        <div className="pointer-events-auto flex items-center justify-center">
+          {isFound ? (
+            <div className="flex items-center gap-2 px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full bg-white/95 border border-emerald-200 shadow-md backdrop-blur-md text-xs sm:text-sm text-slate-800 font-medium">
+              <span className="w-2.5 h-2.5 rounded-full bg-emerald-600 shrink-0" />
+              <span>
+                {language === 'kha'
+                  ? `Lap ${directLinksCount} ki kur, ${indirectLinksCount} ki jait ba teh kur`
+                  : `Found ${directLinksCount} direct links, ${indirectLinksCount} indirect links`}
+              </span>
+
+              {hasMoreThan20 && (
+                <button
+                  type="button"
+                  onClick={toggleMinimalLinks}
+                  className="hidden md:inline-flex items-center gap-1 ml-1.5 text-[11px] font-semibold text-emerald-700 hover:underline cursor-pointer"
+                >
+                  <SlidersHorizontal className="w-3 h-3" />
+                  <span>{minimalLinks ? `(Show All ${totalLinksCount})` : `(Show Minimal)`}</span>
+                </button>
+              )}
+            </div>
+          ) : (
+            <div className="flex items-center gap-2 px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full bg-amber-50/95 border border-amber-300 shadow-md backdrop-blur-md text-xs sm:text-sm text-amber-900 font-medium">
+              <AlertCircle className="w-4 h-4 text-amber-600 shrink-0" />
+              <span className="max-w-[200px] sm:max-w-md truncate">
+                {language === 'kha'
+                  ? 'Ngim don jingtip shaphang ka jait jong phi, da phi don phi lah ban phah mynta'
+                  : 'No results found for your surname, if you have information then do let us know'}
+              </span>
+              <button
+                type="button"
+                onClick={() => setIsSubmitModalOpen(true)}
+                className="ml-1 px-2.5 py-1 rounded-full bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-semibold shrink-0 cursor-pointer flex items-center gap-1 shadow-xs"
+              >
+                <PlusCircle className="w-3.5 h-3.5" />
+                <span>{language === 'kha' ? 'Ai Jingtip' : 'Submit Form'}</span>
+              </button>
+            </div>
+          )}
+        </div>
+
+        {/* Current Surname Badge & Search Trigger (Top-Right) */}
         <div className="pointer-events-auto flex items-center gap-2">
           {!showSearchBar ? (
             <button
               type="button"
               onClick={() => setShowSearchBar(true)}
-              className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/95 border border-slate-200 shadow-md backdrop-blur-md text-slate-800 hover:bg-slate-50 transition cursor-pointer text-xs sm:text-sm font-semibold"
+              className="flex items-center gap-2 px-3.5 sm:px-4 py-2 rounded-full bg-white/95 border border-slate-200 shadow-md backdrop-blur-md text-slate-800 hover:bg-slate-50 transition cursor-pointer text-xs sm:text-sm font-semibold"
             >
               <span 
                 className="w-2.5 h-2.5 rounded-full" 
@@ -486,7 +562,7 @@ export const ClanGraph: React.FC = () => {
               />
               <button
                 type="submit"
-                className="p-1.5 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white cursor-pointer"
+                className="p-1.5 rounded-full bg-emerald-700 hover:bg-emerald-800 text-white cursor-pointer"
               >
                 <Search className="w-3.5 h-3.5" />
               </button>
@@ -502,76 +578,101 @@ export const ClanGraph: React.FC = () => {
         </div>
       </div>
 
-      {/* Cluster Notice Pill */}
-      {response && response.found && response.clusters.length > 0 && (
-        <div className="absolute top-18 left-4 hidden sm:flex items-center gap-2 bg-white/90 border border-slate-200 shadow-sm backdrop-blur-md px-3.5 py-1.5 rounded-full text-xs text-slate-700 max-w-md pointer-events-auto truncate z-10">
-          <Info className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-          <span className="truncate font-medium">{response.clusters[0].title}</span>
-        </div>
-      )}
+      {/* Floating Control Dock: Below the Search button area (Items 11, 13, 15 in Todo) */}
+      <div className="absolute top-18 right-4 flex flex-col items-center gap-2 z-20 pointer-events-auto">
+        {/* Zoom & Reset Controls */}
+        {viewMode === 'graph' && (
+          <div className="flex flex-col items-center bg-white/95 backdrop-blur-md p-1 rounded-2xl shadow-lg border border-slate-200 gap-1">
+            <button
+              type="button"
+              onClick={() => handleZoom(1.3)}
+              className="p-2 rounded-xl text-slate-700 hover:text-emerald-700 hover:bg-emerald-50 transition cursor-pointer"
+              title="Zoom In"
+              aria-label="Zoom In"
+            >
+              <ZoomIn className="w-4 h-4" />
+            </button>
+            <button
+              type="button"
+              onClick={() => handleZoom(0.7)}
+              className="p-2 rounded-xl text-slate-700 hover:text-emerald-700 hover:bg-emerald-50 transition cursor-pointer"
+              title="Zoom Out"
+              aria-label="Zoom Out"
+            >
+              <ZoomOut className="w-4 h-4" />
+            </button>
+            <div className="w-4 h-[1px] bg-slate-200" />
+            <button
+              type="button"
+              onClick={() => {
+                if (canvasRef.current && zoomBehaviorRef.current) {
+                  d3.select(canvasRef.current)
+                    .transition()
+                    .duration(500)
+                    .call(zoomBehaviorRef.current.transform, d3.zoomIdentity);
+                }
+              }}
+              className="p-2 rounded-xl text-slate-700 hover:text-emerald-700 hover:bg-emerald-50 transition cursor-pointer"
+              title="Reset View"
+              aria-label="Reset View"
+            >
+              <RotateCcw className="w-4 h-4" />
+            </button>
+          </div>
+        )}
 
-      {/* Floating Canvas Controls (Bottom-Right) */}
-      <div className="absolute bottom-5 right-5 flex items-center gap-1.5 bg-white/95 backdrop-blur-md px-2.5 py-1.5 rounded-full shadow-lg border border-slate-200 z-10">
-        <button
-          type="button"
-          onClick={() => handleZoom(1.3)}
-          className="p-2 rounded-full text-slate-700 hover:text-emerald-700 hover:bg-emerald-50 transition cursor-pointer"
-          title="Zoom In"
-          aria-label="Zoom In"
-        >
-          <ZoomIn className="w-4 h-4" />
-        </button>
-        <button
-          type="button"
-          onClick={() => handleZoom(0.7)}
-          className="p-2 rounded-full text-slate-700 hover:text-emerald-700 hover:bg-emerald-50 transition cursor-pointer"
-          title="Zoom Out"
-          aria-label="Zoom Out"
-        >
-          <ZoomOut className="w-4 h-4" />
-        </button>
-        <div className="w-[1px] h-4 bg-slate-200" />
-        <button
-          type="button"
-          onClick={() => {
-            if (canvasRef.current && zoomBehaviorRef.current) {
-              d3.select(canvasRef.current)
-                .transition()
-                .duration(500)
-                .call(zoomBehaviorRef.current.transform, d3.zoomIdentity);
-            }
-          }}
-          className="p-2 rounded-full text-slate-700 hover:text-emerald-700 hover:bg-emerald-50 transition flex items-center gap-1 text-xs font-medium cursor-pointer"
-          title="Reset View"
-          aria-label="Reset View"
-        >
-          <RotateCcw className="w-4 h-4" />
-        </button>
-      </div>
-
-      {/* Floating Bottom Center Tier Legend */}
-      <div className="absolute bottom-5 left-4 right-20 sm:left-1/2 sm:-translate-x-1/2 sm:right-auto max-w-xl z-10 pointer-events-auto">
-        <div className="flex flex-col items-center">
+        {/* Table/Graph View Toggle (Item 13 in Todo: below Zoom & Reset) */}
+        <div className="bg-white/95 backdrop-blur-md p-1 rounded-2xl shadow-lg border border-slate-200">
           <button
             type="button"
-            onClick={() => setShowLegend(prev => !prev)}
-            className="mb-1.5 flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/90 border border-slate-200 shadow-xs text-xs font-semibold text-slate-700 hover:text-emerald-800 hover:bg-emerald-50 transition cursor-pointer"
+            onClick={() => setViewMode(viewMode === 'graph' ? 'table' : 'graph')}
+            className={`p-2.5 rounded-xl transition cursor-pointer flex items-center justify-center ${
+              viewMode === 'table'
+                ? 'bg-emerald-700 text-white shadow-xs'
+                : 'text-slate-700 hover:text-emerald-700 hover:bg-emerald-50'
+            }`}
+            title={viewMode === 'graph' ? "Switch to Table View" : "Switch to Graph View"}
+            aria-label="Toggle Table/Graph View"
           >
-            <Layers className="w-3.5 h-3.5 text-emerald-600" />
-            <span>Ki Kyrdan Kur (Legend)</span>
-            {showLegend ? <ChevronDown className="w-3.5 h-3.5" /> : <ChevronUp className="w-3.5 h-3.5" />}
+            {viewMode === 'graph' ? (
+              <TableIcon className="w-4 h-4" />
+            ) : (
+              <Network className="w-4 h-4" />
+            )}
           </button>
-
-          {showLegend && (
-            <div className="w-full">
-              <TierLegend />
-            </div>
-          )}
         </div>
+
+        {/* Share Button (Item 15 in Todo: Share as Image or PDF with watermark) */}
+        <div className="bg-white/95 backdrop-blur-md p-1 rounded-2xl shadow-lg border border-slate-200">
+          <button
+            type="button"
+            onClick={() => setIsShareModalOpen(true)}
+            className="p-2.5 rounded-xl text-slate-700 hover:text-emerald-700 hover:bg-emerald-50 transition cursor-pointer flex items-center justify-center"
+            title="Share as Image or PDF"
+            aria-label="Share current view"
+          >
+            <Share2 className="w-4 h-4" />
+          </button>
+        </div>
+      </div>
+
+      {/* Floating Bottom Center: Ki Kyrdan Kur Details Trigger (Item 9 in Todo: Collapsed by default, opens modal/bottom sheet) */}
+      <div className="absolute bottom-5 left-1/2 -translate-x-1/2 z-20 pointer-events-auto">
+        <button
+          type="button"
+          onClick={() => setIsKyrdanModalOpen(true)}
+          className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/95 border border-slate-200 shadow-lg text-xs sm:text-sm font-semibold text-slate-800 hover:text-emerald-800 hover:bg-emerald-50 transition cursor-pointer backdrop-blur-md"
+        >
+          <Layers className="w-4 h-4 text-emerald-600" />
+          <span>{language === 'kha' ? 'Ki Kyrdan Kur (Legends Details)' : 'Kinship Tiers (Legends)'}</span>
+          <span className="text-[11px] px-1.5 py-0.2 rounded-full bg-emerald-50 text-emerald-800 font-bold border border-emerald-200">
+            {visibleNodes.length}
+          </span>
+        </button>
       </div>
 
       {/* Hover Node Tooltip */}
-      {hoveredNode && !selectedNode && (
+      {hoveredNode && !selectedNode && viewMode === 'graph' && (
         <div 
           className="pointer-events-none absolute top-20 left-1/2 -translate-x-1/2 bg-white/95 backdrop-blur-md px-4 py-2 rounded-xl shadow-xl border border-slate-200 text-xs z-10 max-w-xs transition-opacity duration-150 text-center"
         >
@@ -587,6 +688,24 @@ export const ClanGraph: React.FC = () => {
           </div>
         </div>
       )}
+
+      {/* Modals */}
+      <KyrdanKurModal
+        isOpen={isKyrdanModalOpen}
+        onClose={() => setIsKyrdanModalOpen(false)}
+      />
+
+      <ShareModal
+        isOpen={isShareModalOpen}
+        onClose={() => setIsShareModalOpen(false)}
+        canvasRef={canvasRef}
+      />
+
+      <ClanSubmitModal
+        isOpen={isSubmitModalOpen}
+        onClose={() => setIsSubmitModalOpen(false)}
+        initialSurname={query}
+      />
     </div>
   );
 };

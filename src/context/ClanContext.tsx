@@ -1,26 +1,37 @@
-import React, { createContext, useContext, useState, useCallback } from 'react';
-import { GraphData, GraphNode, GraphLink, ClanTier, TipkurResponse } from '../types';
+import React, { createContext, useContext, useState, useCallback, useEffect } from 'react';
+import { GraphData, GraphNode, GraphLink, ClanTier, TipkurResponse, ViewMode } from '../types';
 import { searchClanApi, getStoredApiConfig } from '../services/api';
 
 interface ClanContextType {
   query: string;
   response: TipkurResponse | null;
   graphData: GraphData;
+  rawGraphData: GraphData;
   loading: boolean;
   error: string | null;
   recentSearches: string[];
   activeTiers: Set<ClanTier>;
   selectedNode: GraphNode | null;
   isGraphOpen: boolean;
+  viewMode: ViewMode;
+  minimalLinks: boolean;
+  hasMoreThan20: boolean;
+  directLinksCount: number;
+  indirectLinksCount: number;
+  totalLinksCount: number;
   isMockMode: boolean;
   isLiveApiReachable: boolean;
+  resetViewTrigger: number;
   searchClan: (jait: string) => Promise<void>;
   toggleTier: (tier: ClanTier) => void;
   setSelectedNode: (node: GraphNode | null) => void;
   clearHistory: () => void;
-  resetViewTrigger: number;
   triggerResetView: () => void;
   setIsGraphOpen: (open: boolean) => void;
+  setViewMode: (mode: ViewMode) => void;
+  setMinimalLinks: (minimal: boolean) => void;
+  toggleMinimalLinks: () => void;
+  clearAllAppData: () => void;
 }
 
 const ClanContext = createContext<ClanContextType | undefined>(undefined);
@@ -39,10 +50,13 @@ export const SEA_GREEN_PALETTE = {
 export const ClanProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [query, setQuery] = useState<string>('');
   const [response, setResponse] = useState<TipkurResponse | null>(null);
+  const [rawGraphData, setRawGraphData] = useState<GraphData>({ nodes: [], links: [] });
   const [graphData, setGraphData] = useState<GraphData>({ nodes: [], links: [] });
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
   const [isGraphOpen, setIsGraphOpen] = useState<boolean>(false);
+  const [viewMode, setViewMode] = useState<ViewMode>('graph');
+  const [minimalLinks, setMinimalLinks] = useState<boolean>(true);
   const [isMockMode, setIsMockMode] = useState<boolean>(true);
   const [isLiveApiReachable, setIsLiveApiReachable] = useState<boolean>(false);
   const [resetViewTrigger, setResetViewTrigger] = useState<number>(0);
@@ -80,7 +94,12 @@ export const ClanProvider: React.FC<{ children: React.ReactNode }> = ({ children
     localStorage.removeItem(RECENT_SEARCHES_KEY);
   };
 
-  const transformToGraph = useCallback((res: TipkurResponse, searchedClan: string): GraphData => {
+  const toggleMinimalLinks = () => {
+    setMinimalLinks(prev => !prev);
+  };
+
+  // Full transform to Graph Nodes & Links without limits
+  const transformToRawGraph = useCallback((res: TipkurResponse, searchedClan: string): GraphData => {
     const nodes: GraphNode[] = [];
     const links: GraphLink[] = [];
     const nodeMap = new Map<string, GraphNode>();
@@ -262,6 +281,60 @@ export const ClanProvider: React.FC<{ children: React.ReactNode }> = ({ children
     return { nodes, links };
   }, []);
 
+  // Filter with limits per Todo item 17:
+  // For Clans that have more than 20 links: max 12 for kpoh, max 7 for shikur, max 5 for other links
+  const filterGraphWithLimits = useCallback((raw: GraphData, useMinimal: boolean): GraphData => {
+    if (!useMinimal) {
+      return raw;
+    }
+
+    const nonOriginNodes = raw.nodes.filter(n => n.tier !== 'origin');
+    if (nonOriginNodes.length <= 20) {
+      return raw;
+    }
+
+    const origin = raw.nodes.find(n => n.tier === 'origin');
+    const kpohNodes = raw.nodes.filter(n => n.tier === 'kpoh').slice(0, 12);
+    const shikurNodes = raw.nodes.filter(n => n.tier === 'shikur').slice(0, 7);
+    const tehKurNodes = raw.nodes.filter(n => n.tier === 'tehkur').slice(0, 5);
+    const distantNodes = raw.nodes.filter(n => n.tier === 'distant').slice(0, 5);
+
+    const filteredNodes: GraphNode[] = [];
+    if (origin) filteredNodes.push(origin);
+    filteredNodes.push(...kpohNodes, ...shikurNodes, ...tehKurNodes, ...distantNodes);
+
+    const allowedNodeIds = new Set(filteredNodes.map(n => n.id));
+
+    const filteredLinks = raw.links.filter(l => {
+      const sourceId = typeof l.source === 'object' ? (l.source as GraphNode).id : l.source;
+      const targetId = typeof l.target === 'object' ? (l.target as GraphNode).id : l.target;
+      return allowedNodeIds.has(sourceId) && allowedNodeIds.has(targetId);
+    });
+
+    return {
+      nodes: filteredNodes,
+      links: filteredLinks
+    };
+  }, []);
+
+  // Re-compute graphData whenever rawGraphData or minimalLinks changes
+  useEffect(() => {
+    const next = filterGraphWithLimits(rawGraphData, minimalLinks);
+    setGraphData(next);
+  }, [rawGraphData, minimalLinks, filterGraphWithLimits]);
+
+  // Compute stats
+  const totalLinksCount = rawGraphData.nodes.filter(n => n.tier !== 'origin').length;
+  const hasMoreThan20 = totalLinksCount > 20;
+
+  const directLinksCount = rawGraphData.nodes.filter(
+    n => n.tier === 'kpoh' || n.tier === 'shikur'
+  ).length;
+
+  const indirectLinksCount = rawGraphData.nodes.filter(
+    n => n.tier === 'tehkur' || n.tier === 'distant'
+  ).length;
+
   const searchClan = useCallback(async (jait: string) => {
     if (!jait || !jait.trim()) return;
     const cleanJait = jait.trim();
@@ -278,11 +351,16 @@ export const ClanProvider: React.FC<{ children: React.ReactNode }> = ({ children
       setResponse(res);
       setIsLiveApiReachable(!res.fromMock);
 
-      const gData = transformToGraph(res, cleanJait);
-      setGraphData(gData);
+      const rawGData = transformToRawGraph(res, cleanJait);
+      setRawGraphData(rawGData);
+
+      // Default minimalLinks to true if links exceed 20
+      const count = rawGData.nodes.filter(n => n.tier !== 'origin').length;
+      setMinimalLinks(count > 20);
 
       // Open fullscreen graph on search!
       setIsGraphOpen(true);
+      window.history.pushState({ graph: true, clan: cleanJait }, '');
 
       // Save to recent searches
       setRecentSearches(prev => {
@@ -299,7 +377,29 @@ export const ClanProvider: React.FC<{ children: React.ReactNode }> = ({ children
     } finally {
       setLoading(false);
     }
-  }, [transformToGraph]);
+  }, [transformToRawGraph]);
+
+  // Handle Physical / Browser Back Press (Item 3 in Todo)
+  useEffect(() => {
+    const handlePopState = () => {
+      // If user hit browser back or phone back gesture, return to home page
+      setIsGraphOpen(false);
+      setSelectedNode(null);
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
+
+  const clearAllAppData = () => {
+    localStorage.clear();
+    setRecentSearches([]);
+    setRawGraphData({ nodes: [], links: [] });
+    setGraphData({ nodes: [], links: [] });
+    setQuery('');
+    setResponse(null);
+    setIsGraphOpen(false);
+  };
 
   return (
     <ClanContext.Provider
@@ -307,12 +407,19 @@ export const ClanProvider: React.FC<{ children: React.ReactNode }> = ({ children
         query,
         response,
         graphData,
+        rawGraphData,
         loading,
         error,
         recentSearches,
         activeTiers,
         selectedNode,
         isGraphOpen,
+        viewMode,
+        minimalLinks,
+        hasMoreThan20,
+        directLinksCount,
+        indirectLinksCount,
+        totalLinksCount,
         isMockMode,
         isLiveApiReachable,
         searchClan,
@@ -321,7 +428,11 @@ export const ClanProvider: React.FC<{ children: React.ReactNode }> = ({ children
         clearHistory,
         resetViewTrigger,
         triggerResetView,
-        setIsGraphOpen
+        setIsGraphOpen,
+        setViewMode,
+        setMinimalLinks,
+        toggleMinimalLinks,
+        clearAllAppData
       }}
     >
       {children}

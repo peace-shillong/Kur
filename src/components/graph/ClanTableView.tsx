@@ -1,0 +1,180 @@
+import React, { useState } from 'react';
+import { ClanTier } from '../../types';
+import { useClan, SEA_GREEN_PALETTE } from '../../context/ClanContext';
+import { useLanguage } from '../../context/LanguageContext';
+import { Search, Info, ExternalLink } from 'lucide-react';
+
+export const ClanTableView: React.FC = () => {
+  const { graphData, query, setSelectedNode, activeTiers } = useClan();
+  const { language } = useLanguage();
+  const [filterQuery, setFilterQuery] = useState<string>('');
+  const [selectedTierFilter, setSelectedTierFilter] = useState<string>('all');
+
+  const nonOriginNodes = graphData.nodes.filter(n => n.tier !== 'origin');
+
+  const filteredNodes = nonOriginNodes.filter(node => {
+    const matchesTier = selectedTierFilter === 'all' || node.tier === selectedTierFilter;
+    const matchesActive = activeTiers.has(node.tier);
+    const matchesSearch = !filterQuery.trim() || 
+      node.label.toLowerCase().includes(filterQuery.toLowerCase()) ||
+      (node.clusterTitle && node.clusterTitle.toLowerCase().includes(filterQuery.toLowerCase()));
+
+    return matchesTier && matchesActive && matchesSearch;
+  });
+
+  const getTierBadge = (tier: ClanTier) => {
+    switch (tier) {
+      case 'kpoh':
+        return {
+          label: language === 'kha' ? 'Ka juh ka kpoh' : 'Direct Bloodline',
+          color: SEA_GREEN_PALETTE.kpoh,
+          bg: 'bg-emerald-900/10 text-emerald-950 border-emerald-900/20'
+        };
+      case 'shikur':
+        return {
+          label: language === 'kha' ? 'Ba ia dei kur' : 'Sister Clan (Shikur)',
+          color: SEA_GREEN_PALETTE.shikur,
+          bg: 'bg-emerald-600/10 text-emerald-800 border-emerald-600/20'
+        };
+      case 'tehkur':
+        return {
+          label: language === 'kha' ? 'Ba ia teh kur' : 'Treaty Bound (Teh Kur)',
+          color: SEA_GREEN_PALETTE.tehkur,
+          bg: 'bg-emerald-400/15 text-emerald-900 border-emerald-400/30'
+        };
+      case 'distant':
+        return {
+          label: language === 'kha' ? 'Ba don jingiadei' : 'Distant Alliance',
+          color: SEA_GREEN_PALETTE.distant,
+          bg: 'bg-slate-200 text-slate-800 border-slate-300'
+        };
+      default:
+        return { label: 'Kur', color: '#2E8B57', bg: 'bg-slate-100 text-slate-800' };
+    }
+  };
+
+  return (
+    <div id="clan-table-container" className="w-full max-w-5xl mx-auto p-4 sm:p-6 space-y-4 bg-white rounded-3xl border border-slate-200 shadow-sm animate-in fade-in duration-200">
+      {/* Top filter bar */}
+      <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 pb-3 border-b border-slate-100">
+        <div className="flex items-center gap-2">
+          <div className="relative flex-1 sm:w-64">
+            <Search className="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" />
+            <input
+              type="text"
+              value={filterQuery}
+              onChange={e => setFilterQuery(e.target.value)}
+              placeholder={language === 'kha' ? 'Wad ha kane ka table...' : 'Filter table...'}
+              className="w-full pl-9 pr-3 py-1.5 text-xs sm:text-sm rounded-xl bg-slate-50 border border-slate-200 text-slate-900 focus:outline-none focus:ring-2 focus:ring-emerald-500"
+            />
+          </div>
+          <span className="text-xs text-slate-500 font-medium whitespace-nowrap">
+            {filteredNodes.length} {language === 'kha' ? 'ki jait' : 'clans'}
+          </span>
+        </div>
+
+        {/* Filter Pills */}
+        <div className="flex flex-wrap items-center gap-1.5 text-xs">
+          {[
+            { id: 'all', label: language === 'kha' ? 'Baroh' : 'All' },
+            { id: 'kpoh', label: language === 'kha' ? 'Ka juh ka kpoh' : 'Direct' },
+            { id: 'shikur', label: language === 'kha' ? 'Shikur' : 'Sister' },
+            { id: 'tehkur', label: language === 'kha' ? 'Teh Kur' : 'Bound' },
+            { id: 'distant', label: language === 'kha' ? 'Jingiadei' : 'Distant' }
+          ].map(tab => (
+            <button
+              key={tab.id}
+              type="button"
+              onClick={() => setSelectedTierFilter(tab.id)}
+              className={`px-3 py-1 rounded-full font-medium transition cursor-pointer text-xs ${
+                selectedTierFilter === tab.id
+                  ? 'bg-emerald-700 text-white shadow-xs'
+                  : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
+              }`}
+            >
+              {tab.label}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* Responsive Table */}
+      <div className="overflow-x-auto rounded-2xl border border-slate-200">
+        <table className="w-full text-left text-xs sm:text-sm border-collapse">
+          <thead>
+            <tr className="bg-slate-50 text-slate-600 font-semibold border-b border-slate-200 text-[11px] sm:text-xs uppercase tracking-wider">
+              <th className="py-3 px-4">#</th>
+              <th className="py-3 px-4">{language === 'kha' ? 'Ka Jait' : 'Clan Surname'}</th>
+              <th className="py-3 px-4">{language === 'kha' ? 'Ka Kyrdan' : 'Kinship Tier'}</th>
+              <th className="py-3 px-4 hidden md:table-cell">{language === 'kha' ? 'Ka Tyngshop / Cluster' : 'Ancestral Cluster'}</th>
+              <th className="py-3 px-4 hidden sm:table-cell">{language === 'kha' ? 'Ka Jingiadei' : 'Relationship'}</th>
+              <th className="py-3 px-4 text-right">{language === 'kha' ? 'Jingbatai' : 'Action'}</th>
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-slate-100">
+            {filteredNodes.length > 0 ? (
+              filteredNodes.map((node, index) => {
+                const badge = getTierBadge(node.tier);
+                return (
+                  <tr 
+                    key={node.id}
+                    className="hover:bg-slate-50/80 transition group"
+                  >
+                    <td className="py-3 px-4 text-slate-400 font-mono text-xs">
+                      {index + 1}
+                    </td>
+                    <td className="py-3 px-4 font-serif font-bold text-slate-900">
+                      {node.label}
+                    </td>
+                    <td className="py-3 px-4">
+                      <span className={`inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-semibold border ${badge.bg}`}>
+                        <span 
+                          className="w-2 h-2 rounded-full shrink-0" 
+                          style={{ backgroundColor: badge.color }} 
+                        />
+                        <span>{badge.label}</span>
+                      </span>
+                    </td>
+                    <td className="py-3 px-4 text-slate-600 text-xs hidden md:table-cell max-w-xs truncate">
+                      {node.clusterTitle || '—'}
+                    </td>
+                    <td className="py-3 px-4 text-slate-600 text-xs hidden sm:table-cell">
+                      {language === 'kha' ? node.relationshipPath?.khasi : node.relationshipPath?.english}
+                    </td>
+                    <td className="py-3 px-4 text-right">
+                      <button
+                        type="button"
+                        onClick={() => setSelectedNode(node)}
+                        className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-emerald-50 text-emerald-800 hover:bg-emerald-100 text-xs font-semibold transition cursor-pointer"
+                      >
+                        <span>{language === 'kha' ? 'Peit' : 'View'}</span>
+                        <ExternalLink className="w-3 h-3" />
+                      </button>
+                    </td>
+                  </tr>
+                );
+              })
+            ) : (
+              <tr>
+                <td colSpan={6} className="py-8 text-center text-slate-500 text-xs">
+                  {language === 'kha' ? 'Ym shem jait kiba iahap bad kane ka jingwad.' : 'No clans match your filter query.'}
+                </td>
+              </tr>
+            )}
+          </tbody>
+        </table>
+      </div>
+
+      {/* Watermark at Bottom of Table for Share & Export (Item 15 in Todo) */}
+      <div className="pt-3 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500 border-t border-slate-100 gap-2">
+        <div className="flex items-center gap-1.5 font-medium">
+          <Info className="w-3.5 h-3.5 text-emerald-600" />
+          <span>Origin Surname: <strong className="text-slate-800">{query}</strong></span>
+        </div>
+        <div className="italic text-center sm:text-right font-sans">
+          Generated by Kur App (https://kur.kyrshan.com), Data Sourced from tynrai.in
+        </div>
+      </div>
+    </div>
+  );
+};

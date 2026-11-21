@@ -52,13 +52,13 @@ export const HomePage: React.FC = () => {
       </div>
 
       {/* Title */}
-      <h1 className="text-3xl sm:text-5xl md:text-6xl font-serif font-black tracking-tight text-slate-900 mb-4 sm:mb-6 animate-in fade-in duration-600">
+      <h1 className="text-3xl sm:text-5xl md:text-6xl font-serif font-bold normal-case tracking-tight text-slate-900 mb-4 sm:mb-6 animate-in fade-in duration-600">
         Wad ki kur jong phi
       </h1>
 
       {/* Single Clear Question */}
-      <p className="text-lg sm:text-2xl font-serif font-medium text-emerald-800 mb-8 sm:mb-10 animate-in fade-in duration-700">
-        {language === 'kha' ? 'Kaei ka jait jong phi?' : 'What is your clan surname? (Kaei ka jait jong phi?)'}
+      <p className="text-lg sm:text-2xl font-serif font-normal normal-case text-emerald-800 mb-8 sm:mb-10 animate-in fade-in duration-700">
+        {language === 'kha' ? 'Kaei ka jait jong phi?' : 'Kaei ka jait jong phi? (What is your clan surname?)'}
       </p>
 
       {/* Main Search Input Form */}
@@ -69,7 +69,7 @@ export const HomePage: React.FC = () => {
             value={jaitInput}
             onChange={e => setJaitInput(e.target.value)}
             onKeyDown={handleKeyDown}
-            placeholder={language === 'kha' ? "Buh ia ka jait jong phi (e.g: Diengdoh, Laloo)..." : "Enter your surname (e.g. Diengdoh, Laloo)..."}
+            placeholder={language === 'kha' ? "Thoh ka jait jong phi hangne" : "Enter your surname (e.g. Diengdoh, Laloo)..."}
             className="w-full pl-4 sm:pl-6 pr-4 py-3.5 sm:py-4 text-base sm:text-lg font-medium text-slate-900 placeholder:text-slate-400 focus:outline-none bg-transparent"
             autoFocus
             required
@@ -85,7 +85,6 @@ export const HomePage: React.FC = () => {
             ) : (
               <Search className="w-5 h-5" />
             )}
-            <span>Wad kur</span>
           </button>
         </div>
 
