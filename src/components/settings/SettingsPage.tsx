@@ -30,7 +30,7 @@ interface SettingsPageProps {
 export const SettingsPage: React.FC<SettingsPageProps> = ({ onBack }) => {
   const { clearAllAppData } = useClan();
   const { language, setLanguage } = useLanguage();
-  const { themeMode, customVariant, setThemeMode, setCustomVariant } = useTheme();
+  const { themeMode, customVariant, setThemeMode, setCustomVariant, homeBg, setHomeBg } = useTheme();
 
   const [isPrivacyOpen, setIsPrivacyOpen] = useState(false);
   const [isTermsOpen, setIsTermsOpen] = useState(false);
@@ -233,6 +233,76 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({ onBack }) => {
                   }`}
               >
                 English
+              </button>
+            </div>
+          </div>
+
+          {/* Home Page Background Image Selector */}
+          <div className="pt-4 border-t border-slate-100 space-y-3">
+            <div>
+              <span className="text-xs font-semibold text-slate-800 uppercase tracking-wider block">
+                {language === 'kha' ? 'Dur Tyngshop jong ka Home Page (Background Image):' : 'Home Page Background Image:'}
+              </span>
+              <p className="text-[11px] text-slate-500 mt-0.5">
+                {language === 'kha' ? 'Jied ia ka dur ban buh ha trai jong ka Home Page (don parallax effect)' : 'Choose a cultural illustration placed at the bottom with a parallax effect'}
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+              {/* Option 1: None / Blank (Default) */}
+              <button
+                type="button"
+                onClick={() => setHomeBg('none')}
+                className={`p-3.5 rounded-2xl border text-left transition cursor-pointer flex items-center justify-between ${homeBg === 'none'
+                  ? 'border-emerald-600 bg-emerald-50/50 shadow-xs ring-2 ring-emerald-500/20'
+                  : 'border-slate-200 bg-slate-50/60 hover:bg-slate-100'
+                  }`}
+              >
+                <div>
+                  <div className="text-xs font-bold text-slate-900">
+                    {language === 'kha' ? 'Khlem Dur (Blank)' : 'Blank / None'}
+                  </div>
+                  <div className="text-[10px] text-slate-500 mt-0.5">
+                    {language === 'kha' ? 'Ka jinglong kaba khuid & jemnam' : 'Clean & minimal default'}
+                  </div>
+                </div>
+                {homeBg === 'none' && <Check className="w-4 h-4 text-emerald-600 shrink-0" />}
+              </button>
+
+              {/* Option 2: Mawbynna */}
+              <button
+                type="button"
+                onClick={() => setHomeBg('mawbynna')}
+                className={`p-3.5 rounded-2xl border text-left transition cursor-pointer flex items-center justify-between ${homeBg === 'mawbynna'
+                  ? 'border-emerald-600 bg-emerald-50/50 shadow-xs ring-2 ring-emerald-500/20'
+                  : 'border-slate-200 bg-slate-50/60 hover:bg-slate-100'
+                  }`}
+              >
+                <div>
+                  <div className="text-xs font-bold text-slate-900">Mawbynna</div>
+                  <div className="text-[10px] text-slate-500 mt-0.5">
+                    {language === 'kha' ? 'Ki mawbynna & mawkren hyndai' : 'Ancient Khasi megalith stones'}
+                  </div>
+                </div>
+                {homeBg === 'mawbynna' && <Check className="w-4 h-4 text-emerald-600 shrink-0" />}
+              </button>
+
+              {/* Option 3: Jingkieng-jri */}
+              <button
+                type="button"
+                onClick={() => setHomeBg('jingkieng-jri')}
+                className={`p-3.5 rounded-2xl border text-left transition cursor-pointer flex items-center justify-between ${homeBg === 'jingkieng-jri'
+                  ? 'border-emerald-600 bg-emerald-50/50 shadow-xs ring-2 ring-emerald-500/20'
+                  : 'border-slate-200 bg-slate-50/60 hover:bg-slate-100'
+                  }`}
+              >
+                <div>
+                  <div className="text-xs font-bold text-slate-900">Jingkieng-jri</div>
+                  <div className="text-[10px] text-slate-500 mt-0.5">
+                    {language === 'kha' ? 'Ki jingkieng jri ba im' : 'Living root bridge of Sohra & War'}
+                  </div>
+                </div>
+                {homeBg === 'jingkieng-jri' && <Check className="w-4 h-4 text-emerald-600 shrink-0" />}
               </button>
             </div>
           </div>

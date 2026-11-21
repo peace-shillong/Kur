@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useEffect, useState, useMemo } from 'react';
-import { ThemeMode, CustomVariant, ThemePalette } from '../types';
+import { ThemeMode, CustomVariant, ThemePalette, HomeBg } from '../types';
 
 export const getThemePalette = (mode: ThemeMode, custom: CustomVariant): ThemePalette => {
   if (mode === 'dark') {
@@ -142,6 +142,8 @@ interface ThemeContextType {
   customVariant: CustomVariant;
   setThemeMode: (mode: ThemeMode) => void;
   setCustomVariant: (variant: CustomVariant) => void;
+  homeBg: HomeBg;
+  setHomeBg: (bg: HomeBg) => void;
   resolvedTheme: 'light' | 'dark';
   palette: ThemePalette;
   theme: ThemeMode;
@@ -159,6 +161,10 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     return (localStorage.getItem('tipkur-theme-custom') as CustomVariant) || 'heritage';
   });
 
+  const [homeBg, setHomeBgState] = useState<HomeBg>(() => {
+    return (localStorage.getItem('tipkur-home-bg') as HomeBg) || 'none';
+  });
+
   const setThemeMode = (mode: ThemeMode) => {
     setThemeModeState(mode);
     localStorage.setItem('tipkur-theme-mode', mode);
@@ -167,6 +173,11 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   const setCustomVariant = (variant: CustomVariant) => {
     setCustomVariantState(variant);
     localStorage.setItem('tipkur-theme-custom', variant);
+  };
+
+  const setHomeBg = (bg: HomeBg) => {
+    setHomeBgState(bg);
+    localStorage.setItem('tipkur-home-bg', bg);
   };
 
   const resolvedTheme: 'light' | 'dark' = themeMode === 'dark' ? 'dark' : 'light';
@@ -206,6 +217,8 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
         customVariant, 
         setThemeMode, 
         setCustomVariant, 
+        homeBg,
+        setHomeBg,
         resolvedTheme,
         palette,
         theme: themeMode,

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { HomePage } from './components/HomePage';
 import { ClanGraph } from './components/graph/ClanGraph';
 import { NodeDetailModal } from './components/graph/NodeDetailModal';
+import { FeatureLockedModal } from './components/modals/FeatureLockedModal';
 import { CompatibilityChecker } from './components/checker/CompatibilityChecker';
 import { SettingsPage } from './components/settings/SettingsPage';
 import { useClan } from './context/ClanContext';
@@ -9,10 +10,11 @@ import { useLanguage } from './context/LanguageContext';
 import { HeartHandshake, ShieldCheck, ArrowLeft, Languages, Settings } from 'lucide-react';
 
 export const App: React.FC = () => {
-  const { isGraphOpen, setIsGraphOpen } = useClan();
+  const { isGraphOpen, setIsGraphOpen, recentSearches, query } = useClan();
   const { language, toggleLanguage, t } = useLanguage();
   const [showChecker, setShowChecker] = useState<boolean>(false);
   const [showSettings, setShowSettings] = useState<boolean>(false);
+  const [showLockedModal, setShowLockedModal] = useState<boolean>(false);
 
   // Handle Physical / Browser Back Press
   useEffect(() => {
@@ -31,6 +33,12 @@ export const App: React.FC = () => {
   }, [showChecker, showSettings, isGraphOpen, setIsGraphOpen]);
 
   const openChecker = () => {
+    // When the user has not done any previous search and there is no recent search, show lock modal
+    const hasPreviousSearch = recentSearches.length > 0 || Boolean(query && query.trim());
+    if (!hasPreviousSearch) {
+      setShowLockedModal(true);
+      return;
+    }
     setShowChecker(true);
     setShowSettings(false);
     window.history.pushState({ page: 'checker' }, '');
@@ -87,6 +95,12 @@ export const App: React.FC = () => {
 
       {/* Floating Modal for Clan Node Details */}
       <NodeDetailModal />
+
+      {/* Feature Locked Alert Modal (when no prior search done) */}
+      <FeatureLockedModal
+        isOpen={showLockedModal}
+        onClose={() => setShowLockedModal(false)}
+      />
 
       {/* Clean Minimalist Footer (Hidden when Settings or Graph is open) */}
       {!showSettings && (

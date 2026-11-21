@@ -14,7 +14,7 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [language, setLanguageState] = useState<Language>(() => {
     const saved = localStorage.getItem('tipkur-lang');
-    return saved === 'kha' ? 'kha' : 'en';
+    return saved === 'en' ? 'en' : 'kha';
   });
 
   const setLanguage = (lang: Language) => {

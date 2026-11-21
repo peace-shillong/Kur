@@ -4,6 +4,8 @@ export type ThemeMode = 'light' | 'dark' | 'custom';
 
 export type CustomVariant = 'heritage' | 'forest' | 'dawki';
 
+export type HomeBg = 'none' | 'mawbynna' | 'jingkieng-jri';
+
 export interface ThemePalette {
   primary: string;
   primaryHover: string;
