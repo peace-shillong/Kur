@@ -8,13 +8,13 @@ import { KyrdanKurModal } from './KyrdanKurModal';
 import { ClanTableView } from './ClanTableView';
 import { ShareModal } from '../modals/ShareModal';
 import { ClanSubmitModal } from '../forms/ClanSubmitModal';
-import { 
-  RotateCcw, 
-  ZoomIn, 
-  ZoomOut, 
-  ArrowLeft, 
-  Search, 
-  Layers, 
+import {
+  RotateCcw,
+  ZoomIn,
+  ZoomOut,
+  ArrowLeft,
+  Search,
+  Layers,
   Table as TableIcon,
   Network,
   Share2,
@@ -30,11 +30,11 @@ export const ClanGraph: React.FC = () => {
   const transformRef = useRef<d3.ZoomTransform>(d3.zoomIdentity);
   const zoomBehaviorRef = useRef<d3.ZoomBehavior<HTMLCanvasElement, unknown> | null>(null);
 
-  const { 
-    graphData, 
-    activeTiers, 
-    selectedNode, 
-    setSelectedNode, 
+  const {
+    graphData,
+    activeTiers,
+    selectedNode,
+    setSelectedNode,
     resetViewTrigger,
     setIsGraphOpen,
     query,
@@ -128,7 +128,7 @@ export const ClanGraph: React.FC = () => {
       ctx.lineTo(target.x, target.y);
 
       const isFocused = (selectedNode && (source.id === selectedNode.id || target.id === selectedNode.id)) ||
-                        (hoveredNode && (source.id === hoveredNode.id || target.id === hoveredNode.id));
+        (hoveredNode && (source.id === hoveredNode.id || target.id === hoveredNode.id));
 
       if (link.tier === 'kpoh') {
         ctx.strokeStyle = isFocused ? palette.kpoh : palette.linkKpoh;
@@ -182,8 +182,8 @@ export const ClanGraph: React.FC = () => {
       ctx.fill();
 
       // Border ring
-      ctx.strokeStyle = isSelected 
-        ? (resolvedTheme === 'dark' ? '#ffffff' : '#0f172a') 
+      ctx.strokeStyle = isSelected
+        ? (resolvedTheme === 'dark' ? '#ffffff' : '#0f172a')
         : (resolvedTheme === 'dark' ? '#090e0c' : '#ffffff');
       ctx.lineWidth = isSelected ? 3.5 : (isOrigin ? 3 : 2);
       ctx.stroke();
@@ -198,8 +198,8 @@ export const ClanGraph: React.FC = () => {
       }
 
       // Node Label Text
-      ctx.font = isOrigin 
-        ? 'bold 15px "Plus Jakarta Sans", sans-serif' 
+      ctx.font = isOrigin
+        ? 'bold 15px "Plus Jakarta Sans", sans-serif'
         : `${isSelected || isHovered ? '600' : '500'} 12px "Plus Jakarta Sans", sans-serif`;
       ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
@@ -502,13 +502,13 @@ export const ClanGraph: React.FC = () => {
         <div className="pointer-events-auto flex items-center justify-center">
           {isFound ? (
             <div className="flex items-center gap-2 px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full bg-white/95 dark:bg-[#111a16]/95 border border-slate-200 dark:border-[#1f352c] shadow-md backdrop-blur-md text-xs sm:text-sm text-slate-800 dark:text-slate-100 font-medium">
-              <span 
-                className="w-2.5 h-2.5 rounded-full shrink-0" 
-                style={{ backgroundColor: palette.primary }} 
+              <span
+                className="w-2.5 h-2.5 rounded-full shrink-0"
+                style={{ backgroundColor: palette.primary }}
               />
               <span>
                 {language === 'kha'
-                  ? `Lap ${directLinksCount} ki kur, ${indirectLinksCount} ki jait ba teh kur`
+                  ? `Lap ${directLinksCount} tylli ki kur, ${indirectLinksCount} ki jait ba teh kur`
                   : `Found ${directLinksCount} direct links, ${indirectLinksCount} indirect links`}
               </span>
 
@@ -553,9 +553,9 @@ export const ClanGraph: React.FC = () => {
               onClick={() => setShowSearchBar(true)}
               className="flex items-center gap-2 px-3.5 sm:px-4 py-2 rounded-full bg-white/95 dark:bg-[#111a16]/95 border border-slate-200 dark:border-[#1f352c] shadow-md backdrop-blur-md text-slate-800 dark:text-slate-100 hover:bg-slate-50 dark:hover:bg-[#1a2a24] transition cursor-pointer text-xs sm:text-sm font-semibold"
             >
-              <span 
-                className="w-2.5 h-2.5 rounded-full shrink-0" 
-                style={{ backgroundColor: palette.origin }} 
+              <span
+                className="w-2.5 h-2.5 rounded-full shrink-0"
+                style={{ backgroundColor: palette.origin }}
               />
               <span className="font-serif font-bold text-slate-900 dark:text-slate-100">{query}</span>
               <Search className="w-3.5 h-3.5 text-slate-400 ml-1" />
@@ -638,11 +638,10 @@ export const ClanGraph: React.FC = () => {
             type="button"
             onClick={() => setViewMode(viewMode === 'graph' ? 'table' : 'graph')}
             style={viewMode === 'table' ? { backgroundColor: palette.primary } : undefined}
-            className={`p-2.5 rounded-xl transition cursor-pointer flex items-center justify-center ${
-              viewMode === 'table'
+            className={`p-2.5 rounded-xl transition cursor-pointer flex items-center justify-center ${viewMode === 'table'
                 ? 'text-white shadow-xs'
                 : 'text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-[#1a2a24]'
-            }`}
+              }`}
             title={viewMode === 'graph' ? "Switch to Table View" : "Switch to Graph View"}
             aria-label="Toggle Table/Graph View"
           >
@@ -677,12 +676,12 @@ export const ClanGraph: React.FC = () => {
         >
           <Layers className="w-4 h-4" style={{ color: palette.primary }} />
           <span>{language === 'kha' ? 'Ki Kyrdan Kur (Legends Details)' : 'Kinship Tiers (Legends)'}</span>
-          <span 
+          <span
             className="text-[11px] px-1.5 py-0.2 rounded-full font-bold"
-            style={{ 
-              backgroundColor: `${palette.primary}15`, 
+            style={{
+              backgroundColor: `${palette.primary}15`,
               color: palette.primary,
-              border: `1px solid ${palette.primary}30` 
+              border: `1px solid ${palette.primary}30`
             }}
           >
             {visibleNodes.length}
@@ -692,11 +691,11 @@ export const ClanGraph: React.FC = () => {
 
       {/* Hover Node Tooltip */}
       {hoveredNode && !selectedNode && viewMode === 'graph' && (
-        <div 
+        <div
           className="pointer-events-none absolute top-20 left-1/2 -translate-x-1/2 bg-white/95 dark:bg-[#111a16]/95 backdrop-blur-md px-4 py-2 rounded-xl shadow-xl border border-slate-200 dark:border-[#1f352c] text-xs z-10 max-w-xs transition-opacity duration-150 text-center"
         >
           <div className="font-semibold text-slate-900 dark:text-slate-100 flex items-center justify-center gap-2">
-            <span 
+            <span
               className="w-2.5 h-2.5 rounded-full inline-block"
               style={{ backgroundColor: (palette as any)[hoveredNode.tier] || hoveredNode.color }}
             />
