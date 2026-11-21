@@ -79,7 +79,7 @@ export const TermsModal: React.FC<TermsModalProps> = ({ isOpen, onClose }) => {
         <div className="p-4 rounded-2xl bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-800/60 text-amber-950 dark:text-amber-200 space-y-1">
           <div className="flex items-center gap-2 font-bold text-sm text-amber-900 dark:text-amber-300">
             <AlertTriangle className="w-4 h-4 text-amber-700 dark:text-amber-400" />
-            <span>{language === 'kha' ? 'Ka Jingmaham kaba Kyntang' : 'Customary Law Advisory'}</span>
+            <span>{language === 'kha' ? 'Ka Jingmaham kaba Kyrpang' : 'Customary Law Advisory'}</span>
           </div>
           <p className="text-xs leading-relaxed text-amber-900 dark:text-amber-200/90">
             {language === 'kha'
@@ -96,7 +96,7 @@ export const TermsModal: React.FC<TermsModalProps> = ({ isOpen, onClose }) => {
             • <strong>Historical Sources:</strong> Kinship ties are derived from published literature and established oral traditions. Minor regional variances may exist across Khasi Hills, Ri-Bhoi, and War Jaiñtia.
           </p>
           <p>
-            • <strong>Respect for Tradition:</strong> Users are requested to treat all genealogical information with the sacred respect due to ancestral heritage (*Tipkur Tipkha*).
+            • <strong>Respect for Tradition:</strong> Users are requested to treat all genealogical information with the sacred respect due to ancestral heritage (Tipkur Tipkha).
           </p>
         </div>
       </div>

@@ -494,8 +494,8 @@ export const ClanGraph: React.FC = () => {
           className="pointer-events-auto flex items-center gap-2 px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-full bg-white/95 dark:bg-[#111a16]/95 text-slate-800 dark:text-slate-100 hover:bg-slate-50 dark:hover:bg-[#1a2a24] border border-slate-200 dark:border-[#1f352c] shadow-md backdrop-blur-md transition font-semibold text-xs sm:text-sm cursor-pointer"
         >
           <ArrowLeft className="w-4 h-4" style={{ color: palette.primary }} />
-          <span className="hidden sm:inline">Wad da kawei pat ka jait</span>
-          <span className="sm:hidden">Wad pat</span>
+          <span className="hidden sm:inline">Leit biang shadien</span>
+
         </button>
 
         {/* Center Top Result Banner */}
@@ -639,8 +639,8 @@ export const ClanGraph: React.FC = () => {
             onClick={() => setViewMode(viewMode === 'graph' ? 'table' : 'graph')}
             style={viewMode === 'table' ? { backgroundColor: palette.primary } : undefined}
             className={`p-2.5 rounded-xl transition cursor-pointer flex items-center justify-center ${viewMode === 'table'
-                ? 'text-white shadow-xs'
-                : 'text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-[#1a2a24]'
+              ? 'text-white shadow-xs'
+              : 'text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-[#1a2a24]'
               }`}
             title={viewMode === 'graph' ? "Switch to Table View" : "Switch to Graph View"}
             aria-label="Toggle Table/Graph View"

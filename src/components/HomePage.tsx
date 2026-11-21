@@ -48,10 +48,10 @@ export const HomePage: React.FC = () => {
   return (
     <div className="flex-1 flex flex-col items-center justify-center px-4 sm:px-6 py-12 sm:py-20 max-w-3xl mx-auto w-full text-center">
       {/* Decorative Brand Accent */}
-      <div 
+      <div
         className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold shadow-xs mb-6 sm:mb-8 animate-in fade-in slide-in-from-top-3 duration-500 transition-colors"
-        style={{ 
-          backgroundColor: `${palette.primary}12`, 
+        style={{
+          backgroundColor: `${palette.primary}12`,
           color: palette.primary,
           border: `1px solid ${palette.primary}35`
         }}
@@ -67,7 +67,7 @@ export const HomePage: React.FC = () => {
 
       {/* Single Clear Question (Normal case, strictly not capitalized) */}
       <p className="text-lg sm:text-2xl font-sans font-normal normal-case text-slate-700 dark:text-slate-300 mb-8 sm:mb-10 animate-in fade-in duration-700">
-        {language === 'kha' ? 'Kaei ka jait jong phi?' : 'Kaei ka jait jong phi? (What is your clan surname?)'}
+        {language === 'kha' ? 'Kaei ka jait jong phi?' : 'What is your clan/surname?'}
       </p>
 
       {/* Main Search Input Form */}
@@ -78,7 +78,7 @@ export const HomePage: React.FC = () => {
             value={jaitInput}
             onChange={e => setJaitInput(e.target.value)}
             onKeyDown={handleKeyDown}
-            placeholder={language === 'kha' ? "Thoh ka jait jong phi hangne" : "Enter your surname (e.g. Diengdoh, Laloo)..."}
+            placeholder={language === 'kha' ? "Thoh ka jait jong phi hangne" : "Enter your surname (e.g Laloo)"}
             className="w-full pl-4 sm:pl-6 pr-4 py-3.5 sm:py-4 text-base sm:text-lg font-medium text-slate-900 dark:text-slate-100 placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:outline-none bg-transparent"
             autoFocus
             required

@@ -81,8 +81,8 @@ export const PrivacyModal: React.FC<PrivacyModalProps> = ({ isOpen, onClose }) =
             "We do not collect any user data. Please do not submit sensitive information in the app."
           </p>
           <p className="text-xs text-emerald-800 dark:text-emerald-300">
-            {language === 'kha' 
-              ? 'Ngim ju lum lane kynshew ia ki data shimet jong phi. Sngewbha ym dei ban phah ia ki jingtip ba kyrpang ne ba rieh.' 
+            {language === 'kha'
+              ? 'Ngim ju lum lane kynshew ia ki data shimet jong phi. Sngewbha nai phah ia ki jingtip ba dei shimet lane kiba kyrpang jong phi.'
               : 'Your searches and lineage checks are processed privately on your local browser.'}
           </p>
         </div>
@@ -92,10 +92,10 @@ export const PrivacyModal: React.FC<PrivacyModalProps> = ({ isOpen, onClose }) =
             • <strong>Local Processing:</strong> All clan link queries, compatibility calculations, and view preferences are handled directly in your browser memory and private <code>localStorage</code>.
           </p>
           <p>
-            • <strong>No Tracking / No Cookies:</strong> There are no advertising trackers, analytics trackers, or personal identifier cookies embedded in this application.
+            • <strong>No Tracking / No Cookies:</strong> There are no advertising trackers, or personal identifier cookies embedded in this application. We only collect analytics data which are public and readily available from your end.
           </p>
           <p>
-            • <strong>Community Submissions:</strong> Any clan details voluntarily submitted via the "Ai Jingtip" form are archived solely for community genealogical review and are never commercialized.
+            • <strong>Community Submissions:</strong> Any clan details voluntarily submitted via the "Ai Jingtip" form are archived solely for community genealogical review and shared with Tynrai, are never commercialized.
           </p>
         </div>
       </div>

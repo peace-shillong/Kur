@@ -277,23 +277,23 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({ onBack }) => {
 
         <p className="text-xs sm:text-sm text-slate-700 leading-relaxed bg-slate-50 p-4 rounded-2xl border border-slate-200">
           {language === 'kha'
-            ? 'Kane ka application ka don ka jingthmu ban pynneh pynsah ia ka dustur kyntang jong ka jaitbynriew Khasi ha kaba iadei bad ka Tipkur Tipkha, ka Tipbriew Tipblei, bad ban pynsuk ia ka jingwad bad jingbishar ia ka Sang ka Ma.'
-            : 'Tipkur Tipkha is an interactive cultural genealogy platform dedicated to preserving Khasi matrilineal kinship roots, educating future generations on exogamous customs (Ka Sang), and offering physics-driven kinship exploration.'}
+            ? 'Kane ka application ka don ka jingthmu ban pynneh pynsah ia ka dustur kyntang jong ka jaitbynriew Khasi ha kaba ia dei bad ka Tipkur Tipkha, ka Tipbriew Tipblei, bad ban pynsuk ia ka jingwad bad jingbishar ia ka Sang ka Ma.'
+            : 'This application is an interactive cultural genealogy platform dedicated to preserving Khasi matrilineal kinship roots, educating future generations on exogamous customs (Ka Sang), and offering physics-driven graphs of kinship exploration.'}
         </p>
 
         {/* Contact Information */}
         <div className="space-y-2 pt-1">
           <span className="text-xs font-semibold text-slate-700 uppercase tracking-wider block">
-            {language === 'kha' ? 'Ki Lad Jingkynpham (Contact Information):' : 'Contact Information:'}
+            {language === 'kha' ? 'Ki Lad Jingpyntip (Contact Information):' : 'Contact Information:'}
           </span>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-slate-700">
             <div className="flex items-center gap-2 p-3 rounded-xl bg-slate-50 border border-slate-200">
               <Mail className="w-4 h-4 text-emerald-700 shrink-0" />
-              <span>Email: <a href="mailto:contact@kyrshan.com" className="text-emerald-800 underline font-semibold">contact@kyrshan.com</a></span>
+              <span>Email: <a href="mailto:dkhar@kyrshan.com" className="text-emerald-800 underline font-semibold">dkhar@kyrshan.com</a></span>
             </div>
             <div className="flex items-center gap-2 p-3 rounded-xl bg-slate-50 border border-slate-200">
               <Globe className="w-4 h-4 text-emerald-700 shrink-0" />
-              <span>Website: <a href="https://kur.kyrshan.com" target="_blank" rel="noreferrer" className="text-emerald-800 underline font-semibold">https://kur.kyrshan.com</a></span>
+              <span>Website: <a href="https://kyrshan.com" target="_blank" rel="noreferrer" className="text-emerald-800 underline font-semibold">https://kyrshan.com</a></span>
             </div>
           </div>
         </div>
@@ -304,7 +304,7 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({ onBack }) => {
         <div className="flex items-center gap-2.5 pb-2 border-b border-slate-100">
           <Heart className="w-5 h-5 text-emerald-600" />
           <h2 className="font-serif font-bold text-lg text-slate-900">
-            {language === 'kha' ? 'Ki Credits & Tynrai Data' : 'Credits & Historical Sources'}
+            {language === 'kha' ? 'Credits & Data Source' : 'Credits & Historical Sources'}
           </h2>
         </div>
 
@@ -326,16 +326,15 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({ onBack }) => {
               Literature & Historical Citations:
             </span>
             <ul className="text-xs text-slate-600 space-y-1.5 list-disc list-inside">
-              <li className="text-emerald-800 underline"><a href="https://archive.org/details/in.ernet.dli.2015.464609/mode/2up"><span>Rev. I. Kharkongngor (2004), Ka Jymbriew Bad Ka Thymmei Longkur Longjait U Khasi</span></a></li>
-              <li>Rev. I. Kharkongngor (2004), <em>Ka Kolshor bad ki Kur Khasi</em></li>
-              <li>Medro Singh Diengdoh, <em>Genealogical Records of Ka Ïaw Shi Bdi and U Riang Bareh</em></li>
-              <li>Dr. H. Lyngdoh (1961), <em>Ka Niam Khasi bad Ki Kur</em></li>
-              <li>H. Bareh (1985), <em>The History and Culture of the Khasi People</em></li>
+              <li className="text-emerald-800 underline"><a href="https://archive.org/details/in.ernet.dli.2015.464609/mode/2up" target="_blank"><span>Rev. I. Kharkongngor (2004), Ka Jymbriew Bad Ka Thymmei Longkur Longjait U Khasi</span></a></li>
+              <li className="text-emerald-800 underline"><a href="https://archive.org/details/in.ernet.dli.2015.464891/mode/2up" target="_blank">Paper (1983), <em>Ka Kolshor U Khasi</em></a></li>
+              <li className='text-emerald-800 underline'><a href="https://ia601406.us.archive.org/22/items/in.ernet.dli.2015.464918/2015.464918.Ki-Khun-Ki-Ksiew-U-Hynniew-Trep_text.pdf" target="_blank"> Spiton Kharakor (1931), Ki Khun Ki Ksiew U Hynñiew Trep<em></em></a></li>
+              <li className='text-emerald-800 underline'><a href="https://archive.org/stream/in.ernet.dli.2015.462529/2015.462529.The-History_djvu.txt">Hamlet Bareh (1964), <em>The History and Culture of the Khasi People</em></a></li>
             </ul>
           </div>
 
           <div className="p-3.5 rounded-2xl bg-slate-50 border border-slate-200 text-xs text-slate-600">
-            <strong>Developer:</strong> Designed and engineered with modern web standards and D3-Force physics by the Kur App Development Team (<a href="https://kur.kyrshan.com" target="_blank" rel="noreferrer" className="text-emerald-800 underline">https://kur.kyrshan.com</a>).
+            <strong>Developer:</strong> Designed and developed with modern web standards by the Kyrshanlang R. Dkhar, November 2026.
           </div>
         </div>
       </section>
@@ -422,7 +421,7 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({ onBack }) => {
         </div>
 
         <div className="text-[11px] text-slate-400">
-          Tipkur Tipkha v1.2 • November 2026
+          Kur Web App• November 2026
         </div>
       </footer>
 
