@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useClan } from '../context/ClanContext';
 import { useLanguage } from '../context/LanguageContext';
 import { useTheme } from '../context/ThemeContext';
-import { Search, Loader2, Sparkles, History } from 'lucide-react';
+import { Search, Loader2, History, UserGroupIcon } from 'lucide-react';
 
 export const HomePage: React.FC = () => {
   const { searchClan, loading, recentSearches } = useClan();
@@ -56,7 +56,7 @@ export const HomePage: React.FC = () => {
           border: `1px solid ${palette.primary}35`
         }}
       >
-        <Sparkles className="w-3.5 h-3.5" style={{ color: palette.primary }} />
+        <UserGroupIcon className="w-3.5 h-3.5" style={{ color: palette.primary }} />
         <span>Tipkur Tipkha • Khasi Ancestral Kinship</span>
       </div>
 

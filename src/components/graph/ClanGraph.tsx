@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useCallback, useState, useMemo } from 'react';
 import * as d3 from 'd3';
-import { GraphNode, GraphLink } from '../../types';
+import { GraphNode, GraphLink, ClanTier } from '../../types';
 import { useClan } from '../../context/ClanContext';
 import { useLanguage } from '../../context/LanguageContext';
 import { useTheme } from '../../context/ThemeContext';
@@ -64,6 +64,15 @@ export const ClanGraph: React.FC = () => {
   const [isKyrdanModalOpen, setIsKyrdanModalOpen] = useState<boolean>(false);
   const [isShareModalOpen, setIsShareModalOpen] = useState<boolean>(false);
   const [isSubmitModalOpen, setIsSubmitModalOpen] = useState<boolean>(false);
+  const [activeEdgeInfo, setActiveEdgeInfo] = useState<{
+    source: GraphNode;
+    target: GraphNode;
+    tier: ClanTier;
+    relationshipPath?: { khasi?: string; english?: string };
+    x: number;
+    y: number;
+  } | null>(null);
+  const originTapTimerRef = useRef<number | null>(null);
   const searchContainerRef = useRef<HTMLDivElement | null>(null);
 
   // Detect iOS to prevent form auto-focus zoom on iOS devices
@@ -173,7 +182,9 @@ export const ClanGraph: React.FC = () => {
       ctx.lineTo(target.x, target.y);
 
       const isFocused = (selectedNode && (source.id === selectedNode.id || target.id === selectedNode.id)) ||
-        (hoveredNode && (source.id === hoveredNode.id || target.id === hoveredNode.id));
+        (hoveredNode && (source.id === hoveredNode.id || target.id === hoveredNode.id)) ||
+        (activeEdgeInfo && ((source.id === activeEdgeInfo.source.id && target.id === activeEdgeInfo.target.id) ||
+                           (source.id === activeEdgeInfo.target.id && target.id === activeEdgeInfo.source.id)));
 
       if (link.tier === 'kpoh') {
         ctx.strokeStyle = isFocused ? palette.kpoh : palette.linkKpoh;
@@ -386,6 +397,87 @@ export const ClanGraph: React.FC = () => {
     }
   }, [viewMode]);
 
+  // Hit-testing for edges (connecting lines between clans)
+  const getEdgeAtPoint = (clientX: number, clientY: number): { link: GraphLink; source: GraphNode; target: GraphNode } | null => {
+    const canvas = canvasRef.current;
+    if (!canvas) return null;
+
+    const rect = canvas.getBoundingClientRect();
+    const transform = transformRef.current;
+
+    const canvasX = clientX - rect.left;
+    const canvasY = clientY - rect.top;
+
+    const graphX = (canvasX - transform.x) / transform.k;
+    const graphY = (canvasY - transform.y) / transform.k;
+
+    // Generous touch target threshold: 22px in screen space
+    const threshold = Math.max(22 / transform.k, 14);
+
+    for (const link of visibleLinks) {
+      const source = link.source as GraphNode;
+      const target = link.target as GraphNode;
+      if (source.x == null || source.y == null || target.x == null || target.y == null) continue;
+
+      const x1 = source.x;
+      const y1 = source.y;
+      const x2 = target.x;
+      const y2 = target.y;
+
+      const dx = x2 - x1;
+      const dy = y2 - y1;
+      const lenSq = dx * dx + dy * dy;
+      if (lenSq === 0) continue;
+
+      // Project point onto line segment
+      const t = Math.max(0, Math.min(1, ((graphX - x1) * dx + (graphY - y1) * dy) / lenSq));
+      const projX = x1 + t * dx;
+      const projY = y1 + t * dy;
+
+      const distSq = (graphX - projX) * (graphX - projX) + (graphY - projY) * (graphY - projY);
+      if (distSq <= threshold * threshold) {
+        return { link, source, target };
+      }
+    }
+    return null;
+  };
+
+  // Double tap on empty space: Zooms in up to 4 levels, or zooms out if already zoomed in
+  const handleEmptySpaceDoubleTap = useCallback((clientX: number, clientY: number) => {
+    const canvas = canvasRef.current;
+    if (!canvas || !zoomBehaviorRef.current || viewMode !== 'graph') return;
+
+    const currentScale = transformRef.current.k;
+    const isZoomedIn = currentScale > 1.35;
+
+    if (!isZoomedIn) {
+      // Zoom in up to 4 levels (scale ~3.0) centered at double-tap position
+      const rect = canvas.getBoundingClientRect();
+      const tapX = clientX - rect.left;
+      const tapY = clientY - rect.top;
+      const targetScale = 3.0;
+
+      const newX = tapX - (tapX - transformRef.current.x) * (targetScale / currentScale);
+      const newY = tapY - (tapY - transformRef.current.y) * (targetScale / currentScale);
+
+      d3.select(canvas)
+        .transition()
+        .duration(450)
+        .ease(d3.easeCubicOut)
+        .call(
+          zoomBehaviorRef.current.transform,
+          d3.zoomIdentity.translate(newX, newY).scale(targetScale)
+        );
+    } else {
+      // Zoom out back to default identity view (1x overview)
+      d3.select(canvas)
+        .transition()
+        .duration(450)
+        .ease(d3.easeCubicOut)
+        .call(zoomBehaviorRef.current.transform, d3.zoomIdentity);
+    }
+  }, [viewMode]);
+
   // Hit-testing helper
   const getNodeAtPoint = (clientX: number, clientY: number): GraphNode | null => {
     const canvas = canvasRef.current;
@@ -412,7 +504,7 @@ export const ClanGraph: React.FC = () => {
     return null;
   };
 
-  // Node Dragging & Pointer Event Handling
+  // Uniform Gesture Handling for All Platforms (Desktop, iOS, Android)
   useEffect(() => {
     if (viewMode !== 'graph') return;
     const canvas = canvasRef.current;
@@ -422,15 +514,18 @@ export const ClanGraph: React.FC = () => {
     let isDragging = false;
     let startX = 0;
     let startY = 0;
+    let lastOriginTapTime = 0;
+    let lastEmptyTapTime = 0;
+    let lastEmptyTapPos = { x: 0, y: 0 };
 
     const onPointerDown = (e: PointerEvent) => {
+      startX = e.clientX;
+      startY = e.clientY;
+      isDragging = false;
+
       const node = getNodeAtPoint(e.clientX, e.clientY);
       if (node) {
         draggedNode = node;
-        startX = e.clientX;
-        startY = e.clientY;
-        isDragging = false;
-
         if (simulationRef.current) {
           simulationRef.current.alphaTarget(0.3).restart();
         }
@@ -443,7 +538,7 @@ export const ClanGraph: React.FC = () => {
       if (draggedNode) {
         const dx = e.clientX - startX;
         const dy = e.clientY - startY;
-        if (Math.abs(dx) > 3 || Math.abs(dy) > 3) {
+        if (Math.abs(dx) > 4 || Math.abs(dy) > 4) {
           isDragging = true;
         }
 
@@ -452,18 +547,55 @@ export const ClanGraph: React.FC = () => {
         draggedNode.fx = (e.clientX - rect.left - transform.x) / transform.k;
         draggedNode.fy = (e.clientY - rect.top - transform.y) / transform.k;
       } else {
-        const hover = getNodeAtPoint(e.clientX, e.clientY);
-        setHoveredNode(hover);
-        canvas.style.cursor = hover ? 'pointer' : 'grab';
+        // Desktop only: hover over circle triggers tooltip
+        if (e.pointerType === 'mouse') {
+          const hover = getNodeAtPoint(e.clientX, e.clientY);
+          setHoveredNode(hover);
+          canvas.style.cursor = hover ? 'pointer' : 'grab';
+        }
       }
     };
 
-    const onPointerUp = (_e: PointerEvent) => {
+    const onPointerUp = (e: PointerEvent) => {
+      const movedDist = Math.hypot(e.clientX - startX, e.clientY - startY);
+
       if (draggedNode) {
-        if (!isDragging) {
-          setSelectedNode(draggedNode);
-          focusOnNode(draggedNode);
+        if (!isDragging && movedDist < 6) {
+          // Tap on a circle
+          if (draggedNode.tier === 'origin') {
+            const now = Date.now();
+            if (now - lastOriginTapTime < 340) {
+              // Quick double-tap on searched surname circle -> show origin pop-up
+              if (originTapTimerRef.current) {
+                window.clearTimeout(originTapTimerRef.current);
+                originTapTimerRef.current = null;
+              }
+              lastOriginTapTime = 0;
+              setHoveredNode(draggedNode);
+              setActiveEdgeInfo(null);
+            } else {
+              lastOriginTapTime = now;
+              if (e.pointerType === 'mouse') {
+                // Desktop: click opens modal directly
+                setSelectedNode(draggedNode);
+                focusOnNode(draggedNode);
+              } else {
+                // Mobile: brief delay to differentiate single tap (modal) from double tap (popup)
+                const targetNode = draggedNode;
+                originTapTimerRef.current = window.setTimeout(() => {
+                  setSelectedNode(targetNode);
+                  focusOnNode(targetNode);
+                  originTapTimerRef.current = null;
+                }, 300);
+              }
+            }
+          } else {
+            // Non-origin circle tap: select node & open modal
+            setSelectedNode(draggedNode);
+            focusOnNode(draggedNode);
+          }
         } else {
+          // Finished dragging
           if (draggedNode.tier !== 'origin') {
             draggedNode.fx = null;
             draggedNode.fy = null;
@@ -475,21 +607,69 @@ export const ClanGraph: React.FC = () => {
         }
         draggedNode = null;
         isDragging = false;
+      } else if (movedDist < 6) {
+        // Tap on non-circle canvas area: Check if tapped on an edge connecting two surnames
+        const edgeHit = getEdgeAtPoint(e.clientX, e.clientY);
+        if (edgeHit) {
+          // Mobile/Desktop: Show pop-up explaining the kinship between the two clans
+          setActiveEdgeInfo({
+            source: edgeHit.source,
+            target: edgeHit.target,
+            tier: edgeHit.link.tier,
+            relationshipPath: edgeHit.target.relationshipPath || edgeHit.source.relationshipPath,
+            x: e.clientX,
+            y: e.clientY
+          });
+          setHoveredNode(null);
+          return;
+        }
+
+        // Tapped on empty canvas space: dismiss any active popups
+        setActiveEdgeInfo(null);
+        if (e.pointerType !== 'mouse') {
+          setHoveredNode(null);
+        }
+
+        // Double-tap on empty space: Zooms in 4 levels, or zooms out if already zoomed in
+        const now = Date.now();
+        if (now - lastEmptyTapTime < 340 && Math.hypot(e.clientX - lastEmptyTapPos.x, e.clientY - lastEmptyTapPos.y) < 28) {
+          handleEmptySpaceDoubleTap(e.clientX, e.clientY);
+          lastEmptyTapTime = 0;
+        } else {
+          lastEmptyTapTime = now;
+          lastEmptyTapPos = { x: e.clientX, y: e.clientY };
+        }
+      }
+    };
+
+    const onCanvasDblClick = (e: MouseEvent) => {
+      const node = getNodeAtPoint(e.clientX, e.clientY);
+      if (!node) {
+        handleEmptySpaceDoubleTap(e.clientX, e.clientY);
       }
     };
 
     canvas.addEventListener('pointerdown', onPointerDown);
     window.addEventListener('pointermove', onPointerMove);
     window.addEventListener('pointerup', onPointerUp);
+    canvas.addEventListener('dblclick', onCanvasDblClick);
+
+    // Disable default D3 dblclick zoom to avoid double-firing
+    const d3Canvas = d3.select(canvas);
+    d3Canvas.on('dblclick.zoom', null);
 
     return () => {
       canvas.removeEventListener('pointerdown', onPointerDown);
       window.removeEventListener('pointermove', onPointerMove);
       window.removeEventListener('pointerup', onPointerUp);
+      canvas.removeEventListener('dblclick', onCanvasDblClick);
+      if (originTapTimerRef.current) {
+        window.clearTimeout(originTapTimerRef.current);
+      }
     };
-  }, [visibleNodes, setSelectedNode, focusOnNode, viewMode]);
+  }, [visibleNodes, visibleLinks, setSelectedNode, focusOnNode, viewMode, handleEmptySpaceDoubleTap]);
 
-  const handleZoom = (factor: number) => {
+    const handleZoom = (factor: number) => {
     const canvas = canvasRef.current;
     if (!canvas || !zoomBehaviorRef.current) return;
     d3.select(canvas)
@@ -690,48 +870,7 @@ export const ClanGraph: React.FC = () => {
 
       {/* Floating Control Dock: Below the Search button area */}
       <div className="absolute top-18 right-4 flex flex-col items-center gap-2 z-20 pointer-events-auto">
-        {/* Zoom & Reset Controls */}
-        {viewMode === 'graph' && (
-          <div className="flex flex-col items-center bg-white/95 dark:bg-[#111a16]/95 backdrop-blur-md p-1 rounded-2xl shadow-lg border border-slate-200 dark:border-[#1f352c] gap-1">
-            <button
-              type="button"
-              onClick={() => handleZoom(1.3)}
-              className="p-2 rounded-xl text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-[#1a2a24] transition cursor-pointer"
-              title="Zoom In"
-              aria-label="Zoom In"
-            >
-              <ZoomIn className="w-4 h-4" />
-            </button>
-            <button
-              type="button"
-              onClick={() => handleZoom(0.7)}
-              className="p-2 rounded-xl text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-[#1a2a24] transition cursor-pointer"
-              title="Zoom Out"
-              aria-label="Zoom Out"
-            >
-              <ZoomOut className="w-4 h-4" />
-            </button>
-            <div className="w-4 h-[1px] bg-slate-200 dark:bg-[#1f352c]" />
-            <button
-              type="button"
-              onClick={() => {
-                if (canvasRef.current && zoomBehaviorRef.current) {
-                  d3.select(canvasRef.current)
-                    .transition()
-                    .duration(500)
-                    .call(zoomBehaviorRef.current.transform, d3.zoomIdentity);
-                }
-              }}
-              className="p-2 rounded-xl text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-[#1a2a24] transition cursor-pointer"
-              title="Reset View"
-              aria-label="Reset View"
-            >
-              <RotateCcw className="w-4 h-4" />
-            </button>
-          </div>
-        )}
-
-        {/* Table/Graph View Toggle */}
+        {/* 1. Table/Graph View Toggle */}
         <div className="bg-white/95 dark:bg-[#111a16]/95 backdrop-blur-md p-1 rounded-2xl shadow-lg border border-slate-200 dark:border-[#1f352c]">
           <button
             type="button"
@@ -752,7 +891,7 @@ export const ClanGraph: React.FC = () => {
           </button>
         </div>
 
-        {/* 1. Share WhatsApp Icon Button: Shares graph image directly to WhatsApp */}
+        {/* 2. Share WhatsApp Icon Button: Shares graph image directly to WhatsApp */}
         <div className="bg-white/95 dark:bg-[#111a16]/95 backdrop-blur-md p-1 rounded-2xl shadow-lg border border-slate-200 dark:border-[#1f352c]">
           <button
             type="button"
@@ -770,7 +909,7 @@ export const ClanGraph: React.FC = () => {
           </button>
         </div>
 
-        {/* General Share & Export Button (PNG / PDF) */}
+        {/* 3. General Share & Export Button (PNG / PDF) */}
         <div className="bg-white/95 dark:bg-[#111a16]/95 backdrop-blur-md p-1 rounded-2xl shadow-lg border border-slate-200 dark:border-[#1f352c]">
           <button
             type="button"
@@ -782,10 +921,55 @@ export const ClanGraph: React.FC = () => {
             <Download className="w-4 h-4" />
           </button>
         </div>
+
+        {/* 4. Zoom & Reset Controls: Placed AFTER download button. Zoom In/Out hidden on mobile */}
+        {viewMode === 'graph' && (
+          <div className="flex flex-col items-center bg-white/95 dark:bg-[#111a16]/95 backdrop-blur-md p-1 rounded-2xl shadow-lg border border-slate-200 dark:border-[#1f352c] gap-1">
+            {/* Zoom In: Hidden on mobile (users pinch to zoom) */}
+            <button
+              type="button"
+              onClick={() => handleZoom(1.3)}
+              className="hidden sm:flex p-2 rounded-xl text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-[#1a2a24] transition cursor-pointer items-center justify-center"
+              title="Zoom In"
+              aria-label="Zoom In"
+            >
+              <ZoomIn className="w-4 h-4" />
+            </button>
+            {/* Zoom Out: Hidden on mobile */}
+            <button
+              type="button"
+              onClick={() => handleZoom(0.7)}
+              className="hidden sm:flex p-2 rounded-xl text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-[#1a2a24] transition cursor-pointer items-center justify-center"
+              title="Zoom Out"
+              aria-label="Zoom Out"
+            >
+              <ZoomOut className="w-4 h-4" />
+            </button>
+            {/* Divider: Hidden on mobile */}
+            <div className="hidden sm:block w-4 h-[1px] bg-slate-200 dark:bg-[#1f352c]" />
+            {/* Reset View: Visible on all devices */}
+            <button
+              type="button"
+              onClick={() => {
+                if (canvasRef.current && zoomBehaviorRef.current) {
+                  d3.select(canvasRef.current)
+                    .transition()
+                    .duration(500)
+                    .call(zoomBehaviorRef.current.transform, d3.zoomIdentity);
+                }
+              }}
+              className="p-2 rounded-xl text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-[#1a2a24] transition cursor-pointer flex items-center justify-center"
+              title="Reset View"
+              aria-label="Reset View"
+            >
+              <RotateCcw className="w-4 h-4" />
+            </button>
+          </div>
+        )}
       </div>
 
       {/* Floating Bottom Center: Ki Kyrdan Kur Details Trigger with safe bottom clearance on mobile & single-line full width */}
-      <div className="fixed sm:absolute bottom-8 sm:bottom-6 inset-x-3 sm:inset-x-auto sm:left-1/2 sm:-translate-x-1/2 z-20 pointer-events-auto pb-[max(16px,env(safe-area-inset-bottom,0px))]">
+      <div className="fixed sm:absolute bottom-6 inset-x-3 sm:inset-x-auto  sm:-translate-x-1/2 z-20 pointer-events-auto pb-[max(16px,env(safe-area-inset-bottom,0px))]">
         <button
           type="button"
           onClick={() => setIsKyrdanModalOpen(true)}
@@ -808,21 +992,121 @@ export const ClanGraph: React.FC = () => {
         </button>
       </div>
 
-      {/* Hover Node Tooltip */}
-      {hoveredNode && !selectedNode && viewMode === 'graph' && (
+      {/* Interactive Tooltip Pop-up for Node or Edge */}
+      {(hoveredNode || activeEdgeInfo) && !selectedNode && viewMode === 'graph' && (
         <div
-          className="pointer-events-none absolute top-20 left-1/2 -translate-x-1/2 bg-white/95 dark:bg-[#111a16]/95 backdrop-blur-md px-4 py-2 rounded-xl shadow-xl border border-slate-200 dark:border-[#1f352c] text-xs z-10 max-w-xs transition-opacity duration-150 text-center"
+          className="pointer-events-auto absolute top-20 left-1/2 -translate-x-1/2 bg-white/95 dark:bg-[#111a16]/95 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-2xl border border-slate-200 dark:border-[#1f352c] text-xs z-30 max-w-xs sm:max-w-sm transition-all duration-150 text-center animate-in fade-in zoom-in-95"
         >
-          <div className="font-semibold text-slate-900 dark:text-slate-100 flex items-center justify-center gap-2">
-            <span
-              className="w-2.5 h-2.5 rounded-full inline-block"
-              style={{ backgroundColor: (palette as any)[hoveredNode.tier] || hoveredNode.color }}
-            />
-            <span>{hoveredNode.label}</span>
-          </div>
-          <div className="text-slate-500 dark:text-slate-400 mt-0.5">
-            {hoveredNode.relationshipPath?.khasi || hoveredNode.relationshipPath?.english}
-          </div>
+          {activeEdgeInfo ? (
+            /* Edge Kinship Connection Pop-up (Triggered on mobile by pressing the edge) */
+            <div>
+              <div className="flex items-center justify-between gap-3 mb-1">
+                <div className="flex items-center gap-1.5 font-bold text-slate-900 dark:text-slate-100 text-sm">
+                  <span>{activeEdgeInfo.source.label}</span>
+                  <span className="text-slate-400 font-normal">↔</span>
+                  <span>{activeEdgeInfo.target.label}</span>
+                </div>
+                <button
+                  type="button"
+                  onClick={() => setActiveEdgeInfo(null)}
+                  className="p-1 rounded-full text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 transition cursor-pointer"
+                  aria-label="Close"
+                >
+                  <X className="w-3.5 h-3.5" />
+                </button>
+              </div>
+              <div className="flex items-center justify-center gap-1.5 mt-1">
+                <span
+                  className="w-2 h-2 rounded-full inline-block shrink-0"
+                  style={{ backgroundColor: (palette as any)[activeEdgeInfo.tier] || palette.primary }}
+                />
+                <span
+                  className="font-semibold text-[11px] px-2 py-0.5 rounded-full"
+                  style={{
+                    backgroundColor: `${(palette as any)[activeEdgeInfo.tier] || palette.primary}18`,
+                    color: (palette as any)[activeEdgeInfo.tier] || palette.primary
+                  }}
+                >
+                  {activeEdgeInfo.tier === 'kpoh'
+                    ? (language === 'kha' ? 'Ka juh ka kpoh' : 'Direct Bloodline')
+                    : activeEdgeInfo.tier === 'shikur'
+                      ? (language === 'kha' ? 'Ba ia dei kur (Shikur)' : 'Sister Clan (Shikur)')
+                      : activeEdgeInfo.tier === 'tehkur'
+                        ? (language === 'kha' ? 'Ba ia teh kur (Teh Kur)' : 'Treaty Bound (Teh Kur)')
+                        : (language === 'kha' ? 'Ba don jingiadei' : 'Distant Alliance')}
+                </span>
+              </div>
+              {(activeEdgeInfo.relationshipPath?.khasi || activeEdgeInfo.relationshipPath?.english) && (
+                <div className="text-slate-600 dark:text-slate-300 mt-1.5 text-[11px] leading-relaxed">
+                  {language === 'kha'
+                    ? activeEdgeInfo.relationshipPath?.khasi || activeEdgeInfo.relationshipPath?.english
+                    : activeEdgeInfo.relationshipPath?.english || activeEdgeInfo.relationshipPath?.khasi}
+                </div>
+              )}
+            </div>
+          ) : hoveredNode?.tier === 'origin' ? (
+            /* Searched Surname Origin Pop-up (Triggered on mobile by double-tapping origin circle, or desktop hover) */
+            <div>
+              <div className="flex items-center justify-between gap-3 mb-1">
+                <div className="flex items-center gap-2">
+                  <span
+                    className="w-3 h-3 rounded-full inline-block shrink-0 ring-2 ring-emerald-500/30"
+                    style={{ backgroundColor: palette.origin }}
+                  />
+                  <span className="font-serif font-bold text-sm text-slate-900 dark:text-slate-100">
+                    {hoveredNode.label}
+                  </span>
+                </div>
+                <button
+                  type="button"
+                  onClick={() => setHoveredNode(null)}
+                  className="p-1 rounded-full text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 transition cursor-pointer md:hidden"
+                  aria-label="Close"
+                >
+                  <X className="w-3.5 h-3.5" />
+                </button>
+              </div>
+              <span className="inline-block text-[10px] font-semibold text-emerald-800 dark:text-emerald-300 bg-emerald-50 dark:bg-emerald-950/60 px-2 py-0.5 rounded-full border border-emerald-200/60 dark:border-emerald-800/60">
+                {language === 'kha' ? 'Ka Jait ba la wad (Origin)' : 'Searched Clan Origin'}
+              </span>
+              <p className="text-[11px] text-slate-600 dark:text-slate-300 mt-1">
+                {language === 'kha'
+                  ? `Lap ${directLinksCount} tylli ki kur, ${indirectLinksCount} ki jait ba teh kur`
+                  : `Found ${directLinksCount} direct links, ${indirectLinksCount} indirect links`}
+              </p>
+            </div>
+          ) : hoveredNode ? (
+            /* Related Clan Pop-up (Shows how clan is related to searched surname) */
+            <div>
+              <div className="font-semibold text-slate-900 dark:text-slate-100 flex items-center justify-center gap-2">
+                <span
+                  className="w-2.5 h-2.5 rounded-full inline-block shrink-0"
+                  style={{ backgroundColor: (palette as any)[hoveredNode.tier] || hoveredNode.color }}
+                />
+                <span className="font-serif font-bold text-sm">{hoveredNode.label}</span>
+                <span
+                  className="text-[10px] px-1.5 py-0.2 rounded-full font-semibold"
+                  style={{
+                    backgroundColor: `${(palette as any)[hoveredNode.tier] || palette.primary}20`,
+                    color: (palette as any)[hoveredNode.tier] || palette.primary
+                  }}
+                >
+                  {hoveredNode.tier.toUpperCase()}
+                </span>
+              </div>
+              <div className="text-slate-600 dark:text-slate-300 text-[11px] mt-1 leading-relaxed">
+                {hoveredNode.relationshipPath?.khasi || hoveredNode.relationshipPath?.english || (
+                  hoveredNode.tier === 'kpoh'
+                    ? (language === 'kha' ? 'Ka juh ka kpoh' : 'Direct Bloodline')
+                    : hoveredNode.tier === 'shikur'
+                      ? (language === 'kha' ? 'Ba ia dei kur' : 'Sister Clan')
+                      : hoveredNode.tier === 'tehkur'
+                        ? (language === 'kha' ? 'Ba ia teh kur' : 'Treaty Bound')
+                        : (language === 'kha' ? 'Ba don jingiadei' : 'Distant Alliance')
+                )}
+              </div>
+            </div>
+          ) : null}
         </div>
       )}
 
