@@ -8,6 +8,8 @@ export const NodeDetailModal: React.FC = () => {
   const { t, language } = useLanguage();
   const dialogRef = useRef<HTMLDialogElement | null>(null);
 
+  const openTimeRef = useRef<number>(0);
+
   // Sync with native <dialog> element per Modern Web Guidance
   useEffect(() => {
     const dialog = dialogRef.current;
@@ -16,6 +18,7 @@ export const NodeDetailModal: React.FC = () => {
     if (selectedNode) {
       if (!dialog.open) {
         dialog.showModal();
+        openTimeRef.current = Date.now();
       }
     } else {
       if (dialog.open) {
@@ -25,12 +28,40 @@ export const NodeDetailModal: React.FC = () => {
   }, [selectedNode]);
 
   // Fallback for click outside backdrop dismissal per Modern Web Guidance
+  // Uses mousedown tracking and a grace period to prevent trailing clicks from canvas dismissing the modal
   useEffect(() => {
     const dialog = dialogRef.current;
     if (!dialog) return;
 
+    let backdropMouseDown = false;
+
+    const handleMouseDown = (event: MouseEvent) => {
+      if (event.target === dialog) {
+        const rect = dialog.getBoundingClientRect();
+        const isContent = (
+          rect.top <= event.clientY &&
+          event.clientY <= rect.top + rect.height &&
+          rect.left <= event.clientX &&
+          event.clientX <= rect.left + rect.width
+        );
+        backdropMouseDown = !isContent;
+      } else {
+        backdropMouseDown = false;
+      }
+    };
+
     const handleBackdropClick = (event: MouseEvent) => {
-      if (event.target !== dialog) return;
+      // Prevent trailing click from canvas tap from immediately closing the modal
+      if (Date.now() - openTimeRef.current < 350) {
+        backdropMouseDown = false;
+        return;
+      }
+
+      if (event.target !== dialog || !backdropMouseDown) {
+        backdropMouseDown = false;
+        return;
+      }
+      backdropMouseDown = false;
       const rect = dialog.getBoundingClientRect();
       const isContent = (
         rect.top <= event.clientY &&
@@ -43,8 +74,19 @@ export const NodeDetailModal: React.FC = () => {
       }
     };
 
+    const handleCancel = (e: Event) => {
+      e.preventDefault();
+      setSelectedNode(null);
+    };
+
+    dialog.addEventListener('mousedown', handleMouseDown);
     dialog.addEventListener('click', handleBackdropClick);
-    return () => dialog.removeEventListener('click', handleBackdropClick);
+    dialog.addEventListener('cancel', handleCancel);
+    return () => {
+      dialog.removeEventListener('mousedown', handleMouseDown);
+      dialog.removeEventListener('click', handleBackdropClick);
+      dialog.removeEventListener('cancel', handleCancel);
+    };
   }, [setSelectedNode]);
 
   if (!selectedNode) return null;

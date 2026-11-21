@@ -397,49 +397,54 @@ export const ClanGraph: React.FC = () => {
     }
   }, [viewMode]);
 
-  // Hit-testing for edges (connecting lines between clans)
+  // Hit-testing for edges (connecting lines between clans) in screen coordinates
   const getEdgeAtPoint = (clientX: number, clientY: number): { link: GraphLink; source: GraphNode; target: GraphNode } | null => {
     const canvas = canvasRef.current;
     if (!canvas) return null;
 
     const rect = canvas.getBoundingClientRect();
     const transform = transformRef.current;
+    const tapX = clientX - rect.left;
+    const tapY = clientY - rect.top;
 
-    const canvasX = clientX - rect.left;
-    const canvasY = clientY - rect.top;
+    const nodeMap = new Map<string, GraphNode>();
+    for (const n of visibleNodes) {
+      nodeMap.set(n.id, n);
+    }
 
-    const graphX = (canvasX - transform.x) / transform.k;
-    const graphY = (canvasY - transform.y) / transform.k;
-
-    // Generous touch target threshold: 22px in screen space
-    const threshold = Math.max(22 / transform.k, 14);
+    // Screen pixel threshold: 30px screen radius makes tapping lines effortless on mobile & desktop
+    const hitThreshold = 30;
+    let closest: { link: GraphLink; source: GraphNode; target: GraphNode } | null = null;
+    let minDistance = hitThreshold;
 
     for (const link of visibleLinks) {
-      const source = link.source as GraphNode;
-      const target = link.target as GraphNode;
-      if (source.x == null || source.y == null || target.x == null || target.y == null) continue;
+      const source = typeof link.source === 'object' ? (link.source as GraphNode) : nodeMap.get(link.source as string);
+      const target = typeof link.target === 'object' ? (link.target as GraphNode) : nodeMap.get(link.target as string);
+      if (!source || !target || source.x == null || source.y == null || target.x == null || target.y == null) continue;
 
-      const x1 = source.x;
-      const y1 = source.y;
-      const x2 = target.x;
-      const y2 = target.y;
+      // Endpoints in screen pixels
+      const x1 = source.x * transform.k + transform.x;
+      const y1 = source.y * transform.k + transform.y;
+      const x2 = target.x * transform.k + transform.x;
+      const y2 = target.y * transform.k + transform.y;
 
       const dx = x2 - x1;
       const dy = y2 - y1;
       const lenSq = dx * dx + dy * dy;
       if (lenSq === 0) continue;
 
-      // Project point onto line segment
-      const t = Math.max(0, Math.min(1, ((graphX - x1) * dx + (graphY - y1) * dy) / lenSq));
+      // Project point onto line segment in screen space
+      const t = Math.max(0, Math.min(1, ((tapX - x1) * dx + (tapY - y1) * dy) / lenSq));
       const projX = x1 + t * dx;
       const projY = y1 + t * dy;
 
-      const distSq = (graphX - projX) * (graphX - projX) + (graphY - projY) * (graphY - projY);
-      if (distSq <= threshold * threshold) {
-        return { link, source, target };
+      const dist = Math.hypot(tapX - projX, tapY - projY);
+      if (dist <= minDistance) {
+        minDistance = dist;
+        closest = { link, source, target };
       }
     }
-    return null;
+    return closest;
   };
 
   // Double tap on empty space: Zooms in up to 4 levels, or zooms out if already zoomed in
@@ -478,7 +483,7 @@ export const ClanGraph: React.FC = () => {
     }
   }, [viewMode]);
 
-  // Hit-testing helper
+  // Screen-space hit-testing helper for circles
   const getNodeAtPoint = (clientX: number, clientY: number): GraphNode | null => {
     const canvas = canvasRef.current;
     if (!canvas) return null;
@@ -486,22 +491,26 @@ export const ClanGraph: React.FC = () => {
     const rect = canvas.getBoundingClientRect();
     const transform = transformRef.current;
 
-    const canvasX = clientX - rect.left;
-    const canvasY = clientY - rect.top;
+    const tapX = clientX - rect.left;
+    const tapY = clientY - rect.top;
 
-    const graphX = (canvasX - transform.x) / transform.k;
-    const graphY = (canvasY - transform.y) / transform.k;
+    let closestNode: GraphNode | null = null;
+    let minDistance = Infinity;
 
     for (const node of visibleNodes) {
       if (node.x == null || node.y == null) continue;
-      const dx = graphX - node.x;
-      const dy = graphY - node.y;
-      const hitRadius = Math.max(node.radius + 6, 24);
-      if (dx * dx + dy * dy <= hitRadius * hitRadius) {
-        return node;
+      const nodeScreenX = node.x * transform.k + transform.x;
+      const nodeScreenY = node.y * transform.k + transform.y;
+      const dist = Math.hypot(tapX - nodeScreenX, tapY - nodeScreenY);
+
+      // Generous screen-space hit radius (at least 28px screen radius for effortless touch)
+      const hitRadius = Math.max(node.radius * transform.k + 12, 28);
+      if (dist <= hitRadius && dist < minDistance) {
+        minDistance = dist;
+        closestNode = node;
       }
     }
-    return null;
+    return closestNode;
   };
 
   // Uniform Gesture Handling for All Platforms (Desktop, iOS, Android)
@@ -526,11 +535,6 @@ export const ClanGraph: React.FC = () => {
       const node = getNodeAtPoint(e.clientX, e.clientY);
       if (node) {
         draggedNode = node;
-        if (simulationRef.current) {
-          simulationRef.current.alphaTarget(0.3).restart();
-        }
-        draggedNode.fx = draggedNode.x;
-        draggedNode.fy = draggedNode.y;
       }
     };
 
@@ -538,14 +542,20 @@ export const ClanGraph: React.FC = () => {
       if (draggedNode) {
         const dx = e.clientX - startX;
         const dy = e.clientY - startY;
-        if (Math.abs(dx) > 4 || Math.abs(dy) > 4) {
+        const dragThreshold = e.pointerType === 'touch' ? 14 : 5;
+        if (!isDragging && (Math.abs(dx) > dragThreshold || Math.abs(dy) > dragThreshold)) {
           isDragging = true;
+          if (simulationRef.current) {
+            simulationRef.current.alphaTarget(0.3).restart();
+          }
         }
 
-        const transform = transformRef.current;
-        const rect = canvas.getBoundingClientRect();
-        draggedNode.fx = (e.clientX - rect.left - transform.x) / transform.k;
-        draggedNode.fy = (e.clientY - rect.top - transform.y) / transform.k;
+        if (isDragging) {
+          const transform = transformRef.current;
+          const rect = canvas.getBoundingClientRect();
+          draggedNode.fx = (e.clientX - rect.left - transform.x) / transform.k;
+          draggedNode.fy = (e.clientY - rect.top - transform.y) / transform.k;
+        }
       } else {
         // Desktop only: hover over circle triggers tooltip
         if (e.pointerType === 'mouse') {
@@ -558,10 +568,12 @@ export const ClanGraph: React.FC = () => {
 
     const onPointerUp = (e: PointerEvent) => {
       const movedDist = Math.hypot(e.clientX - startX, e.clientY - startY);
+      const tapThreshold = e.pointerType === 'touch' ? 16 : 6;
+      const isTap = !isDragging && movedDist <= tapThreshold;
 
       if (draggedNode) {
-        if (!isDragging && movedDist < 6) {
-          // Tap on a circle
+        if (isTap) {
+          // Tap on a circle (origin or non-origin)
           if (draggedNode.tier === 'origin') {
             const now = Date.now();
             if (now - lastOriginTapTime < 340) {
@@ -586,7 +598,7 @@ export const ClanGraph: React.FC = () => {
                   setSelectedNode(targetNode);
                   focusOnNode(targetNode);
                   originTapTimerRef.current = null;
-                }, 300);
+                }, 280);
               }
             }
           } else {
@@ -594,20 +606,20 @@ export const ClanGraph: React.FC = () => {
             setSelectedNode(draggedNode);
             focusOnNode(draggedNode);
           }
-        } else {
+        } else if (isDragging) {
           // Finished dragging
           if (draggedNode.tier !== 'origin') {
             draggedNode.fx = null;
             draggedNode.fy = null;
           }
+          if (simulationRef.current) {
+            simulationRef.current.alphaTarget(0);
+          }
         }
 
-        if (simulationRef.current) {
-          simulationRef.current.alphaTarget(0);
-        }
         draggedNode = null;
         isDragging = false;
-      } else if (movedDist < 6) {
+      } else if (isTap) {
         // Tap on non-circle canvas area: Check if tapped on an edge connecting two surnames
         const edgeHit = getEdgeAtPoint(e.clientX, e.clientY);
         if (edgeHit) {
