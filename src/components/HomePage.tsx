@@ -173,14 +173,14 @@ export const HomePage: React.FC = () => {
         </form>
       </motion.div>
 
-      {/* Optional Cultural Background Image (Mawbynna on Left, Jingkieng-jri on Right with vertical middle crop) with Parallax */}
+      {/* Optional Cultural Background Image (Mawbynna on Left, Jingkieng-jri on Right in full right-side) with Parallax */}
       {homeBg !== 'none' && (
         <div
           aria-hidden="true"
           className={`fixed pointer-events-none z-0 transition-transform duration-500 ease-out overflow-hidden flex items-end ${
             homeBg === 'mawbynna'
               ? 'inset-x-0 bottom-16 sm:bottom-20 md:bottom-0 justify-center max-h-[42vh] sm:max-h-[50vh] md:inset-x-auto md:left-0 md:w-[42vw] md:max-w-xl md:max-h-[68vh] md:justify-start'
-              : 'inset-x-0 bottom-16 sm:bottom-20 md:bottom-0 justify-center max-h-[42vh] sm:max-h-[50vh] md:inset-x-auto md:right-0 md:w-[42vw] md:max-w-xl md:max-h-[68vh] md:justify-end'
+              : 'inset-x-0 bottom-16 sm:bottom-20 md:bottom-0 justify-center max-h-[42vh] sm:max-h-[50vh] md:inset-x-auto md:right-0 md:h-[72vh] md:aspect-[1/2] md:justify-end'
           }`}
           style={{
             transform: `translate3d(0, ${parallaxOffset.y}px, 0) scale(${parallaxOffset.scale})`
@@ -191,7 +191,7 @@ export const HomePage: React.FC = () => {
             className={`absolute inset-0 z-10 ${
               homeBg === 'mawbynna'
                 ? 'bg-gradient-to-t from-transparent via-white/30 to-white dark:via-[#090e0c]/40 dark:to-[#090e0c] md:bg-gradient-to-r md:from-transparent md:via-white/20 md:to-white dark:md:via-[#090e0c]/30 dark:md:to-[#090e0c]'
-                : 'bg-gradient-to-t from-transparent via-white/30 to-white dark:via-[#090e0c]/40 dark:to-[#090e0c] md:bg-gradient-to-l md:from-transparent md:via-white/20 md:to-white dark:md:via-[#090e0c]/30 dark:md:to-[#090e0c]'
+                : 'bg-gradient-to-t from-transparent via-white/30 to-white dark:via-[#090e0c]/40 dark:to-[#090e0c] md:bg-gradient-to-r md:from-white md:via-white/20 md:to-transparent dark:md:from-[#090e0c] dark:md:via-[#090e0c]/30 dark:md:to-transparent'
             }`}
           />
 
@@ -201,7 +201,7 @@ export const HomePage: React.FC = () => {
             className={`opacity-35 dark:opacity-25 select-none pointer-events-none transition-all duration-700 ${
               homeBg === 'mawbynna'
                 ? 'w-full max-w-5xl object-contain object-bottom md:object-left-bottom md:w-full md:h-full'
-                : 'w-full max-w-5xl object-contain object-bottom md:w-[200%] md:max-w-none md:h-full md:object-cover md:object-left'
+                : 'w-full max-w-5xl object-contain object-bottom md:w-[200%] md:max-w-none md:h-full md:object-cover md:object-right'
             }`}
           />
         </div>
