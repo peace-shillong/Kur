@@ -173,21 +173,36 @@ export const HomePage: React.FC = () => {
         </form>
       </motion.div>
 
-      {/* Optional Cultural Background Image (Mawbynna or Jingkieng-jri) placed at bottom with Parallax */}
+      {/* Optional Cultural Background Image (Mawbynna on Left, Jingkieng-jri on Right-cropped) with Parallax */}
       {homeBg !== 'none' && (
         <div
           aria-hidden="true"
-          className="fixed inset-x-0 bottom-0 pointer-events-none z-0 flex justify-center items-end overflow-hidden max-h-[38vh] sm:max-h-[46vh] transition-transform duration-500 ease-out"
+          className={`fixed pointer-events-none z-0 transition-transform duration-500 ease-out overflow-hidden flex items-end ${
+            homeBg === 'mawbynna'
+              ? 'inset-x-0 bottom-0 justify-center max-h-[38vh] sm:max-h-[46vh] md:inset-x-auto md:left-0 md:bottom-0 md:w-[42vw] md:max-w-2xl md:max-h-[65vh] md:justify-start'
+              : 'inset-x-0 bottom-0 justify-center max-h-[38vh] sm:max-h-[46vh] md:inset-x-auto md:right-0 md:bottom-0 md:w-[45vw] md:max-w-2xl md:max-h-[65vh] md:justify-end'
+          }`}
           style={{
             transform: `translate3d(0, ${parallaxOffset.y}px, 0) scale(${parallaxOffset.scale})`
           }}
         >
-          {/* Subtle gradient overlay to blend into light/dark theme seamlessly */}
-          <div className="absolute inset-0 bg-gradient-to-t from-transparent via-white/40 to-white dark:via-[#090e0c]/50 dark:to-[#090e0c] z-10" />
+          {/* Subtle gradient overlay to blend seamlessly into page background */}
+          <div
+            className={`absolute inset-0 z-10 ${
+              homeBg === 'mawbynna'
+                ? 'bg-gradient-to-t from-transparent via-white/40 to-white dark:via-[#090e0c]/50 dark:to-[#090e0c] md:bg-gradient-to-r md:from-transparent md:via-white/20 md:to-white dark:md:via-[#090e0c]/30 dark:md:to-[#090e0c]'
+                : 'bg-gradient-to-t from-transparent via-white/40 to-white dark:via-[#090e0c]/50 dark:to-[#090e0c] md:bg-gradient-to-l md:from-transparent md:via-white/20 md:to-white dark:md:via-[#090e0c]/30 dark:md:to-[#090e0c]'
+            }`}
+          />
+
           <img
-            src={homeBg === 'mawbynna' ? '/Mawbynna.png' : '/jingkieng-jri.png'}
+            src={homeBg === 'mawbynna' ? '/Mawbynna.webp' : '/jingkieng-jri.webp'}
             alt=""
-            className="w-full max-w-5xl object-contain object-bottom opacity-30 dark:opacity-20 select-none pointer-events-none"
+            className={`w-full max-w-5xl opacity-30 dark:opacity-25 select-none pointer-events-none transition-all duration-700 ${
+              homeBg === 'mawbynna'
+                ? 'object-contain object-bottom md:object-left-bottom md:w-full md:h-full'
+                : 'object-contain object-bottom md:object-cover md:object-right md:w-full md:h-full'
+            }`}
           />
         </div>
       )}

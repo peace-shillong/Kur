@@ -7,11 +7,13 @@ import { CompatibilityChecker } from './components/checker/CompatibilityChecker'
 import { SettingsPage } from './components/settings/SettingsPage';
 import { useClan } from './context/ClanContext';
 import { useLanguage } from './context/LanguageContext';
+import { useTheme } from './context/ThemeContext';
 import { HeartHandshake, ShieldCheck, ArrowLeft, Languages, Settings } from 'lucide-react';
 
 export const App: React.FC = () => {
   const { isGraphOpen, setIsGraphOpen, recentSearches, query } = useClan();
   const { language, toggleLanguage, t } = useLanguage();
+  const { homeBg } = useTheme();
   const [showChecker, setShowChecker] = useState<boolean>(false);
   const [showSettings, setShowSettings] = useState<boolean>(false);
   const [showLockedModal, setShowLockedModal] = useState<boolean>(false);
@@ -104,7 +106,11 @@ export const App: React.FC = () => {
 
       {/* Clean Minimalist Footer (Hidden when Settings or Graph is open) */}
       {!showSettings && (
-        <footer className="w-full border-t border-slate-100 py-6 px-4 bg-slate-50/50 text-xs text-center text-slate-500 space-y-3">
+        <footer className={`w-full border-t py-6 px-4 text-xs text-center space-y-3 transition-colors ${
+          homeBg !== 'none'
+            ? 'bg-white/85 dark:bg-[#090e0c]/85 backdrop-blur-md border-slate-200/70 dark:border-slate-800/70 text-slate-700 dark:text-slate-300 shadow-xs'
+            : 'bg-slate-50/50 dark:bg-[#090e0c]/40 border-slate-100 dark:border-slate-800/40 text-slate-500 dark:text-slate-400'
+        }`}>
           <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-6">
 
             {/* Settings Page Link (Opens Fullscreen Settings Page) */}
