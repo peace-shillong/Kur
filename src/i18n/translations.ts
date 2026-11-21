@@ -151,7 +151,7 @@ export const translations = {
     associatedClans: "Ki Kur kiba don lang ha kane ka cluster",
     shikurClansList: "Ki Kur Shikur (Kajuh ka tynrai)",
     tehkurClansList: "Ki Kur ba ïateh Kur",
-    historicalSummary: "Ka Parom & Ka Jingiathuhpat Hyndai",
+    historicalSummary: "Ka Jingiathuh pateng",
     citationSource: "Ka Kot bad ka Jingpynshisha",
     disclaimerTitle: "Ka Jingmaham kaba kyntang",
     closeButton: "Khad ia kane",

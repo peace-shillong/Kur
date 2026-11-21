@@ -230,7 +230,7 @@ export const ClanSubmitModal: React.FC<ClanSubmitModalProps> = ({
             {/* Historical Notes */}
             <div className="space-y-1">
               <label className="font-semibold text-slate-700">
-                {language === 'kha' ? 'Ka Parom / Ki Jingbatai shuh shuh' : 'Oral Lore or Historical Context'}
+                {language === 'kha' ? 'Ka Jingiathuh pateng / Ki Jingbatai shuh shuh' : 'Oral Lore or Historical Context'}
               </label>
               <textarea
                 value={notes}
