@@ -587,13 +587,15 @@ export const ClanGraph: React.FC = () => {
               setActiveEdgeInfo(null);
             } else {
               lastOriginTapTime = now;
+              const targetNode = draggedNode;
               if (e.pointerType === 'mouse') {
-                // Desktop: click opens modal directly
-                setSelectedNode(draggedNode);
-                focusOnNode(draggedNode);
+                // Desktop: click opens modal directly (deferred to after trailing click finishes)
+                focusOnNode(targetNode);
+                window.setTimeout(() => {
+                  setSelectedNode(targetNode);
+                }, 60);
               } else {
                 // Mobile: brief delay to differentiate single tap (modal) from double tap (popup)
-                const targetNode = draggedNode;
                 originTapTimerRef.current = window.setTimeout(() => {
                   setSelectedNode(targetNode);
                   focusOnNode(targetNode);
@@ -602,9 +604,13 @@ export const ClanGraph: React.FC = () => {
               }
             }
           } else {
-            // Non-origin circle tap: select node & open modal
-            setSelectedNode(draggedNode);
-            focusOnNode(draggedNode);
+            // Non-origin circle tap (Level 1 kpoh, Level 2 tehkur/shikur, distant):
+            // Select node & open modal (deferred to after trailing click finishes)
+            const targetNode = draggedNode;
+            focusOnNode(targetNode);
+            window.setTimeout(() => {
+              setSelectedNode(targetNode);
+            }, 60);
           }
         } else if (isDragging) {
           // Finished dragging
@@ -980,8 +986,8 @@ export const ClanGraph: React.FC = () => {
         )}
       </div>
 
-      {/* Floating Bottom Center: Ki Kyrdan Kur Details Trigger with safe bottom clearance on mobile & single-line full width */}
-      <div className="fixed sm:absolute bottom-6 inset-x-3 sm:inset-x-auto  sm:-translate-x-1/2 z-20 pointer-events-auto pb-[max(16px,env(safe-area-inset-bottom,0px))]">
+      {/* Floating Bottom Center: Ki Kyrdan Kur Details Trigger with safe bottom clearance on mobile & centered on desktop */}
+      <div className="fixed sm:absolute bottom-6 inset-x-3 sm:inset-x-auto sm:left-1/2 sm:-translate-x-1/2 sm:pb-0 z-20 pointer-events-auto pb-[max(16px,env(safe-area-inset-bottom,0px))]">
         <button
           type="button"
           onClick={() => setIsKyrdanModalOpen(true)}
