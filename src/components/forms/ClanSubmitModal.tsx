@@ -10,8 +10,8 @@ interface ClanSubmitModalProps {
   initialSurname?: string;
 }
 
-export const ClanSubmitModal: React.FC<ClanSubmitModalProps> = ({ 
-  isOpen, 
+export const ClanSubmitModal: React.FC<ClanSubmitModalProps> = ({
+  isOpen,
   onClose,
   initialSurname = ''
 }) => {
@@ -144,8 +144,8 @@ export const ClanSubmitModal: React.FC<ClanSubmitModalProps> = ({
               {language === 'kha' ? 'Khublei shibun!' : 'Thank you!'}
             </h4>
             <p className="text-xs text-slate-600 max-w-sm mx-auto">
-              {language === 'kha' 
-                ? 'La kynshew ia ka jingtip ba phi la phah. Ngin sa peit bniah bad ki Seng Kur.' 
+              {language === 'kha'
+                ? 'La kynshew ia ka jingtip ba phi la phah. Ngin sa peit bniah bad ki Seng Kur.'
                 : 'Your submission has been saved. We will review and incorporate it.'}
             </p>
           </div>
@@ -178,6 +178,7 @@ export const ClanSubmitModal: React.FC<ClanSubmitModalProps> = ({
                   onChange={e => setFullName(e.target.value)}
                   placeholder="Kyrteng"
                   className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                  required
                 />
               </div>
 
@@ -191,6 +192,7 @@ export const ClanSubmitModal: React.FC<ClanSubmitModalProps> = ({
                   onChange={e => setEmail(e.target.value)}
                   placeholder="email@example.com"
                   className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                  required
                 />
               </div>
             </div>
@@ -206,6 +208,7 @@ export const ClanSubmitModal: React.FC<ClanSubmitModalProps> = ({
                 onChange={e => setShikurClans(e.target.value)}
                 placeholder="kumba: Jait A, Jait B, Jait C..."
                 className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                required
               />
             </div>
 
@@ -220,6 +223,7 @@ export const ClanSubmitModal: React.FC<ClanSubmitModalProps> = ({
                 onChange={e => setTehKurClans(e.target.value)}
                 placeholder="kumba: Jait X, Jait Y..."
                 className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                required
               />
             </div>
 

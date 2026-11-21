@@ -184,7 +184,7 @@ export const ClanGraph: React.FC = () => {
       const isFocused = (selectedNode && (source.id === selectedNode.id || target.id === selectedNode.id)) ||
         (hoveredNode && (source.id === hoveredNode.id || target.id === hoveredNode.id)) ||
         (activeEdgeInfo && ((source.id === activeEdgeInfo.source.id && target.id === activeEdgeInfo.target.id) ||
-                           (source.id === activeEdgeInfo.target.id && target.id === activeEdgeInfo.source.id)));
+          (source.id === activeEdgeInfo.target.id && target.id === activeEdgeInfo.source.id)));
 
       if (link.tier === 'kpoh') {
         ctx.strokeStyle = isFocused ? palette.kpoh : palette.linkKpoh;
@@ -669,7 +669,7 @@ export const ClanGraph: React.FC = () => {
     };
   }, [visibleNodes, visibleLinks, setSelectedNode, focusOnNode, viewMode, handleEmptySpaceDoubleTap]);
 
-    const handleZoom = (factor: number) => {
+  const handleZoom = (factor: number) => {
     const canvas = canvasRef.current;
     if (!canvas || !zoomBehaviorRef.current) return;
     d3.select(canvas)

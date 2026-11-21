@@ -52,7 +52,7 @@ export const App: React.FC = () => {
 
   return (
     <div className="min-h-screen flex flex-col justify-between selection:bg-emerald-600 selection:text-white transition-colors">
-      
+
       {/* Main Content Area */}
       <main className="flex-1 flex flex-col">
         {showSettings ? (
@@ -92,15 +92,6 @@ export const App: React.FC = () => {
       {!showSettings && (
         <footer className="w-full border-t border-slate-100 py-6 px-4 bg-slate-50/50 text-xs text-center text-slate-500 space-y-3">
           <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-6">
-            {/* Feature: Bishar ia ka Sang on the Footer Link */}
-            <button
-              type="button"
-              onClick={openChecker}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-200 font-semibold text-xs transition cursor-pointer shadow-xs"
-            >
-              <HeartHandshake className="w-4 h-4 text-emerald-700" />
-              <span>Bishar ia ka Sang</span>
-            </button>
 
             {/* Settings Page Link (Opens Fullscreen Settings Page) */}
             <button
@@ -122,6 +113,16 @@ export const App: React.FC = () => {
             >
               <Languages className="w-3.5 h-3.5 text-emerald-600" />
               <span>{language.toUpperCase()}</span>
+            </button>
+
+            {/* Feature: Bishar ia ka Sang on the Footer Link */}
+            <button
+              type="button"
+              onClick={openChecker}
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-200 font-semibold text-xs transition cursor-pointer shadow-xs"
+            >
+              <HeartHandshake className="w-4 h-4 text-emerald-700" />
+              <span>Bishar ia ka Sang</span>
             </button>
           </div>
 
