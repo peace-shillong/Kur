@@ -220,6 +220,32 @@ export const HomePage: React.FC = () => {
           </div>
         </div>
       )}
+
+      {/* Symmetrical Desktop Duplicate for Jingkieng-jri (Left Side of Desktop Screen) */}
+      {homeBg === 'jingkieng-jri' && (
+        <div
+          aria-hidden="true"
+          className="hidden md:flex fixed pointer-events-none z-0 inset-y-0 left-0 h-screen w-auto items-center justify-start overflow-hidden transition-transform duration-500 ease-out"
+          style={{
+            transform: `translate3d(0, ${parallaxOffset.y}px, 0) scale(${parallaxOffset.scale})`
+          }}
+        >
+          {/* Framed container on desktop left side */}
+          <div className="relative flex h-[72vh] aspect-[1/2] overflow-hidden items-center justify-start">
+            {/* Subtle gradient overlay fading inward toward center */}
+            <div className="absolute inset-0 z-10 bg-gradient-to-l from-white via-white/20 to-transparent dark:from-[#090e0c] dark:via-[#090e0c]/30 dark:to-transparent" />
+
+            {/* Left Duplicate Image (natural orientation anchoring from left edge inward) */}
+            <div className="w-full h-full flex items-center justify-start">
+              <img
+                src="/jingkieng-jri.webp"
+                alt=""
+                className="opacity-35 dark:opacity-25 select-none pointer-events-none transition-all duration-700 w-[200%] max-w-none h-full object-cover object-right"
+              />
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
