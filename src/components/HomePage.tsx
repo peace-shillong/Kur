@@ -235,8 +235,8 @@ export const HomePage: React.FC = () => {
             {/* Subtle gradient overlay fading inward toward center */}
             <div className="absolute inset-0 z-10 bg-gradient-to-l from-white via-white/20 to-transparent dark:from-[#090e0c] dark:via-[#090e0c]/30 dark:to-transparent" />
 
-            {/* Left Duplicate Image (natural orientation anchoring from left edge inward) */}
-            <div className="w-full h-full flex items-center justify-start">
+            {/* Left Duplicate Image (flipped horizontally to mirror the right side) */}
+            <div className="w-full h-full flex items-center justify-start scale-x-[-1]">
               <img
                 src="/jingkieng-jri.webp"
                 alt=""
