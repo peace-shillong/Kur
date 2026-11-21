@@ -201,15 +201,22 @@ export const HomePage: React.FC = () => {
               }`}
             />
 
-            <img
-              src={homeBg === 'mawbynna' ? '/Mawbynna.webp' : '/jingkieng-jri.webp'}
-              alt=""
-              className={`opacity-35 dark:opacity-25 select-none pointer-events-none transition-all duration-700 ${
-                homeBg === 'mawbynna'
-                  ? 'w-full max-w-5xl object-contain object-bottom md:object-left-bottom md:w-full md:h-full'
-                  : 'w-full max-w-5xl object-contain object-bottom md:w-[200%] md:max-w-none md:h-full md:object-cover md:object-right'
-              }`}
-            />
+            {/* Image Wrapper: Mirrored/Reflected horizontally on Desktop only for Jingkieng-jri */}
+            <div className={`w-full h-full flex ${
+              homeBg === 'jingkieng-jri'
+                ? 'items-end justify-center md:items-center md:justify-end md:scale-x-[-1]'
+                : 'items-end justify-center md:justify-start'
+            }`}>
+              <img
+                src={homeBg === 'mawbynna' ? '/Mawbynna.webp' : '/jingkieng-jri.webp'}
+                alt=""
+                className={`opacity-35 dark:opacity-25 select-none pointer-events-none transition-all duration-700 ${
+                  homeBg === 'mawbynna'
+                    ? 'w-full max-w-5xl object-contain object-bottom md:object-left-bottom md:w-full md:h-full'
+                    : 'w-full max-w-5xl object-contain object-bottom md:w-[200%] md:max-w-none md:h-full md:object-cover md:object-right'
+                }`}
+              />
+            </div>
           </div>
         </div>
       )}
