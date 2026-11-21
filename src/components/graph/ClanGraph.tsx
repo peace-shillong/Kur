@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useCallback, useState } from 'react';
+import React, { useRef, useEffect, useCallback, useState, useMemo } from 'react';
 import * as d3 from 'd3';
 import { GraphNode, GraphLink } from '../../types';
 import { useClan } from '../../context/ClanContext';
@@ -65,6 +65,15 @@ export const ClanGraph: React.FC = () => {
   const [isShareModalOpen, setIsShareModalOpen] = useState<boolean>(false);
   const [isSubmitModalOpen, setIsSubmitModalOpen] = useState<boolean>(false);
   const searchContainerRef = useRef<HTMLDivElement | null>(null);
+
+  // Detect iOS to prevent form auto-focus zoom on iOS devices
+  const isIOS = useMemo(() => {
+    if (typeof window === 'undefined' || typeof navigator === 'undefined') return false;
+    return (
+      /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+      (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1)
+    );
+  }, []);
 
   // Close active inline search when user clicks outside or presses Escape
   useEffect(() => {
@@ -562,15 +571,15 @@ export const ClanGraph: React.FC = () => {
               <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-50/95 dark:bg-amber-950/70 border border-amber-300 dark:border-amber-800/60 shadow-md backdrop-blur-md text-[11px] text-amber-900 dark:text-amber-200 font-medium">
                 <AlertCircle className="w-3.5 h-3.5 text-amber-600 shrink-0" />
                 <span className="truncate max-w-[280px]">
-                  {language === 'kha' ? 'Ngim don jingtip shaphang ka jait jong phi, da phi don phi lah ban phah mynta' : 'No results found for your surname, if you have information then do let us know'}
+                  {language === 'kha' ? 'Ka jait jong phi ngim don ' : 'No results found for your surname,'}
                 </span>
                 <button
                   type="button"
                   onClick={() => setIsSubmitModalOpen(true)}
                   style={{ backgroundColor: palette.primary }}
-                  className="ml-0.5 px-2 py-0.5 rounded-full text-white text-[10px] font-semibold shrink-0 cursor-pointer"
+                  className="ml-1 px-2.5 py-0.5 rounded-full text-white text-[10px] font-bold shrink-0 cursor-pointer shadow-md shadow-emerald-500/30 hover:shadow-lg transition-all animate-pulse hover:animate-none active:scale-95 flex items-center gap-1"
                 >
-                  {language === 'kha' ? 'Ai Jingtip' : 'Submit'}
+                  <span>{language === 'kha' ? 'Ai Jingtip' : 'Submit'}</span>
                 </button>
               </div>
             )}
@@ -608,8 +617,8 @@ export const ClanGraph: React.FC = () => {
               <AlertCircle className="w-4 h-4 text-amber-600 shrink-0" />
               <span className="max-w-[200px] sm:max-w-md truncate">
                 {language === 'kha'
-                  ? 'Ngim don jingtip shaphang ka jait jong phi, da phi don phi lah ban phah mynta'
-                  : 'No results found for your surname, if you have information then do let us know'}
+                  ? 'Ngim don jingtip shaphang ka jait jong phi, phi don jingtip?'
+                  : 'No results found for your surname, do you have information?'}
               </span>
               <button
                 type="button"
@@ -624,13 +633,13 @@ export const ClanGraph: React.FC = () => {
           )}
         </div>
 
-        {/* Current Surname Badge / Active Inline Search (Top-Right on Desktop, Centered on Mobile) */}
+        {/* Current Surname Badge / Active Inline Search (Centered on Mobile even when closed, Top-Right on Desktop) */}
         {!showSearchBar ? (
-          <div className="pointer-events-auto flex items-center gap-2">
+          <div className="pointer-events-auto fixed top-4 left-1/2 -translate-x-1/2 md:static md:top-auto md:left-auto md:translate-x-0 flex items-center gap-2 z-20">
             <button
               type="button"
               onClick={() => setShowSearchBar(true)}
-              className="flex items-center gap-2 px-3.5 sm:px-4 py-2 rounded-full bg-white/95 dark:bg-[#111a16]/95 border border-slate-200 dark:border-[#1f352c] shadow-md backdrop-blur-md text-slate-800 dark:text-slate-100 hover:bg-slate-50 dark:hover:bg-[#1a2a24] transition cursor-pointer text-xs sm:text-sm font-semibold"
+              className="flex items-center gap-2 px-3.5 sm:px-4 py-2 rounded-full bg-white/95 dark:bg-[#111a16]/95 border border-slate-200 dark:border-[#1f352c] shadow-md backdrop-blur-md text-slate-800 dark:text-slate-100 hover:bg-slate-50 dark:hover:bg-[#1a2a24] transition cursor-pointer text-xs sm:text-sm font-semibold whitespace-nowrap"
             >
               <span
                 className="w-2.5 h-2.5 rounded-full shrink-0"
@@ -643,7 +652,7 @@ export const ClanGraph: React.FC = () => {
         ) : (
           <div
             ref={searchContainerRef}
-            className="fixed top-4 inset-x-3 max-w-md mx-auto sm:static sm:top-auto sm:inset-x-auto sm:max-w-none sm:mx-0 z-30 pointer-events-auto animate-in fade-in zoom-in-95 duration-200"
+            className="fixed top-4 inset-x-3 max-w-md mx-auto md:static md:top-auto md:inset-x-auto md:max-w-none md:mx-0 z-30 pointer-events-auto animate-in fade-in zoom-in-95 duration-200"
           >
             <form
               onSubmit={handleInlineSearch}
@@ -655,8 +664,8 @@ export const ClanGraph: React.FC = () => {
                 value={inlineSearch}
                 onChange={e => setInlineSearch(e.target.value)}
                 placeholder={language === 'kha' ? "Thoh ka jait..." : "Enter surname..."}
-                className="flex-1 px-2 py-1.5 text-xs sm:text-sm text-slate-900 dark:text-slate-100 focus:outline-none font-medium bg-transparent min-w-0"
-                autoFocus
+                className="flex-1 px-2 py-1.5 text-base md:text-sm text-slate-900 dark:text-slate-100 focus:outline-none font-medium bg-transparent min-w-0"
+                autoFocus={!isIOS}
               />
               <button
                 type="submit"
@@ -776,7 +785,7 @@ export const ClanGraph: React.FC = () => {
       </div>
 
       {/* Floating Bottom Center: Ki Kyrdan Kur Details Trigger with safe bottom clearance on mobile & single-line full width */}
-      <div className="fixed sm:absolute bottom-16 sm:bottom-6 inset-x-3 sm:inset-x-auto sm:left-1/2 sm:-translate-x-1/2 z-20 pointer-events-auto pb-[max(16px,env(safe-area-inset-bottom,0px))]">
+      <div className="fixed sm:absolute bottom-8 sm:bottom-6 inset-x-3 sm:inset-x-auto sm:left-1/2 sm:-translate-x-1/2 z-20 pointer-events-auto pb-[max(16px,env(safe-area-inset-bottom,0px))]">
         <button
           type="button"
           onClick={() => setIsKyrdanModalOpen(true)}
