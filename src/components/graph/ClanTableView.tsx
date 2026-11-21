@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import { ClanTier } from '../../types';
-import { useClan, SEA_GREEN_PALETTE } from '../../context/ClanContext';
+import { useClan } from '../../context/ClanContext';
 import { useLanguage } from '../../context/LanguageContext';
+import { useTheme } from '../../context/ThemeContext';
 import { Search, Info, ExternalLink } from 'lucide-react';
 
 export const ClanTableView: React.FC = () => {
   const { graphData, query, setSelectedNode, activeTiers } = useClan();
   const { language } = useLanguage();
+  const { palette } = useTheme();
   const [filterQuery, setFilterQuery] = useState<string>('');
   const [selectedTierFilter, setSelectedTierFilter] = useState<string>('all');
 
@@ -23,40 +25,41 @@ export const ClanTableView: React.FC = () => {
   });
 
   const getTierBadge = (tier: ClanTier) => {
+    const color = (palette as any)[tier] || '#2E8B57';
     switch (tier) {
       case 'kpoh':
         return {
           label: language === 'kha' ? 'Ka juh ka kpoh' : 'Direct Bloodline',
-          color: SEA_GREEN_PALETTE.kpoh,
-          bg: 'bg-emerald-900/10 text-emerald-950 border-emerald-900/20'
+          color,
+          bg: 'bg-emerald-900/10 text-emerald-950 dark:text-emerald-300 border-emerald-900/20'
         };
       case 'shikur':
         return {
           label: language === 'kha' ? 'Ba ia dei kur' : 'Sister Clan (Shikur)',
-          color: SEA_GREEN_PALETTE.shikur,
-          bg: 'bg-emerald-600/10 text-emerald-800 border-emerald-600/20'
+          color,
+          bg: 'bg-emerald-600/10 text-emerald-800 dark:text-emerald-300 border-emerald-600/20'
         };
       case 'tehkur':
         return {
           label: language === 'kha' ? 'Ba ia teh kur' : 'Treaty Bound (Teh Kur)',
-          color: SEA_GREEN_PALETTE.tehkur,
-          bg: 'bg-emerald-400/15 text-emerald-900 border-emerald-400/30'
+          color,
+          bg: 'bg-emerald-400/15 text-emerald-900 dark:text-emerald-200 border-emerald-400/30'
         };
       case 'distant':
         return {
           label: language === 'kha' ? 'Ba don jingiadei' : 'Distant Alliance',
-          color: SEA_GREEN_PALETTE.distant,
-          bg: 'bg-slate-200 text-slate-800 border-slate-300'
+          color,
+          bg: 'bg-slate-200 dark:bg-slate-800 text-slate-800 dark:text-slate-300 border-slate-300 dark:border-slate-700'
         };
       default:
-        return { label: 'Kur', color: '#2E8B57', bg: 'bg-slate-100 text-slate-800' };
+        return { label: 'Kur', color, bg: 'bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-300' };
     }
   };
 
   return (
-    <div id="clan-table-container" className="w-full max-w-5xl mx-auto p-4 sm:p-6 space-y-4 bg-white rounded-3xl border border-slate-200 shadow-sm animate-in fade-in duration-200">
+    <div id="clan-table-container" className="w-full max-w-5xl mx-auto p-4 sm:p-6 space-y-4 bg-white dark:bg-[#111a16] rounded-3xl border border-slate-200 dark:border-[#1f352c] shadow-sm animate-in fade-in duration-200">
       {/* Top filter bar */}
-      <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 pb-3 border-b border-slate-100">
+      <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 pb-3 border-b border-slate-100 dark:border-[#1f352c]">
         <div className="flex items-center gap-2">
           <div className="relative flex-1 sm:w-64">
             <Search className="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" />
@@ -65,10 +68,10 @@ export const ClanTableView: React.FC = () => {
               value={filterQuery}
               onChange={e => setFilterQuery(e.target.value)}
               placeholder={language === 'kha' ? 'Wad ha kane ka table...' : 'Filter table...'}
-              className="w-full pl-9 pr-3 py-1.5 text-xs sm:text-sm rounded-xl bg-slate-50 border border-slate-200 text-slate-900 focus:outline-none focus:ring-2 focus:ring-emerald-500"
+              className="w-full pl-9 pr-3 py-1.5 text-xs sm:text-sm rounded-xl bg-slate-50 dark:bg-[#15221d] border border-slate-200 dark:border-[#1f352c] text-slate-900 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-emerald-500"
             />
           </div>
-          <span className="text-xs text-slate-500 font-medium whitespace-nowrap">
+          <span className="text-xs text-slate-500 dark:text-slate-400 font-medium whitespace-nowrap">
             {filteredNodes.length} {language === 'kha' ? 'ki jait' : 'clans'}
           </span>
         </div>
@@ -86,10 +89,11 @@ export const ClanTableView: React.FC = () => {
               key={tab.id}
               type="button"
               onClick={() => setSelectedTierFilter(tab.id)}
+              style={selectedTierFilter === tab.id ? { backgroundColor: palette.primary } : undefined}
               className={`px-3 py-1 rounded-full font-medium transition cursor-pointer text-xs ${
                 selectedTierFilter === tab.id
-                  ? 'bg-emerald-700 text-white shadow-xs'
-                  : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
+                  ? 'text-white shadow-xs'
+                  : 'bg-slate-100 dark:bg-[#15221d] text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-[#1f352c]'
               }`}
             >
               {tab.label}
@@ -98,35 +102,44 @@ export const ClanTableView: React.FC = () => {
         </div>
       </div>
 
-      {/* Responsive Table */}
-      <div className="overflow-x-auto rounded-2xl border border-slate-200">
+      {/* Responsive Table: Exactly 3 columns on Mobile (#, Ka jait, Jingbatai) */}
+      <div className="overflow-x-auto rounded-2xl border border-slate-200 dark:border-[#1f352c]">
         <table className="w-full text-left text-xs sm:text-sm border-collapse">
           <thead>
-            <tr className="bg-slate-50 text-slate-600 font-semibold border-b border-slate-200 text-[11px] sm:text-xs uppercase tracking-wider">
-              <th className="py-3 px-4">#</th>
-              <th className="py-3 px-4">{language === 'kha' ? 'Ka Jait' : 'Clan Surname'}</th>
-              <th className="py-3 px-4">{language === 'kha' ? 'Ka Kyrdan' : 'Kinship Tier'}</th>
+            <tr className="bg-slate-50 dark:bg-[#15221d] text-slate-600 dark:text-slate-300 font-semibold border-b border-slate-200 dark:border-[#1f352c] text-[11px] sm:text-xs uppercase tracking-wider">
+              {/* 1. Index Column */}
+              <th className="py-3 px-3 sm:px-4 w-10 sm:w-12">#</th>
+              {/* 2. Clan Surname Column */}
+              <th className="py-3 px-3 sm:px-4">{language === 'kha' ? 'Ka Jait' : 'Clan Surname'}</th>
+              {/* Desktop Only Columns */}
+              <th className="py-3 px-4 hidden sm:table-cell">{language === 'kha' ? 'Ka Kyrdan' : 'Kinship Tier'}</th>
               <th className="py-3 px-4 hidden md:table-cell">{language === 'kha' ? 'Ka Tyngshop / Cluster' : 'Ancestral Cluster'}</th>
               <th className="py-3 px-4 hidden sm:table-cell">{language === 'kha' ? 'Ka Jingiadei' : 'Relationship'}</th>
-              <th className="py-3 px-4 text-right">{language === 'kha' ? 'Jingbatai' : 'Action'}</th>
+              {/* 3. Jingbatai Column (Shows description & quick view on mobile, action on desktop) */}
+              <th className="py-3 px-3 sm:px-4 text-left sm:text-right">{language === 'kha' ? 'Jingbatai' : 'Description'}</th>
             </tr>
           </thead>
-          <tbody className="divide-y divide-slate-100">
+          <tbody className="divide-y divide-slate-100 dark:divide-[#1f352c]">
             {filteredNodes.length > 0 ? (
               filteredNodes.map((node, index) => {
                 const badge = getTierBadge(node.tier);
                 return (
                   <tr 
                     key={node.id}
-                    className="hover:bg-slate-50/80 transition group"
+                    className="hover:bg-slate-50/80 dark:hover:bg-[#15221d]/60 transition group"
                   >
-                    <td className="py-3 px-4 text-slate-400 font-mono text-xs">
+                    {/* 1. Index */}
+                    <td className="py-3 px-3 sm:px-4 text-slate-400 font-mono text-xs">
                       {index + 1}
                     </td>
-                    <td className="py-3 px-4 font-serif font-bold text-slate-900">
+
+                    {/* 2. Ka Jait */}
+                    <td className="py-3 px-3 sm:px-4 font-serif font-bold text-slate-900 dark:text-slate-100">
                       {node.label}
                     </td>
-                    <td className="py-3 px-4">
+
+                    {/* Desktop Only Columns */}
+                    <td className="py-3 px-4 hidden sm:table-cell">
                       <span className={`inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-semibold border ${badge.bg}`}>
                         <span 
                           className="w-2 h-2 rounded-full shrink-0" 
@@ -135,17 +148,44 @@ export const ClanTableView: React.FC = () => {
                         <span>{badge.label}</span>
                       </span>
                     </td>
-                    <td className="py-3 px-4 text-slate-600 text-xs hidden md:table-cell max-w-xs truncate">
+                    <td className="py-3 px-4 text-slate-600 dark:text-slate-400 text-xs hidden md:table-cell max-w-xs truncate">
                       {node.clusterTitle || '—'}
                     </td>
-                    <td className="py-3 px-4 text-slate-600 text-xs hidden sm:table-cell">
+                    <td className="py-3 px-4 text-slate-600 dark:text-slate-400 text-xs hidden sm:table-cell">
                       {language === 'kha' ? node.relationshipPath?.khasi : node.relationshipPath?.english}
                     </td>
-                    <td className="py-3 px-4 text-right">
+
+                    {/* 3. Jingbatai Column */}
+                    <td className="py-3 px-3 sm:px-4 text-left sm:text-right">
+                      {/* Mobile View Content: Tier badge + relationship text + inline tap */}
+                      <div className="sm:hidden space-y-1">
+                        <div className="flex items-center gap-1.5">
+                          <span className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-semibold border ${badge.bg}`}>
+                            <span 
+                              className="w-1.5 h-1.5 rounded-full shrink-0" 
+                              style={{ backgroundColor: badge.color }} 
+                            />
+                            <span>{badge.label}</span>
+                          </span>
+                          <button
+                            type="button"
+                            onClick={() => setSelectedNode(node)}
+                            className="p-1 text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 cursor-pointer"
+                            title="Peit bniah"
+                          >
+                            <ExternalLink className="w-3 h-3" />
+                          </button>
+                        </div>
+                        <p className="text-[11px] text-slate-500 dark:text-slate-400 leading-tight">
+                          {language === 'kha' ? node.relationshipPath?.khasi : node.relationshipPath?.english}
+                        </p>
+                      </div>
+
+                      {/* Desktop View Action Button */}
                       <button
                         type="button"
                         onClick={() => setSelectedNode(node)}
-                        className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-emerald-50 text-emerald-800 hover:bg-emerald-100 text-xs font-semibold transition cursor-pointer"
+                        className="hidden sm:inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-[#15221d] hover:bg-slate-200 dark:hover:bg-[#1f352c] text-slate-800 dark:text-slate-200 text-xs font-semibold transition cursor-pointer"
                       >
                         <span>{language === 'kha' ? 'Peit' : 'View'}</span>
                         <ExternalLink className="w-3 h-3" />
@@ -156,7 +196,7 @@ export const ClanTableView: React.FC = () => {
               })
             ) : (
               <tr>
-                <td colSpan={6} className="py-8 text-center text-slate-500 text-xs">
+                <td colSpan={6} className="py-8 text-center text-slate-500 dark:text-slate-400 text-xs">
                   {language === 'kha' ? 'Ym shem jait kiba iahap bad kane ka jingwad.' : 'No clans match your filter query.'}
                 </td>
               </tr>
@@ -166,10 +206,10 @@ export const ClanTableView: React.FC = () => {
       </div>
 
       {/* Watermark at Bottom of Table for Share & Export (Item 15 in Todo) */}
-      <div className="pt-3 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500 border-t border-slate-100 gap-2">
+      <div className="pt-3 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500 dark:text-slate-400 border-t border-slate-100 dark:border-[#1f352c] gap-2">
         <div className="flex items-center gap-1.5 font-medium">
-          <Info className="w-3.5 h-3.5 text-emerald-600" />
-          <span>Origin Surname: <strong className="text-slate-800">{query}</strong></span>
+          <Info className="w-3.5 h-3.5" style={{ color: palette.primary }} />
+          <span>Origin Surname: <strong className="text-slate-800 dark:text-slate-200">{query}</strong></span>
         </div>
         <div className="italic text-center sm:text-right font-sans">
           Generated by Kur App (https://kur.kyrshan.com), Data Sourced from tynrai.in

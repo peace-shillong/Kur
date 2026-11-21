@@ -74,7 +74,7 @@ export const NodeDetailModal: React.FC = () => {
       // MANDATORY per Modern Web Guidance: closedby="any"
       {...({ closedby: 'any' } as any)}
       aria-labelledby="dialog-clan-title"
-      className="m-0 sm:m-auto w-full sm:max-w-xl max-h-[85vh] sm:rounded-3xl rounded-t-3xl bg-white text-slate-900 p-0 shadow-2xl border border-slate-200 backdrop:bg-slate-950/50 backdrop:backdrop-blur-xs fixed bottom-0 sm:bottom-auto inset-x-0 overflow-hidden outline-none animate-in fade-in zoom-in-95 duration-200 z-[60]"
+      className="fixed inset-0 m-auto w-[calc(100%-2rem)] sm:w-full sm:max-w-xl max-h-[85vh] rounded-3xl bg-white dark:bg-[#111a16] text-slate-900 dark:text-slate-100 p-0 shadow-2xl border border-slate-200 dark:border-[#1f352c] backdrop:bg-slate-950/65 backdrop:backdrop-blur-xs overflow-hidden outline-none animate-in fade-in zoom-in-95 duration-200 z-[60]"
     >
       {/* Top Banner Accent */}
       <div 
@@ -93,7 +93,7 @@ export const NodeDetailModal: React.FC = () => {
               <span className="w-2 h-2 rounded-full bg-white/80 animate-pulse" />
               {getTierLabel()}
             </div>
-            <h2 id="dialog-clan-title" className="text-2xl sm:text-3xl font-serif font-bold text-slate-900">
+            <h2 id="dialog-clan-title" className="text-2xl sm:text-3xl font-serif font-bold text-slate-900 dark:text-slate-100">
               {selectedNode.label}
             </h2>
           </div>
@@ -101,7 +101,7 @@ export const NodeDetailModal: React.FC = () => {
           <button
             type="button"
             onClick={() => setSelectedNode(null)}
-            className="p-2 rounded-full text-slate-400 hover:text-slate-800 hover:bg-slate-100 transition cursor-pointer"
+            className="p-2 rounded-full text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-[#1f352c] transition cursor-pointer"
             aria-label="Close"
             autoFocus
           >
@@ -173,21 +173,10 @@ export const NodeDetailModal: React.FC = () => {
 
         {/* Citation */}
         {selectedNode.citation && (
-          <div className="text-xs text-slate-500 italic pt-1 border-t border-slate-200">
+          <div className="text-xs text-slate-500 dark:text-slate-400 italic pt-1 border-t border-slate-200 dark:border-[#1f352c]">
             <span className="font-semibold not-italic">{t('citationSource')}:</span> {selectedNode.citation}
           </div>
         )}
-
-        {/* Action button */}
-        <div className="pt-2 flex justify-end">
-          <button
-            type="button"
-            onClick={() => setSelectedNode(null)}
-            className="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 font-semibold text-sm transition cursor-pointer"
-          >
-            {t('closeButton')}
-          </button>
-        </div>
       </div>
     </dialog>
   );

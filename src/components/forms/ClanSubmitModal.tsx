@@ -107,20 +107,20 @@ export const ClanSubmitModal: React.FC<ClanSubmitModalProps> = ({
       // MANDATORY per Modern Web Guidance: closedby="any"
       {...({ closedby: 'any' } as any)}
       aria-labelledby="submit-clan-title"
-      className="m-0 sm:m-auto w-full sm:max-w-lg max-h-[90vh] sm:rounded-3xl rounded-t-3xl bg-white text-slate-900 p-0 shadow-2xl border border-slate-200 backdrop:bg-slate-950/50 backdrop:backdrop-blur-xs fixed bottom-0 sm:bottom-auto inset-x-0 overflow-hidden outline-none animate-in fade-in zoom-in-95 duration-200 z-[60]"
+      className="fixed inset-0 m-auto w-[calc(100%-2rem)] sm:w-full sm:max-w-lg max-h-[88vh] rounded-3xl bg-white dark:bg-[#111a16] text-slate-900 dark:text-slate-100 p-0 shadow-2xl border border-slate-200 dark:border-[#1f352c] backdrop:bg-slate-950/65 backdrop:backdrop-blur-xs overflow-hidden outline-none animate-in fade-in zoom-in-95 duration-200 z-[60]"
     >
-      <div className="p-6 overflow-y-auto max-h-[90vh] space-y-5">
+      <div className="p-6 overflow-y-auto max-h-[88vh] space-y-5">
         {/* Header */}
-        <div className="flex items-center justify-between pb-3 border-b border-slate-100">
+        <div className="flex items-center justify-between pb-3 border-b border-slate-100 dark:border-[#1f352c]">
           <div className="flex items-center gap-2.5">
-            <div className="w-8 h-8 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center">
+            <div className="w-8 h-8 rounded-xl bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 flex items-center justify-center">
               <HeartHandshake className="w-4 h-4" />
             </div>
             <div>
-              <h3 id="submit-clan-title" className="font-serif font-bold text-lg text-slate-900">
+              <h3 id="submit-clan-title" className="font-serif font-bold text-lg text-slate-900 dark:text-slate-100">
                 {language === 'kha' ? 'Ai Jingtip shaphang ka Jait jong phi' : 'Submit Clan Lineage Information'}
               </h3>
-              <p className="text-xs text-slate-500">
+              <p className="text-xs text-slate-500 dark:text-slate-400">
                 {language === 'kha' ? 'Ïarap ban pynsuk ia ka jingthoh jingtar jong ka jaitbynriew' : 'Help expand and preserve authentic community clan records'}
               </p>
             </div>
@@ -129,7 +129,7 @@ export const ClanSubmitModal: React.FC<ClanSubmitModalProps> = ({
           <button
             type="button"
             onClick={onClose}
-            className="p-1.5 rounded-full text-slate-400 hover:text-slate-800 hover:bg-slate-100 transition cursor-pointer"
+            className="p-1.5 rounded-full text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-[#1f352c] transition cursor-pointer"
             aria-label="Close"
             autoFocus
           >

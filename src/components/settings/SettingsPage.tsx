@@ -4,19 +4,19 @@ import { useLanguage } from '../../context/LanguageContext';
 import { useTheme } from '../../context/ThemeContext';
 import { PrivacyModal } from './PrivacyModal';
 import { TermsModal } from './TermsModal';
-import { 
-  ArrowLeft, 
-  Palette, 
-  Info, 
-  BookOpen, 
-  ShieldCheck, 
-  FileText, 
-  Trash2, 
-  Mail, 
-  Globe, 
-  Sparkles, 
-  ExternalLink, 
-  Check, 
+import {
+  ArrowLeft,
+  Palette,
+  Info,
+  BookOpen,
+  ShieldCheck,
+  FileText,
+  Trash2,
+  Mail,
+  Globe,
+  Sparkles,
+  ExternalLink,
+  Check,
   Heart,
   Sun,
   Moon,
@@ -49,7 +49,7 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({ onBack }) => {
 
   return (
     <div className="w-full max-w-4xl mx-auto px-4 sm:px-6 py-8 sm:py-12 space-y-8 animate-in fade-in duration-300">
-      
+
       {/* Top Header */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-slate-200">
         <button
@@ -86,11 +86,10 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({ onBack }) => {
             <button
               type="button"
               onClick={() => setThemeMode('light')}
-              className={`p-4 rounded-2xl border text-left transition flex items-start gap-3 cursor-pointer ${
-                themeMode === 'light'
-                  ? 'border-emerald-600 bg-emerald-50/50 shadow-xs ring-2 ring-emerald-500/20'
-                  : 'border-slate-200 bg-slate-50/60 hover:bg-slate-100'
-              }`}
+              className={`p-4 rounded-2xl border text-left transition flex items-start gap-3 cursor-pointer ${themeMode === 'light'
+                ? 'border-emerald-600 bg-emerald-50/50 shadow-xs ring-2 ring-emerald-500/20'
+                : 'border-slate-200 bg-slate-50/60 hover:bg-slate-100'
+                }`}
             >
               <div className="p-2 rounded-xl bg-white shadow-xs text-amber-500">
                 <Sun className="w-5 h-5" />
@@ -110,11 +109,10 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({ onBack }) => {
             <button
               type="button"
               onClick={() => setThemeMode('dark')}
-              className={`p-4 rounded-2xl border text-left transition flex items-start gap-3 cursor-pointer ${
-                themeMode === 'dark'
-                  ? 'border-emerald-600 bg-emerald-50/50 shadow-xs ring-2 ring-emerald-500/20'
-                  : 'border-slate-200 bg-slate-50/60 hover:bg-slate-100'
-              }`}
+              className={`p-4 rounded-2xl border text-left transition flex items-start gap-3 cursor-pointer ${themeMode === 'dark'
+                ? 'border-emerald-600 bg-emerald-50/50 shadow-xs ring-2 ring-emerald-500/20'
+                : 'border-slate-200 bg-slate-50/60 hover:bg-slate-100'
+                }`}
             >
               <div className="p-2 rounded-xl bg-slate-900 shadow-xs text-emerald-400">
                 <Moon className="w-5 h-5" />
@@ -134,11 +132,10 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({ onBack }) => {
             <button
               type="button"
               onClick={() => setThemeMode('custom')}
-              className={`p-4 rounded-2xl border text-left transition flex items-start gap-3 cursor-pointer ${
-                themeMode === 'custom'
-                  ? 'border-emerald-600 bg-emerald-50/50 shadow-xs ring-2 ring-emerald-500/20'
-                  : 'border-slate-200 bg-slate-50/60 hover:bg-slate-100'
-              }`}
+              className={`p-4 rounded-2xl border text-left transition flex items-start gap-3 cursor-pointer ${themeMode === 'custom'
+                ? 'border-emerald-600 bg-emerald-50/50 shadow-xs ring-2 ring-emerald-500/20'
+                : 'border-slate-200 bg-slate-50/60 hover:bg-slate-100'
+                }`}
             >
               <div className="p-2 rounded-xl bg-white shadow-xs text-rose-600">
                 <Brush className="w-5 h-5" />
@@ -189,16 +186,15 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({ onBack }) => {
                     key={item.id}
                     type="button"
                     onClick={() => setCustomVariant(item.id as any)}
-                    className={`p-3 rounded-xl border text-left transition cursor-pointer flex items-center justify-between ${
-                      customVariant === item.id
-                        ? 'bg-white border-slate-900 shadow-xs'
-                        : 'bg-white/60 border-slate-200 hover:bg-white'
-                    }`}
+                    className={`p-3 rounded-xl border text-left transition cursor-pointer flex items-center justify-between ${customVariant === item.id
+                      ? 'bg-white border-slate-900 shadow-xs'
+                      : 'bg-white/60 border-slate-200 hover:bg-white'
+                      }`}
                   >
                     <div className="flex items-center gap-2.5">
-                      <span 
+                      <span
                         className="w-4 h-4 rounded-full shrink-0 shadow-xs ring-2 ring-white"
-                        style={{ backgroundColor: item.color }} 
+                        style={{ backgroundColor: item.color }}
                       />
                       <div>
                         <div className="text-xs font-bold text-slate-900">{item.name}</div>
@@ -221,22 +217,20 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({ onBack }) => {
               <button
                 type="button"
                 onClick={() => setLanguage('kha')}
-                className={`px-4 py-1.5 rounded-full text-xs font-semibold transition cursor-pointer ${
-                  language === 'kha'
-                    ? 'bg-emerald-700 text-white shadow-xs'
-                    : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
-                }`}
+                className={`px-4 py-1.5 rounded-full text-xs font-semibold transition cursor-pointer ${language === 'kha'
+                  ? 'bg-emerald-700 text-white shadow-xs'
+                  : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+                  }`}
               >
                 Khasi (Ktien Khasi)
               </button>
               <button
                 type="button"
                 onClick={() => setLanguage('en')}
-                className={`px-4 py-1.5 rounded-full text-xs font-semibold transition cursor-pointer ${
-                  language === 'en'
-                    ? 'bg-emerald-700 text-white shadow-xs'
-                    : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
-                }`}
+                className={`px-4 py-1.5 rounded-full text-xs font-semibold transition cursor-pointer ${language === 'en'
+                  ? 'bg-emerald-700 text-white shadow-xs'
+                  : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+                  }`}
               >
                 English
               </button>
@@ -332,6 +326,7 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({ onBack }) => {
               Literature & Historical Citations:
             </span>
             <ul className="text-xs text-slate-600 space-y-1.5 list-disc list-inside">
+              <li className="text-emerald-800 underline"><a href="https://archive.org/details/in.ernet.dli.2015.464609/mode/2up"><span>Rev. I. Kharkongngor (2004), Ka Jymbriew Bad Ka Thymmei Longkur Longjait U Khasi</span></a></li>
               <li>Rev. I. Kharkongngor (2004), <em>Ka Kolshor bad ki Kur Khasi</em></li>
               <li>Medro Singh Diengdoh, <em>Genealogical Records of Ka Ïaw Shi Bdi and U Riang Bareh</em></li>
               <li>Dr. H. Lyngdoh (1961), <em>Ka Niam Khasi bad Ki Kur</em></li>
@@ -354,8 +349,8 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({ onBack }) => {
               <span>{language === 'kha' ? 'Pynduh lut ia ki Data & Cache' : 'Clear All Data & Cache'}</span>
             </div>
             <p className="text-xs text-red-700">
-              {language === 'kha' 
-                ? 'Pynkhuid lut ia ki jait ba la wad, ki setting, bad ki draft submission ba la kynshew ha kane ka browser.' 
+              {language === 'kha'
+                ? 'Pynkhuid lut ia ki jait ba la wad, ki setting, bad ki draft submission ba la kynshew ha kane ka browser.'
                 : 'Deletes local storage cache, search history, draft submissions, and resets all settings.'}
             </p>
           </div>
@@ -390,9 +385,9 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({ onBack }) => {
 
         <div className="flex flex-col sm:flex-row sm:items-center justify-between text-xs font-semibold pt-2 text-amber-950 gap-2 border-t border-amber-200">
           <span>JINGKHEIÑ 1:2-4</span>
-          <a 
-            href="https://www.bible.com/bible/1865/NUM.1.2-4.KHACLBSI" 
-            target="_blank" 
+          <a
+            href="https://www.bible.com/bible/1865/NUM.1.2-4.KHACLBSI"
+            target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-1.5 text-emerald-800 hover:text-emerald-950 underline"
           >
@@ -445,3 +440,4 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({ onBack }) => {
     </div>
   );
 };
+

@@ -3,6 +3,7 @@ import * as d3 from 'd3';
 import { GraphNode, GraphLink } from '../../types';
 import { useClan, SEA_GREEN_PALETTE } from '../../context/ClanContext';
 import { useLanguage } from '../../context/LanguageContext';
+import { useTheme } from '../../context/ThemeContext';
 import { KyrdanKurModal } from './KyrdanKurModal';
 import { ClanTableView } from './ClanTableView';
 import { ShareModal } from '../modals/ShareModal';
@@ -50,6 +51,7 @@ export const ClanGraph: React.FC = () => {
   } = useClan();
 
   const { language } = useLanguage();
+  const { palette, resolvedTheme } = useTheme();
 
   const [hoveredNode, setHoveredNode] = useState<GraphNode | null>(null);
   const [inlineSearch, setInlineSearch] = useState<string>('');
@@ -72,7 +74,7 @@ export const ClanGraph: React.FC = () => {
     });
   }, [graphData.links, visibleNodes, activeTiers]);
 
-  // Main Canvas render function in White Theme with Monochromatic Sea Green
+  // Main Canvas render function with dynamic Theme Palette (Light, Dark, Custom)
   const render = useCallback(() => {
     const canvas = canvasRef.current;
     if (!canvas || viewMode !== 'graph') return;
@@ -84,7 +86,9 @@ export const ClanGraph: React.FC = () => {
     const dpr = window.devicePixelRatio || 1;
 
     ctx.save();
-    ctx.clearRect(0, 0, width, height);
+    // Fill background with active theme canvasBg
+    ctx.fillStyle = palette.canvasBg;
+    ctx.fillRect(0, 0, width, height);
 
     // Apply zoom & pan transformation
     const transform = transformRef.current;
@@ -97,10 +101,10 @@ export const ClanGraph: React.FC = () => {
     const cy = originNode ? (originNode.y ?? height / (2 * dpr)) : height / (2 * dpr);
 
     const orbitalRings = [
-      { r: 95, color: 'rgba(46, 139, 87, 0.16)' },
-      { r: 180, color: 'rgba(64, 191, 119, 0.14)' },
-      { r: 260, color: 'rgba(117, 209, 157, 0.12)' },
-      { r: 340, color: 'rgba(10, 31, 19, 0.08)' }
+      { r: 95, color: palette.ringColors[0] || 'rgba(46, 139, 87, 0.16)' },
+      { r: 180, color: palette.ringColors[1] || 'rgba(64, 191, 119, 0.14)' },
+      { r: 260, color: palette.ringColors[2] || 'rgba(117, 209, 157, 0.12)' },
+      { r: 340, color: palette.ringColors[3] || 'rgba(10, 31, 19, 0.08)' }
     ];
 
     orbitalRings.forEach(ring => {
@@ -127,19 +131,19 @@ export const ClanGraph: React.FC = () => {
                         (hoveredNode && (source.id === hoveredNode.id || target.id === hoveredNode.id));
 
       if (link.tier === 'kpoh') {
-        ctx.strokeStyle = isFocused ? '#1C5434' : 'rgba(28, 84, 52, 0.45)';
+        ctx.strokeStyle = isFocused ? palette.kpoh : palette.linkKpoh;
         ctx.lineWidth = isFocused ? 3.5 : 2.2;
         ctx.setLineDash([]);
       } else if (link.tier === 'shikur') {
-        ctx.strokeStyle = isFocused ? '#2E8B57' : 'rgba(64, 191, 119, 0.40)';
+        ctx.strokeStyle = isFocused ? palette.shikur : palette.linkShikur;
         ctx.lineWidth = isFocused ? 2.8 : 1.8;
         ctx.setLineDash([]);
       } else if (link.tier === 'tehkur') {
-        ctx.strokeStyle = isFocused ? '#40BF77' : 'rgba(117, 209, 157, 0.45)';
+        ctx.strokeStyle = isFocused ? palette.tehkur : palette.linkTehkur;
         ctx.lineWidth = isFocused ? 2.2 : 1.4;
         ctx.setLineDash([6, 5]);
       } else {
-        ctx.strokeStyle = isFocused ? '#0A1F13' : 'rgba(10, 31, 19, 0.25)';
+        ctx.strokeStyle = isFocused ? palette.distant : palette.linkDistant;
         ctx.lineWidth = isFocused ? 1.8 : 1;
         ctx.setLineDash([3, 5]);
       }
@@ -148,21 +152,22 @@ export const ClanGraph: React.FC = () => {
       ctx.setLineDash([]);
     });
 
-    // 3. Draw Nodes with Monochromatic Sea Green
+    // 3. Draw Nodes with Dynamic Theme Palette
     visibleNodes.forEach(node => {
       if (node.x == null || node.y == null) return;
 
       const isOrigin = node.tier === 'origin';
       const isSelected = selectedNode?.id === node.id;
       const isHovered = hoveredNode?.id === node.id;
+      const nodeColor = (palette as any)[node.tier] || node.color;
 
-      // Glow effect for Origin (#2E8B57) or Selected
+      // Glow effect for Origin or Selected
       if (isOrigin || isSelected) {
         ctx.beginPath();
         const glowRadius = node.radius + (isSelected ? 10 : 14);
         const glowGrad = ctx.createRadialGradient(node.x, node.y, node.radius * 0.7, node.x, node.y, glowRadius);
-        glowGrad.addColorStop(0, 'rgba(46, 139, 87, 0.35)');
-        glowGrad.addColorStop(1, 'rgba(46, 139, 87, 0)');
+        glowGrad.addColorStop(0, `${palette.origin}66`);
+        glowGrad.addColorStop(1, `${palette.origin}00`);
         ctx.fillStyle = glowGrad;
         ctx.arc(node.x, node.y, glowRadius, 0, Math.PI * 2);
         ctx.fill();
@@ -172,14 +177,14 @@ export const ClanGraph: React.FC = () => {
       ctx.beginPath();
       ctx.arc(node.x, node.y, node.radius, 0, Math.PI * 2);
 
-      // Node background color from monochromatic sea green palette
-      ctx.fillStyle = node.color;
+      // Node background color from dynamic theme palette
+      ctx.fillStyle = nodeColor;
       ctx.fill();
 
-      // Crisp White Border ring
+      // Border ring
       ctx.strokeStyle = isSelected 
-        ? '#0f172a' 
-        : (isOrigin ? '#ffffff' : '#ffffff');
+        ? (resolvedTheme === 'dark' ? '#ffffff' : '#0f172a') 
+        : (resolvedTheme === 'dark' ? '#090e0c' : '#ffffff');
       ctx.lineWidth = isSelected ? 3.5 : (isOrigin ? 3 : 2);
       ctx.stroke();
 
@@ -187,7 +192,7 @@ export const ClanGraph: React.FC = () => {
       if (isOrigin) {
         ctx.beginPath();
         ctx.arc(node.x, node.y, node.radius + 5, 0, Math.PI * 2);
-        ctx.strokeStyle = 'rgba(46, 139, 87, 0.5)';
+        ctx.strokeStyle = `${palette.origin}90`;
         ctx.lineWidth = 1.5;
         ctx.stroke();
       }
@@ -199,18 +204,18 @@ export const ClanGraph: React.FC = () => {
       ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
 
-      // White halo behind label for crisp contrast
+      // Halo behind label for crisp contrast in both light and dark
       const labelY = node.y + node.radius + 14;
-      ctx.strokeStyle = '#ffffff';
+      ctx.strokeStyle = palette.canvasTextHalo;
       ctx.lineWidth = 4;
       ctx.strokeText(node.label, node.x, labelY);
 
-      ctx.fillStyle = isOrigin ? '#0A1F13' : '#1e293b';
+      ctx.fillStyle = isOrigin ? palette.origin : palette.canvasTextColor;
       ctx.fillText(node.label, node.x, labelY);
     });
 
     ctx.restore();
-  }, [visibleNodes, visibleLinks, selectedNode, hoveredNode, viewMode]);
+  }, [visibleNodes, visibleLinks, selectedNode, hoveredNode, viewMode, palette, resolvedTheme]);
 
   // Set up D3 simulation dynamically to window size
   useEffect(() => {
@@ -466,13 +471,13 @@ export const ClanGraph: React.FC = () => {
   return (
     <div
       ref={containerRef}
-      className="fixed inset-0 z-50 w-screen h-screen bg-white select-none touch-none overflow-hidden animate-in fade-in duration-300"
+      className="fixed inset-0 z-50 w-screen h-screen bg-white dark:bg-[#090e0c] select-none touch-none overflow-hidden animate-in fade-in duration-300"
     >
       {/* View Switch: Graph Canvas vs Table View */}
       {viewMode === 'graph' ? (
         <canvas
           ref={canvasRef}
-          className="block w-full h-full cursor-grab active:cursor-grabbing bg-radial from-slate-50 via-white to-white"
+          className={`block w-full h-full cursor-grab active:cursor-grabbing bg-radial ${palette.canvasRadial}`}
         />
       ) : (
         <div className="w-full h-full overflow-y-auto pt-24 pb-20 px-4">
@@ -482,22 +487,25 @@ export const ClanGraph: React.FC = () => {
 
       {/* Floating Top Navigation Header */}
       <div className="absolute top-4 inset-x-4 max-w-6xl mx-auto flex items-center justify-between pointer-events-none z-20 gap-2">
-        {/* Back Button (Item 3 in Todo: on physical/UI back press) */}
+        {/* Back Button */}
         <button
           type="button"
           onClick={handleBackToHome}
-          className="pointer-events-auto flex items-center gap-2 px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-full bg-white/95 text-slate-800 hover:text-emerald-800 hover:bg-emerald-50 border border-slate-200 shadow-md backdrop-blur-md transition font-semibold text-xs sm:text-sm cursor-pointer"
+          className="pointer-events-auto flex items-center gap-2 px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-full bg-white/95 dark:bg-[#111a16]/95 text-slate-800 dark:text-slate-100 hover:bg-slate-50 dark:hover:bg-[#1a2a24] border border-slate-200 dark:border-[#1f352c] shadow-md backdrop-blur-md transition font-semibold text-xs sm:text-sm cursor-pointer"
         >
-          <ArrowLeft className="w-4 h-4 text-emerald-700" />
+          <ArrowLeft className="w-4 h-4" style={{ color: palette.primary }} />
           <span className="hidden sm:inline">Wad da kawei pat ka jait</span>
           <span className="sm:hidden">Wad pat</span>
         </button>
 
-        {/* Center Top Result Banner (Item 5-7 in Todo) */}
+        {/* Center Top Result Banner */}
         <div className="pointer-events-auto flex items-center justify-center">
           {isFound ? (
-            <div className="flex items-center gap-2 px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full bg-white/95 border border-emerald-200 shadow-md backdrop-blur-md text-xs sm:text-sm text-slate-800 font-medium">
-              <span className="w-2.5 h-2.5 rounded-full bg-emerald-600 shrink-0" />
+            <div className="flex items-center gap-2 px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full bg-white/95 dark:bg-[#111a16]/95 border border-slate-200 dark:border-[#1f352c] shadow-md backdrop-blur-md text-xs sm:text-sm text-slate-800 dark:text-slate-100 font-medium">
+              <span 
+                className="w-2.5 h-2.5 rounded-full shrink-0" 
+                style={{ backgroundColor: palette.primary }} 
+              />
               <span>
                 {language === 'kha'
                   ? `Lap ${directLinksCount} ki kur, ${indirectLinksCount} ki jait ba teh kur`
@@ -508,7 +516,8 @@ export const ClanGraph: React.FC = () => {
                 <button
                   type="button"
                   onClick={toggleMinimalLinks}
-                  className="hidden md:inline-flex items-center gap-1 ml-1.5 text-[11px] font-semibold text-emerald-700 hover:underline cursor-pointer"
+                  className="hidden md:inline-flex items-center gap-1 ml-1.5 text-[11px] font-semibold hover:underline cursor-pointer"
+                  style={{ color: palette.primary }}
                 >
                   <SlidersHorizontal className="w-3 h-3" />
                   <span>{minimalLinks ? `(Show All ${totalLinksCount})` : `(Show Minimal)`}</span>
@@ -516,7 +525,7 @@ export const ClanGraph: React.FC = () => {
               )}
             </div>
           ) : (
-            <div className="flex items-center gap-2 px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full bg-amber-50/95 border border-amber-300 shadow-md backdrop-blur-md text-xs sm:text-sm text-amber-900 font-medium">
+            <div className="flex items-center gap-2 px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full bg-amber-50/95 dark:bg-amber-950/60 border border-amber-300 dark:border-amber-800/60 shadow-md backdrop-blur-md text-xs sm:text-sm text-amber-900 dark:text-amber-200 font-medium">
               <AlertCircle className="w-4 h-4 text-amber-600 shrink-0" />
               <span className="max-w-[200px] sm:max-w-md truncate">
                 {language === 'kha'
@@ -526,7 +535,8 @@ export const ClanGraph: React.FC = () => {
               <button
                 type="button"
                 onClick={() => setIsSubmitModalOpen(true)}
-                className="ml-1 px-2.5 py-1 rounded-full bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-semibold shrink-0 cursor-pointer flex items-center gap-1 shadow-xs"
+                style={{ backgroundColor: palette.primary }}
+                className="ml-1 px-2.5 py-1 rounded-full text-white text-xs font-semibold shrink-0 cursor-pointer flex items-center gap-1 shadow-xs hover:brightness-110"
               >
                 <PlusCircle className="w-3.5 h-3.5" />
                 <span>{language === 'kha' ? 'Ai Jingtip' : 'Submit Form'}</span>
@@ -541,35 +551,36 @@ export const ClanGraph: React.FC = () => {
             <button
               type="button"
               onClick={() => setShowSearchBar(true)}
-              className="flex items-center gap-2 px-3.5 sm:px-4 py-2 rounded-full bg-white/95 border border-slate-200 shadow-md backdrop-blur-md text-slate-800 hover:bg-slate-50 transition cursor-pointer text-xs sm:text-sm font-semibold"
+              className="flex items-center gap-2 px-3.5 sm:px-4 py-2 rounded-full bg-white/95 dark:bg-[#111a16]/95 border border-slate-200 dark:border-[#1f352c] shadow-md backdrop-blur-md text-slate-800 dark:text-slate-100 hover:bg-slate-50 dark:hover:bg-[#1a2a24] transition cursor-pointer text-xs sm:text-sm font-semibold"
             >
               <span 
-                className="w-2.5 h-2.5 rounded-full" 
-                style={{ backgroundColor: SEA_GREEN_PALETTE.origin }} 
+                className="w-2.5 h-2.5 rounded-full shrink-0" 
+                style={{ backgroundColor: palette.origin }} 
               />
-              <span className="font-serif font-bold text-slate-900">{query}</span>
+              <span className="font-serif font-bold text-slate-900 dark:text-slate-100">{query}</span>
               <Search className="w-3.5 h-3.5 text-slate-400 ml-1" />
             </button>
           ) : (
-            <form onSubmit={handleInlineSearch} className="flex items-center gap-1.5 bg-white rounded-full shadow-lg border border-emerald-300 p-1">
+            <form onSubmit={handleInlineSearch} className="flex items-center gap-1.5 bg-white dark:bg-[#111a16] rounded-full shadow-lg border border-slate-300 dark:border-[#1f352c] p-1">
               <input
                 type="text"
                 value={inlineSearch}
                 onChange={e => setInlineSearch(e.target.value)}
                 placeholder="Buh ka jait..."
-                className="px-3 py-1.5 text-xs sm:text-sm text-slate-900 focus:outline-none w-32 sm:w-48 font-medium"
+                className="px-3 py-1.5 text-xs sm:text-sm text-slate-900 dark:text-slate-100 focus:outline-none w-32 sm:w-48 font-medium bg-transparent"
                 autoFocus
               />
               <button
                 type="submit"
-                className="p-1.5 rounded-full bg-emerald-700 hover:bg-emerald-800 text-white cursor-pointer"
+                style={{ backgroundColor: palette.primary }}
+                className="p-1.5 rounded-full text-white cursor-pointer hover:brightness-110"
               >
                 <Search className="w-3.5 h-3.5" />
               </button>
               <button
                 type="button"
                 onClick={() => setShowSearchBar(false)}
-                className="px-2 py-1 text-xs text-slate-500 hover:text-slate-800 cursor-pointer"
+                className="px-2 py-1 text-xs text-slate-500 hover:text-slate-800 dark:hover:text-slate-200 cursor-pointer"
               >
                 Cancel
               </button>
@@ -578,15 +589,15 @@ export const ClanGraph: React.FC = () => {
         </div>
       </div>
 
-      {/* Floating Control Dock: Below the Search button area (Items 11, 13, 15 in Todo) */}
+      {/* Floating Control Dock: Below the Search button area */}
       <div className="absolute top-18 right-4 flex flex-col items-center gap-2 z-20 pointer-events-auto">
         {/* Zoom & Reset Controls */}
         {viewMode === 'graph' && (
-          <div className="flex flex-col items-center bg-white/95 backdrop-blur-md p-1 rounded-2xl shadow-lg border border-slate-200 gap-1">
+          <div className="flex flex-col items-center bg-white/95 dark:bg-[#111a16]/95 backdrop-blur-md p-1 rounded-2xl shadow-lg border border-slate-200 dark:border-[#1f352c] gap-1">
             <button
               type="button"
               onClick={() => handleZoom(1.3)}
-              className="p-2 rounded-xl text-slate-700 hover:text-emerald-700 hover:bg-emerald-50 transition cursor-pointer"
+              className="p-2 rounded-xl text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-[#1a2a24] transition cursor-pointer"
               title="Zoom In"
               aria-label="Zoom In"
             >
@@ -595,13 +606,13 @@ export const ClanGraph: React.FC = () => {
             <button
               type="button"
               onClick={() => handleZoom(0.7)}
-              className="p-2 rounded-xl text-slate-700 hover:text-emerald-700 hover:bg-emerald-50 transition cursor-pointer"
+              className="p-2 rounded-xl text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-[#1a2a24] transition cursor-pointer"
               title="Zoom Out"
               aria-label="Zoom Out"
             >
               <ZoomOut className="w-4 h-4" />
             </button>
-            <div className="w-4 h-[1px] bg-slate-200" />
+            <div className="w-4 h-[1px] bg-slate-200 dark:bg-[#1f352c]" />
             <button
               type="button"
               onClick={() => {
@@ -612,7 +623,7 @@ export const ClanGraph: React.FC = () => {
                     .call(zoomBehaviorRef.current.transform, d3.zoomIdentity);
                 }
               }}
-              className="p-2 rounded-xl text-slate-700 hover:text-emerald-700 hover:bg-emerald-50 transition cursor-pointer"
+              className="p-2 rounded-xl text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-[#1a2a24] transition cursor-pointer"
               title="Reset View"
               aria-label="Reset View"
             >
@@ -621,15 +632,16 @@ export const ClanGraph: React.FC = () => {
           </div>
         )}
 
-        {/* Table/Graph View Toggle (Item 13 in Todo: below Zoom & Reset) */}
-        <div className="bg-white/95 backdrop-blur-md p-1 rounded-2xl shadow-lg border border-slate-200">
+        {/* Table/Graph View Toggle */}
+        <div className="bg-white/95 dark:bg-[#111a16]/95 backdrop-blur-md p-1 rounded-2xl shadow-lg border border-slate-200 dark:border-[#1f352c]">
           <button
             type="button"
             onClick={() => setViewMode(viewMode === 'graph' ? 'table' : 'graph')}
+            style={viewMode === 'table' ? { backgroundColor: palette.primary } : undefined}
             className={`p-2.5 rounded-xl transition cursor-pointer flex items-center justify-center ${
               viewMode === 'table'
-                ? 'bg-emerald-700 text-white shadow-xs'
-                : 'text-slate-700 hover:text-emerald-700 hover:bg-emerald-50'
+                ? 'text-white shadow-xs'
+                : 'text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-[#1a2a24]'
             }`}
             title={viewMode === 'graph' ? "Switch to Table View" : "Switch to Graph View"}
             aria-label="Toggle Table/Graph View"
@@ -642,12 +654,12 @@ export const ClanGraph: React.FC = () => {
           </button>
         </div>
 
-        {/* Share Button (Item 15 in Todo: Share as Image or PDF with watermark) */}
-        <div className="bg-white/95 backdrop-blur-md p-1 rounded-2xl shadow-lg border border-slate-200">
+        {/* Share Button */}
+        <div className="bg-white/95 dark:bg-[#111a16]/95 backdrop-blur-md p-1 rounded-2xl shadow-lg border border-slate-200 dark:border-[#1f352c]">
           <button
             type="button"
             onClick={() => setIsShareModalOpen(true)}
-            className="p-2.5 rounded-xl text-slate-700 hover:text-emerald-700 hover:bg-emerald-50 transition cursor-pointer flex items-center justify-center"
+            className="p-2.5 rounded-xl text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-[#1a2a24] transition cursor-pointer flex items-center justify-center"
             title="Share as Image or PDF"
             aria-label="Share current view"
           >
@@ -656,16 +668,23 @@ export const ClanGraph: React.FC = () => {
         </div>
       </div>
 
-      {/* Floating Bottom Center: Ki Kyrdan Kur Details Trigger (Item 9 in Todo: Collapsed by default, opens modal/bottom sheet) */}
+      {/* Floating Bottom Center: Ki Kyrdan Kur Details Trigger */}
       <div className="absolute bottom-5 left-1/2 -translate-x-1/2 z-20 pointer-events-auto">
         <button
           type="button"
           onClick={() => setIsKyrdanModalOpen(true)}
-          className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/95 border border-slate-200 shadow-lg text-xs sm:text-sm font-semibold text-slate-800 hover:text-emerald-800 hover:bg-emerald-50 transition cursor-pointer backdrop-blur-md"
+          className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/95 dark:bg-[#111a16]/95 border border-slate-200 dark:border-[#1f352c] shadow-lg text-xs sm:text-sm font-semibold text-slate-800 dark:text-slate-100 hover:bg-slate-50 dark:hover:bg-[#1a2a24] transition cursor-pointer backdrop-blur-md"
         >
-          <Layers className="w-4 h-4 text-emerald-600" />
+          <Layers className="w-4 h-4" style={{ color: palette.primary }} />
           <span>{language === 'kha' ? 'Ki Kyrdan Kur (Legends Details)' : 'Kinship Tiers (Legends)'}</span>
-          <span className="text-[11px] px-1.5 py-0.2 rounded-full bg-emerald-50 text-emerald-800 font-bold border border-emerald-200">
+          <span 
+            className="text-[11px] px-1.5 py-0.2 rounded-full font-bold"
+            style={{ 
+              backgroundColor: `${palette.primary}15`, 
+              color: palette.primary,
+              border: `1px solid ${palette.primary}30` 
+            }}
+          >
             {visibleNodes.length}
           </span>
         </button>
@@ -674,16 +693,16 @@ export const ClanGraph: React.FC = () => {
       {/* Hover Node Tooltip */}
       {hoveredNode && !selectedNode && viewMode === 'graph' && (
         <div 
-          className="pointer-events-none absolute top-20 left-1/2 -translate-x-1/2 bg-white/95 backdrop-blur-md px-4 py-2 rounded-xl shadow-xl border border-slate-200 text-xs z-10 max-w-xs transition-opacity duration-150 text-center"
+          className="pointer-events-none absolute top-20 left-1/2 -translate-x-1/2 bg-white/95 dark:bg-[#111a16]/95 backdrop-blur-md px-4 py-2 rounded-xl shadow-xl border border-slate-200 dark:border-[#1f352c] text-xs z-10 max-w-xs transition-opacity duration-150 text-center"
         >
-          <div className="font-semibold text-slate-900 flex items-center justify-center gap-2">
+          <div className="font-semibold text-slate-900 dark:text-slate-100 flex items-center justify-center gap-2">
             <span 
               className="w-2.5 h-2.5 rounded-full inline-block"
-              style={{ backgroundColor: hoveredNode.color }}
+              style={{ backgroundColor: (palette as any)[hoveredNode.tier] || hoveredNode.color }}
             />
             <span>{hoveredNode.label}</span>
           </div>
-          <div className="text-slate-500 mt-0.5">
+          <div className="text-slate-500 dark:text-slate-400 mt-0.5">
             {hoveredNode.relationshipPath?.khasi || hoveredNode.relationshipPath?.english}
           </div>
         </div>

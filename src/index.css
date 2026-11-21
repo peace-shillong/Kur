@@ -3,7 +3,7 @@
 @layer base {
   :root {
     color-scheme: light;
-    --font-serif: 'Cinzel', serif;
+    --font-serif: 'Playfair Display', Georgia, serif;
     --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
   }
 
@@ -14,8 +14,19 @@
     transition: background-color 0.25s ease, color 0.25s ease;
   }
 
-  h1, h2, h3, .font-serif {
+  h1, h2, h3 {
     font-family: var(--font-serif);
+  }
+
+  /* Universal Dialog Centering per User Directive */
+  dialog {
+    margin: auto !important;
+    inset: 0 !important;
+  }
+
+  dialog::backdrop {
+    background-color: rgba(9, 14, 12, 0.65);
+    backdrop-filter: blur(4px);
   }
 
   /* Dark Theme */

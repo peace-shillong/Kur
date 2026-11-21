@@ -255,16 +255,16 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose, canvasR
       // MANDATORY per Modern Web Guidance: closedby="any"
       {...({ closedby: 'any' } as any)}
       aria-labelledby="share-dialog-title"
-      className="m-0 sm:m-auto w-full sm:max-w-md max-h-[90vh] sm:rounded-3xl rounded-t-3xl bg-white text-slate-900 p-0 shadow-2xl border border-slate-200 backdrop:bg-slate-950/50 backdrop:backdrop-blur-xs fixed bottom-0 sm:bottom-auto inset-x-0 overflow-hidden outline-none animate-in fade-in zoom-in-95 duration-200 z-[60]"
+      className="fixed inset-0 m-auto w-[calc(100%-2rem)] sm:w-full sm:max-w-md max-h-[85vh] rounded-3xl bg-white dark:bg-[#111a16] text-slate-900 dark:text-slate-100 p-0 shadow-2xl border border-slate-200 dark:border-[#1f352c] backdrop:bg-slate-950/65 backdrop:backdrop-blur-xs overflow-hidden outline-none animate-in fade-in zoom-in-95 duration-200 z-[60]"
     >
       <div className="p-6 space-y-5">
         {/* Header */}
-        <div className="flex items-center justify-between pb-3 border-b border-slate-100">
+        <div className="flex items-center justify-between pb-3 border-b border-slate-100 dark:border-[#1f352c]">
           <div>
-            <h3 id="share-dialog-title" className="font-serif font-bold text-lg text-slate-900">
+            <h3 id="share-dialog-title" className="font-serif font-bold text-lg text-slate-900 dark:text-slate-100">
               {language === 'kha' ? 'Sam ia kane ka View' : 'Share Current View'}
             </h3>
-            <p className="text-xs text-slate-500">
+            <p className="text-xs text-slate-500 dark:text-slate-400">
               {language === 'kha' ? `Ka jait: ${query} (${viewMode === 'graph' ? 'Graph View' : 'Table View'})` : `Clan: ${query} (${viewMode.toUpperCase()} View)`}
             </p>
           </div>
@@ -272,7 +272,7 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose, canvasR
           <button
             type="button"
             onClick={onClose}
-            className="p-1.5 rounded-full text-slate-400 hover:text-slate-800 hover:bg-slate-100 transition cursor-pointer"
+            className="p-1.5 rounded-full text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-[#1f352c] transition cursor-pointer"
             aria-label="Close"
             autoFocus
           >

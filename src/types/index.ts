@@ -4,6 +4,26 @@ export type ThemeMode = 'light' | 'dark' | 'custom';
 
 export type CustomVariant = 'heritage' | 'forest' | 'dawki';
 
+export interface ThemePalette {
+  primary: string;
+  primaryHover: string;
+  accent: string;
+  origin: string;
+  kpoh: string;
+  shikur: string;
+  tehkur: string;
+  distant: string;
+  canvasBg: string;
+  canvasRadial: string;
+  canvasTextColor: string;
+  canvasTextHalo: string;
+  ringColors: string[];
+  linkKpoh: string;
+  linkShikur: string;
+  linkTehkur: string;
+  linkDistant: string;
+}
+
 export type ClanTier = 'origin' | 'kpoh' | 'shikur' | 'tehkur' | 'distant';
 
 export type ViewMode = 'graph' | 'table';

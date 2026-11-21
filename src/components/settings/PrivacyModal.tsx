@@ -54,20 +54,20 @@ export const PrivacyModal: React.FC<PrivacyModalProps> = ({ isOpen, onClose }) =
       // MANDATORY per Modern Web Guidance: closedby="any"
       {...({ closedby: 'any' } as any)}
       aria-labelledby="privacy-modal-title"
-      className="m-0 sm:m-auto w-full sm:max-w-lg max-h-[85vh] sm:rounded-3xl rounded-t-3xl bg-white text-slate-900 p-0 shadow-2xl border border-slate-200 backdrop:bg-slate-950/50 backdrop:backdrop-blur-xs fixed bottom-0 sm:bottom-auto inset-x-0 overflow-hidden outline-none animate-in fade-in zoom-in-95 duration-200 z-[70]"
+      className="fixed inset-0 m-auto w-[calc(100%-2rem)] sm:w-full sm:max-w-lg max-h-[85vh] rounded-3xl bg-white dark:bg-[#111a16] text-slate-900 dark:text-slate-100 p-0 shadow-2xl border border-slate-200 dark:border-[#1f352c] backdrop:bg-slate-950/65 backdrop:backdrop-blur-xs overflow-hidden outline-none animate-in fade-in zoom-in-95 duration-200 z-[70]"
     >
       <div className="p-6 overflow-y-auto max-h-[85vh] space-y-4">
-        <div className="flex items-center justify-between pb-3 border-b border-slate-100">
+        <div className="flex items-center justify-between pb-3 border-b border-slate-100 dark:border-[#1f352c]">
           <div className="flex items-center gap-2">
-            <ShieldCheck className="w-5 h-5 text-emerald-600" />
-            <h3 id="privacy-modal-title" className="font-serif font-bold text-lg text-slate-900">
+            <ShieldCheck className="w-5 h-5 text-emerald-600 dark:text-emerald-400" />
+            <h3 id="privacy-modal-title" className="font-serif font-bold text-lg text-slate-900 dark:text-slate-100">
               {language === 'kha' ? 'Ka Policy Halor ka Privacy & Data' : 'Privacy & Data Policy'}
             </h3>
           </div>
           <button
             type="button"
             onClick={onClose}
-            className="p-1.5 rounded-full text-slate-400 hover:text-slate-800 hover:bg-slate-100 transition cursor-pointer"
+            className="p-1.5 rounded-full text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-[#1f352c] transition cursor-pointer"
             aria-label="Close"
             autoFocus
           >
@@ -76,18 +76,18 @@ export const PrivacyModal: React.FC<PrivacyModalProps> = ({ isOpen, onClose }) =
         </div>
 
         {/* Primary Statement */}
-        <div className="p-4 rounded-2xl bg-emerald-50 border border-emerald-200 text-emerald-950 space-y-1">
+        <div className="p-4 rounded-2xl bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800/60 text-emerald-950 dark:text-emerald-200 space-y-1">
           <p className="text-sm font-bold">
             "We do not collect any user data. Please do not submit sensitive information in the app."
           </p>
-          <p className="text-xs text-emerald-800">
+          <p className="text-xs text-emerald-800 dark:text-emerald-300">
             {language === 'kha' 
               ? 'Ngim ju lum lane kynshew ia ki data shimet jong phi. Sngewbha ym dei ban phah ia ki jingtip ba kyrpang ne ba rieh.' 
               : 'Your searches and lineage checks are processed privately on your local browser.'}
           </p>
         </div>
 
-        <div className="text-xs text-slate-600 space-y-2.5 leading-relaxed bg-slate-50 p-4 rounded-2xl border border-slate-200">
+        <div className="text-xs text-slate-600 dark:text-slate-300 space-y-2.5 leading-relaxed bg-slate-50 dark:bg-[#15221d] p-4 rounded-2xl border border-slate-200 dark:border-[#1f352c]">
           <p>
             • <strong>Local Processing:</strong> All clan link queries, compatibility calculations, and view preferences are handled directly in your browser memory and private <code>localStorage</code>.
           </p>
@@ -98,17 +98,8 @@ export const PrivacyModal: React.FC<PrivacyModalProps> = ({ isOpen, onClose }) =
             • <strong>Community Submissions:</strong> Any clan details voluntarily submitted via the "Ai Jingtip" form are archived solely for community genealogical review and are never commercialized.
           </p>
         </div>
-
-        <div className="pt-2 flex justify-end">
-          <button
-            type="button"
-            onClick={onClose}
-            className="px-5 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-semibold text-xs transition cursor-pointer"
-          >
-            {language === 'kha' ? 'Khad' : 'Close'}
-          </button>
-        </div>
       </div>
     </dialog>
   );
 };
+

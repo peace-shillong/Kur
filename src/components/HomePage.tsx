@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { useClan } from '../context/ClanContext';
 import { useLanguage } from '../context/LanguageContext';
+import { useTheme } from '../context/ThemeContext';
 import { Search, Loader2, Sparkles, History } from 'lucide-react';
 
 export const HomePage: React.FC = () => {
   const { searchClan, loading, recentSearches } = useClan();
   const { language } = useLanguage();
+  const { palette } = useTheme();
   const [jaitInput, setJaitInput] = useState<string>('');
 
   const quickSuggestions = [
@@ -46,31 +48,38 @@ export const HomePage: React.FC = () => {
   return (
     <div className="flex-1 flex flex-col items-center justify-center px-4 sm:px-6 py-12 sm:py-20 max-w-3xl mx-auto w-full text-center">
       {/* Decorative Brand Accent */}
-      <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200/80 shadow-xs mb-6 sm:mb-8 animate-in fade-in slide-in-from-top-3 duration-500">
-        <Sparkles className="w-3.5 h-3.5 text-emerald-600" />
+      <div 
+        className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold shadow-xs mb-6 sm:mb-8 animate-in fade-in slide-in-from-top-3 duration-500 transition-colors"
+        style={{ 
+          backgroundColor: `${palette.primary}12`, 
+          color: palette.primary,
+          border: `1px solid ${palette.primary}35`
+        }}
+      >
+        <Sparkles className="w-3.5 h-3.5" style={{ color: palette.primary }} />
         <span>Tipkur Tipkha • Khasi Ancestral Kinship</span>
       </div>
 
-      {/* Title */}
-      <h1 className="text-3xl sm:text-5xl md:text-6xl font-serif font-bold normal-case tracking-tight text-slate-900 mb-4 sm:mb-6 animate-in fade-in duration-600">
+      {/* Title (Normal case, strictly not capitalized) */}
+      <h1 className="text-3xl sm:text-5xl md:text-6xl font-serif font-bold normal-case tracking-tight text-slate-900 dark:text-slate-100 mb-4 sm:mb-6 animate-in fade-in duration-600">
         Wad ki kur jong phi
       </h1>
 
-      {/* Single Clear Question */}
-      <p className="text-lg sm:text-2xl font-serif font-normal normal-case text-emerald-800 mb-8 sm:mb-10 animate-in fade-in duration-700">
+      {/* Single Clear Question (Normal case, strictly not capitalized) */}
+      <p className="text-lg sm:text-2xl font-sans font-normal normal-case text-slate-700 dark:text-slate-300 mb-8 sm:mb-10 animate-in fade-in duration-700">
         {language === 'kha' ? 'Kaei ka jait jong phi?' : 'Kaei ka jait jong phi? (What is your clan surname?)'}
       </p>
 
       {/* Main Search Input Form */}
       <form onSubmit={handleSubmit} className="w-full max-w-xl mx-auto space-y-4">
-        <div className="relative flex items-center shadow-lg shadow-emerald-900/5 rounded-2xl sm:rounded-3xl border border-emerald-200 bg-white p-1.5 sm:p-2 transition-all focus-within:ring-3 focus-within:ring-emerald-500/20 focus-within:border-emerald-500">
+        <div className="relative flex items-center shadow-lg rounded-2xl sm:rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-[#111a16] p-1.5 sm:p-2 transition-all focus-within:ring-3 focus-within:ring-emerald-500/20 focus-within:border-emerald-500">
           <input
             type="text"
             value={jaitInput}
             onChange={e => setJaitInput(e.target.value)}
             onKeyDown={handleKeyDown}
             placeholder={language === 'kha' ? "Thoh ka jait jong phi hangne" : "Enter your surname (e.g. Diengdoh, Laloo)..."}
-            className="w-full pl-4 sm:pl-6 pr-4 py-3.5 sm:py-4 text-base sm:text-lg font-medium text-slate-900 placeholder:text-slate-400 focus:outline-none bg-transparent"
+            className="w-full pl-4 sm:pl-6 pr-4 py-3.5 sm:py-4 text-base sm:text-lg font-medium text-slate-900 dark:text-slate-100 placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:outline-none bg-transparent"
             autoFocus
             required
           />
@@ -78,7 +87,8 @@ export const HomePage: React.FC = () => {
           <button
             type="submit"
             disabled={loading || !jaitInput.trim()}
-            className="shrink-0 px-5 sm:px-7 py-3.5 sm:py-4 rounded-xl sm:rounded-2xl bg-emerald-700 hover:bg-emerald-800 active:bg-emerald-900 text-white font-semibold text-sm sm:text-base transition-all flex items-center gap-2 shadow-md shadow-emerald-700/20 cursor-pointer disabled:opacity-50"
+            style={{ backgroundColor: palette.primary }}
+            className="shrink-0 px-5 sm:px-7 py-3.5 sm:py-4 rounded-xl sm:rounded-2xl text-white font-semibold text-sm sm:text-base transition-all flex items-center gap-2 shadow-md cursor-pointer disabled:opacity-50 hover:brightness-110 active:brightness-90"
           >
             {loading ? (
               <Loader2 className="w-5 h-5 animate-spin" />
@@ -90,7 +100,7 @@ export const HomePage: React.FC = () => {
 
         {/* Quick Suggestion Pills */}
         <div className="pt-4 flex flex-wrap items-center justify-center gap-2 text-xs">
-          <span className="text-slate-400 font-medium">Pyrshang da kine:</span>
+          <span className="text-slate-400 dark:text-slate-500 font-medium">Pyrshang da kine:</span>
           {quickSuggestions.map(clan => (
             <button
               key={clan}
@@ -99,7 +109,7 @@ export const HomePage: React.FC = () => {
                 setJaitInput(clan);
                 handleSearch(clan);
               }}
-              className="px-3 py-1.5 rounded-full bg-slate-50 hover:bg-emerald-50 text-slate-700 hover:text-emerald-800 border border-slate-200 hover:border-emerald-300 font-medium transition cursor-pointer"
+              className="px-3 py-1.5 rounded-full bg-slate-50 dark:bg-[#15221d] hover:bg-slate-100 dark:hover:bg-[#1f352c] text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800 font-medium transition cursor-pointer"
             >
               {clan}
             </button>

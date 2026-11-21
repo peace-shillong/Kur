@@ -102,23 +102,20 @@ export const KyrdanKurModal: React.FC<KyrdanKurModalProps> = ({ isOpen, onClose 
       // MANDATORY per Modern Web Guidance: closedby="any"
       {...({ closedby: 'any' } as any)}
       aria-labelledby="kyrdan-kur-title"
-      className="m-0 md:m-auto w-full md:max-w-2xl max-h-[88vh] md:rounded-3xl rounded-t-3xl bg-white text-slate-900 p-0 shadow-2xl border border-slate-200 backdrop:bg-slate-950/50 backdrop:backdrop-blur-xs fixed bottom-0 md:bottom-auto inset-x-0 overflow-hidden outline-none animate-in fade-in zoom-in-95 duration-200 z-[60]"
+      className="fixed inset-0 m-auto w-[calc(100%-2rem)] md:w-full md:max-w-2xl max-h-[85vh] rounded-3xl bg-white dark:bg-[#111a16] text-slate-900 dark:text-slate-100 p-0 shadow-2xl border border-slate-200 dark:border-[#1f352c] backdrop:bg-slate-950/65 backdrop:backdrop-blur-xs overflow-hidden outline-none animate-in fade-in zoom-in-95 duration-200 z-[60]"
     >
-      {/* Mobile drag affordance bar */}
-      <div className="md:hidden w-12 h-1.5 bg-slate-300 rounded-full mx-auto mt-3" />
-
-      <div className="p-5 sm:p-6 overflow-y-auto max-h-[calc(88vh-20px)] space-y-5">
+      <div className="p-5 sm:p-6 overflow-y-auto max-h-[85vh] space-y-5">
         {/* Header */}
-        <div className="flex items-center justify-between pb-3 border-b border-slate-100">
+        <div className="flex items-center justify-between pb-3 border-b border-slate-100 dark:border-[#1f352c]">
           <div className="flex items-center gap-2.5">
-            <div className="w-8 h-8 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center">
+            <div className="w-8 h-8 rounded-xl bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 flex items-center justify-center">
               <Filter className="w-4 h-4" />
             </div>
             <div>
-              <h2 id="kyrdan-kur-title" className="font-serif font-bold text-lg sm:text-xl text-slate-900">
+              <h2 id="kyrdan-kur-title" className="font-serif font-bold text-lg sm:text-xl text-slate-900 dark:text-slate-100">
                 {language === 'kha' ? 'Ki Kyrdan Jingiadei Kur (Legends)' : 'Kinship Tiers & Legend Details'}
               </h2>
-              <p className="text-xs text-slate-500">
+              <p className="text-xs text-slate-500 dark:text-slate-400">
                 {language === 'kha' ? 'Ki jingbatai bad ka jingpeit ia ki thied ki kur' : 'Tier descriptions, filters and clan limits'}
               </p>
             </div>
@@ -127,7 +124,7 @@ export const KyrdanKurModal: React.FC<KyrdanKurModalProps> = ({ isOpen, onClose 
           <button
             type="button"
             onClick={onClose}
-            className="p-1.5 rounded-full text-slate-400 hover:text-slate-800 hover:bg-slate-100 transition cursor-pointer"
+            className="p-1.5 rounded-full text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-[#1f352c] transition cursor-pointer"
             aria-label="Close"
             autoFocus
           >
@@ -233,17 +230,6 @@ export const KyrdanKurModal: React.FC<KyrdanKurModalProps> = ({ isOpen, onClose 
               );
             })}
           </div>
-        </div>
-
-        {/* Footer */}
-        <div className="pt-2 flex justify-end">
-          <button
-            type="button"
-            onClick={onClose}
-            className="w-full sm:w-auto px-6 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-semibold text-xs transition cursor-pointer"
-          >
-            {t('closeButton')}
-          </button>
         </div>
       </div>
     </dialog>
