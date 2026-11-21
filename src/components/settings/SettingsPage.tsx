@@ -329,7 +329,7 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({ onBack }) => {
               <li className="text-emerald-800 underline"><a href="https://archive.org/details/in.ernet.dli.2015.464609/mode/2up" target="_blank"><span>Rev. I. Kharkongngor (2004), Ka Jymbriew Bad Ka Thymmei Longkur Longjait U Khasi</span></a></li>
               <li className="text-emerald-800 underline"><a href="https://archive.org/details/in.ernet.dli.2015.464891/mode/2up" target="_blank">Paper (1983), <em>Ka Kolshor U Khasi</em></a></li>
               <li className='text-emerald-800 underline'><a href="https://ia601406.us.archive.org/22/items/in.ernet.dli.2015.464918/2015.464918.Ki-Khun-Ki-Ksiew-U-Hynniew-Trep_text.pdf" target="_blank"> Spiton Kharakor (1931), Ki Khun Ki Ksiew U Hynñiew Trep<em></em></a></li>
-              <li className='text-emerald-800 underline'><a href="https://archive.org/stream/in.ernet.dli.2015.462529/2015.462529.The-History_djvu.txt">Hamlet Bareh (1964), <em>The History and Culture of the Khasi People</em></a></li>
+              <li className='text-emerald-800 underline'><a href="https://archive.org/stream/in.ernet.dli.2015.462529/2015.462529.The-History_djvu.txt" target="_blank">Hamlet Bareh (1964), <em>The History and Culture of the Khasi People</em></a></li>
             </ul>
           </div>
 

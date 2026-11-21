@@ -52,16 +52,17 @@ export const shareToWhatsApp = async (
   sourceCanvas: HTMLCanvasElement | null,
   query: string,
   isDark: boolean
-) => {
+): Promise<{ success: boolean; method: 'web-share' | 'download-clipboard' | 'text-only' }> => {
   const shareText = `Tipkur Tipkha — Ki kur jong ka jait ${query}.\nData Sourced from tynrai.in: https://kur.kyrshan.com`;
 
   if (sourceCanvas) {
     try {
       const blob = await generateGraphBlobWithWatermark(sourceCanvas, query, isDark);
       if (blob) {
-        const file = new File([blob], `kur-${query.toLowerCase()}-graph.png`, { type: 'image/png' });
+        const fileName = `kur-${query.toLowerCase().replace(/[^a-z0-9]/gi, '_')}-graph.png`;
+        const file = new File([blob], fileName, { type: 'image/png' });
 
-        // If Web Share API supports file sharing (Mobile Chrome/Safari/WhatsApp share sheet)
+        // If Web Share API supports file sharing (Mobile Chrome/Safari with WhatsApp)
         if (navigator.canShare && navigator.canShare({ files: [file] })) {
           try {
             await navigator.share({
@@ -69,26 +70,48 @@ export const shareToWhatsApp = async (
               title: `Tipkur Tipkha — ${query}`,
               text: shareText
             });
-            return;
+            return { success: true, method: 'web-share' };
           } catch (err: any) {
-            if (err.name === 'AbortError') return;
+            if (err.name === 'AbortError') {
+              return { success: false, method: 'web-share' };
+            }
           }
         }
 
-        // Fallback for browsers that cannot share files directly:
-        // Automatically download the graph PNG image with watermark
+        // For desktop browsers or devices where Web Share API does not attach files directly:
+        // 1. Copy image to clipboard so user can immediately paste (Cmd+V / Ctrl+V) into WhatsApp Web
+        try {
+          if (navigator.clipboard && typeof ClipboardItem !== 'undefined') {
+            await navigator.clipboard.write([
+              new ClipboardItem({ 'image/png': blob })
+            ]);
+          }
+        } catch (clipErr) {
+          console.warn('Clipboard image write failed:', clipErr);
+        }
+
+        // 2. Automatically download the high-resolution graph PNG image with watermark
         const link = document.createElement('a');
-        link.download = `kur-${query.toLowerCase()}-graph.png`;
+        link.download = fileName;
         link.href = URL.createObjectURL(blob);
         link.click();
-        setTimeout(() => URL.revokeObjectURL(link.href), 10000);
+        setTimeout(() => URL.revokeObjectURL(link.href), 15000);
+
+        // 3. Wait briefly so the image download is triggered before opening WhatsApp
+        await new Promise(resolve => setTimeout(resolve, 600));
+
+        // 4. Open WhatsApp with the pre-filled text
+        const whatsappUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(shareText)}`;
+        window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+        return { success: true, method: 'download-clipboard' };
       }
     } catch (err) {
       console.error('Error generating graph blob for WhatsApp share:', err);
     }
   }
 
-  // Open WhatsApp with pre-filled message
+  // Fallback: Open WhatsApp with pre-filled message
   const whatsappUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(shareText)}`;
   window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+  return { success: true, method: 'text-only' };
 };

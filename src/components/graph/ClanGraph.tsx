@@ -22,7 +22,9 @@ import {
   AlertCircle,
   PlusCircle,
   SlidersHorizontal,
-  Download
+  Download,
+  X,
+  Loader2
 } from 'lucide-react';
 
 export const ClanGraph: React.FC = () => {
@@ -58,9 +60,41 @@ export const ClanGraph: React.FC = () => {
   const [hoveredNode, setHoveredNode] = useState<GraphNode | null>(null);
   const [inlineSearch, setInlineSearch] = useState<string>('');
   const [showSearchBar, setShowSearchBar] = useState<boolean>(false);
+  const [isSharingWhatsApp, setIsSharingWhatsApp] = useState<boolean>(false);
   const [isKyrdanModalOpen, setIsKyrdanModalOpen] = useState<boolean>(false);
   const [isShareModalOpen, setIsShareModalOpen] = useState<boolean>(false);
   const [isSubmitModalOpen, setIsSubmitModalOpen] = useState<boolean>(false);
+  const searchContainerRef = useRef<HTMLDivElement | null>(null);
+
+  // Close active inline search when user clicks outside or presses Escape
+  useEffect(() => {
+    if (!showSearchBar) return;
+
+    const handlePointerDown = (event: MouseEvent | TouchEvent) => {
+      if (
+        searchContainerRef.current &&
+        !searchContainerRef.current.contains(event.target as Node)
+      ) {
+        setShowSearchBar(false);
+      }
+    };
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        setShowSearchBar(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handlePointerDown);
+    document.addEventListener('touchstart', handlePointerDown);
+    window.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      document.removeEventListener('mousedown', handlePointerDown);
+      document.removeEventListener('touchstart', handlePointerDown);
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [showSearchBar]);
 
   // Filter nodes & links based on active tiers
   const visibleNodes = React.useMemo(() => {
@@ -468,8 +502,14 @@ export const ClanGraph: React.FC = () => {
     setIsGraphOpen(false);
   };
 
-  const handleWhatsAppShare = () => {
-    shareToWhatsApp(canvasRef.current, query, resolvedTheme === 'dark');
+  const handleWhatsAppShare = async () => {
+    if (isSharingWhatsApp) return;
+    setIsSharingWhatsApp(true);
+    try {
+      await shareToWhatsApp(canvasRef.current, query, resolvedTheme === 'dark');
+    } finally {
+      setIsSharingWhatsApp(false);
+    }
   };
 
   const isFound = response?.found === true;
@@ -507,22 +547,22 @@ export const ClanGraph: React.FC = () => {
           {/* Results Found Text (MOBILE ONLY: Placed below the back button icon) */}
           <div className="md:hidden">
             {isFound ? (
-              <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/95 dark:bg-[#111a16]/95 border border-slate-200 dark:border-[#1f352c] shadow-md backdrop-blur-md text-[11px] text-slate-800 dark:text-slate-100 font-medium max-w-[250px]">
+              <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/95 dark:bg-[#111a16]/95 border border-slate-200 dark:border-[#1f352c] shadow-md backdrop-blur-md text-[11px] text-slate-800 dark:text-slate-100 font-medium max-w-[280px]">
                 <span
                   className="w-2 h-2 rounded-full shrink-0"
                   style={{ backgroundColor: palette.primary }}
                 />
                 <span className="truncate">
                   {language === 'kha'
-                    ? `Lap ${directLinksCount} ki kur, ${indirectLinksCount} ba teh kur`
-                    : `Found ${directLinksCount} direct, ${indirectLinksCount} indirect`}
+                    ? `Lap ${directLinksCount} tyyli ki kur, ${indirectLinksCount} ki jait ba teh kur`
+                    : `Found ${directLinksCount} direct links, ${indirectLinksCount} indirect links`}
                 </span>
               </div>
             ) : (
               <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-50/95 dark:bg-amber-950/70 border border-amber-300 dark:border-amber-800/60 shadow-md backdrop-blur-md text-[11px] text-amber-900 dark:text-amber-200 font-medium">
                 <AlertCircle className="w-3.5 h-3.5 text-amber-600 shrink-0" />
-                <span className="truncate max-w-[160px]">
-                  {language === 'kha' ? 'Ngim don jingtip' : 'No clan data'}
+                <span className="truncate max-w-[280px]">
+                  {language === 'kha' ? 'Ngim don jingtip shaphang ka jait jong phi, da phi don phi lah ban phah mynta' : 'No results found for your surname, if you have information then do let us know'}
                 </span>
                 <button
                   type="button"
@@ -584,9 +624,9 @@ export const ClanGraph: React.FC = () => {
           )}
         </div>
 
-        {/* Current Surname Badge & Search Trigger (Top-Right) */}
-        <div className="pointer-events-auto flex items-center gap-2">
-          {!showSearchBar ? (
+        {/* Current Surname Badge / Active Inline Search (Top-Right on Desktop, Centered on Mobile) */}
+        {!showSearchBar ? (
+          <div className="pointer-events-auto flex items-center gap-2">
             <button
               type="button"
               onClick={() => setShowSearchBar(true)}
@@ -599,33 +639,44 @@ export const ClanGraph: React.FC = () => {
               <span className="font-serif font-bold text-slate-900 dark:text-slate-100">{query}</span>
               <Search className="w-3.5 h-3.5 text-slate-400 ml-1" />
             </button>
-          ) : (
-            <form onSubmit={handleInlineSearch} className="flex items-center gap-1.5 bg-white dark:bg-[#111a16] rounded-full shadow-lg border border-slate-300 dark:border-[#1f352c] p-1">
+          </div>
+        ) : (
+          <div
+            ref={searchContainerRef}
+            className="fixed top-4 inset-x-3 max-w-md mx-auto sm:static sm:top-auto sm:inset-x-auto sm:max-w-none sm:mx-0 z-30 pointer-events-auto animate-in fade-in zoom-in-95 duration-200"
+          >
+            <form
+              onSubmit={handleInlineSearch}
+              className="flex items-center gap-2 bg-white/98 dark:bg-[#111a16]/98 backdrop-blur-md rounded-full shadow-2xl border border-slate-300 dark:border-[#1f352c] p-1.5 w-full ring-2 ring-emerald-500/20"
+            >
+              <Search className="w-4 h-4 text-slate-400 ml-2.5 shrink-0" />
               <input
                 type="text"
                 value={inlineSearch}
                 onChange={e => setInlineSearch(e.target.value)}
-                placeholder="Buh ka jait..."
-                className="px-3 py-1.5 text-xs sm:text-sm text-slate-900 dark:text-slate-100 focus:outline-none w-32 sm:w-48 font-medium bg-transparent"
+                placeholder={language === 'kha' ? "Thoh ka jait..." : "Enter surname..."}
+                className="flex-1 px-2 py-1.5 text-xs sm:text-sm text-slate-900 dark:text-slate-100 focus:outline-none font-medium bg-transparent min-w-0"
                 autoFocus
               />
               <button
                 type="submit"
                 style={{ backgroundColor: palette.primary }}
-                className="p-1.5 rounded-full text-white cursor-pointer hover:brightness-110"
+                className="px-3.5 py-1.5 rounded-full text-white text-xs font-semibold cursor-pointer hover:brightness-110 active:brightness-90 transition shrink-0 shadow-xs flex items-center gap-1"
               >
-                <Search className="w-3.5 h-3.5" />
+                <span>{language === 'kha' ? 'Wad' : 'Search'}</span>
               </button>
               <button
                 type="button"
                 onClick={() => setShowSearchBar(false)}
-                className="px-2 py-1 text-xs text-slate-500 hover:text-slate-800 dark:hover:text-slate-200 cursor-pointer"
+                className="p-1.5 rounded-full text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-[#1f352c] transition cursor-pointer shrink-0"
+                title="Cancel search"
+                aria-label="Cancel search"
               >
-                Cancel
+                <X className="w-4 h-4" />
               </button>
             </form>
-          )}
-        </div>
+          </div>
+        )}
       </div>
 
       {/* Floating Control Dock: Below the Search button area */}
@@ -697,11 +748,16 @@ export const ClanGraph: React.FC = () => {
           <button
             type="button"
             onClick={handleWhatsAppShare}
-            className="p-2.5 rounded-xl text-[#25D366] hover:bg-emerald-50 dark:hover:bg-[#1a2a24] transition cursor-pointer flex items-center justify-center hover:scale-110 active:scale-95"
+            disabled={isSharingWhatsApp}
+            className="p-2.5 rounded-xl text-[#25D366] hover:bg-emerald-50 dark:hover:bg-[#1a2a24] transition cursor-pointer flex items-center justify-center hover:scale-110 active:scale-95 disabled:opacity-50"
             title="Share Graph on WhatsApp"
             aria-label="Share Graph on WhatsApp"
           >
-            <WhatsAppIcon className="w-4 h-4 fill-current" />
+            {isSharingWhatsApp ? (
+              <Loader2 className="w-4 h-4 animate-spin text-[#25D366]" />
+            ) : (
+              <WhatsAppIcon className="w-4 h-4 fill-current" />
+            )}
           </button>
         </div>
 
@@ -719,17 +775,19 @@ export const ClanGraph: React.FC = () => {
         </div>
       </div>
 
-      {/* Floating Bottom Center: Ki Kyrdan Kur Details Trigger with safe bottom margin on mobile */}
-      <div className="absolute bottom-10 sm:bottom-6 left-1/2 -translate-x-1/2 z-20 pointer-events-auto pb-[env(safe-area-inset-bottom,0px)]">
+      {/* Floating Bottom Center: Ki Kyrdan Kur Details Trigger with safe bottom clearance on mobile & single-line full width */}
+      <div className="fixed sm:absolute bottom-16 sm:bottom-6 inset-x-3 sm:inset-x-auto sm:left-1/2 sm:-translate-x-1/2 z-20 pointer-events-auto pb-[max(16px,env(safe-area-inset-bottom,0px))]">
         <button
           type="button"
           onClick={() => setIsKyrdanModalOpen(true)}
-          className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-white/95 dark:bg-[#111a16]/95 border border-slate-200 dark:border-[#1f352c] shadow-xl text-xs sm:text-sm font-semibold text-slate-800 dark:text-slate-100 hover:bg-slate-50 dark:hover:bg-[#1a2a24] transition cursor-pointer backdrop-blur-md active:scale-95"
+          className="w-full sm:w-auto flex items-center justify-center gap-2 px-4 py-3 sm:py-2.5 rounded-2xl sm:rounded-full bg-white/95 dark:bg-[#111a16]/95 border border-slate-200 dark:border-[#1f352c] shadow-xl text-xs sm:text-sm font-semibold text-slate-800 dark:text-slate-100 hover:bg-slate-50 dark:hover:bg-[#1a2a24] transition cursor-pointer backdrop-blur-md active:scale-[0.98]"
         >
-          <Layers className="w-4 h-4" style={{ color: palette.primary }} />
-          <span>{language === 'kha' ? 'Ki Kyrdan Kur (Legends Details)' : 'Kinship Tiers (Legends)'}</span>
+          <Layers className="w-4 h-4 shrink-0" style={{ color: palette.primary }} />
+          <span className="whitespace-nowrap truncate">
+            {language === 'kha' ? 'Ki Kyrdan Kur (Legends Details)' : 'Kinship Tiers (Legends)'}
+          </span>
           <span
-            className="text-[11px] px-1.5 py-0.2 rounded-full font-bold"
+            className="text-[11px] px-2 py-0.5 rounded-full font-bold shrink-0 ml-1"
             style={{
               backgroundColor: `${palette.primary}15`,
               color: palette.primary,
