@@ -1,7 +1,10 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { useClan } from '../../context/ClanContext';
 import { useLanguage } from '../../context/LanguageContext';
-import { X, Image, FileText, Check, Download, Printer } from 'lucide-react';
+import { useTheme } from '../../context/ThemeContext';
+import { shareToWhatsApp } from '../../utils/shareUtils';
+import { WhatsAppIcon } from '../icons/WhatsAppIcon';
+import { X, Image, FileText, Check, Download, File, ExternalLink } from 'lucide-react';
 
 interface ShareModalProps {
   isOpen: boolean;
@@ -12,6 +15,7 @@ interface ShareModalProps {
 export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose, canvasRef }) => {
   const { query, viewMode, graphData } = useClan();
   const { language } = useLanguage();
+  const { resolvedTheme } = useTheme();
   const dialogRef = useRef<HTMLDialogElement | null>(null);
   const [downloading, setDownloading] = useState<boolean>(false);
   const [copiedSuccess, setCopiedSuccess] = useState<boolean>(false);
@@ -282,6 +286,28 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose, canvasR
 
         {/* Options */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          {/* Share Directly on WhatsApp */}
+          <button
+            type="button"
+            onClick={() => shareToWhatsApp(canvasRef?.current || null, query, resolvedTheme === 'dark')}
+            className="p-4 rounded-2xl border border-emerald-200 dark:border-emerald-800/60 bg-emerald-50/50 dark:bg-emerald-950/20 hover:bg-emerald-100/60 dark:hover:bg-emerald-900/30 transition text-left space-y-2 group cursor-pointer shadow-xs col-span-1 sm:col-span-2"
+          >
+            <div className="w-9 h-9 rounded-xl bg-[#25D366]/15 text-[#25D366] flex items-center justify-center group-hover:scale-105 transition-transform">
+              <WhatsAppIcon className="w-5 h-5 fill-current" />
+            </div>
+            <div>
+              <div className="font-bold text-sm text-slate-900 dark:text-slate-100 flex items-center gap-1.5">
+                <span>{language === 'kha' ? 'Sam ha WhatsApp' : 'Share to WhatsApp'}</span>
+                <ExternalLink className="w-3.5 h-3.5 text-[#25D366]" />
+              </div>
+              <p className="text-[11px] text-slate-600 dark:text-slate-400 mt-0.5">
+                {language === 'kha'
+                  ? 'Phah ia ka dur jong ka graph bad ka watermark sha ki paralok ha WhatsApp'
+                  : 'Share high-resolution graph image with clan watermark directly to WhatsApp'}
+              </p>
+            </div>
+          </button>
+
           {/* Share as Image */}
           <button
             type="button"
@@ -298,7 +324,7 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose, canvasR
                 <Download className="w-3.5 h-3.5 text-slate-400" />
               </div>
               <p className="text-[11px] text-slate-500 mt-0.5">
-                PNG format with embedded watermark
+                PNG format
               </p>
             </div>
           </button>
@@ -315,10 +341,10 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose, canvasR
             <div>
               <div className="font-bold text-sm text-slate-900 flex items-center gap-1.5">
                 <span>{language === 'kha' ? 'Kynshew kum ka PDF' : 'Save as PDF'}</span>
-                <Printer className="w-3.5 h-3.5 text-slate-400" />
+                <File className="w-3.5 h-3.5 text-slate-400" />
               </div>
               <p className="text-[11px] text-slate-500 mt-0.5">
-                Printable document with watermark
+                Printable document
               </p>
             </div>
           </button>
@@ -326,7 +352,7 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose, canvasR
 
         {/* Watermark Notice */}
         <div className="p-3 rounded-xl bg-slate-50 border border-slate-200 text-[11px] text-slate-500 italic text-center">
-          Watermark: "{WATERMARK_TEXT}"
+          "{WATERMARK_TEXT}"
         </div>
       </div>
     </dialog>

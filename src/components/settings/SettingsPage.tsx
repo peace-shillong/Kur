@@ -14,13 +14,13 @@ import {
   Trash2,
   Mail,
   Globe,
-  Sparkles,
   ExternalLink,
   Check,
   Heart,
   Sun,
   Moon,
-  Brush
+  Brush,
+  Link
 } from 'lucide-react';
 
 interface SettingsPageProps {
@@ -76,7 +76,7 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({ onBack }) => {
         <div className="flex items-center gap-2.5 pb-2 border-b border-slate-100">
           <Palette className="w-5 h-5 text-emerald-600" />
           <h2 className="font-serif font-bold text-lg text-slate-900">
-            {language === 'kha' ? 'Ka Rong ka Phang (Theme Switch)' : 'Color Theme & Appearance'}
+            {language === 'kha' ? 'Ka Rong (Theme) ' : 'Color Theme & Appearance'}
           </h2>
         </div>
 
@@ -244,7 +244,7 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({ onBack }) => {
         <div className="flex items-center gap-2.5 pb-2 border-b border-slate-100">
           <Info className="w-5 h-5 text-emerald-600" />
           <h2 className="font-serif font-bold text-lg text-slate-900">
-            {language === 'kha' ? 'Shaphang ka App (About Tipkur Tipkha)' : 'About the App & Archives'}
+            {language === 'kha' ? 'Shaphang ka App' : 'About the App & Archives'}
           </h2>
         </div>
 
@@ -312,7 +312,7 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({ onBack }) => {
           {/* Tynrai */}
           <div className="p-4 rounded-2xl bg-emerald-50/70 border border-emerald-200 space-y-1">
             <div className="font-serif font-bold text-sm text-emerald-950 flex items-center gap-1.5">
-              <Sparkles className="w-4 h-4 text-emerald-700" />
+              <Link className="w-4 h-4 text-emerald-700" />
               <span>Source of Data: Tynrai</span>
             </div>
             <p className="text-xs text-slate-700 leading-relaxed">

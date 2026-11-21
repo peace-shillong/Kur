@@ -4,6 +4,8 @@ import { GraphNode, GraphLink } from '../../types';
 import { useClan } from '../../context/ClanContext';
 import { useLanguage } from '../../context/LanguageContext';
 import { useTheme } from '../../context/ThemeContext';
+import { shareToWhatsApp } from '../../utils/shareUtils';
+import { WhatsAppIcon } from '../icons/WhatsAppIcon';
 import { KyrdanKurModal } from './KyrdanKurModal';
 import { ClanTableView } from './ClanTableView';
 import { ShareModal } from '../modals/ShareModal';
@@ -17,10 +19,10 @@ import {
   Layers,
   Table as TableIcon,
   Network,
-  Share2,
   AlertCircle,
   PlusCircle,
-  SlidersHorizontal
+  SlidersHorizontal,
+  Download
 } from 'lucide-react';
 
 export const ClanGraph: React.FC = () => {
@@ -466,6 +468,10 @@ export const ClanGraph: React.FC = () => {
     setIsGraphOpen(false);
   };
 
+  const handleWhatsAppShare = () => {
+    shareToWhatsApp(canvasRef.current, query, resolvedTheme === 'dark');
+  };
+
   const isFound = response?.found === true;
 
   return (
@@ -486,20 +492,53 @@ export const ClanGraph: React.FC = () => {
       )}
 
       {/* Floating Top Navigation Header */}
-      <div className="absolute top-4 inset-x-4 max-w-6xl mx-auto flex items-center justify-between pointer-events-none z-20 gap-2">
-        {/* Back Button */}
-        <button
-          type="button"
-          onClick={handleBackToHome}
-          className="pointer-events-auto flex items-center gap-2 px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-full bg-white/95 dark:bg-[#111a16]/95 text-slate-800 dark:text-slate-100 hover:bg-slate-50 dark:hover:bg-[#1a2a24] border border-slate-200 dark:border-[#1f352c] shadow-md backdrop-blur-md transition font-semibold text-xs sm:text-sm cursor-pointer"
-        >
-          <ArrowLeft className="w-4 h-4" style={{ color: palette.primary }} />
-          <span className="hidden sm:inline">Leit biang shadien</span>
+      <div className="absolute top-4 inset-x-4 max-w-6xl mx-auto flex items-start justify-between pointer-events-none z-20 gap-2">
+        {/* Left Side: Back Button + (On Mobile: Results Found Text placed directly below the back button) */}
+        <div className="pointer-events-auto flex flex-col items-start gap-1.5">
+          <button
+            type="button"
+            onClick={handleBackToHome}
+            className="flex items-center gap-2 px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-full bg-white/95 dark:bg-[#111a16]/95 text-slate-800 dark:text-slate-100 hover:bg-slate-50 dark:hover:bg-[#1a2a24] border border-slate-200 dark:border-[#1f352c] shadow-md backdrop-blur-md transition font-semibold text-xs sm:text-sm cursor-pointer"
+          >
+            <ArrowLeft className="w-4 h-4" style={{ color: palette.primary }} />
+            <span className="hidden sm:inline">Leit biang shadien</span>
+          </button>
 
-        </button>
+          {/* Results Found Text (MOBILE ONLY: Placed below the back button icon) */}
+          <div className="md:hidden">
+            {isFound ? (
+              <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/95 dark:bg-[#111a16]/95 border border-slate-200 dark:border-[#1f352c] shadow-md backdrop-blur-md text-[11px] text-slate-800 dark:text-slate-100 font-medium max-w-[250px]">
+                <span
+                  className="w-2 h-2 rounded-full shrink-0"
+                  style={{ backgroundColor: palette.primary }}
+                />
+                <span className="truncate">
+                  {language === 'kha'
+                    ? `Lap ${directLinksCount} ki kur, ${indirectLinksCount} ba teh kur`
+                    : `Found ${directLinksCount} direct, ${indirectLinksCount} indirect`}
+                </span>
+              </div>
+            ) : (
+              <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-50/95 dark:bg-amber-950/70 border border-amber-300 dark:border-amber-800/60 shadow-md backdrop-blur-md text-[11px] text-amber-900 dark:text-amber-200 font-medium">
+                <AlertCircle className="w-3.5 h-3.5 text-amber-600 shrink-0" />
+                <span className="truncate max-w-[160px]">
+                  {language === 'kha' ? 'Ngim don jingtip' : 'No clan data'}
+                </span>
+                <button
+                  type="button"
+                  onClick={() => setIsSubmitModalOpen(true)}
+                  style={{ backgroundColor: palette.primary }}
+                  className="ml-0.5 px-2 py-0.5 rounded-full text-white text-[10px] font-semibold shrink-0 cursor-pointer"
+                >
+                  {language === 'kha' ? 'Ai Jingtip' : 'Submit'}
+                </button>
+              </div>
+            )}
+          </div>
+        </div>
 
-        {/* Center Top Result Banner */}
-        <div className="pointer-events-auto flex items-center justify-center">
+        {/* Center: DESKTOP ONLY Result Banner */}
+        <div className="hidden md:flex pointer-events-auto items-center justify-center">
           {isFound ? (
             <div className="flex items-center gap-2 px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full bg-white/95 dark:bg-[#111a16]/95 border border-slate-200 dark:border-[#1f352c] shadow-md backdrop-blur-md text-xs sm:text-sm text-slate-800 dark:text-slate-100 font-medium">
               <span
@@ -653,7 +692,20 @@ export const ClanGraph: React.FC = () => {
           </button>
         </div>
 
-        {/* Share Button */}
+        {/* 1. Share WhatsApp Icon Button: Shares graph image directly to WhatsApp */}
+        <div className="bg-white/95 dark:bg-[#111a16]/95 backdrop-blur-md p-1 rounded-2xl shadow-lg border border-slate-200 dark:border-[#1f352c]">
+          <button
+            type="button"
+            onClick={handleWhatsAppShare}
+            className="p-2.5 rounded-xl text-[#25D366] hover:bg-emerald-50 dark:hover:bg-[#1a2a24] transition cursor-pointer flex items-center justify-center hover:scale-110 active:scale-95"
+            title="Share Graph on WhatsApp"
+            aria-label="Share Graph on WhatsApp"
+          >
+            <WhatsAppIcon className="w-4 h-4 fill-current" />
+          </button>
+        </div>
+
+        {/* General Share & Export Button (PNG / PDF) */}
         <div className="bg-white/95 dark:bg-[#111a16]/95 backdrop-blur-md p-1 rounded-2xl shadow-lg border border-slate-200 dark:border-[#1f352c]">
           <button
             type="button"
@@ -662,17 +714,17 @@ export const ClanGraph: React.FC = () => {
             title="Share as Image or PDF"
             aria-label="Share current view"
           >
-            <Share2 className="w-4 h-4" />
+            <Download className="w-4 h-4" />
           </button>
         </div>
       </div>
 
-      {/* Floating Bottom Center: Ki Kyrdan Kur Details Trigger */}
-      <div className="absolute bottom-5 left-1/2 -translate-x-1/2 z-20 pointer-events-auto">
+      {/* Floating Bottom Center: Ki Kyrdan Kur Details Trigger with safe bottom margin on mobile */}
+      <div className="absolute bottom-10 sm:bottom-6 left-1/2 -translate-x-1/2 z-20 pointer-events-auto pb-[env(safe-area-inset-bottom,0px)]">
         <button
           type="button"
           onClick={() => setIsKyrdanModalOpen(true)}
-          className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/95 dark:bg-[#111a16]/95 border border-slate-200 dark:border-[#1f352c] shadow-lg text-xs sm:text-sm font-semibold text-slate-800 dark:text-slate-100 hover:bg-slate-50 dark:hover:bg-[#1a2a24] transition cursor-pointer backdrop-blur-md"
+          className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-white/95 dark:bg-[#111a16]/95 border border-slate-200 dark:border-[#1f352c] shadow-xl text-xs sm:text-sm font-semibold text-slate-800 dark:text-slate-100 hover:bg-slate-50 dark:hover:bg-[#1a2a24] transition cursor-pointer backdrop-blur-md active:scale-95"
         >
           <Layers className="w-4 h-4" style={{ color: palette.primary }} />
           <span>{language === 'kha' ? 'Ki Kyrdan Kur (Legends Details)' : 'Kinship Tiers (Legends)'}</span>
