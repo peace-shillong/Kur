@@ -126,7 +126,17 @@ export const ClanTableView: React.FC = () => {
                 return (
                   <tr 
                     key={node.id}
-                    className="hover:bg-slate-50/80 dark:hover:bg-[#15221d]/60 transition group"
+                    onClick={() => setSelectedNode(node)}
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        setSelectedNode(node);
+                      }
+                    }}
+                    tabIndex={0}
+                    role="button"
+                    aria-label={`View details for ${node.label}`}
+                    className="hover:bg-slate-50/90 dark:hover:bg-[#15221d]/90 transition-colors cursor-pointer group focus:outline-none focus:bg-slate-100 dark:focus:bg-[#1a2c25]"
                   >
                     {/* 1. Index */}
                     <td className="py-3 px-3 sm:px-4 text-slate-400 font-mono text-xs">
@@ -169,8 +179,11 @@ export const ClanTableView: React.FC = () => {
                           </span>
                           <button
                             type="button"
-                            onClick={() => setSelectedNode(node)}
-                            className="p-1 text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 cursor-pointer"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              setSelectedNode(node);
+                            }}
+                            className="p-1 text-slate-400 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors cursor-pointer"
                             title="Peit bniah"
                           >
                             <ExternalLink className="w-3 h-3" />
@@ -184,8 +197,11 @@ export const ClanTableView: React.FC = () => {
                       {/* Desktop View Action Button */}
                       <button
                         type="button"
-                        onClick={() => setSelectedNode(node)}
-                        className="hidden sm:inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-[#15221d] hover:bg-slate-200 dark:hover:bg-[#1f352c] text-slate-800 dark:text-slate-200 text-xs font-semibold transition cursor-pointer"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          setSelectedNode(node);
+                        }}
+                        className="hidden sm:inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-[#15221d] group-hover:bg-slate-200 dark:group-hover:bg-[#1f352c] text-slate-800 dark:text-slate-200 text-xs font-semibold transition cursor-pointer"
                       >
                         <span>{language === 'kha' ? 'Peit' : 'View'}</span>
                         <ExternalLink className="w-3 h-3" />
