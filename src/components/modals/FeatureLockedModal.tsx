@@ -148,16 +148,10 @@ export const FeatureLockedModal: React.FC<FeatureLockedModalProps> = ({
               <Search className="w-4 h-4" />
               <span>{language === 'kha' ? 'Wad Kur Mynta' : 'Search Clan First'}</span>
             </button>
-            <button
-              type="button"
-              onClick={onClose}
-              className="w-full sm:w-auto px-5 py-3 rounded-2xl bg-slate-100 dark:bg-[#1a2a24] hover:bg-slate-200 dark:hover:bg-[#233830] text-slate-700 dark:text-slate-200 font-semibold text-sm transition cursor-pointer"
-            >
-              {language === 'kha' ? 'Khad' : 'Close'}
-            </button>
           </div>
         </div>
       )}
     </dialog>
   );
 };
+
