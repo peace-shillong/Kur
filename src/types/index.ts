@@ -1,6 +1,8 @@
 export type Language = 'en' | 'kha';
 
-export type ThemeMode = 'light' | 'dark' | 'earth' | 'system';
+export type ThemeMode = 'light' | 'dark' | 'custom';
+
+export type CustomVariant = 'heritage' | 'forest' | 'dawki';
 
 export type ClanTier = 'origin' | 'kpoh' | 'shikur' | 'tehkur' | 'distant';
 

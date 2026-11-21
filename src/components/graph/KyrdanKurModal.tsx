@@ -249,3 +249,4 @@ export const KyrdanKurModal: React.FC<KyrdanKurModalProps> = ({ isOpen, onClose 
     </dialog>
   );
 };
+

@@ -11,10 +11,94 @@
     font-family: var(--font-sans);
     background-color: #ffffff;
     color: #0f172a;
+    transition: background-color 0.25s ease, color 0.25s ease;
   }
 
   h1, h2, h3, .font-serif {
     font-family: var(--font-serif);
+  }
+
+  /* Dark Theme */
+  html.dark, html[data-theme="dark"] body {
+    background-color: #090e0c;
+    color: #f1f5f9;
+  }
+
+  html.dark .bg-white {
+    background-color: #111a16 !important;
+    color: #f1f5f9 !important;
+  }
+
+  html.dark .bg-slate-50, html.dark .bg-slate-50\/50, html.dark .bg-slate-50\/60 {
+    background-color: #15221d !important;
+    color: #e2e8f0 !important;
+  }
+
+  html.dark .bg-slate-100 {
+    background-color: #1a2a24 !important;
+    color: #cbd5e1 !important;
+  }
+
+  html.dark .border-slate-100, html.dark .border-slate-200 {
+    border-color: #1f352c !important;
+  }
+
+  html.dark .text-slate-900 {
+    color: #f8fafc !important;
+  }
+
+  html.dark .text-slate-800, html.dark .text-slate-700 {
+    color: #e2e8f0 !important;
+  }
+
+  html.dark .text-slate-600, html.dark .text-slate-500 {
+    color: #94a3b8 !important;
+  }
+
+  /* Custom: Heritage Woven (Rong Ryndia / Terracotta & Gold) */
+  html.theme-heritage body, html[data-theme="custom-heritage"] body {
+    background-color: #fbf7f3;
+    color: #271a17;
+  }
+
+  html.theme-heritage .bg-white {
+    background-color: #ffffff !important;
+  }
+
+  html.theme-heritage .bg-slate-50, html.theme-heritage .bg-slate-50\/50 {
+    background-color: #f5ece4 !important;
+  }
+
+  html.theme-heritage .border-slate-100, html.theme-heritage .border-slate-200 {
+    border-color: #ebdacf !important;
+  }
+
+  /* Custom: Pine Forest (Rong Khlaw) */
+  html.theme-forest body, html[data-theme="custom-forest"] body {
+    background-color: #f3f9f5;
+    color: #122419;
+  }
+
+  html.theme-forest .bg-slate-50, html.theme-forest .bg-slate-50\/50 {
+    background-color: #e8f5ec !important;
+  }
+
+  html.theme-forest .border-slate-100, html.theme-forest .border-slate-200 {
+    border-color: #d2ebd9 !important;
+  }
+
+  /* Custom: Dawki Umngot (Rong Umngot) */
+  html.theme-dawki body, html[data-theme="custom-dawki"] body {
+    background-color: #f1f8fa;
+    color: #0f2330;
+  }
+
+  html.theme-dawki .bg-slate-50, html.theme-dawki .bg-slate-50\/50 {
+    background-color: #e3f2f7 !important;
+  }
+
+  html.theme-dawki .border-slate-100, html.theme-dawki .border-slate-200 {
+    border-color: #cbe6f0 !important;
   }
 
   /* Modern Web Guidance: Modal Dialog Scroll Containment */
@@ -24,7 +108,7 @@
   dialog::backdrop {
     overflow: hidden;
     overscroll-behavior: contain;
-    background-color: rgba(15, 23, 42, 0.45);
+    background-color: rgba(15, 23, 42, 0.5);
     backdrop-filter: blur(4px);
   }
 }

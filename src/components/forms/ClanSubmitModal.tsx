@@ -259,3 +259,4 @@ export const ClanSubmitModal: React.FC<ClanSubmitModalProps> = ({
     </dialog>
   );
 };
+
