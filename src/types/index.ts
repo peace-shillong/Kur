@@ -109,6 +109,26 @@ export interface ClanSubmission {
 }
 
 // Compatibility Checker Types
+export type BisharVerdict = 'SANG_PROHIBITED' | 'DISTINCT_CLANS' | 'UNMAPPED_VERIFY_KINSHIP';
+
+export interface BisharSangResponse {
+  mode: 'bishar-sang';
+  jait_a: string;
+  jait_b: string;
+  verdict: BisharVerdict;
+  can_marry_by_jait: boolean | null;
+  cluster?: string;
+  reason_khasi: string;
+  reason_english: string;
+  citation?: string;
+  fromMock?: boolean;
+}
+
+export interface Level3CheckItem {
+  kñiiClan: string;
+  response: BisharSangResponse;
+}
+
 export type KinshipVerdict = 
   | 'SANG_DIRECT_KPOH'
   | 'SANG_SHIKUR'

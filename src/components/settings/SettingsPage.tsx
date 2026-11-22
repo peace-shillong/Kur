@@ -20,7 +20,8 @@ import {
   Sun,
   Moon,
   Brush,
-  Link
+  Link,
+  GitBranchPlus
 } from 'lucide-react';
 
 interface SettingsPageProps {
@@ -322,13 +323,13 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({ onBack }) => {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div className="p-5 rounded-2xl bg-emerald-50/60 border border-emerald-200/80 text-center space-y-1">
             <div className="text-3xl sm:text-4xl font-serif font-black text-emerald-800">
-              5,204
+              250+
             </div>
             <div className="text-xs font-bold text-emerald-950 uppercase tracking-wider">
-              {language === 'kha' ? 'Ki Kur ba la thoh' : 'Documented Khasi Kurs'}
+              {language === 'kha' ? 'Na 5,204 ki Kur ba la kynthup hangne' : 'out of 5,204 Documented Khasi Kurs'}
             </div>
             <div className="text-[11px] text-slate-500">
-              As of November 2026
+              As on November 2026
             </div>
           </div>
 
@@ -400,6 +401,11 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({ onBack }) => {
               <li className="text-emerald-800 underline"><a href="https://archive.org/details/in.ernet.dli.2015.464891/mode/2up" target="_blank">Paper (1983), <em>Ka Kolshor U Khasi</em></a></li>
               <li className='text-emerald-800 underline'><a href="https://ia601406.us.archive.org/22/items/in.ernet.dli.2015.464918/2015.464918.Ki-Khun-Ki-Ksiew-U-Hynniew-Trep_text.pdf" target="_blank"> Spiton Kharakor (1931), Ki Khun Ki Ksiew U Hynñiew Trep<em></em></a></li>
               <li className='text-emerald-800 underline'><a href="https://archive.org/stream/in.ernet.dli.2015.462529/2015.462529.The-History_djvu.txt" target="_blank">Hamlet Bareh (1964), <em>The History and Culture of the Khasi People</em></a></li>
+              <li className='text-emerald-800 '>Dr. Homiwell Lyngdoh (1937), Ka Niam Khasi</li>
+              <li className='text-emerald-800 underline'><a href="https://archive.org/details/dli.ministry.26143">P.R.T. Gurdon (1914), The Khasis</a></li>
+              <li className='text-emerald-800 '>Medro Singh Diengdoh, Ka Thymmei ka Kur Laloo</li>
+              <li className='text-emerald-800 '>S. Khonglah, Ki Nongrim Tynrai ka Dustur Kheiñ Kur Kheiñ Kha u Hyndai</li>
+              <li className='text-emerald-800 underline'><a href="https://khadc.nic.in/acts_rules_regulations_bills/Acts_Rules_arranged/Khasi_Lineage_Act_1997.pdf">KHADC, The Khasi Social Custom of Lineage Act, 1997</a></li>
             </ul>
           </div>
 
@@ -450,12 +456,29 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({ onBack }) => {
                 <span className="block text-[11px] text-slate-500">tynrai.in</span>
               </div>
             </a>
+
+            {/* Github */}
+            <a
+              href="https://github.com/peace-shillong/Kur"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center gap-3 p-2.5 pr-4 rounded-2xl bg-slate-50 hover:bg-slate-100 transition-all shadow-sm border border-slate-200 text-slate-900 cursor-pointer"
+              title="Github"
+            >
+              <div className="w-10 h-10 rounded-xl bg-white flex items-center justify-center p-1 overflow-hidden border border-slate-200/80 shadow-xs shrink-0">
+                <GitBranchPlus></GitBranchPlus>
+              </div>
+              <div className="text-left">
+                <span className="block text-xs font-bold leading-tight">Github</span>
+                <span className="block text-[11px] text-slate-500">Source Code</span>
+              </div>
+            </a>
           </div>
         </div>
-      </section>
+      </section >
 
       {/* SECTION 4: Clear Data & Cache Button */}
-      <section className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm">
+      < section className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm" >
         <div className="p-4 sm:p-5 rounded-2xl bg-red-50 border border-red-200 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div className="space-y-0.5">
             <div className="text-sm font-bold text-red-950 flex items-center gap-2">
@@ -484,10 +507,10 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({ onBack }) => {
             )}
           </button>
         </div>
-      </section>
+      </section >
 
       {/* SECTION 5: Dkhot Baibl (Bible Verse Page at the Bottom) */}
-      <section className="bg-amber-50/70 rounded-3xl p-6 sm:p-8 border border-amber-200/80 shadow-sm space-y-4">
+      < section className="bg-amber-50/70 rounded-3xl p-6 sm:p-8 border border-amber-200/80 shadow-sm space-y-4" >
         <div className="flex items-center gap-2 text-amber-950 font-serif font-bold text-base sm:text-lg">
           <BookOpen className="w-5 h-5 text-amber-700" />
           <span>Ka Jingkheiñbriew da ki Kur (Numbers 1:2-4)</span>
@@ -509,10 +532,10 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({ onBack }) => {
             <ExternalLink className="w-3.5 h-3.5" />
           </a>
         </div>
-      </section>
+      </section >
 
       {/* FOOTER OF SETTINGS PAGE: Privacy Policy and Terms Modals Links */}
-      <footer className="pt-4 pb-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 border-t border-slate-200">
+      < footer className="pt-4 pb-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 border-t border-slate-200" >
         <div className="flex items-center gap-4">
           <button
             type="button"
@@ -538,20 +561,20 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({ onBack }) => {
         <div className="text-[11px] text-slate-400">
           Kur Web App• November 2026
         </div>
-      </footer>
+      </footer >
 
       {/* Modals for Privacy and Terms */}
-      <PrivacyModal
+      < PrivacyModal
         isOpen={isPrivacyOpen}
         onClose={() => setIsPrivacyOpen(false)}
       />
 
-      <TermsModal
+      < TermsModal
         isOpen={isTermsOpen}
         onClose={() => setIsTermsOpen(false)}
       />
 
-    </div>
+    </div >
   );
 };
 

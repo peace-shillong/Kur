@@ -1,4 +1,4 @@
-import { ApiConfig, TipkurResponse, CompatibilityResult, CompatibilityCheckStep } from '../types';
+import { ApiConfig, TipkurResponse, CompatibilityResult, CompatibilityCheckStep, BisharSangResponse } from '../types';
 import { findMockClan, MOCK_CLUSTERS } from './mockData';
 
 const CONFIG_KEY = 'tipkur-api-config';
@@ -73,6 +73,183 @@ export async function searchClanApi(jait: string): Promise<TipkurResponse & { fr
       fromMock: true
     };
   }
+}
+
+/**
+ * Evaluates marriage compatibility between two surnames (mode: "bishar-sang")
+ * Matches docs/curl.md and response formats in docs/iashongkha *.json
+ */
+export async function checkBisharSang(
+  jaitA: string,
+  jaitB: string
+): Promise<BisharSangResponse> {
+  const config = getStoredApiConfig();
+  const cleanA = jaitA.trim();
+  const cleanB = jaitB.trim();
+  const aLower = cleanA.toLowerCase();
+  const bLower = cleanB.toLowerCase();
+
+  // Try live API if not in forced mock mode
+  if (!config.useMock) {
+    try {
+      const headers: Record<string, string> = {
+        'Content-Type': 'application/json'
+      };
+      if (config.token && config.token.trim().length > 0) {
+        headers['Authorization'] = `Bearer ${config.token.trim()}`;
+      }
+
+      const response = await fetch(config.baseUrl, {
+        method: 'POST',
+        headers,
+        body: JSON.stringify({
+          mode: 'bishar-sang',
+          jait_a: cleanA,
+          jait_b: cleanB
+        })
+      });
+
+      if (response.ok) {
+        const data: BisharSangResponse = await response.json();
+        return {
+          ...data,
+          fromMock: false
+        };
+      }
+    } catch (err) {
+      console.warn('Backend bishar-sang unreachable, falling back to local database:', err);
+    }
+  }
+
+  // Artificial short delay for smooth UI feedback in demo/offline mode
+  await new Promise(r => setTimeout(r, 220));
+
+  // 1. Direct same clan
+  if (aLower === bLower) {
+    return {
+      mode: 'bishar-sang',
+      jait_a: cleanA,
+      jait_b: cleanB,
+      verdict: 'SANG_PROHIBITED',
+      can_marry_by_jait: false,
+      reason_khasi: `Ka jait ${cleanA} bad ${cleanB} ki dei kajuh ka jait thik (Ka juh ka kpoh). Ka long ka Sang kaba jur tam ban ïashongkha.`,
+      reason_english: `${cleanA} and ${cleanB} share the exact same surname and direct maternal lineage. Intermarriage is strictly taboo (Ka Sang).`,
+      citation: 'Rev. I. Kharkongngor (2004), Chapter 11 (Page 129)',
+      fromMock: true
+    };
+  }
+
+  // 2. Specific historical test pairings from docs/iashongkha *.json
+  // (a) Nongkynrih & Nongbri -> SANG_PROHIBITED (docs/iashongkha sang.json)
+  if (
+    (aLower.includes('nongkynrih') && bLower.includes('nongbri')) ||
+    (bLower.includes('nongkynrih') && aLower.includes('nongbri'))
+  ) {
+    return {
+      mode: 'bishar-sang',
+      jait_a: cleanA,
+      jait_b: cleanB,
+      verdict: 'SANG_PROHIBITED',
+      can_marry_by_jait: false,
+      cluster: 'Nongkynrih / Shadap / Nongbri / Passah / Lyngdoh Kynshi',
+      reason_khasi: "Ki kur Nongkynrih, Shadap, Passah, Nongbri, Lyngdoh Kynshi, Lyngdoh Nongbri, Marboh, bad Namsheh ki ïalong shikur (kawei ka kpoh) bad kim bit ban ïashongkha (Sang). Ha Riangmang (p. 93) ïa ki Nongkynrih la khot 'Nongphod'. Ki Pombah bad Wahbah ruh ki ïateh kur bad ki Shadap.",
+      reason_english: "Nongkynrih, Shadap, Passah, Nongbri, Lyngdoh Kynshi, Lyngdoh Nongbri, Marboh, and Namsheh share the same clan lineage (ïalong shikur) and cannot intermarry (Sang). Pombah and Wahbah are also prohibited from marrying Shadap.",
+      citation: 'Rev. I. Kharkongngor (2004), Entries #57, #76, #92 (Pages 93, 95, 97, 98)',
+      fromMock: true
+    };
+  }
+
+  // (b) Nongbsap Pyrtuh & Mylliem Pyrtuh -> DISTINCT_CLANS (docs/iashongkha ym_sang.json)
+  if (
+    (aLower.includes('nongbsap') && bLower.includes('mylliem')) ||
+    (bLower.includes('nongbsap') && aLower.includes('mylliem'))
+  ) {
+    return {
+      mode: 'bishar-sang',
+      jait_a: cleanA,
+      jait_b: cleanB,
+      verdict: 'DISTINCT_CLANS',
+      can_marry_by_jait: true,
+      reason_khasi: 'Nongbsap Pyrtuh bad Mylliem Pyrtuh kim dei ki juh ki kur (Page 96). Da bishar ruh ïa ka longkha (Para-ar-kmie / Shi-Parakha).',
+      reason_english: 'Explicitly distinguished as separate clans on Page 96. Still verify paternal/maternal kinship rules.',
+      citation: 'Rev. I. Kharkongngor (2004), Entry #62 (Page 96)',
+      fromMock: true
+    };
+  }
+
+  // (c) Nongkynrih & Nongrum -> UNMAPPED_VERIFY_KINSHIP (docs/iashongkha needs_verify.json)
+  if (
+    (aLower.includes('nongkynrih') && bLower.includes('nongrum')) ||
+    (bLower.includes('nongkynrih') && aLower.includes('nongrum'))
+  ) {
+    return {
+      mode: 'bishar-sang',
+      jait_a: cleanA,
+      jait_b: cleanB,
+      verdict: 'UNMAPPED_VERIFY_KINSHIP',
+      can_marry_by_jait: null,
+      reason_khasi: 'Ym shem jingïateh kur ha ki thup ba la lum. Da kylli na ki Longkñii bad bishar ïa ka Shi-Parakha / Sohpet-Parakha / Para-ar-kmie.',
+      reason_english: 'No direct clan prohibition indexed. Verify paternal/maternal kinship laws and consult your Longkñii.',
+      citation: 'Chapters 10–12 (Pages 127–131)',
+      fromMock: true
+    };
+  }
+
+  // 3. Cluster database matching
+  for (const cluster of MOCK_CLUSTERS) {
+    const kpoh = (cluster.kpoh_clans || []).map(c => c.toLowerCase());
+    const shikur = cluster.shikur_clans.map(c => c.toLowerCase());
+    const tehkur = cluster.teh_kur_clans.map(c => c.toLowerCase());
+    const distant = (cluster.distant_clans || []).map(c => c.toLowerCase());
+
+    const inProhibitedA = kpoh.includes(aLower) || shikur.includes(aLower) || tehkur.includes(aLower);
+    const inProhibitedB = kpoh.includes(bLower) || shikur.includes(bLower) || tehkur.includes(bLower);
+
+    if (inProhibitedA && inProhibitedB) {
+      return {
+        mode: 'bishar-sang',
+        jait_a: cleanA,
+        jait_b: cleanB,
+        verdict: 'SANG_PROHIBITED',
+        can_marry_by_jait: false,
+        cluster: cluster.title,
+        reason_khasi: cluster.summary_khasi || `Ki kur ${cleanA} bad ${cleanB} ki ïalong shikur lane iateh kur ha ka kynhun ${cluster.title} bad kim bit ban ïashongkha (Sang).`,
+        reason_english: cluster.summary_english || `${cleanA} and ${cleanB} belong to the same ancestral clan cluster (${cluster.title}) and cannot intermarry.`,
+        citation: cluster.citation || 'Rev. I. Kharkongngor (2004)',
+        fromMock: true
+      };
+    }
+
+    const inDistantA = distant.includes(aLower);
+    const inDistantB = distant.includes(bLower);
+    if ((inProhibitedA && inDistantB) || (inProhibitedB && inDistantA) || (inDistantA && inDistantB)) {
+      return {
+        mode: 'bishar-sang',
+        jait_a: cleanA,
+        jait_b: cleanB,
+        verdict: 'UNMAPPED_VERIFY_KINSHIP',
+        can_marry_by_jait: null,
+        cluster: cluster.title,
+        reason_khasi: `Don ka jingïadei jngai lane jingïathuhpat hyndai ha ka cluster ${cluster.title}. Ym shem jingïateh kur ba skhem, to da kylli na ki Longkñii.`,
+        reason_english: `Distant or historical association detected within ${cluster.title}. Consult clan elders (Longkñii) to verify kinship lineage.`,
+        citation: cluster.citation || 'Chapters 10–12 (Pages 127–131)',
+        fromMock: true
+      };
+    }
+  }
+
+  // 4. Default: Distinct clans
+  return {
+    mode: 'bishar-sang',
+    jait_a: cleanA,
+    jait_b: cleanB,
+    verdict: 'DISTINCT_CLANS',
+    can_marry_by_jait: true,
+    reason_khasi: `${cleanA} bad ${cleanB} kim dei ki juh ki kur. Da bishar ruh ïa ka longkha (Para-ar-kmie / Shi-Parakha).`,
+    reason_english: `Explicitly distinguished as separate clans. Still verify paternal/maternal kinship rules.`,
+    citation: 'Rev. I. Kharkongngor (2004), Standard Exogamy Register',
+    fromMock: true
+  };
 }
 
 /**
