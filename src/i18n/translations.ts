@@ -135,10 +135,10 @@ export const translations = {
     tierKpohDesc: "Ki jait kiba hiar beit na kajuh ka kmie-tymmen. Ka jingiadei ba jan tam bad kaba kyntang tam.",
     tierShikur: "Ba ia dei kur",
     tierShikurSub: "Kiba ïadei Kur (Shikur)",
-    tierShikurDesc: "Ki kur kiba mih na ki khun kynthei jong kajuh ka Iawbei. Kim bit ban iashongkha lymne ban iapoikha (Sang).",
+    tierShikurDesc: "Ki kur kiba mih na ki khun kynthei jong kajuh ka Iawbei. Kim bit ban ia shongkha lymne ban iapoikha (Sang).",
     tierTehkur: "Ba ia teh kur",
     tierTehkurSub: "Kiba ïateh Kur (Da ka Jingiateh)",
-    tierTehkurDesc: "Ki kur kiba la pyniasoh da ka jingiateh kur ha ki por hyndai. La khein kumba dei kajuh ka kur; ka sang ban iashongkha.",
+    tierTehkurDesc: "Ki kur kiba la pyniasoh da ka jingiateh kur ha ki por hyndai. La khein kumba dei kajuh ka kur; ka sang ban ia shongkha.",
     tierDistant: "Ba don jingiadei",
     tierDistantSub: "Ki Kur ba don jingiadei jngai",
     tierDistantDesc: "Ki kur kiba don ka jingiadei hyndai lane ki tnat jait ba jngai kiba donkam ka jingbatai ki Tymmen ki San.",
@@ -159,28 +159,28 @@ export const translations = {
 
     // Compatibility Checker
     checkerTitle: "Ka Jingbishar ia ka Sang ka Ma",
-    checkerSubtitle: "Bishar step-by-step katkum ka niam ka rukom Tipkur-Tipkha ban tip la bit ne em ban iashongkha",
-    step1Title: "Kyrdan 1: Bishar ia ka Jait ka Kmie (Maternal Clan)",
+    checkerSubtitle: "Bishar bniah katkum ka niam ka rukom Tipkur-Tipkha ban tip ka bit ne em ban ia poi sha ka shongkha shongman",
+    step1Title: "Bishar na ka Jait Kmie (Maternal Clan)",
     step1Desc: "Ka jaidbynriew Khasi ka bud ia ka kpoh ka kmie. Bishar la ki arngut ki iadei kur, shikur, lane iateh kur.",
     person1Label: "Ka Jait u/ka Ba-nyngkong",
     person2Label: "Ka Jait u/ka Ba-ar",
     person1Placeholder: "kumba: Diengdoh",
     person2Placeholder: "kumba: Laloo",
-    checkButton: "Bishar ia ka Kyrdan 1",
+    checkButton: "Iaid sha khmat",
 
-    step2Title: "Kyrdan 2: Bishar ia ka Jait u Kpa (Paternal Lineage)",
+    step2Title: "Bishar na ka Jait u Kpa (Paternal Lineage)",
     step2Desc: "Bishar ia ka jait u kpa ban tip la don ka jingiadei Kha lane Shi Kpa.",
     fatherSurnameLabel: "Ka jait u kpa jong u/ka Ba-nyngkong",
     fatherSurnamePlaceholder: "kumba: Nongkynrih",
-    checkStep2Button: "Bishar pynrap ia ka Kyrdan 2",
-    skipStep2: "Kut noh tang ha ka Kyrdan 1",
-
-    step3Title: "Kyrdan 3: Ka Jingbishar Baniai",
+    checkStep2Button: "Bishar ia ka Kyrdan ba ar",
+    skipStep2: "Kut noh tang ha ka Kyrdan #1",
+    //Todo
+    step3Title: "Kyrdan 3: Ka Jingbishar Bniah",
     step3ComingSoon: "Dang Wan Shen: Ka Jingwad jait na ki Kmie-rad bad Kpa-rad",
     step3Desc: "Buit shna kaba kloi ban pyniasoh bad ki API bniah ha ki sngi kiban wan.",
 
     // Verdicts
-    verdictSangHeader: "Don Jingiadei Kur — Sang (Kim bit ban iashongkha)",
+    verdictSangHeader: "Don Jingiadei Kur — Sang (Kim bit ban ia shongkha)",
     verdictClearHeader: "Ym shem jingiadei kur ha kane ka Kyrdan (Bit)",
     verdictKhaHeader: "Don ka jingiadei Kha / Shi Kpa (Burom)",
     verdictCautionHeader: "Don ka jingiadei hyndai (Tylliang na ki Longkñi)",
@@ -188,7 +188,7 @@ export const translations = {
     clearMessage: "Ym shem ba kine ki ar jait ki don jingiadei shikur ne iateh kur ha ki jingthoh ba don.",
     khaMessage: "Don ka jingiadei na ka jait u kpa. Wat la kam dei ka Sang kur, hynrei ka dustur Khasi ka burom ia ki Kha.",
     resetChecker: "Bishar biang thymmai",
-    continueToStep2: "Bteng sha ka Kyrdan 2 (Jait u Kpa)",
+    continueToStep2: "Bteng sha ka Kyrdan ba ar (Jait u Kpa)",
 
     // Settings Drawer
     settingsTitle: "Ki Jingpynbeit & API",

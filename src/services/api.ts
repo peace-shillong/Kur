@@ -104,7 +104,7 @@ export async function checkKinshipCompatibility(
       verdict: 'SANG_DIRECT_KPOH',
       tierNameKhasi: 'Ka juh ka kpoh (Kajuh ka Jait)',
       tierNameEnglish: 'Direct Bloodline / Same Surname',
-      descriptionKhasi: `Ka jait ${p1} bad ${p2} ki dei kajuh ka jait thik. Ha ka niam Khasi, kane ka long ka Sang kaba jur tam ban iashongkha.`,
+      descriptionKhasi: `Ka jait ${p1} bad ${p2} ki dei kajuh ka jait thik. Ha ka niam Khasi, kane ka long ka Sang kaba jur tam ban ia shongkha.`,
       descriptionEnglish: `${p1} and ${p2} share the exact same surname and direct maternal lineage. Intermarriage is strictly taboo (Ka Sang).`,
       clusterMatch: cluster,
       citation: cluster?.citation
@@ -149,7 +149,7 @@ export async function checkKinshipCompatibility(
           verdict: 'SANG_DIRECT_KPOH',
           tierNameKhasi: 'Ka juh ka kpoh (Direct Branch)',
           tierNameEnglish: 'Direct Lineage Branch (Same Womb)',
-          descriptionKhasi: `Ka jait ${p1} bad ${p2} ki hiar na kajuh ka kpoh ha ka kynhun ${matchedCluster.title}. Kim bit ban iashongkha (Sang).`,
+          descriptionKhasi: `Ka jait ${p1} bad ${p2} ki hiar na kajuh ka kpoh ha ka kynhun ${matchedCluster.title}. Kim bit ban ia shongkha (Sang).`,
           descriptionEnglish: `${p1} and ${p2} are direct sub-branches within ${matchedCluster.title}. Matrimonial union is prohibited (Sang).`,
           clusterMatch: matchedCluster,
           citation: matchedCluster.citation
@@ -175,7 +175,7 @@ export async function checkKinshipCompatibility(
           verdict: 'SANG_TEHKUR',
           tierNameKhasi: 'Ba ia teh kur (Treaty Covenant)',
           tierNameEnglish: 'Second Linked Clans (Teh Kur)',
-          descriptionKhasi: `Ka jait ${p1} bad ${p2} ki dei kiba la iateh kur hyndai da ka smai kyntang. La khein kumba dei kajuh ka kur, kim bit ban iashongkha.`,
+          descriptionKhasi: `Ka jait ${p1} bad ${p2} ki dei kiba la iateh kur hyndai da ka smai kyntang. La khein kumba dei kajuh ka kur, kim bit ban ia shongkha.`,
           descriptionEnglish: `${p1} and ${p2} are bound by historic covenant (Teh Kur). Traditional custom forbids marriage between these clans.`,
           clusterMatch: matchedCluster,
           citation: matchedCluster.citation
@@ -280,20 +280,20 @@ export async function checkKinshipCompatibility(
     level1: level1Step,
     level2: level2Step,
     overallVerdict,
-    summaryKhasi: overallVerdict === 'SANG' 
-      ? `KA SANG: Kim bit ban iashongkha namar ba ki iadei kur (${level1Step.tierNameKhasi}).`
+    summaryKhasi: overallVerdict === 'SANG'
+      ? `KA SANG: Kim bit ban ia shongkha namar ba ki iadei kur (${level1Step.tierNameKhasi}).`
       : overallVerdict === 'KHA'
-      ? `BIT HYNREI DON JINGIADEI KHA: Ym dei ka Sang kur kmie, hynrei don ka jingiadei Kha na u kpa.`
-      : overallVerdict === 'CAUTION'
-      ? `DONKAM JINGBATAI KI TYMMEN: Don ka jingiadei hyndai, to sngewbha kylli na ki Longkñi.`
-      : `BIT BAN IASHONGKHA: Ym shem jingiadei kur ha kane ka jingbishar.`,
+        ? `BIT HYNREI DON JINGIADEI KHA: Ym dei ka Sang kur kmie, hynrei don ka jingiadei Kha na u kpa.`
+        : overallVerdict === 'CAUTION'
+          ? `DONKAM JINGBATAI KI TYMMEN: Don ka jingiadei hyndai, to sngewbha kylli na ki Longkñi.`
+          : `BIT BAN IA SHONGKHA: Ym shem jingiadei kur ha kane ka jingbishar.`,
     summaryEnglish: overallVerdict === 'SANG'
       ? `PROHIBITED (KA SANG): Clan kinship prohibits marriage (${level1Step.tierNameEnglish}).`
       : overallVerdict === 'KHA'
-      ? `MATERNALLY CLEAR WITH PATERNAL TIES: No maternal Sang; respectful paternal ties (Kha) present.`
-      : overallVerdict === 'CAUTION'
-      ? `CAUTION / INQUIRE WITH ELDERS: Distant historical connection; elder counsel recommended.`
-      : `COMPATIBLE / NO CLAN PROHIBITION FOUND: Clean bill of maternal exogamy.`,
+        ? `MATERNALLY CLEAR WITH PATERNAL TIES: No maternal Sang; respectful paternal ties (Kha) present.`
+        : overallVerdict === 'CAUTION'
+          ? `CAUTION / INQUIRE WITH ELDERS: Distant historical connection; elder counsel recommended.`
+          : `COMPATIBLE / NO CLAN PROHIBITION FOUND: Clean bill of maternal exogamy.`,
     disclaimer: "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
   };
 }

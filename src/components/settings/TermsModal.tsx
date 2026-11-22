@@ -79,7 +79,7 @@ export const TermsModal: React.FC<TermsModalProps> = ({ isOpen, onClose }) => {
         <div className="p-4 rounded-2xl bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-800/60 text-amber-950 dark:text-amber-200 space-y-1">
           <div className="flex items-center gap-2 font-bold text-sm text-amber-900 dark:text-amber-300">
             <AlertTriangle className="w-4 h-4 text-amber-700 dark:text-amber-400" />
-            <span>{language === 'kha' ? 'Ka Jingmaham kaba Kyrpang' : 'Customary Law Advisory'}</span>
+            <span>{language === 'kha' ? 'Ka Jingmaham Kaba Kyrpang' : 'Customary Law Advisory'}</span>
           </div>
           <p className="text-xs leading-relaxed text-amber-900 dark:text-amber-200/90">
             {language === 'kha'
@@ -90,7 +90,10 @@ export const TermsModal: React.FC<TermsModalProps> = ({ isOpen, onClose }) => {
 
         <div className="text-xs text-slate-600 dark:text-slate-300 space-y-2.5 leading-relaxed bg-slate-50 dark:bg-[#15221d] p-4 rounded-2xl border border-slate-200 dark:border-[#1f352c]">
           <p>
-            • <strong>Informational Cultural Resource:</strong> This app serves to facilitate education, lineage awareness, and matrimonial exogamy research. It does not replace oral consultations with family elders (*Longkñi*).
+            • <strong>Data Source:</strong> Sourced from <u><a href="https://tynrai.in" target="_blank" rel="noopener noreferrer">tynrai.in</a></u>, Khasi genealogical works, primarily Rev. I. Kharkongngor's "Ka Jymbriew Bad Ka Thymmei Longkur Longjait U Khasi" and data collected from various contributors across Khasi, Jaintia and Ri-Bhoi. Our source and information is not complete and may require review, corrections and updates. We recommend you to contribute what you know and any oral traditions with keen interest and accuracy.
+          </p>
+          <p>
+            • <strong>Informational Cultural Resource:</strong> This app serves to facilitate education, lineage awareness, and matrimonial exogamy research. It does not replace oral consultations with family elders (Longkñi).
           </p>
           <p>
             • <strong>Historical Sources:</strong> Kinship ties are derived from published literature and established oral traditions. Minor regional variances may exist across Khasi Hills, Ri-Bhoi, and War Jaiñtia.

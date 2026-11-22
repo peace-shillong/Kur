@@ -3,14 +3,14 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useLanguage } from '../../context/LanguageContext';
 import { checkKinshipCompatibility } from '../../services/api';
 import { CompatibilityResult } from '../../types';
-import { 
-  HeartHandshake, 
-  AlertOctagon, 
-  CheckCircle2, 
-  ArrowRight, 
-  RotateCcw, 
-  Sparkles, 
-  BookOpen, 
+import {
+  HeartHandshake,
+  AlertOctagon,
+  CheckCircle2,
+  ArrowRight,
+  RotateCcw,
+  Sparkles,
+  BookOpen,
   ShieldAlert,
   Loader2,
   ChevronRight
@@ -103,23 +103,20 @@ export const CompatibilityChecker: React.FC = () => {
 
       {/* Wizard Progress Indicator */}
       <div className="flex items-center justify-center gap-2 text-xs font-medium text-slate-600">
-        <div className={`flex items-center gap-1.5 px-3 py-1 rounded-full ${
-          currentStep >= 1 ? 'bg-emerald-700 text-white font-semibold' : 'bg-slate-100 text-slate-500'
-        }`}>
+        <div className={`flex items-center gap-1.5 px-3 py-1 rounded-full ${currentStep >= 1 ? 'bg-emerald-700 text-white font-semibold' : 'bg-slate-100 text-slate-500'
+          }`}>
           <span>1</span>
           <span>{language === 'kha' ? 'Kmie' : 'Maternal'}</span>
         </div>
         <ChevronRight className="w-4 h-4 text-slate-400" />
-        <div className={`flex items-center gap-1.5 px-3 py-1 rounded-full ${
-          currentStep >= 3 ? 'bg-emerald-700 text-white font-semibold' : 'bg-slate-100 text-slate-500'
-        }`}>
+        <div className={`flex items-center gap-1.5 px-3 py-1 rounded-full ${currentStep >= 3 ? 'bg-emerald-700 text-white font-semibold' : 'bg-slate-100 text-slate-500'
+          }`}>
           <span>2</span>
           <span>{language === 'kha' ? 'Kpa' : 'Paternal'}</span>
         </div>
         <ChevronRight className="w-4 h-4 text-slate-400" />
-        <div className={`flex items-center gap-1.5 px-3 py-1 rounded-full ${
-          currentStep === 5 ? 'bg-emerald-700 text-white font-semibold' : 'bg-slate-100 text-slate-400 opacity-60'
-        }`}>
+        <div className={`flex items-center gap-1.5 px-3 py-1 rounded-full ${currentStep === 5 ? 'bg-emerald-700 text-white font-semibold' : 'bg-slate-100 text-slate-400 opacity-60'
+          }`}>
           <span>3</span>
           <span>{language === 'kha' ? 'Bniah' : 'Extended'}</span>
         </div>
@@ -153,8 +150,8 @@ export const CompatibilityChecker: React.FC = () => {
               <form onSubmit={handleLevel1Submit} className="space-y-4">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="space-y-1.5">
-                    <label 
-                      htmlFor="p1-clan-input" 
+                    <label
+                      htmlFor="p1-clan-input"
                       className="text-xs font-semibold text-slate-700 uppercase tracking-wider"
                     >
                       {t('person1Label')}
@@ -172,8 +169,8 @@ export const CompatibilityChecker: React.FC = () => {
                   </div>
 
                   <div className="space-y-1.5">
-                    <label 
-                      htmlFor="p2-clan-input" 
+                    <label
+                      htmlFor="p2-clan-input"
                       className="text-xs font-semibold text-slate-700 uppercase tracking-wider"
                     >
                       {t('person2Label')}
@@ -341,8 +338,8 @@ export const CompatibilityChecker: React.FC = () => {
 
               <form onSubmit={handleLevel2Submit} className="space-y-4">
                 <div className="space-y-1.5">
-                  <label 
-                    htmlFor="father-clan-input" 
+                  <label
+                    htmlFor="father-clan-input"
                     className="text-xs font-semibold text-slate-700 uppercase tracking-wider"
                   >
                     {t('fatherSurnameLabel')}
@@ -413,11 +410,10 @@ export const CompatibilityChecker: React.FC = () => {
               </div>
 
               {/* Level 1 Summary */}
-              <div className={`p-4 rounded-2xl border ${
-                result.level1.verdict === 'NO_LINK'
-                  ? 'bg-emerald-50 border-emerald-200 text-emerald-950'
-                  : 'bg-red-50 border-red-200 text-red-950'
-              }`}>
+              <div className={`p-4 rounded-2xl border ${result.level1.verdict === 'NO_LINK'
+                ? 'bg-emerald-50 border-emerald-200 text-emerald-950'
+                : 'bg-red-50 border-red-200 text-red-950'
+                }`}>
                 <div className="flex items-center gap-2 font-bold text-sm mb-1">
                   <span>Level 1 (Maternal):</span>
                   <span>{language === 'kha' ? result.level1.tierNameKhasi : result.level1.tierNameEnglish}</span>
@@ -429,11 +425,10 @@ export const CompatibilityChecker: React.FC = () => {
 
               {/* Level 2 Summary */}
               {result.level2 && (
-                <div className={`p-4 rounded-2xl border ${
-                  result.level2.verdict === 'PATERNAL_KHA'
-                    ? 'bg-amber-50 border-amber-200 text-amber-950'
-                    : 'bg-slate-50 border-slate-200 text-slate-900'
-                }`}>
+                <div className={`p-4 rounded-2xl border ${result.level2.verdict === 'PATERNAL_KHA'
+                  ? 'bg-amber-50 border-amber-200 text-amber-950'
+                  : 'bg-slate-50 border-slate-200 text-slate-900'
+                  }`}>
                   <div className="flex items-center gap-2 font-bold text-sm mb-1">
                     <span>Level 2 (Paternal - {fatherClan}):</span>
                     <span>{language === 'kha' ? result.level2.tierNameKhasi : result.level2.tierNameEnglish}</span>
@@ -459,7 +454,6 @@ export const CompatibilityChecker: React.FC = () => {
                   onClick={() => setCurrentStep(5)}
                   className="flex-1 py-3 px-5 rounded-2xl bg-slate-100 hover:bg-slate-200 text-slate-800 font-semibold transition flex items-center justify-center gap-2 cursor-pointer"
                 >
-                  <Sparkles className="w-4 h-4 text-emerald-600" />
                   <span>Preview Level 3 Check</span>
                 </button>
 
@@ -485,7 +479,7 @@ export const CompatibilityChecker: React.FC = () => {
               className="space-y-6 text-center"
             >
               <div className="w-14 h-14 rounded-full bg-emerald-50 text-emerald-700 mx-auto flex items-center justify-center">
-                <Sparkles className="w-7 h-7" />
+                <HeartHandshake className="w-7 h-7" />
               </div>
 
               <div className="space-y-2">
