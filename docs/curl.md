@@ -15,12 +15,12 @@ curl -X POST http://localhost/tipkur-api \
 
    2. Ym Sang
    curl -X POST https://tynrai.in/.netlify/functions/tipkur-api \
-  -H "Authorization: Bearer tynrai_tk_krd_2836" \
+  -H "Authorization: Bearer tynrai_demo_api" \
   -H "Content-Type: application/json" \
   -d '{"mode": "bishar-sang", "jait_a": "Nongbsap Pyrtuh", "jait_b": "Mylliem Pyrtuh"}'
 
   3. Verify
   curl -X POST https://tynrai.in/.netlify/functions/tipkur-api \
-  -H "Authorization: Bearer tynrai_tk_krd_2836" \
+  -H "Authorization: Bearer tynrai_demo_api" \
   -H "Content-Type: application/json" \
-  -d '{"mode": "bishar-sang", "jait_a": "Nongkynrih", "jait_b": "Nongrum"}'
+  -d '{"mode": "bishar-sang", "jait_a": "Nongbsap Pyrtuh", "jait_b": "Nongrum"}'

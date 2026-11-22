@@ -1,45 +1,49 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <!-- MANDATORY per Modern Web Guidance: declare light dark color schemes -->
-    <meta name="color-scheme" content="light dark" />
-    <script>
-      // FOUC prevention: set color-scheme, active theme classes and data-theme from localStorage before render
-      try {
-        const storedMode = localStorage.getItem('tipkur-theme-mode') || 'light';
-        const customVar = localStorage.getItem('tipkur-theme-custom') || 'heritage';
-        
-        document.documentElement.classList.remove('dark', 'theme-light', 'theme-dark', 'theme-heritage', 'theme-forest', 'theme-dawki');
-        
-        if (storedMode === 'dark') {
-          document.documentElement.classList.add('dark', 'theme-dark');
-          document.documentElement.setAttribute('data-theme', 'dark');
-        } else if (storedMode === 'custom') {
-          document.documentElement.classList.add(`theme-${customVar}`);
-          document.documentElement.setAttribute('data-theme', `custom-${customVar}`);
-        } else {
-          document.documentElement.classList.add('theme-light');
-          document.documentElement.setAttribute('data-theme', 'light');
-        }
-        
-        const meta = document.querySelector('meta[name="color-scheme"]');
-        if (meta) {
-          meta.content = storedMode === 'dark' ? 'dark' : 'light';
-        }
-      } catch (e) {}
-    </script>
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
-    <title>Tipkur Tipkha — Khasi Clan Genealogy & Kinship Checker</title>
-    <!-- Google Fonts for Khasi Heritage typography: Playfair Display for classic headings, Plus Jakarta Sans for UI -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..800;1,400..700&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,400..700&display=swap" rel="stylesheet">
-  </head>
-  <body class="min-h-screen bg-white text-slate-900 antialiased selection:bg-emerald-600 selection:text-white">
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
-</html>
 
+<head>
+  <meta charset="UTF-8" />
+  <!-- MANDATORY per Modern Web Guidance: declare light dark color schemes -->
+  <meta name="color-scheme" content="light dark" />
+  <script>
+    // FOUC prevention: set color-scheme, active theme classes and data-theme from localStorage before render
+    try {
+      const storedMode = localStorage.getItem('tipkur-theme-mode') || 'light';
+      const customVar = localStorage.getItem('tipkur-theme-custom') || 'heritage';
+
+      document.documentElement.classList.remove('dark', 'theme-light', 'theme-dark', 'theme-heritage', 'theme-forest', 'theme-dawki');
+
+      if (storedMode === 'dark') {
+        document.documentElement.classList.add('dark', 'theme-dark');
+        document.documentElement.setAttribute('data-theme', 'dark');
+      } else if (storedMode === 'custom') {
+        document.documentElement.classList.add(`theme-${customVar}`);
+        document.documentElement.setAttribute('data-theme', `custom-${customVar}`);
+      } else {
+        document.documentElement.classList.add('theme-light');
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+
+      const meta = document.querySelector('meta[name="color-scheme"]');
+      if (meta) {
+        meta.content = storedMode === 'dark' ? 'dark' : 'light';
+      }
+    } catch (e) { }
+  </script>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>Tipkur Tipkha — Khasi Clan Genealogy & Kinship Checker</title>
+  <!-- Google Fonts for Khasi Heritage typography: Playfair Display for classic headings, Plus Jakarta Sans for UI -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..800;1,400..700&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,400..700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="min-h-screen bg-white text-slate-900 antialiased selection:bg-emerald-600 selection:text-white">
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
+</html>
