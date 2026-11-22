@@ -9,9 +9,9 @@ import {
   MessageSquareHeart,
   ArrowRight,
   ArrowLeft,
-  Sparkles,
   CheckCircle2,
-  Bot
+  Bot,
+  FileIcon
 } from 'lucide-react';
 
 export type BisharSangMode = 'select' | 'form' | 'chat';
@@ -20,6 +20,15 @@ export const BisharSangHub: React.FC = () => {
   const { language } = useLanguage();
   const [mode, setMode] = useState<BisharSangMode>('select');
 
+  const handleSelectMode = (newMode: BisharSangMode) => {
+    setMode(newMode);
+    // On Desktop view when a user chooses to Start Chat Method or switch views,
+    // do not scroll to the bottom of the page when showing the chat box.
+    if (typeof window !== 'undefined' && window.innerWidth >= 768) {
+      window.scrollTo({ top: 0, behavior: 'instant' });
+    }
+  };
+
   return (
     <div className="w-full space-y-6">
       {/* Mode Switcher Nav (Visible when inside Form or Chat) */}
@@ -27,7 +36,7 @@ export const BisharSangHub: React.FC = () => {
         <div className="flex flex-wrap items-center justify-between gap-3 p-3 sm:p-4 rounded-2xl bg-white dark:bg-[#111a16] border border-slate-200 dark:border-[#1f352c] shadow-xs">
           <button
             type="button"
-            onClick={() => setMode('select')}
+            onClick={() => handleSelectMode('select')}
             className="inline-flex items-center gap-2 px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-[#16231e] dark:hover:bg-[#1f352c] text-slate-800 dark:text-slate-200 text-xs font-semibold transition cursor-pointer"
           >
             <ArrowLeft className="w-3.5 h-3.5 text-emerald-700 dark:text-emerald-400" />
@@ -42,20 +51,20 @@ export const BisharSangHub: React.FC = () => {
             {mode === 'form' ? (
               <button
                 type="button"
-                onClick={() => setMode('chat')}
+                onClick={() => handleSelectMode('chat')}
                 className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-emerald-50 hover:bg-emerald-100 dark:bg-emerald-950/40 dark:hover:bg-emerald-900/50 text-emerald-800 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800 text-xs font-semibold transition cursor-pointer"
               >
                 <Bot className="w-3.5 h-3.5" />
-                <span>{language === 'kha' ? 'Kylla sha ka Chatting' : 'Switch to Chat'}</span>
+                <span>{language === 'kha' ? 'Pynkylla sha ka Chat' : 'Switch to Chat'}</span>
               </button>
             ) : (
               <button
                 type="button"
-                onClick={() => setMode('form')}
+                onClick={() => handleSelectMode('form')}
                 className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-emerald-50 hover:bg-emerald-100 dark:bg-emerald-950/40 dark:hover:bg-emerald-900/50 text-emerald-800 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800 text-xs font-semibold transition cursor-pointer"
               >
                 <Layers className="w-3.5 h-3.5" />
-                <span>{language === 'kha' ? 'Kylla sha ka Form' : 'Switch to Form'}</span>
+                <span>{language === 'kha' ? 'Pynkylla sha ka Form' : 'Switch to Form'}</span>
               </button>
             )}
           </div>
@@ -95,16 +104,16 @@ export const BisharSangHub: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6">
               {/* Option 1: Step-by-Step Form */}
               <div
-                onClick={() => setMode('form')}
+                onClick={() => handleSelectMode('form')}
                 className="group relative p-6 sm:p-7 rounded-3xl bg-white dark:bg-[#111a16] border-2 border-slate-200 hover:border-emerald-600 dark:border-[#1f352c] dark:hover:border-emerald-500 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer flex flex-col justify-between space-y-6"
               >
                 <div className="space-y-4">
                   <div className="flex items-center justify-between">
                     <div className="w-12 h-12 rounded-2xl bg-emerald-50 dark:bg-emerald-950/60 border border-emerald-200 dark:border-emerald-800 text-emerald-700 dark:text-emerald-300 flex items-center justify-center shadow-xs group-hover:scale-105 transition-transform">
-                      <Layers className="w-6 h-6" />
+                      <FileIcon className="w-6 h-6" />
                     </div>
                     <span className="text-[11px] font-bold px-2.5 py-1 rounded-full bg-slate-100 dark:bg-[#16231e] text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-[#1f352c] uppercase tracking-wider">
-                      {language === 'kha' ? 'Rukom Form' : 'Guided Form'}
+                      {language === 'kha' ? 'Pyndap Form' : 'Guided Form'}
                     </span>
                   </div>
 
@@ -145,7 +154,7 @@ export const BisharSangHub: React.FC = () => {
 
               {/* Option 2: Chatting Method */}
               <div
-                onClick={() => setMode('chat')}
+                onClick={() => handleSelectMode('chat')}
                 className="group relative p-6 sm:p-7 rounded-3xl bg-white dark:bg-[#111a16] border-2 border-slate-200 hover:border-emerald-600 dark:border-[#1f352c] dark:hover:border-emerald-500 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer flex flex-col justify-between space-y-6"
               >
                 <div className="space-y-4">
@@ -154,26 +163,26 @@ export const BisharSangHub: React.FC = () => {
                       <MessageSquareHeart className="w-6 h-6" />
                     </div>
                     <span className="text-[11px] font-bold px-2.5 py-1 rounded-full bg-emerald-100 dark:bg-emerald-950/80 text-emerald-800 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800 uppercase tracking-wider flex items-center gap-1">
-                      <Sparkles className="w-3 h-3 text-emerald-600" />
+                      <MessageSquareHeart className="w-3 h-3 text-emerald-600" />
                       <span>{language === 'kha' ? 'Rukom Thymmai' : 'Conversational'}</span>
                     </span>
                   </div>
 
                   <div className="space-y-1.5">
                     <h3 className="text-lg sm:text-xl font-serif font-bold text-slate-900 dark:text-slate-100 group-hover:text-emerald-700 dark:group-hover:text-emerald-400 transition-colors">
-                      {language === 'kha' ? 'Rukom Ïakren (Chatting)' : 'Interactive Chat Method'}
+                      {language === 'kha' ? 'Rukom Ïakren (Chat)' : 'Interactive Chat Method'}
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
                       {language === 'kha'
-                        ? 'Bishar da kaba ïakren bad ka App kumba phi texting chatbot. Ka app kan kylli ia phi step-by-step bad batai ha kawei pa kawei ka kyrdan.'
-                        : 'Verify compatibility conversationally like texting a chatbot. The app guides you step-by-step with interactive questions.'}
+                        ? 'Bishar da kaba ïakren bad ka App kumba phi text paralok. Ka app kan kylli ia phi step-by-step bad batai ha kawei pa kawei ka kyrdan.'
+                        : 'Verify compatibility conversationally like texting a friend. The app guides you step-by-step with interactive questions.'}
                     </p>
                   </div>
 
                   <ul className="space-y-2 text-xs text-slate-600 dark:text-slate-300 pt-1">
                     <li className="flex items-center gap-2">
                       <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                      <span>{language === 'kha' ? 'Ïakren kumba texting chatbot' : 'Conversational chat experience'}</span>
+                      <span>{language === 'kha' ? 'Ïakren kumba text paralok' : 'Conversational chat experience'}</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 shrink-0" />

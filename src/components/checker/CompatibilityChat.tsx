@@ -75,8 +75,9 @@ export const CompatibilityChat: React.FC = () => {
   const [fatherClan, setFatherClan] = useState<string>('');
   const [uncleClans, setUncleClans] = useState<string>('');
 
-  const messagesEndRef = useRef<HTMLDivElement | null>(null);
+  const messagesContainerRef = useRef<HTMLDivElement | null>(null);
   const inputRef = useRef<HTMLInputElement | null>(null);
+  const isInitialMount = useRef(true);
 
   // Quick test friend pairings
   const friendPresets = [
@@ -87,12 +88,32 @@ export const CompatibilityChat: React.FC = () => {
     { p2: 'Syngngai', label: 'Syngngai (Teh Kur Sang)' }
   ];
 
-  const scrollToBottom = () => {
-    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+  const scrollToBottom = (smooth = true) => {
+    const container = messagesContainerRef.current;
+    if (!container) return;
+    // Only scroll the internal message container, never the outer window/page!
+    if (container.scrollHeight > container.clientHeight) {
+      container.scrollTo({
+        top: container.scrollHeight,
+        behavior: smooth ? 'smooth' : 'auto'
+      });
+    }
   };
 
   useEffect(() => {
-    scrollToBottom();
+    // On Desktop view, ensure we do not scroll to the bottom of the page when showing the chat box
+    if (window.innerWidth >= 768) {
+      window.scrollTo({ top: 0, behavior: 'instant' });
+    }
+  }, []);
+
+  useEffect(() => {
+    if (isInitialMount.current) {
+      isInitialMount.current = false;
+      // Do not auto-scroll on initial mount when showing the chat box
+      return;
+    }
+    scrollToBottom(true);
   }, [messages, isTyping]);
 
   // Initialize Chat on mount or reset
@@ -169,7 +190,7 @@ export const CompatibilityChat: React.FC = () => {
 
       setMessages(prev => [...prev, userMsg, appMsg]);
       setStage('awaiting_friend_surname');
-      setTimeout(() => inputRef.current?.focus(), 100);
+      setTimeout(() => inputRef.current?.focus({ preventScroll: true }), 100);
     } else {
       // User said "em" (No)
       const userMsg: ChatMessage = {
@@ -193,7 +214,7 @@ export const CompatibilityChat: React.FC = () => {
 
       setMessages(prev => [...prev, userMsg, appMsg]);
       setStage('awaiting_user_surname');
-      setTimeout(() => inputRef.current?.focus(), 100);
+      setTimeout(() => inputRef.current?.focus({ preventScroll: true }), 100);
     }
   };
 
@@ -227,7 +248,7 @@ export const CompatibilityChat: React.FC = () => {
     setMessages(prev => [...prev, userMsg, appMsg]);
     setStage('awaiting_friend_surname');
     setInputValue('');
-    setTimeout(() => inputRef.current?.focus(), 100);
+    setTimeout(() => inputRef.current?.focus({ preventScroll: true }), 100);
   };
 
   // Submit Friend Surname & Run Level 1 Checking
@@ -291,7 +312,7 @@ export const CompatibilityChat: React.FC = () => {
         };
         setMessages(prev => [...prev, resultMsg, nextPrompt]);
         setStage('awaiting_father_surname');
-        setTimeout(() => inputRef.current?.focus(), 100);
+        setTimeout(() => inputRef.current?.focus({ preventScroll: true }), 100);
       }
     } catch (err) {
       console.error(err);
@@ -354,13 +375,13 @@ export const CompatibilityChat: React.FC = () => {
           type: 'uncle_prompt',
           text:
             language === 'kha'
-              ? 'Ka Kyrdan 2 ka la shai (Ym don jingiadei sang u kpa). Mynta ngin bishar ia ka Kyrdan 3.\n\nIathuh ia ki jait jong ki khun jong ki mama jong phi baroh:'
+              ? 'Ka Kyrdan 2 ka la shai (Ym don jingiadei sang u kpa). Mynta ngin bishar ia ka Kyrdan 3.\n\nIathuh ia ki jait jong ki khun jong ki mama jong phi baroh, wei hadien kawei: \n e.g: Mawlong, Pyngrope, Shadap'
               : "Level 2 is clear (No paternal taboo found). Now proceeding to Level 3.\n\nPlease enter the surnames of all your maternal uncle's children:",
           timestamp: new Date()
         };
         setMessages(prev => [...prev, resultMsg, nextPrompt]);
         setStage('awaiting_uncle_surnames');
-        setTimeout(() => inputRef.current?.focus(), 100);
+        setTimeout(() => inputRef.current?.focus({ preventScroll: true }), 100);
       }
     } catch (err) {
       console.error(err);
@@ -627,7 +648,10 @@ export const CompatibilityChat: React.FC = () => {
         </div>
 
         {/* Messages Stream */}
-        <div className="flex-1 overflow-y-auto p-4 sm:p-5 space-y-4">
+        <div
+          ref={messagesContainerRef}
+          className="flex-1 overflow-y-auto p-4 sm:p-5 space-y-4"
+        >
           <AnimatePresence initial={false}>
             {messages.map(msg => (
               <motion.div
@@ -882,7 +906,6 @@ export const CompatibilityChat: React.FC = () => {
               </motion.div>
             )}
           </AnimatePresence>
-          <div ref={messagesEndRef} />
         </div>
 
         {/* Dynamic Suggestions Bar (e.g. presets for friend or uncle) */}
@@ -907,7 +930,7 @@ export const CompatibilityChat: React.FC = () => {
         {stage === 'awaiting_uncle_surnames' && (
           <div className="px-4 py-2 border-t border-slate-100 dark:border-[#1f352c] bg-slate-50/50 dark:bg-[#15221d]/40 flex items-center gap-2 text-xs">
             <span className="text-[11px] text-slate-400">
-              {language === 'kha' ? 'Lada khlem mama/kñii:' : 'If no maternal uncle:'}
+              {language === 'kha' ? 'Lada ym don mama/kñii shi para bad i mei:' : 'If no maternal uncle:'}
             </span>
             <button
               type="button"
@@ -950,11 +973,11 @@ export const CompatibilityChat: React.FC = () => {
                       : "Enter your friend's surname (e.g. Nongbri)..."
                     : stage === 'awaiting_father_surname'
                       ? language === 'kha'
-                        ? 'Thoh ka jait u kpa jong phi...'
+                        ? 'Thoh ka jait kpa jong phi...'
                         : "Enter your father's surname..."
                       : stage === 'awaiting_uncle_surnames'
                         ? language === 'kha'
-                          ? 'Thoh ki jait khun u mama (kumba: Mawlong, Pyngrope lane "Em")...'
+                          ? 'Thoh ki jait khun jong ki mama (kumba: Mawlong, Pyngrope lane "Em")...'
                           : "Enter uncle's children surnames or 'Em'..."
                         : stage === 'courtship_stopped' || stage === 'completed_level4'
                           ? language === 'kha'
