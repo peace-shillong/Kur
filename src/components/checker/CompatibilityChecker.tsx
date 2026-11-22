@@ -176,13 +176,12 @@ export const CompatibilityChecker: React.FC = () => {
 
     return (
       <div
-        className={`p-5 rounded-3xl border-2 space-y-3 transition-all ${
-          prohibited
-            ? 'bg-red-50/90 dark:bg-red-950/40 border-red-300 dark:border-red-800 text-red-950 dark:text-red-100'
-            : clear
+        className={`p-5 rounded-3xl border-2 space-y-3 transition-all ${prohibited
+          ? 'bg-red-50/90 dark:bg-red-950/40 border-red-300 dark:border-red-800 text-red-950 dark:text-red-100'
+          : clear
             ? 'bg-emerald-50/90 dark:bg-emerald-950/40 border-emerald-300 dark:border-emerald-800 text-emerald-950 dark:text-emerald-100'
             : 'bg-amber-50/90 dark:bg-amber-950/40 border-amber-300 dark:border-amber-800 text-amber-950 dark:text-amber-100'
-        }`}
+          }`}
       >
         <div className="flex items-center justify-between gap-2 border-b border-black/10 dark:border-white/10 pb-2.5">
           <div className="flex items-center gap-2.5">
@@ -198,8 +197,8 @@ export const CompatibilityChecker: React.FC = () => {
                 {prohibited
                   ? 'KA SANG (PROHIBITED)'
                   : clear
-                  ? 'YM DEI KA JUH KA KUR (DISTINCT CLANS)'
-                  : 'DONKAM JINGBATAI KI TYMMEN (VERIFY)'}
+                    ? 'YM DEI KA JUH KA KUR (DISTINCT CLANS)'
+                    : 'DONKAM JINGBATAI KI TYMMEN (VERIFY)'}
               </span>
               <span className="text-xs opacity-80">
                 {subtitlePrefix ? `${subtitlePrefix}: ` : ''}
@@ -209,13 +208,12 @@ export const CompatibilityChecker: React.FC = () => {
           </div>
 
           <span
-            className={`text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider shrink-0 ${
-              prohibited
-                ? 'bg-red-200 dark:bg-red-900/80 text-red-900 dark:text-red-200'
-                : clear
+            className={`text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider shrink-0 ${prohibited
+              ? 'bg-red-200 dark:bg-red-900/80 text-red-900 dark:text-red-200'
+              : clear
                 ? 'bg-emerald-200 dark:bg-emerald-900/80 text-emerald-900 dark:text-emerald-200'
                 : 'bg-amber-200 dark:bg-amber-900/80 text-amber-900 dark:text-amber-200'
-            }`}
+              }`}
           >
             {prohibited ? 'Kim bit ban shongkha' : clear ? 'Bit ban ïashongkha' : 'Kylli na ki Longkñii'}
           </span>
@@ -255,7 +253,7 @@ export const CompatibilityChecker: React.FC = () => {
       <div className="text-center space-y-2">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-50 dark:bg-emerald-950/40 text-emerald-800 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800">
           <HeartHandshake className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
-          <span>Tipkur Tipkha • 4-Level Traditional Kinship Verification</span>
+          <span>Bishar ia ka Sang • 4-Level Traditional Kinship Verification</span>
         </div>
         <h2 className="text-2xl sm:text-3xl font-serif font-bold text-slate-900 dark:text-slate-100">
           {language === 'kha' ? 'Bishar ïa ka Sang ka Ma' : 'Traditional Marriage Compatibility Checker'}
@@ -271,13 +269,12 @@ export const CompatibilityChecker: React.FC = () => {
       <div className="grid grid-cols-4 gap-1.5 sm:gap-2 text-[11px] sm:text-xs font-medium">
         {/* Step 1 Pill */}
         <div
-          className={`flex flex-col items-center justify-center p-2 rounded-2xl border text-center transition-all ${
-            currentStep >= 1 && currentStep <= 2
-              ? 'bg-emerald-700 text-white border-emerald-700 shadow-sm'
-              : currentStep > 2
+          className={`flex flex-col items-center justify-center p-2 rounded-2xl border text-center transition-all ${currentStep >= 1 && currentStep <= 2
+            ? 'bg-emerald-700 text-white border-emerald-700 shadow-sm'
+            : currentStep > 2
               ? 'bg-emerald-50 dark:bg-emerald-950/30 text-emerald-800 dark:text-emerald-300 border-emerald-200 dark:border-emerald-800'
               : 'bg-slate-100 dark:bg-[#15221d] text-slate-500 border-slate-200 dark:border-slate-800 opacity-60'
-          }`}
+            }`}
         >
           <span className="font-bold">Lvl 1</span>
           <span className="truncate w-full text-[10px] sm:text-[11px]">
@@ -287,13 +284,12 @@ export const CompatibilityChecker: React.FC = () => {
 
         {/* Step 2 Pill */}
         <div
-          className={`flex flex-col items-center justify-center p-2 rounded-2xl border text-center transition-all ${
-            currentStep >= 3 && currentStep <= 4
-              ? 'bg-emerald-700 text-white border-emerald-700 shadow-sm'
-              : currentStep > 4
+          className={`flex flex-col items-center justify-center p-2 rounded-2xl border text-center transition-all ${currentStep >= 3 && currentStep <= 4
+            ? 'bg-emerald-700 text-white border-emerald-700 shadow-sm'
+            : currentStep > 4
               ? 'bg-emerald-50 dark:bg-emerald-950/30 text-emerald-800 dark:text-emerald-300 border-emerald-200 dark:border-emerald-800'
               : 'bg-slate-100 dark:bg-[#15221d] text-slate-500 border-slate-200 dark:border-slate-800 opacity-60'
-          }`}
+            }`}
         >
           <span className="font-bold">Lvl 2</span>
           <span className="truncate w-full text-[10px] sm:text-[11px]">
@@ -303,13 +299,12 @@ export const CompatibilityChecker: React.FC = () => {
 
         {/* Step 3 Pill */}
         <div
-          className={`flex flex-col items-center justify-center p-2 rounded-2xl border text-center transition-all ${
-            currentStep >= 5 && currentStep <= 6
-              ? 'bg-emerald-700 text-white border-emerald-700 shadow-sm'
-              : currentStep > 6
+          className={`flex flex-col items-center justify-center p-2 rounded-2xl border text-center transition-all ${currentStep >= 5 && currentStep <= 6
+            ? 'bg-emerald-700 text-white border-emerald-700 shadow-sm'
+            : currentStep > 6
               ? 'bg-emerald-50 dark:bg-emerald-950/30 text-emerald-800 dark:text-emerald-300 border-emerald-200 dark:border-emerald-800'
               : 'bg-slate-100 dark:bg-[#15221d] text-slate-500 border-slate-200 dark:border-slate-800 opacity-60'
-          }`}
+            }`}
         >
           <span className="font-bold">Lvl 3</span>
           <span className="truncate w-full text-[10px] sm:text-[11px]">
@@ -319,11 +314,10 @@ export const CompatibilityChecker: React.FC = () => {
 
         {/* Step 4 Pill */}
         <div
-          className={`flex flex-col items-center justify-center p-2 rounded-2xl border text-center transition-all ${
-            currentStep === 7
-              ? 'bg-emerald-700 text-white border-emerald-700 shadow-sm'
-              : 'bg-slate-100 dark:bg-[#15221d] text-slate-500 border-slate-200 dark:border-slate-800 opacity-60'
-          }`}
+          className={`flex flex-col items-center justify-center p-2 rounded-2xl border text-center transition-all ${currentStep === 7
+            ? 'bg-emerald-700 text-white border-emerald-700 shadow-sm'
+            : 'bg-slate-100 dark:bg-[#15221d] text-slate-500 border-slate-200 dark:border-slate-800 opacity-60'
+            }`}
         >
           <span className="font-bold">Lvl 4</span>
           <span className="truncate w-full text-[10px] sm:text-[11px]">
@@ -352,8 +346,8 @@ export const CompatibilityChecker: React.FC = () => {
                   </span>
                   <span>
                     {language === 'kha'
-                      ? 'Kyrdan 1: Para-ar-kmie (Bishar na ka Jait Kmie)'
-                      : 'Level 1: Para-ar-kmie (Direct Maternal Clan Check)'}
+                      ? 'Para-ar-kmie (Bishar na ka Jait Kmie)'
+                      : 'Para-ar-kmie (Direct Maternal Clan Check)'}
                   </span>
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 mt-1">
@@ -370,7 +364,7 @@ export const CompatibilityChecker: React.FC = () => {
                       htmlFor="p1-clan-input"
                       className="text-xs font-semibold text-slate-700 dark:text-slate-300 uppercase tracking-wider"
                     >
-                      {language === 'kha' ? 'Ka Jait u/ka Ba-nyngkong *' : 'Person 1 Surname (Jait) *'}
+                      {language === 'kha' ? 'Ka Jait jong phi (u/ka Ba-nyngkong) *' : 'Your Surname (Jait) *'}
                     </label>
                     <input
                       id="p1-clan-input"
@@ -389,7 +383,7 @@ export const CompatibilityChecker: React.FC = () => {
                       htmlFor="p2-clan-input"
                       className="text-xs font-semibold text-slate-700 dark:text-slate-300 uppercase tracking-wider"
                     >
-                      {language === 'kha' ? 'Ka Jait u/ka Ba-ar *' : 'Person 2 Surname (Jait) *'}
+                      {language === 'kha' ? 'Ka Jait jong i paralok (u/ka Ba-ar) *' : "Your friend's Surname (Jait) *"}
                     </label>
                     <input
                       id="p2-clan-input"
@@ -442,7 +436,7 @@ export const CompatibilityChecker: React.FC = () => {
                       </>
                     ) : (
                       <>
-                        <span>{language === 'kha' ? 'Bishar ia ka Kyrdan 1' : 'Verify Level 1 Compatibility'}</span>
+                        <span>{language === 'kha' ? 'Bishar ia ka Jingiadei kur ' : 'Verify Level 1 Compatibility'}</span>
                         <ArrowRight className="w-4 h-4" />
                       </>
                     )}
@@ -483,11 +477,22 @@ export const CompatibilityChecker: React.FC = () => {
                       <ShieldAlert className="w-4 h-4 shrink-0 text-red-600" />
                       <span>
                         {language === 'kha'
-                          ? 'Ka jingiadei kur ka la thikna ha ka Kyrdan 1. Ha ka niam Khasi ym bit ban bteng shuh sha kiwei ki kyrdan namar ka long ka Sang.'
-                          : 'Maternal clan taboo identified in Level 1. In traditional Khasi custom, further checks are discontinued.'}
+                          ? 'Ka jingiadei kur ka la thikna hangne.'
+                          : 'Maternal clan taboo identified in Level 1.'}
                       </span>
                     </div>
-
+                    <div className="p-3.5 rounded-2xl bg-red-100/60 dark:bg-red-950/30 border border-red-200 dark:border-red-900/40 text-xs text-red-900 dark:text-red-300 flex items-center gap-2">
+                      <span> {language === 'kha'
+                        ? 'Ha ka riti, dustur, jinghikai lem bad ha ka niam Khasi ym bit ban bteng shuh sha kiwei ki kyrdan namar ka long ka Sang.'
+                        : 'In traditional Khasi custom, culture, teachings and also as per Khasi religion, further checks are discontinued as it is taboo to marry within the clan.'}
+                      </span>
+                    </div>
+                    <div className="p-3.5 rounded-2xl bg-red-100/60 dark:bg-red-950/30 border border-red-200 dark:border-red-900/40 text-xs text-red-900 dark:text-red-300 flex items-center gap-2">
+                      <span> {language === 'kha'
+                        ? 'Sngewbha ban ialait noh ka jingaidei jong phi, phi dang ia dei na kajuh ka kpoh.'
+                        : 'Please refrain from proceeding further, as you belong to the same clan.'}
+                      </span>
+                    </div>
                     <button
                       type="button"
                       onClick={resetAll}
@@ -647,8 +652,14 @@ export const CompatibilityChecker: React.FC = () => {
                       <ShieldAlert className="w-4 h-4 shrink-0 text-red-600" />
                       <span>
                         {language === 'kha'
-                          ? 'Ka jingiadei Sang u Kpa (Kha trai / Ai khaw kylliang) ka la mih ha ka Kyrdan 2. Ym bit ban bteng sha ka Kyrdan 3.'
+                          ? 'Ka jingiadei Sang u Kpa (Kha trai / Ai khaw kylliang) ka la mih ha ka Kyrdan 2. Ym bit ban bteng sha ka jingiashongkha.'
                           : 'Paternal Sang prohibition detected in Level 2. In traditional custom, advancement to Level 3 is prohibited.'}
+                      </span>
+                    </div>
+                    <div className="p-3.5 rounded-2xl bg-red-100/60 dark:bg-red-950/30 border border-red-200 dark:border-red-900/40 text-xs text-red-900 dark:text-red-300 flex items-center gap-2">
+                      <span> {language === 'kha'
+                        ? 'Sngewbha ban ialait noh mo, phi dang don jingiadei.'
+                        : 'Please refrain from proceeding further, as you are related.'}
                       </span>
                     </div>
 
@@ -796,11 +807,12 @@ export const CompatibilityChecker: React.FC = () => {
             >
               <div className="text-center space-y-1">
                 <span className="text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
-                  {language === 'kha' ? 'Ka Jingmih Kyrdan 3 (Sohpet-Parakha)' : 'Level 3 Cousin Relations Breakdown'}
+                  {language === 'kha' ? 'Ka Jingmih Kyrdan 3 (Sohpet-Parakha) - Experimental Feature*' : 'Level 3 Cousin Relations Breakdown (Experimental Feature*)'}
                 </span>
                 <h4 className="text-xl font-serif font-bold text-slate-900 dark:text-slate-100">
                   {language === 'kha' ? 'Ki Jait Khun u Kñii' : 'Maternal Uncle\'s Lineages'} vs {person2Clan}
                 </h4>
+                <h5 className="text-xs font-semibold text-slate-500 dark:text-slate-400 tracking-wider">This Level is not 100% ready, it needs Verification and may not be accurate, <br /><span className="uppercase text-red-700">kindly don't treat this as final.</span></h5>
               </div>
 
               {/* List of checked uncle surnames */}
@@ -830,6 +842,12 @@ export const CompatibilityChecker: React.FC = () => {
                             {language === 'kha'
                               ? 'Ka don ka jingiadei Sang Sohpet-Parakha bad ka jait ba la thoh. Katkum ka rukom Khasi ym bit ban bteng sha ka Kyrdan 4.'
                               : 'Sohpet-Parakha taboo detected among the uncle\'s lineages. Advance to Level 4 is prohibited.'}
+                          </span>
+                        </div>
+                        <div className="p-3.5 rounded-2xl bg-red-100/60 dark:bg-red-950/30 border border-red-200 dark:border-red-900/40 text-xs text-red-900 dark:text-red-300 flex items-center gap-2">
+                          <span> {language === 'kha'
+                            ? 'Sngewbha ban ialait noh mo, phi dang don jingiadei.'
+                            : 'Please refrain from proceeding further, as you are related.'}
                           </span>
                         </div>
 
@@ -973,6 +991,6 @@ export const CompatibilityChecker: React.FC = () => {
           )}
         </AnimatePresence>
       </div>
-    </div>
+    </div >
   );
 };
