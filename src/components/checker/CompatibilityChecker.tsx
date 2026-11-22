@@ -9,7 +9,6 @@ import {
   CheckCircle2,
   ArrowRight,
   RotateCcw,
-  Sparkles,
   BookOpen,
   ShieldAlert,
   Loader2,

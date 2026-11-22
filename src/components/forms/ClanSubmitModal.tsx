@@ -28,10 +28,11 @@ export const ClanSubmitModal: React.FC<ClanSubmitModalProps> = ({
   const [submitted, setSubmitted] = useState(false);
 
   useEffect(() => {
-    if (initialSurname || query) {
+    if (isOpen) {
+      setSubmitted(false);
       setJait(initialSurname || query);
     }
-  }, [initialSurname, query, isOpen]);
+  }, [isOpen, initialSurname, query]);
 
   // Sync with native <dialog> element per Modern Web Guidance
   useEffect(() => {
@@ -39,16 +40,29 @@ export const ClanSubmitModal: React.FC<ClanSubmitModalProps> = ({
     if (!dialog) return;
 
     if (isOpen) {
-      if (!dialog.open) dialog.showModal();
+      if (!dialog.open) {
+        dialog.showModal();
+      }
     } else {
-      if (dialog.open) dialog.close();
+      if (dialog.open) {
+        dialog.close();
+      }
     }
   }, [isOpen]);
 
-  // Click outside fallback per Modern Web Guidance
+  // Native dialog event synchronization (Esc key, closedby, backdrop click)
   useEffect(() => {
     const dialog = dialogRef.current;
     if (!dialog) return;
+
+    const handleClose = () => {
+      onClose();
+    };
+
+    const handleCancel = (e: Event) => {
+      e.preventDefault();
+      onClose();
+    };
 
     const handleBackdropClick = (event: MouseEvent) => {
       if (event.target !== dialog) return;
@@ -65,7 +79,13 @@ export const ClanSubmitModal: React.FC<ClanSubmitModalProps> = ({
     };
 
     dialog.addEventListener('click', handleBackdropClick);
-    return () => dialog.removeEventListener('click', handleBackdropClick);
+    dialog.addEventListener('close', handleClose);
+    dialog.addEventListener('cancel', handleCancel);
+    return () => {
+      dialog.removeEventListener('click', handleBackdropClick);
+      dialog.removeEventListener('close', handleClose);
+      dialog.removeEventListener('cancel', handleCancel);
+    };
   }, [onClose]);
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -99,8 +119,6 @@ export const ClanSubmitModal: React.FC<ClanSubmitModalProps> = ({
     }, 2500);
   };
 
-  if (!isOpen) return null;
-
   return (
     <dialog
       ref={dialogRef}
@@ -109,7 +127,8 @@ export const ClanSubmitModal: React.FC<ClanSubmitModalProps> = ({
       aria-labelledby="submit-clan-title"
       className="fixed inset-0 m-auto w-[calc(100%-2rem)] sm:w-full sm:max-w-lg max-h-[88vh] rounded-3xl bg-white dark:bg-[#111a16] text-slate-900 dark:text-slate-100 p-0 shadow-2xl border border-slate-200 dark:border-[#1f352c] backdrop:bg-slate-950/65 backdrop:backdrop-blur-xs overflow-hidden outline-none animate-in fade-in zoom-in-95 duration-200 z-[60]"
     >
-      <div className="p-6 overflow-y-auto max-h-[88vh] space-y-5">
+      {isOpen && (
+        <div className="p-6 overflow-y-auto max-h-[88vh] space-y-5">
         {/* Header */}
         <div className="flex items-center justify-between pb-3 border-b border-slate-100 dark:border-[#1f352c]">
           <div className="flex items-center gap-2.5">
@@ -259,7 +278,8 @@ export const ClanSubmitModal: React.FC<ClanSubmitModalProps> = ({
             </div>
           </form>
         )}
-      </div>
+        </div>
+      )}
     </dialog>
   );
 };

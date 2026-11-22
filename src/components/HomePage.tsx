@@ -6,7 +6,7 @@ import { useTheme } from '../context/ThemeContext';
 import { Search, Loader2, History, UserGroupIcon } from 'lucide-react';
 
 export const HomePage: React.FC = () => {
-  const { searchClan, loading, recentSearches } = useClan();
+  const { searchClan, loading, recentSearches, setPrimarySurname } = useClan();
   const { language } = useLanguage();
   const { palette, homeBg } = useTheme();
   const [jaitInput, setJaitInput] = useState<string>('');
@@ -50,7 +50,16 @@ export const HomePage: React.FC = () => {
     dismissKeyboard();
     const target = clanToSearch ?? jaitInput;
     if (target && target.trim()) {
-      searchClan(target.trim());
+      const clean = target.trim();
+      try {
+        if (!localStorage.getItem('primarySurname')) {
+          localStorage.setItem('primarySurname', clean);
+          setPrimarySurname(clean);
+        }
+      } catch {
+        // ignore
+      }
+      searchClan(clean);
     }
   };
 
@@ -241,6 +250,32 @@ export const HomePage: React.FC = () => {
                 src="/jingkieng-jri.webp"
                 alt=""
                 className="opacity-35 dark:opacity-25 select-none pointer-events-none transition-all duration-700 w-[200%] max-w-none h-full object-cover object-right"
+              />
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Symmetrical Desktop Duplicate for Mawbynna (Right Side of Desktop Screen, Mirror Image) */}
+      {homeBg === 'mawbynna' && (
+        <div
+          aria-hidden="true"
+          className="hidden md:flex fixed pointer-events-none z-0 bottom-0 right-0 w-[42vw] max-w-xl max-h-[68vh] items-end justify-end overflow-hidden transition-transform duration-500 ease-out"
+          style={{
+            transform: `translate3d(0, ${parallaxOffset.y}px, 0) scale(${parallaxOffset.scale})`
+          }}
+        >
+          {/* Framed container on desktop right side */}
+          <div className="relative w-full h-full flex items-end justify-end">
+            {/* Subtle gradient overlay fading inward toward center */}
+            <div className="absolute inset-0 z-10 bg-gradient-to-l from-transparent via-white/20 to-white dark:from-transparent dark:via-[#090e0c]/30 dark:to-[#090e0c]" />
+
+            {/* Right Mirror Image */}
+            <div className="w-full h-full flex items-end justify-end scale-x-[-1]">
+              <img
+                src="/Mawbynna.webp"
+                alt=""
+                className="opacity-35 dark:opacity-25 select-none pointer-events-none transition-all duration-700 w-full max-w-5xl object-contain object-bottom md:object-left-bottom md:w-full md:h-full"
               />
             </div>
           </div>

@@ -32,6 +32,8 @@ interface ClanContextType {
   setMinimalLinks: (minimal: boolean) => void;
   toggleMinimalLinks: () => void;
   clearAllAppData: () => void;
+  primarySurname: string | null;
+  setPrimarySurname: (surname: string) => void;
 }
 
 const ClanContext = createContext<ClanContextType | undefined>(undefined);
@@ -74,6 +76,25 @@ export const ClanProvider: React.FC<{ children: React.ReactNode }> = ({ children
       return ['Diengdoh', 'Nongkynrih'];
     }
   });
+
+  const [primarySurname, setPrimarySurnameState] = useState<string | null>(() => {
+    try {
+      return localStorage.getItem('primarySurname');
+    } catch {
+      return null;
+    }
+  });
+
+  const setPrimarySurname = (surname: string) => {
+    const clean = surname.trim();
+    if (!clean) return;
+    try {
+      localStorage.setItem('primarySurname', clean);
+      setPrimarySurnameState(clean);
+    } catch {
+      // ignore storage errors
+    }
+  };
 
   const triggerResetView = () => setResetViewTrigger(prev => prev + 1);
 
@@ -370,6 +391,16 @@ export const ClanProvider: React.FC<{ children: React.ReactNode }> = ({ children
         return updated;
       });
 
+      // Save primary surname if entering for the first time
+      try {
+        if (!localStorage.getItem('primarySurname')) {
+          localStorage.setItem('primarySurname', cleanJait);
+          setPrimarySurnameState(cleanJait);
+        }
+      } catch {
+        // ignore
+      }
+
       triggerResetView();
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : 'Error querying clan records';
@@ -393,6 +424,7 @@ export const ClanProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const clearAllAppData = () => {
     localStorage.clear();
+    setPrimarySurnameState(null);
     setRecentSearches([]);
     setRawGraphData({ nodes: [], links: [] });
     setGraphData({ nodes: [], links: [] });
@@ -432,7 +464,9 @@ export const ClanProvider: React.FC<{ children: React.ReactNode }> = ({ children
         setViewMode,
         setMinimalLinks,
         toggleMinimalLinks,
-        clearAllAppData
+        clearAllAppData,
+        primarySurname,
+        setPrimarySurname
       }}
     >
       {children}

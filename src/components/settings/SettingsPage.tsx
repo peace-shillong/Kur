@@ -406,6 +406,51 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({ onBack }) => {
           <div className="p-3.5 rounded-2xl bg-slate-50 border border-slate-200 text-xs text-slate-600">
             <strong>Developer:</strong> Designed and developed with modern web standards by the Kyrshanlang R. Dkhar, November 2026.
           </div>
+
+          {/* Partner & Community Logos */}
+          <div className="pt-2 flex flex-wrap items-center gap-3 sm:gap-4 justify-start">
+            {/* MegDev Connect (white logo with dark container for optimal visibility) */}
+            <a
+              href="https://www.instagram.com/meg.devconnect/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center gap-3 p-2.5 pr-4 rounded-2xl bg-slate-900 text-white hover:bg-slate-800 transition-all shadow-sm border border-slate-800 cursor-pointer"
+              title="MegDev Connect Instagram"
+            >
+              <div className="w-10 h-10 rounded-xl bg-black/60 flex items-center justify-center p-1.5 overflow-hidden shrink-0">
+                <img
+                  src="/MegDev.png"
+                  alt="MegDev"
+                  className="w-full h-full object-contain group-hover:scale-105 transition-transform"
+                />
+              </div>
+              <div className="text-left">
+                <span className="block text-xs font-bold leading-tight">MegDev</span>
+                <span className="block text-[11px] text-slate-400">@meg.devconnect</span>
+              </div>
+            </a>
+
+            {/* Tynrai Tip Kur */}
+            <a
+              href="https://tynrai.in/demo/tipkur/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center gap-3 p-2.5 pr-4 rounded-2xl bg-slate-50 hover:bg-slate-100 transition-all shadow-sm border border-slate-200 text-slate-900 cursor-pointer"
+              title="Tynrai Tip Kur"
+            >
+              <div className="w-10 h-10 rounded-xl bg-white flex items-center justify-center p-1 overflow-hidden border border-slate-200/80 shadow-xs shrink-0">
+                <img
+                  src="/Tynrai_Logo.webp"
+                  alt="Tynrai"
+                  className="w-full h-full object-contain group-hover:scale-105 transition-transform"
+                />
+              </div>
+              <div className="text-left">
+                <span className="block text-xs font-bold leading-tight">Tynrai</span>
+                <span className="block text-[11px] text-slate-500">tynrai.in</span>
+              </div>
+            </a>
+          </div>
         </div>
       </section>
 
