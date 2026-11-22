@@ -97,6 +97,9 @@ export const PrivacyModal: React.FC<PrivacyModalProps> = ({ isOpen, onClose }) =
           <p>
             • <strong>Community Submissions:</strong> Any clan details voluntarily submitted via the "Ai Jingtip" form are archived solely for community genealogical review and shared with Tynrai, are never commercialized.
           </p>
+          <p>
+            • <strong>Indian Data Protection (DPDPA 2023):</strong> Designed in full alignment with India's Digital Personal Data Protection Act, 2023. You have complete rights to data erasure and privacy, exercisable at any time using the "Pynduh lut ia ki Data & Cache" button.
+          </p>
         </div>
       </div>
     </dialog>

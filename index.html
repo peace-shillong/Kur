@@ -3,42 +3,59 @@
 
 <head>
   <meta charset="UTF-8" />
-  <!-- MANDATORY per Modern Web Guidance: declare light dark color schemes -->
-  <meta name="color-scheme" content="light dark" />
-  <script>
-    // FOUC prevention: set color-scheme, active theme classes and data-theme from localStorage before render
-    try {
-      const storedMode = localStorage.getItem('tipkur-theme-mode') || 'light';
-      const customVar = localStorage.getItem('tipkur-theme-custom') || 'heritage';
-
-      document.documentElement.classList.remove('dark', 'theme-light', 'theme-dark', 'theme-heritage', 'theme-forest', 'theme-dawki');
-
-      if (storedMode === 'dark') {
-        document.documentElement.classList.add('dark', 'theme-dark');
-        document.documentElement.setAttribute('data-theme', 'dark');
-      } else if (storedMode === 'custom') {
-        document.documentElement.classList.add(`theme-${customVar}`);
-        document.documentElement.setAttribute('data-theme', `custom-${customVar}`);
-      } else {
-        document.documentElement.classList.add('theme-light');
-        document.documentElement.setAttribute('data-theme', 'light');
-      }
-
-      const meta = document.querySelector('meta[name="color-scheme"]');
-      if (meta) {
-        meta.content = storedMode === 'dark' ? 'dark' : 'light';
-      }
-    } catch (e) { }
-  </script>
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
-  <title>Tipkur Tipkha — Khasi Clan Genealogy & Kinship Checker</title>
-  <!-- Google Fonts for Khasi Heritage typography: Playfair Display for classic headings, Plus Jakarta Sans for UI -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta name="color-scheme" content="light dark" />
+
+  <!-- Primary Meta Data -->
+  <title>Tipkur Tipkha — Khasi Clan Genealogy & Kinship Verification</title>
+  <meta name="title" content="Tipkur Tipkha — Khasi Clan Genealogy & Kinship Verification" />
+  <meta name="description"
+    content="Digital genealogical platform for Khasi clan kinship (kur bad jait), matrilineal ancestry, and traditional marriage exogamy verification (Bishar ia ka Sang) according to authentic Khasi customary laws." />
+  <meta name="keywords"
+    content="Khasi, Tipkur Tipkha, Kur, Jait, Meghalaya, Shillong, Khasi Lineage, Bishar Sang, Matrilineal Kinship, Khasi Clans, Mawbynna, Sohra, Hynniewtrep, Genealogy, Tribal Lineage, Khasi Customary Law" />
+  <meta name="author" content="Kyrshanlang R. Dkhar" />
+  <meta name="application-name" content="Tipkur Tipkha" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#2E8B57" />
+
+  <!-- Mobile & PWA Web App Capabilities -->
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Tipkur Tipkha" />
+  <meta name="format-detection" content="telephone=no" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Tipkur Tipkha — Khasi Clan Genealogy & Kinship Verification" />
+  <meta property="og:description"
+    content="Digital genealogical platform for Khasi clan kinship (kur bad jait), matrilineal ancestry, and traditional marriage exogamy verification (Bishar ia ka Sang) according to authentic Khasi customary laws." />
+  <meta property="og:image" content="/Mawbynna.webp" />
+  <meta property="og:site_name" content="Tipkur Tipkha" />
+  <meta property="og:locale" content="en_IN" />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Tipkur Tipkha — Khasi Clan Genealogy & Kinship Verification" />
+  <meta name="twitter:description"
+    content="Digital genealogical platform for Khasi clan kinship (kur bad jait), matrilineal ancestry, and traditional marriage exogamy verification (Bishar ia ka Sang) according to authentic Khasi customary laws." />
+  <meta name="twitter:image" content="/Mawbynna.webp" />
+
+  <!-- Favicon & Icons -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="apple-touch-icon" href="/favicon.svg" />
+
+  <!-- Fonts Optimization: Preconnect & DNS-Prefetch for Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
   <link
     href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..800;1,400..700&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,400..700&display=swap"
-    rel="stylesheet">
+    rel="stylesheet" />
+
+  <!-- External Theme Init Script (Zero inline JavaScript in HTML for strict CSP & FOUC prevention) -->
+  <script src="/theme-init.js"></script>
 </head>
 
 <body class="min-h-screen bg-white text-slate-900 antialiased selection:bg-emerald-600 selection:text-white">

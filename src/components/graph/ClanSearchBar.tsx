@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useLanguage } from '../../context/LanguageContext';
 import { useClan } from '../../context/ClanContext';
 import { Search, History, Sparkles, X, Loader2 } from 'lucide-react';
+import { sanitizeClanInput } from '../../utils/sanitize';
 
 export const ClanSearchBar: React.FC = () => {
   const { t } = useLanguage();
@@ -10,8 +11,9 @@ export const ClanSearchBar: React.FC = () => {
 
   const handleSearch = (clanToSearch?: string) => {
     const target = clanToSearch ?? searchInput;
-    if (target && target.trim()) {
-      searchClan(target.trim());
+    const clean = sanitizeClanInput(target);
+    if (clean) {
+      searchClan(clean);
     }
   };
 

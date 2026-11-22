@@ -4,6 +4,7 @@ import { useClan } from '../context/ClanContext';
 import { useLanguage } from '../context/LanguageContext';
 import { useTheme } from '../context/ThemeContext';
 import { Search, Loader2, History, UserGroupIcon } from 'lucide-react';
+import { sanitizeClanInput } from '../utils/sanitize';
 
 export const HomePage: React.FC = () => {
   const { searchClan, loading, recentSearches, setPrimarySurname } = useClan();
@@ -49,8 +50,8 @@ export const HomePage: React.FC = () => {
   const handleSearch = (clanToSearch?: string) => {
     dismissKeyboard();
     const target = clanToSearch ?? jaitInput;
-    if (target && target.trim()) {
-      const clean = target.trim();
+    const clean = sanitizeClanInput(target);
+    if (clean) {
       try {
         if (!localStorage.getItem('primarySurname')) {
           localStorage.setItem('primarySurname', clean);

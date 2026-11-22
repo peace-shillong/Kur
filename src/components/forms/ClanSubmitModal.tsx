@@ -3,6 +3,7 @@ import { useClan } from '../../context/ClanContext';
 import { useLanguage } from '../../context/LanguageContext';
 import { ClanSubmission } from '../../types';
 import { X, Send, CheckCircle2, HeartHandshake } from 'lucide-react';
+import { sanitizeClanInput, sanitizeTextInput } from '../../utils/sanitize';
 
 interface ClanSubmitModalProps {
   isOpen: boolean;
@@ -90,16 +91,17 @@ export const ClanSubmitModal: React.FC<ClanSubmitModalProps> = ({
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!jait.trim()) return;
+    const cleanJait = sanitizeClanInput(jait);
+    if (!cleanJait) return;
 
     const submission: ClanSubmission = {
       id: Date.now().toString(),
-      jait: jait.trim(),
-      fullName: fullName.trim(),
-      email: email.trim(),
-      shikurClans: shikurClans.trim(),
-      tehKurClans: tehKurClans.trim(),
-      notes: notes.trim(),
+      jait: cleanJait,
+      fullName: sanitizeTextInput(fullName, 120),
+      email: sanitizeTextInput(email, 120),
+      shikurClans: sanitizeTextInput(shikurClans, 200),
+      tehKurClans: sanitizeTextInput(tehKurClans, 200),
+      notes: sanitizeTextInput(notes, 500),
       submittedAt: new Date().toISOString()
     };
 

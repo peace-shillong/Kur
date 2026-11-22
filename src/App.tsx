@@ -62,9 +62,16 @@ export const App: React.FC = () => {
 
   return (
     <div className="min-h-screen flex flex-col justify-between selection:bg-emerald-600 selection:text-white transition-colors">
+      {/* Accessibility Skip Link (WCAG 2.1 AA / GIGW standard for India) */}
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:px-4 focus:py-2 focus:bg-emerald-700 focus:text-white focus:rounded-xl focus:shadow-lg focus:outline-none focus:ring-2 focus:ring-white text-xs font-semibold"
+      >
+        {language === 'kha' ? 'Kyntait sha ka bynta bakongsan (Skip to content)' : 'Skip to main content'}
+      </a>
 
       {/* Main Content Area */}
-      <main className="flex-1 flex flex-col">
+      <main id="main-content" className="flex-1 flex flex-col">
         {showSettings ? (
           /* Single Settings Page (Full Page / Fullscreen View, No Tabs) */
           <SettingsPage onBack={closeSettings} />

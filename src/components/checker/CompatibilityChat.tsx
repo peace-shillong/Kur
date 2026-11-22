@@ -23,6 +23,7 @@ import {
   Sparkles,
   Check
 } from 'lucide-react';
+import { sanitizeClanInput, sanitizeTextInput } from '../../utils/sanitize';
 
 export type ChatSender = 'app' | 'user';
 
@@ -220,7 +221,7 @@ export const CompatibilityChat: React.FC = () => {
 
   // Submit User Surname
   const submitUserSurname = (enteredClan: string) => {
-    const clan = enteredClan.trim();
+    const clan = sanitizeClanInput(enteredClan);
     if (!clan) return;
 
     setUserClan(clan);
@@ -253,7 +254,7 @@ export const CompatibilityChat: React.FC = () => {
 
   // Submit Friend Surname & Run Level 1 Checking
   const submitFriendSurname = async (enteredClan: string) => {
-    const friend = enteredClan.trim();
+    const friend = sanitizeClanInput(enteredClan);
     if (!friend || !userClan) return;
 
     setFriendClan(friend);
@@ -323,7 +324,7 @@ export const CompatibilityChat: React.FC = () => {
 
   // Submit Father's Surname & Run Level 2 Checking
   const submitFatherSurname = async (enteredClan: string) => {
-    const father = enteredClan.trim();
+    const father = sanitizeClanInput(enteredClan);
     if (!father || !friendClan) return;
 
     setFatherClan(father);
@@ -392,7 +393,7 @@ export const CompatibilityChat: React.FC = () => {
 
   // Submit Maternal Uncle Children's Surnames & Run Level 3 Checking
   const submitUncleSurnames = async (enteredInput: string) => {
-    const raw = enteredInput.trim();
+    const raw = sanitizeTextInput(enteredInput, 250);
     if (!raw || !friendClan) return;
 
     setUncleClans(raw);
@@ -450,10 +451,10 @@ export const CompatibilityChat: React.FC = () => {
       return;
     }
 
-    // Split comma-separated surnames
+    // Split comma-separated surnames and sanitize each
     const clanList = raw
       .split(',')
-      .map(s => s.trim())
+      .map(s => sanitizeClanInput(s))
       .filter(Boolean);
 
     try {

@@ -9,6 +9,11 @@ export default defineConfig({
     tailwindcss()
   ],
   build: {
+    target: 'es2022',
+    minify: 'esbuild',
+    cssMinify: true,
+    sourcemap: false,
+    chunkSizeWarningLimit: 1000,
     rollupOptions: {
       output: {
         manualChunks: {
