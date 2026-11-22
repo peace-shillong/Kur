@@ -72,7 +72,7 @@ export const ClanTableView: React.FC = () => {
             />
           </div>
           <span className="text-xs text-slate-500 dark:text-slate-400 font-medium whitespace-nowrap">
-            {filteredNodes.length} {language === 'kha' ? 'ki jait' : 'clans'}
+            {filteredNodes.length} {language === 'kha' ? 'tylli ki jait' : 'clans'}
           </span>
         </div>
 

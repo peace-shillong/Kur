@@ -386,7 +386,7 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({ onBack }) => {
               <span>Source of Data: Tynrai</span>
             </div>
             <p className="text-xs text-slate-700 leading-relaxed">
-              Clan connection datasets and historical oral citations are sourced from <a href="https://tynrai.in" target="_blank" rel="noreferrer" className="text-emerald-800 underline font-bold">Tynrai (tynrai.in)</a>, working towards comprehensive Khasi historical digital records.
+              Clan connection datasets and historical oral citations are sourced from <a href="https://tynrai.in/demo/tipkur/" target="_blank" rel="noreferrer" className="text-emerald-800 underline font-bold">Tynrai (tynrai.in)</a>, working towards comprehensive Khasi historical digital records.
             </p>
           </div>
 

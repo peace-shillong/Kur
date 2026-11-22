@@ -230,13 +230,13 @@ export const ClanSubmitModal: React.FC<ClanSubmitModalProps> = ({
             {/* Historical Notes */}
             <div className="space-y-1">
               <label className="font-semibold text-slate-700">
-                {language === 'kha' ? 'Ka Jingiathuh pateng / Ki Jingbatai shuh shuh' : 'Oral Lore or Historical Context'}
+                {language === 'kha' ? 'Ki Sabut (Evidence) / Ka Jingiathuh pateng' : 'Evidence or Oral Lore'}
               </label>
               <textarea
                 value={notes}
                 onChange={e => setNotes(e.target.value)}
                 rows={3}
-                placeholder={language === 'kha' ? 'Iathuh lem shaphang ka thymmei, ka hima ne ka shnong...' : 'Add any additional lineage or village references...'}
+                placeholder={language === 'kha' ? 'Iathuh lem shaphang ka thymmei jong ka jait jong phi, ki kot ba la pynmih bad ki jingiathuh pateng ban pynshisha...' : 'Let us know the source of your surname, published books, and oral traditions as evidence...'}
                 className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 focus:outline-none focus:ring-2 focus:ring-emerald-500"
               />
             </div>
