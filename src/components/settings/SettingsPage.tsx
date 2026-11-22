@@ -4,6 +4,7 @@ import { useLanguage } from '../../context/LanguageContext';
 import { useTheme } from '../../context/ThemeContext';
 import { PrivacyModal } from './PrivacyModal';
 import { TermsModal } from './TermsModal';
+import { ConfirmClearModal } from './ConfirmClearModal';
 import {
   ArrowLeft,
   Palette,
@@ -36,16 +37,19 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({ onBack }) => {
   const [isPrivacyOpen, setIsPrivacyOpen] = useState(false);
   const [isTermsOpen, setIsTermsOpen] = useState(false);
   const [clearedNotice, setClearedNotice] = useState(false);
+  const [isConfirmClearOpen, setIsConfirmClearOpen] = useState(false);
 
   const handleClearCache = () => {
-    if (window.confirm(language === 'kha' ? 'Phi sngewbha ban pynduh lut ia ki cache bad history baroh?' : 'Are you sure you want to clear all cached data, history, and settings?')) {
-      clearAllAppData();
-      setClearedNotice(true);
-      setTimeout(() => {
-        setClearedNotice(false);
-        onBack();
-      }, 1500);
-    }
+    setIsConfirmClearOpen(true);
+  };
+
+  const executeClearCache = () => {
+    clearAllAppData();
+    setClearedNotice(true);
+    setTimeout(() => {
+      setClearedNotice(false);
+      onBack();
+    }, 1500);
   };
 
   return (
@@ -563,15 +567,21 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({ onBack }) => {
         </div>
       </footer >
 
-      {/* Modals for Privacy and Terms */}
-      < PrivacyModal
+      {/* Modals for Privacy, Terms and Clear Cache Confirmation */}
+      <PrivacyModal
         isOpen={isPrivacyOpen}
         onClose={() => setIsPrivacyOpen(false)}
       />
 
-      < TermsModal
+      <TermsModal
         isOpen={isTermsOpen}
         onClose={() => setIsTermsOpen(false)}
+      />
+
+      <ConfirmClearModal
+        isOpen={isConfirmClearOpen}
+        onClose={() => setIsConfirmClearOpen(false)}
+        onConfirm={executeClearCache}
       />
 
     </div >

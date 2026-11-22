@@ -3,7 +3,7 @@ import { HomePage } from './components/HomePage';
 import { ClanGraph } from './components/graph/ClanGraph';
 import { NodeDetailModal } from './components/graph/NodeDetailModal';
 import { FeatureLockedModal } from './components/modals/FeatureLockedModal';
-import { CompatibilityChecker } from './components/checker/CompatibilityChecker';
+import { BisharSangHub } from './components/checker/BisharSangHub';
 import { SettingsPage } from './components/settings/SettingsPage';
 import { useClan } from './context/ClanContext';
 import { useLanguage } from './context/LanguageContext';
@@ -82,7 +82,7 @@ export const App: React.FC = () => {
               </button>
             </div>
 
-            <CompatibilityChecker />
+            <BisharSangHub />
           </div>
         ) : (
           <>
