@@ -548,7 +548,7 @@ export const CompatibilityChecker: React.FC = () => {
                   </span>
                   <span>
                     {language === 'kha'
-                      ? 'Kyrdan 2: Kur u Kpa & Ai Khaw Kylliang (Paternal Lineage)'
+                      ? 'Kur u Kpa & Ai Khaw Kylliang (Paternal Lineage)'
                       : 'Level 2: Kur u Kpa & Ai Khaw Kylliang (Paternal Lineage)'}
                   </span>
                 </h3>
@@ -726,7 +726,7 @@ export const CompatibilityChecker: React.FC = () => {
                   </span>
                   <span>
                     {language === 'kha'
-                      ? 'Kyrdan 3: Shi-Parakha & Sohpet-Parakha (Ka Jait ki Khun u Kñii)'
+                      ? 'Shi-Parakha & Sohpet-Parakha (Ka Jait ki Khun u Kñii)'
                       : 'Level 3: Shi-Parakha & Sohpet-Parakha (Cousin Relation Link)'}
                   </span>
                 </h3>
@@ -760,8 +760,8 @@ export const CompatibilityChecker: React.FC = () => {
                   />
                   <div className="text-[11px] text-slate-500 dark:text-slate-400">
                     {language === 'kha'
-                      ? 'Lada don bun ki jait, pynbynta da ka comma (,). Ka app kan bishar ia kawei pa kawei ka jait pyrshah ia ka jait ba-ar.'
-                      : 'Enter one surname or comma-separated list. Each surname will be verified individually against Person 2\'s clan.'}
+                      ? 'Lada don bun ki jait, pynbynta da ka comma (,). Ka app kan bishar ia kawei pa kawei ka jait pyrshah ia ka jait ba-ar. Thoh "Em" lada i mei im don ki shynrang shipara.'
+                      : 'Enter one surname or comma-separated list. Each surname will be verified individually against Person 2\'s clan.  Enter "No" if you don\'t have any maternal uncle'}
                   </div>
                 </div>
 
@@ -921,6 +921,9 @@ export const CompatibilityChecker: React.FC = () => {
                   {language === 'kha'
                     ? `Ym shem jingiadei Sang ha ka Kmie (${person1Clan}), u Kpa (${fatherClan || 'Clear'}), lane ki Khun u Kñii pyrshah ia ka jait ${person2Clan}.`
                     : `No direct exogamous taboos detected across Maternal (${person1Clan}), Paternal (${fatherClan || 'Clear'}), or Uncle's children against ${person2Clan}.`}
+                </p>
+                <p className="text-xs sm:text-sm text-emerald-900 dark:text-emerald-200 max-w-md mx-auto uppercase font-bold">
+                  {language === 'kha' ? 'Phi lah ban ia kynduh baroh ar ing ban ia kren kham bha.' : 'You can meet each others family and discuss further.'}
                 </p>
               </div>
 
