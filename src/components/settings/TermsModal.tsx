@@ -90,7 +90,7 @@ export const TermsModal: React.FC<TermsModalProps> = ({ isOpen, onClose }) => {
 
         <div className="text-xs text-slate-600 dark:text-slate-300 space-y-2.5 leading-relaxed bg-slate-50 dark:bg-[#15221d] p-4 rounded-2xl border border-slate-200 dark:border-[#1f352c]">
           <p>
-            • <strong>Data Source:</strong> Sourced from <u><a href="https://tynrai.in/demo/tipkur/" target="_blank" rel="noopener noreferrer">tynrai.in</a></u>, Khasi genealogical works, primarily Rev. I. Kharkongngor's "Ka Jymbriew Bad Ka Thymmei Longkur Longjait U Khasi" and data collected from various contributors across Khasi, Jaintia and Ri-Bhoi. Our source and information is not complete and may require review, corrections and updates. We recommend you to contribute what you know and any oral traditions with keen interest and accuracy.
+            • <strong>Data Source:</strong> Sourced from <u><a href="https://tynrai.in/demo/tipkur/" target="_blank" rel="noopener noreferrer">Tynrai-AI</a></u>, Khasi genealogical works, primarily Rev. I. Kharkongngor's "Ka Jymbriew Bad Ka Thymmei Longkur Longjait U Khasi" and data collected from various contributors across Khasi, Jaintia and Ri-Bhoi. Our source and information is not complete and may require review, corrections and updates. We recommend you to contribute what you know and any oral traditions with keen interest and accuracy.
           </p>
           <p>
             • <strong>Informational Cultural Resource:</strong> This app serves to facilitate education, lineage awareness, and matrimonial exogamy research. It does not replace oral consultations with family elders (Longkñi).

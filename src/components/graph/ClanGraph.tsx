@@ -10,6 +10,7 @@ import { KyrdanKurModal } from './KyrdanKurModal';
 import { ClanTableView } from './ClanTableView';
 import { ShareModal } from '../modals/ShareModal';
 import { ClanSubmitModal } from '../forms/ClanSubmitModal';
+import { GraphHelpModal } from './GraphHelpModal';
 import {
   RotateCcw,
   ZoomIn,
@@ -24,7 +25,8 @@ import {
   SlidersHorizontal,
   Download,
   X,
-  Loader2
+  Loader2,
+  HelpCircle
 } from 'lucide-react';
 
 export const ClanGraph: React.FC = () => {
@@ -64,6 +66,7 @@ export const ClanGraph: React.FC = () => {
   const [isKyrdanModalOpen, setIsKyrdanModalOpen] = useState<boolean>(false);
   const [isShareModalOpen, setIsShareModalOpen] = useState<boolean>(false);
   const [isSubmitModalOpen, setIsSubmitModalOpen] = useState<boolean>(false);
+  const [isHelpModalOpen, setIsHelpModalOpen] = useState<boolean>(false);
   const [activeEdgeInfo, setActiveEdgeInfo] = useState<{
     source: GraphNode;
     target: GraphNode;
@@ -888,6 +891,19 @@ export const ClanGraph: React.FC = () => {
 
       {/* Floating Control Dock: Below the Search button area */}
       <div className="absolute top-18 right-4 flex flex-col items-center gap-2 z-20 pointer-events-auto">
+        {/* 0. Help & Gestures / Mouse Controls Icon Button */}
+        <div className="bg-white/95 dark:bg-[#111a16]/95 backdrop-blur-md p-1 rounded-2xl shadow-lg border border-slate-200 dark:border-[#1f352c]">
+          <button
+            type="button"
+            onClick={() => setIsHelpModalOpen(true)}
+            className="p-2.5 rounded-xl text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-[#1a2a24] transition cursor-pointer flex items-center justify-center"
+            title={language === 'kha' ? "Jingbatai kumno ban pyndonkam (Help & Gestures)" : "Help & Gestures / Mouse Controls"}
+            aria-label="Help & Gestures"
+          >
+            <HelpCircle className="w-4 h-4" />
+          </button>
+        </div>
+
         {/* 1. Table/Graph View Toggle */}
         <div className="bg-white/95 dark:bg-[#111a16]/95 backdrop-blur-md p-1 rounded-2xl shadow-lg border border-slate-200 dark:border-[#1f352c]">
           <button
@@ -1144,6 +1160,11 @@ export const ClanGraph: React.FC = () => {
         isOpen={isSubmitModalOpen}
         onClose={() => setIsSubmitModalOpen(false)}
         initialSurname={query}
+      />
+
+      <GraphHelpModal
+        isOpen={isHelpModalOpen}
+        onClose={() => setIsHelpModalOpen(false)}
       />
     </div>
   );

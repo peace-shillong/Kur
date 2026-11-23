@@ -83,7 +83,7 @@ export const HomePage: React.FC = () => {
   };
 
   return (
-    <div className="flex-1 flex flex-col items-center justify-center relative w-full overflow-hidden">
+    <div className="flex-1 flex flex-col items-center justify-center relative w-full overflow-hidden dark:bg-black transition-colors duration-300">
       {/* Main Home Content with Smooth Pop-up Ease-In Animation */}
       <motion.div
         initial={{ opacity: 0, scale: 0.94, y: 16 }}
@@ -206,8 +206,8 @@ export const HomePage: React.FC = () => {
             <div
               className={`absolute inset-0 z-10 ${
                 homeBg === 'mawbynna'
-                  ? 'bg-gradient-to-t from-transparent via-white/30 to-white dark:via-[#090e0c]/40 dark:to-[#090e0c] md:bg-gradient-to-r md:from-transparent md:via-white/20 md:to-white dark:md:via-[#090e0c]/30 dark:md:to-[#090e0c]'
-                  : 'bg-gradient-to-t from-transparent via-white/30 to-white dark:via-[#090e0c]/40 dark:to-[#090e0c] md:bg-gradient-to-r md:from-white md:via-white/20 md:to-transparent dark:md:from-[#090e0c] dark:md:via-[#090e0c]/30 dark:md:to-transparent'
+                  ? 'bg-gradient-to-t from-transparent via-white/30 to-white dark:via-black/40 dark:to-black md:bg-gradient-to-r md:from-transparent md:via-white/20 md:to-white dark:md:via-black/30 dark:md:to-black'
+                  : 'bg-gradient-to-t from-transparent via-white/30 to-white dark:via-black/40 dark:to-black md:bg-gradient-to-r md:from-white md:via-white/20 md:to-transparent dark:md:from-black dark:md:via-black/30 dark:md:to-transparent'
               }`}
             />
 
@@ -220,7 +220,7 @@ export const HomePage: React.FC = () => {
               <img
                 src={homeBg === 'mawbynna' ? '/Mawbynna.webp' : '/jingkieng-jri.webp'}
                 alt=""
-                className={`opacity-35 dark:opacity-25 select-none pointer-events-none transition-all duration-700 ${
+                className={`opacity-35 dark:opacity-30 dark:invert dark:mix-blend-screen select-none pointer-events-none transition-all duration-700 ${
                   homeBg === 'mawbynna'
                     ? 'w-full max-w-5xl object-contain object-bottom md:object-left-bottom md:w-full md:h-full'
                     : 'w-full max-w-5xl object-contain object-bottom md:w-[200%] md:max-w-none md:h-full md:object-cover md:object-right'
@@ -243,14 +243,14 @@ export const HomePage: React.FC = () => {
           {/* Framed container on desktop left side */}
           <div className="relative flex h-[72vh] aspect-[1/2] overflow-hidden items-center justify-start">
             {/* Subtle gradient overlay fading inward toward center */}
-            <div className="absolute inset-0 z-10 bg-gradient-to-l from-white via-white/20 to-transparent dark:from-[#090e0c] dark:via-[#090e0c]/30 dark:to-transparent" />
+            <div className="absolute inset-0 z-10 bg-gradient-to-l from-white via-white/20 to-transparent dark:from-black dark:via-black/30 dark:to-transparent" />
 
             {/* Left Duplicate Image (flipped horizontally to mirror the right side) */}
             <div className="w-full h-full flex items-center justify-start scale-x-[-1]">
               <img
                 src="/jingkieng-jri.webp"
                 alt=""
-                className="opacity-35 dark:opacity-25 select-none pointer-events-none transition-all duration-700 w-[200%] max-w-none h-full object-cover object-right"
+                className="opacity-35 dark:opacity-30 dark:invert dark:mix-blend-screen select-none pointer-events-none transition-all duration-700 w-[200%] max-w-none h-full object-cover object-right"
               />
             </div>
           </div>
@@ -269,14 +269,14 @@ export const HomePage: React.FC = () => {
           {/* Framed container on desktop right side */}
           <div className="relative w-full h-full flex items-end justify-end">
             {/* Subtle gradient overlay fading inward toward center */}
-            <div className="absolute inset-0 z-10 bg-gradient-to-l from-transparent via-white/20 to-white dark:from-transparent dark:via-[#090e0c]/30 dark:to-[#090e0c]" />
+            <div className="absolute inset-0 z-10 bg-gradient-to-l from-transparent via-white/20 to-white dark:from-transparent dark:via-black/30 dark:to-black" />
 
             {/* Right Mirror Image */}
             <div className="w-full h-full flex items-end justify-end scale-x-[-1]">
               <img
                 src="/Mawbynna.webp"
                 alt=""
-                className="opacity-35 dark:opacity-25 select-none pointer-events-none transition-all duration-700 w-full max-w-5xl object-contain object-bottom md:object-left-bottom md:w-full md:h-full"
+                className="opacity-35 dark:opacity-30 dark:invert dark:mix-blend-screen select-none pointer-events-none transition-all duration-700 w-full max-w-5xl object-contain object-bottom md:object-left-bottom md:w-full md:h-full"
               />
             </div>
           </div>

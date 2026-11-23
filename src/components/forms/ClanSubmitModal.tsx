@@ -131,155 +131,159 @@ export const ClanSubmitModal: React.FC<ClanSubmitModalProps> = ({
     >
       {isOpen && (
         <div className="p-6 overflow-y-auto max-h-[88vh] space-y-5">
-        {/* Header */}
-        <div className="flex items-center justify-between pb-3 border-b border-slate-100 dark:border-[#1f352c]">
-          <div className="flex items-center gap-2.5">
-            <div className="w-8 h-8 rounded-xl bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 flex items-center justify-center">
-              <HeartHandshake className="w-4 h-4" />
+          {/* Header */}
+          <div className="flex items-center justify-between pb-3 border-b border-slate-100 dark:border-[#1f352c]">
+            <div className="flex items-center gap-2.5">
+              <div className="w-8 h-8 rounded-xl bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 flex items-center justify-center">
+                <HeartHandshake className="w-4 h-4" />
+              </div>
+              <div>
+                <h3 id="submit-clan-title" className="font-serif font-bold text-lg text-slate-900 dark:text-slate-100">
+                  {language === 'kha' ? 'Ai Jingtip shaphang ka Jait jong phi' : 'Submit Clan Lineage Information'}
+                </h3>
+                <p className="text-xs text-slate-500 dark:text-slate-400">
+                  {language === 'kha' ? 'Ïarap ban pynsuk ia ka jingthoh jingtar jong ka jaitbynriew' : 'Help expand and preserve authentic community clan records'}
+                </p>
+              </div>
             </div>
-            <div>
-              <h3 id="submit-clan-title" className="font-serif font-bold text-lg text-slate-900 dark:text-slate-100">
-                {language === 'kha' ? 'Ai Jingtip shaphang ka Jait jong phi' : 'Submit Clan Lineage Information'}
-              </h3>
-              <p className="text-xs text-slate-500 dark:text-slate-400">
-                {language === 'kha' ? 'Ïarap ban pynsuk ia ka jingthoh jingtar jong ka jaitbynriew' : 'Help expand and preserve authentic community clan records'}
+
+            <button
+              type="button"
+              onClick={onClose}
+              className="p-1.5 rounded-full text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-[#1f352c] transition cursor-pointer"
+              aria-label="Close"
+              autoFocus
+            >
+              <X className="w-5 h-5" />
+            </button>
+          </div>
+
+          {submitted ? (
+            <div className="py-8 text-center space-y-3">
+              <CheckCircle2 className="w-12 h-12 text-emerald-600 mx-auto animate-bounce" />
+              <h4 className="font-serif font-bold text-lg text-slate-900">
+                {language === 'kha' ? 'Khublei shibun!' : 'Thank you!'}
+              </h4>
+              <p className="text-xs text-slate-600 max-w-sm mx-auto">
+                {language === 'kha'
+                  ? 'La kynshew ia ka jingtip ba phi la phah. Ngin sa peit bniah bad ki Seng Kur.'
+                  : 'Your submission has been saved. We will review and incorporate it.'}
               </p>
             </div>
-          </div>
-
-          <button
-            type="button"
-            onClick={onClose}
-            className="p-1.5 rounded-full text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-[#1f352c] transition cursor-pointer"
-            aria-label="Close"
-            autoFocus
-          >
-            <X className="w-5 h-5" />
-          </button>
-        </div>
-
-        {submitted ? (
-          <div className="py-8 text-center space-y-3">
-            <CheckCircle2 className="w-12 h-12 text-emerald-600 mx-auto animate-bounce" />
-            <h4 className="font-serif font-bold text-lg text-slate-900">
-              {language === 'kha' ? 'Khublei shibun!' : 'Thank you!'}
-            </h4>
-            <p className="text-xs text-slate-600 max-w-sm mx-auto">
-              {language === 'kha'
-                ? 'La kynshew ia ka jingtip ba phi la phah. Ngin sa peit bniah bad ki Seng Kur.'
-                : 'Your submission has been saved. We will review and incorporate it.'}
-            </p>
-          </div>
-        ) : (
-          <form onSubmit={handleSubmit} className="space-y-4 text-xs">
-            {/* Surname */}
-            <div className="space-y-1">
-              <label className="font-semibold text-slate-700 uppercase tracking-wider">
-                {language === 'kha' ? 'Ka Jait (Surname) *' : 'Surname / Clan *'}
-              </label>
-              <input
-                type="text"
-                value={jait}
-                onChange={e => setJait(e.target.value)}
-                placeholder="kumba: Kharpran, Marngar..."
-                className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 focus:outline-none focus:ring-2 focus:ring-emerald-500 font-medium"
-                required
-              />
-            </div>
-
-            {/* Name & Email */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          ) : (
+            <form onSubmit={handleSubmit} className="space-y-4 text-xs">
+              {/* Surname */}
               <div className="space-y-1">
-                <label className="font-semibold text-slate-700">
-                  {language === 'kha' ? 'Kyrteng ba pura jong phi' : 'Your Full Name'}
+                <label className="font-semibold text-slate-700 uppercase tracking-wider">
+                  {language === 'kha' ? 'Ka Jait (Surname) *' : 'Surname / Clan *'}
                 </label>
                 <input
                   type="text"
-                  value={fullName}
-                  onChange={e => setFullName(e.target.value)}
-                  placeholder="Kyrteng"
-                  className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                  value={jait}
+                  onChange={e => setJait(e.target.value)}
+                  placeholder="kumba: Kharpran, Marngar..."
+                  className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 focus:outline-none focus:ring-2 focus:ring-emerald-500 font-medium"
                   required
                 />
               </div>
 
+              {/* Name & Email */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div className="space-y-1">
+                  <label className="font-semibold text-slate-700">
+                    {language === 'kha' ? 'Kyrteng ba pura jong phi' : 'Your Full Name'}
+                  </label>
+                  <input
+                    type="text"
+                    value={fullName}
+                    onChange={e => setFullName(e.target.value)}
+                    placeholder="Kyrteng"
+                    className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                    required
+                  />
+                </div>
+
+                <div className="space-y-1">
+                  <label className="font-semibold text-slate-700">
+                    {language === 'kha' ? 'Email jong phi' : 'Email Address'}
+                  </label>
+                  <input
+                    type="email"
+                    value={email}
+                    onChange={e => setEmail(e.target.value)}
+                    placeholder="email@example.com"
+                    className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                    required
+                  />
+                </div>
+              </div>
+
+              {/* Shikur Clans */}
               <div className="space-y-1">
                 <label className="font-semibold text-slate-700">
-                  {language === 'kha' ? 'Email jong phi' : 'Email Address'}
+                  {language === 'kha' ? 'Ki Jait ba phi ïadei Shikur (Maternal sister clans)' : 'Shikur Clans (Comma-separated)'}
                 </label>
                 <input
-                  type="email"
-                  value={email}
-                  onChange={e => setEmail(e.target.value)}
-                  placeholder="email@example.com"
+                  type="text"
+                  value={shikurClans}
+                  onChange={e => setShikurClans(e.target.value)}
+                  placeholder="kumba: Jait A, Jait B, Jait C..."
                   className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 focus:outline-none focus:ring-2 focus:ring-emerald-500"
                   required
                 />
               </div>
-            </div>
 
-            {/* Shikur Clans */}
-            <div className="space-y-1">
-              <label className="font-semibold text-slate-700">
-                {language === 'kha' ? 'Ki Jait ba phi ïadei Shikur (Maternal sister clans)' : 'Shikur Clans (Comma-separated)'}
-              </label>
-              <input
-                type="text"
-                value={shikurClans}
-                onChange={e => setShikurClans(e.target.value)}
-                placeholder="kumba: Jait A, Jait B, Jait C..."
-                className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 focus:outline-none focus:ring-2 focus:ring-emerald-500"
-                required
-              />
-            </div>
+              {/* Teh Kur Clans */}
+              <div className="space-y-1">
+                <label className="font-semibold text-slate-700">
+                  {language === 'kha' ? 'Ki Jait ba phi ïateh Kur (Covenant-bound clans)' : 'Teh Kur Clans (Comma-separated)'}
+                </label>
+                <input
+                  type="text"
+                  value={tehKurClans}
+                  onChange={e => setTehKurClans(e.target.value)}
+                  placeholder="kumba: Jait X, Jait Y..."
+                  className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                  required
+                />
+              </div>
 
-            {/* Teh Kur Clans */}
-            <div className="space-y-1">
-              <label className="font-semibold text-slate-700">
-                {language === 'kha' ? 'Ki Jait ba phi ïateh Kur (Covenant-bound clans)' : 'Teh Kur Clans (Comma-separated)'}
-              </label>
-              <input
-                type="text"
-                value={tehKurClans}
-                onChange={e => setTehKurClans(e.target.value)}
-                placeholder="kumba: Jait X, Jait Y..."
-                className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 focus:outline-none focus:ring-2 focus:ring-emerald-500"
-                required
-              />
-            </div>
-
-            {/* Historical Notes */}
-            <div className="space-y-1">
-              <label className="font-semibold text-slate-700">
-                {language === 'kha' ? 'Ki Sabut (Evidence) / Ka Jingiathuh pateng' : 'Evidence or Oral Lore'}
-              </label>
-              <textarea
-                value={notes}
-                onChange={e => setNotes(e.target.value)}
-                rows={3}
-                placeholder={language === 'kha' ? 'Iathuh lem shaphang ka thymmei jong ka jait jong phi, ki kot ba la pynmih bad ki jingiathuh pateng ban pynshisha...' : 'Let us know the source of your surname, published books, and oral traditions as evidence...'}
-                className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 focus:outline-none focus:ring-2 focus:ring-emerald-500"
-              />
-            </div>
-
-            <div className="pt-2 flex justify-end gap-2">
-              <button
-                type="button"
-                onClick={onClose}
-                className="px-4 py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-medium transition cursor-pointer"
-              >
-                Cancel
-              </button>
-              <button
-                type="submit"
-                className="px-6 py-2.5 rounded-xl bg-emerald-700 hover:bg-emerald-800 text-white font-semibold transition flex items-center gap-1.5 shadow-md shadow-emerald-700/20 cursor-pointer"
-              >
-                <Send className="w-3.5 h-3.5" />
-                <span>{language === 'kha' ? 'Phah ia ka Jingtip' : 'Submit Information'}</span>
-              </button>
-            </div>
-          </form>
-        )}
+              {/* Historical Notes */}
+              <div className="space-y-1">
+                <label className="font-semibold text-slate-700">
+                  {language === 'kha' ? 'Ki Sabut (Evidence) / Ka Jingiathuh pateng' : 'Evidence or Oral Lore'}
+                </label>
+                <textarea
+                  value={notes}
+                  onChange={e => setNotes(e.target.value)}
+                  rows={3}
+                  placeholder={language === 'kha' ? 'Iathuh lem shaphang ka thymmei jong ka jait jong phi, ki kot ba la pynmih bad ki jingiathuh pateng ban pynshisha...' : 'Let us know the source of your surname, published books, and oral traditions as evidence...'}
+                  className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                />
+              </div>
+              <div className="space-y-1.5">
+                <label className="block text-[11px] font-semibold text-slate-600 dark:text-slate-300">
+                  {language === 'kha' ? 'Da kaba phah ia kane ka phorm phi mynjur ban sam ia ki jingtip bad ngi.' : 'By submitting this form you consent to share the information with us.'}
+                </label>
+              </div>
+              <div className="pt-2 flex justify-end gap-2">
+                <button
+                  type="button"
+                  onClick={onClose}
+                  className="px-4 py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-medium transition cursor-pointer"
+                >
+                  Cancel
+                </button>
+                <button
+                  type="submit"
+                  className="px-6 py-2.5 rounded-xl bg-emerald-700 hover:bg-emerald-800 text-white font-semibold transition flex items-center gap-1.5 shadow-md shadow-emerald-700/20 cursor-pointer"
+                >
+                  <Send className="w-3.5 h-3.5" />
+                  <span>{language === 'kha' ? 'Phah ia ka Jingtip' : 'Submit Information'}</span>
+                </button>
+              </div>
+            </form>
+          )}
         </div>
       )}
     </dialog>

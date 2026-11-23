@@ -95,7 +95,7 @@ export const BisharSangHub: React.FC = () => {
 
               <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 max-w-xl mx-auto leading-relaxed">
                 {language === 'kha'
-                  ? 'Jied ia ka rukom bishar ba phi sngewbit ban bishar ia ka jingiadei kur bad shongkha shongman ha ki 4 tylli ki kyrdan katkum ka niam bad ka dustur Khasi:'
+                  ? "Jied ia ka rukom bishar ba phi sngewbit ban bishar ia ka jingiadei kur bad shongkha shongman ha ki 4 tylli ki kyrdan (Jait kmie, Kur u kpa, Khun u kñii) katkum ka niam bad ka dustur Khasi: "
                   : 'Choose your preferred verification method to evaluate kinship and traditional Khasi exogamy rules across all 4 levels:'}
               </p>
             </div>
@@ -123,7 +123,7 @@ export const BisharSangHub: React.FC = () => {
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
                       {language === 'kha'
-                        ? 'Bishar lyngba ki 4 tylli ki kyrdan da kaba pyndap kyrteng ha ki form kiba pynbeit kyrdan-pa-kyrdan (Jait kmie, Kur u kpa, Khun u kñii).'
+                        ? 'Bishar lyngba ki 4 tylli ki kyrdan da kaba pyndap kyrteng jong ki jait ha ki form kiba pynbeit kyrdan-pa-kyrdan.'
                         : 'Verify clan compatibility sequentially using structured forms across maternal lineage, paternal lineage, and cousin connections.'}
                     </p>
                   </div>
@@ -131,15 +131,15 @@ export const BisharSangHub: React.FC = () => {
                   <ul className="space-y-2 text-xs text-slate-600 dark:text-slate-300 pt-1">
                     <li className="flex items-center gap-2">
                       <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                      <span>{language === 'kha' ? 'Pyndap jait step-by-step ha ka form' : 'Structured multi-step form entry'}</span>
+                      <span>{language === 'kha' ? 'Pyndap ka jait wei hadien kawei ka kyrdan' : 'Structured multi-step form entry'}</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                      <span>{language === 'kha' ? 'Bishar bniah bad ki test presets' : 'Test pairings presets available'}</span>
+                      <span>{language === 'kha' ? 'Bishar bniah bad ki jur jong ka jingiadei kur' : 'Test clan pairing links'}</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                      <span>{language === 'kha' ? 'Pyni sani ia ki citation na ki kot tynrai' : 'Historical literature citations'}</span>
+                      <span>{language === 'kha' ? 'Phin ioh ka jingtip ba donkam' : 'Get Decisive information'}</span>
                     </li>
                   </ul>
                 </div>
@@ -174,7 +174,7 @@ export const BisharSangHub: React.FC = () => {
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
                       {language === 'kha'
-                        ? 'Bishar da kaba ïakren bad ka App kumba phi text paralok. Ka app kan kylli ia phi step-by-step bad batai ha kawei pa kawei ka kyrdan.'
+                        ? 'Bishar da kaba ïakren bad ka App kumba phi text paralok. Ka app kan kylli ia phi wei hadien kawei ki jingkylli bad phi lah ban jubab.'
                         : 'Verify compatibility conversationally like texting a friend. The app guides you step-by-step with interactive questions.'}
                     </p>
                   </div>
@@ -186,11 +186,11 @@ export const BisharSangHub: React.FC = () => {
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                      <span>{language === 'kha' ? 'Kheiñ lypa ia ka primary surname' : 'Primary surname auto-detected'}</span>
+                      <span>{language === 'kha' ? 'Ka iasyriem bad ka form' : 'Similar to Form Method'}</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                      <span>{language === 'kha' ? 'Jingbatai kyrdan-pa-kyrdan ha ka chat' : 'Dynamic responses & stop warnings'}</span>
+                      <span>{language === 'kha' ? 'Iathuh kyrdan-pa-kyrdan ha ka chat' : 'Dynamic responses & stop warnings'}</span>
                     </li>
                   </ul>
                 </div>

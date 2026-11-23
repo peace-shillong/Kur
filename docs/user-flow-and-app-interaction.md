@@ -8,7 +8,7 @@ You didn't find your surname here?
 
 (We got the user's surname from his first input)
 
-Kane ka dei ka jait jong phi __________?
+Kane ka dei ka jait jong phi: __________?
 Is this your surname ________ ?
 - hooid
 - em 

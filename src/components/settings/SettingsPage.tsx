@@ -5,6 +5,7 @@ import { useTheme } from '../../context/ThemeContext';
 import { PrivacyModal } from './PrivacyModal';
 import { TermsModal } from './TermsModal';
 import { ConfirmClearModal } from './ConfirmClearModal';
+import { ClanReportModal } from '../modals/ClanReportModal';
 import {
   ArrowLeft,
   Palette,
@@ -22,7 +23,8 @@ import {
   Moon,
   Brush,
   Link,
-  GitBranchPlus
+  GitBranchPlus,
+  AlertTriangle
 } from 'lucide-react';
 
 interface SettingsPageProps {
@@ -38,6 +40,7 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({ onBack }) => {
   const [isTermsOpen, setIsTermsOpen] = useState(false);
   const [clearedNotice, setClearedNotice] = useState(false);
   const [isConfirmClearOpen, setIsConfirmClearOpen] = useState(false);
+  const [isReportModalOpen, setIsReportModalOpen] = useState(false);
 
   const handleClearCache = () => {
     setIsConfirmClearOpen(true);
@@ -388,10 +391,10 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({ onBack }) => {
           <div className="p-4 rounded-2xl bg-emerald-50/70 border border-emerald-200 space-y-1">
             <div className="font-serif font-bold text-sm text-emerald-950 flex items-center gap-1.5">
               <Link className="w-4 h-4 text-emerald-700" />
-              <span>Source of Data: Tynrai</span>
+              <span>Source of Data: Tynrai-AI</span>
             </div>
             <p className="text-xs text-slate-700 leading-relaxed">
-              Clan connection datasets and historical oral citations are sourced from <a href="https://tynrai.in/demo/tipkur/" target="_blank" rel="noreferrer" className="text-emerald-800 underline font-bold">Tynrai (tynrai.in)</a>, working towards comprehensive Khasi historical digital records.
+              Clan connection datasets and historical oral citations are sourced from <a href="https://tynrai.in/demo/tipkur/" target="_blank" rel="noreferrer" className="text-emerald-800 underline font-bold">Tynrai-AI (tynrai.in)</a>, working towards comprehensive Khasi historical digital records.
             </p>
           </div>
 
@@ -414,7 +417,7 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({ onBack }) => {
           </div>
 
           <div className="p-3.5 rounded-2xl bg-slate-50 border border-slate-200 text-xs text-slate-600">
-            <strong>Developer:</strong> Designed and developed with modern web standards by the Kyrshanlang R. Dkhar, November 2026.
+            <strong>Developer:</strong> Designed and developed with modern web standards by Kyrshanlang R. Dkhar, November 2026.
           </div>
 
           {/* Partner & Community Logos */}
@@ -456,7 +459,7 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({ onBack }) => {
                 />
               </div>
               <div className="text-left">
-                <span className="block text-xs font-bold leading-tight">Tynrai</span>
+                <span className="block text-xs font-bold leading-tight">Tynrai-AI</span>
                 <span className="block text-[11px] text-slate-500">tynrai.in</span>
               </div>
             </a>
@@ -480,6 +483,38 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({ onBack }) => {
           </div>
         </div>
       </section >
+
+      {/* SECTION: Report Mistakes in Clan Kinship */}
+      <section className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-4">
+        <div className="flex items-center gap-2.5 pb-2 border-b border-slate-100">
+          <AlertTriangle className="w-5 h-5 text-amber-600" />
+          <h2 className="font-serif font-bold text-lg text-slate-900">
+            {language === 'kha' ? 'Ujor Jingbakla ha ka Jingïadei Kur' : 'Report Mistakes in Clan Kinship'}
+          </h2>
+        </div>
+
+        <div className="p-4 sm:p-5 rounded-2xl bg-amber-50/70 border border-amber-200/80 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div className="space-y-1">
+            <div className="text-sm font-bold text-amber-950 flex items-center gap-2">
+              <span>{language === 'kha' ? 'Shem jingbakla ha ki kur ne jingïateh kur?' : 'Found inaccurate kinship or clan connections?'}</span>
+            </div>
+            <p className="text-xs text-amber-900 leading-relaxed max-w-xl">
+              {language === 'kha'
+                ? 'Lada phi lap ba don ki kur ba la buh bakla kum shikur lane teh kur, sngewbha ujor hangne khnang ba ki rangbah kur bad ki nongbishar kin pynbeit.'
+                : 'If you notice historical inaccuracies, incorrectly linked sister clans (shikur), or treaty connections (tehkur), submit a correction for verification.'}
+            </p>
+          </div>
+
+          <button
+            type="button"
+            onClick={() => setIsReportModalOpen(true)}
+            className="px-5 py-2.5 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-semibold text-xs transition cursor-pointer shrink-0 shadow-sm flex items-center gap-2"
+          >
+            <AlertTriangle className="w-4 h-4" />
+            <span>{language === 'kha' ? 'Ujor Jingbakla' : 'Report a Mistake'}</span>
+          </button>
+        </div>
+      </section>
 
       {/* SECTION 4: Clear Data & Cache Button */}
       < section className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm" >
@@ -582,6 +617,11 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({ onBack }) => {
         isOpen={isConfirmClearOpen}
         onClose={() => setIsConfirmClearOpen(false)}
         onConfirm={executeClearCache}
+      />
+
+      <ClanReportModal
+        isOpen={isReportModalOpen}
+        onClose={() => setIsReportModalOpen(false)}
       />
 
     </div >
