@@ -1,0 +1,44 @@
+{
+  "name": "Kur - Tipkur Tipkha",
+  "short_name": "Tipkur",
+  "description": "Digital genealogical platform for Khasi clan kinship (kur bad jait), matrilineal ancestry, and traditional marriage exogamy verification (Bishar ia ka Sang).",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#090e0c",
+  "theme_color": "#2E8B57",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": [
+    "education",
+    "reference",
+    "lifestyle"
+  ],
+  "icons": [
+    {
+      "src": "/pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
+

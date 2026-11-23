@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useLanguage } from '../../context/LanguageContext';
 import { CompatibilityChecker } from './CompatibilityChecker';
@@ -19,6 +19,15 @@ export type BisharSangMode = 'select' | 'form' | 'chat';
 export const BisharSangHub: React.FC = () => {
   const { language } = useLanguage();
   const [mode, setMode] = useState<BisharSangMode>('select');
+  const headingRef = useRef<HTMLHeadingElement | null>(null);
+
+  // When user opens BisharSangHub, scroll the page to <h2>Bishar ïa ka Sang ka Ma</h2> when page loads
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      headingRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 150);
+    return () => clearTimeout(timer);
+  }, []);
 
   const handleSelectMode = (newMode: BisharSangMode) => {
     setMode(newMode);
@@ -89,7 +98,10 @@ export const BisharSangHub: React.FC = () => {
                 <span>Bishar ia ka Sang • 4-Level Traditional Kinship Verification</span>
               </div>
 
-              <h2 className="text-2xl sm:text-3xl font-serif font-bold text-slate-900 dark:text-slate-100">
+              <h2
+                ref={headingRef}
+                className="text-2xl sm:text-3xl font-serif font-bold text-slate-900 dark:text-slate-100 scroll-mt-6"
+              >
                 {language === 'kha' ? 'Bishar ïa ka Sang ka Ma' : 'Traditional Marriage Compatibility'}
               </h2>
 

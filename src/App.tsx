@@ -9,7 +9,7 @@ import { KurJaitPage } from './components/kur-jait/KurJaitPage';
 import { useClan } from './context/ClanContext';
 import { useLanguage } from './context/LanguageContext';
 import { useTheme } from './context/ThemeContext';
-import { HeartHandshake, ShieldCheck, ArrowLeft, Languages, Settings, BookOpen } from 'lucide-react';
+import { HeartHandshake, ArrowLeft, Languages, Settings, BookOpen } from 'lucide-react';
 
 export const App: React.FC = () => {
   const { isGraphOpen, setIsGraphOpen, recentSearches, query } = useClan();
@@ -20,9 +20,17 @@ export const App: React.FC = () => {
   const [showKurJait, setShowKurJait] = useState<boolean>(false);
   const [showLockedModal, setShowLockedModal] = useState<boolean>(false);
 
+  // Helper to ensure mobile virtual keyboard stays dismissed when returning to homepage
+  const dismissMobileKeyboard = () => {
+    if (typeof document !== 'undefined' && document.activeElement instanceof HTMLElement) {
+      document.activeElement.blur();
+    }
+  };
+
   // Handle Physical / Browser Back Press
   useEffect(() => {
     const handlePopState = () => {
+      dismissMobileKeyboard();
       if (showSettings) {
         setShowSettings(false);
       } else if (showKurJait) {
@@ -52,6 +60,7 @@ export const App: React.FC = () => {
   };
 
   const closeChecker = () => {
+    dismissMobileKeyboard();
     setShowChecker(false);
   };
 
@@ -63,6 +72,7 @@ export const App: React.FC = () => {
   };
 
   const closeSettings = () => {
+    dismissMobileKeyboard();
     setShowSettings(false);
   };
 
@@ -74,6 +84,7 @@ export const App: React.FC = () => {
   };
 
   const closeKurJait = () => {
+    dismissMobileKeyboard();
     setShowKurJait(false);
   };
 
@@ -184,7 +195,6 @@ export const App: React.FC = () => {
           </div>
 
           <div className="flex items-center justify-center gap-1.5 font-medium text-[11px] text-slate-400">
-            <ShieldCheck className="w-3.5 h-3.5 text-emerald-600" />
             <span>{t('disclaimerText')}</span>
           </div><br />Powered by <a href='https://tynrai.in' className='underline text-emerald-800' target='_blank' rel='noopener noreferrer' >Tynrai-AI</a>
         </footer>

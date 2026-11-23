@@ -6,6 +6,7 @@ import { PrivacyModal } from './PrivacyModal';
 import { TermsModal } from './TermsModal';
 import { ConfirmClearModal } from './ConfirmClearModal';
 import { ClanReportModal } from '../modals/ClanReportModal';
+import { usePWA } from '../../context/PWAContext';
 import {
   ArrowLeft,
   Palette,
@@ -24,7 +25,10 @@ import {
   Brush,
   Link,
   GitBranchPlus,
-  AlertTriangle
+  AlertTriangle,
+  Download,
+  Smartphone,
+  CheckCircle2
 } from 'lucide-react';
 
 interface SettingsPageProps {
@@ -41,6 +45,7 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({ onBack }) => {
   const [clearedNotice, setClearedNotice] = useState(false);
   const [isConfirmClearOpen, setIsConfirmClearOpen] = useState(false);
   const [isReportModalOpen, setIsReportModalOpen] = useState(false);
+  const { isInstalled, isInstallable, isIOS, installApp } = usePWA();
 
   const handleClearCache = () => {
     setIsConfirmClearOpen(true);
@@ -317,6 +322,78 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({ onBack }) => {
         </div>
       </section>
 
+      {/* SECTION: Install App (Progressive Web App - PWA) */}
+      <section className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-4">
+        <div className="flex items-center gap-2.5 pb-2 border-b border-slate-100">
+          <Download className="w-5 h-5 text-emerald-600" />
+          <h2 className="font-serif font-bold text-lg text-slate-900">
+            {language === 'kha' ? 'Buh ia ka App (Install App)' : 'Install App'}
+          </h2>
+        </div>
+
+        <div className="p-4 sm:p-5 rounded-2xl bg-emerald-50/70 border border-emerald-200/80 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div className="space-y-1">
+            <div className="text-sm font-bold text-slate-900 flex items-center gap-2">
+              <Smartphone className="w-4 h-4 text-emerald-700" />
+              <span>
+                {isInstalled
+                  ? (language === 'kha' ? 'Kane ka App ka la don lypa ha ka Device' : 'App is already installed on this device')
+                  : (language === 'kha' ? 'Pynskhem ha ka Phone lane Computer' : 'Install on Mobile or Desktop')}
+              </span>
+            </div>
+            <p className="text-xs text-slate-600 leading-relaxed max-w-xl">
+              {language === 'kha'
+                ? 'Plie sted kumba plie ia ki apps, pyndonkam offline, bad ym donkam ban plie ha ka browser.'
+                : 'Experience fast launching, offline support, and a clean standalone full-screen experience without browser toolbars.'}
+            </p>
+            {isIOS && !isInstalled && (
+              <div className="pt-2 text-[11px] text-emerald-800 font-medium">
+                {language === 'kha'
+                  ? "Ha iPhone/iPad: Khem ia ka button Share ha Safari (⎋), nangta jied 'Add to Home Screen' (+)."
+                  : "On iPhone/iPad: Tap the Safari Share button (⎋), then scroll down and tap 'Add to Home Screen' (+)."}
+              </div>
+            )}
+          </div>
+
+          <div className="shrink-0">
+            {isInstalled ? (
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-emerald-100 text-emerald-800 text-xs font-bold border border-emerald-300 shadow-xs">
+                <CheckCircle2 className="w-4 h-4 text-emerald-600" />
+                <span>{language === 'kha' ? 'La Pynskhem (Installed)' : 'Installed'}</span>
+              </div>
+            ) : isInstallable ? (
+              <button
+                type="button"
+                onClick={installApp}
+                className="px-5 py-2.5 rounded-xl bg-emerald-700 hover:bg-emerald-800 text-white font-semibold text-xs transition cursor-pointer shadow-sm flex items-center gap-2 active:scale-95"
+              >
+                <Download className="w-4 h-4" />
+                <span>{language === 'kha' ? 'Pynskhem Mynta' : 'Install Now'}</span>
+              </button>
+            ) : isIOS ? (
+              <div className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-slate-100 text-slate-700 text-xs font-semibold">
+                <span>iOS / Safari</span>
+              </div>
+            ) : (
+              <button
+                type="button"
+                onClick={() => {
+                  alert(
+                    language === 'kha'
+                      ? "Lada phim iohi ia ka prompt, khem ha ki lai tylli ki thoh (Menu ⋮) ha ka browser jong phi bad jied 'Install App' lane 'Add to Home Screen'."
+                      : "If the prompt did not appear, tap the browser menu (⋮) and select 'Install App' or 'Add to Home Screen'."
+                  );
+                }}
+                className="px-5 py-2.5 rounded-xl bg-emerald-700 hover:bg-emerald-800 text-white font-semibold text-xs transition cursor-pointer shadow-sm flex items-center gap-2"
+              >
+                <Download className="w-4 h-4" />
+                <span>{language === 'kha' ? 'Buh ia ka App' : 'Install App'}</span>
+              </button>
+            )}
+          </div>
+        </div>
+      </section>
+
       {/* SECTION 2: About the App & Live Statistics */}
       <section className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-5">
         <div className="flex items-center gap-2.5 pb-2 border-b border-slate-100">
@@ -421,6 +498,7 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({ onBack }) => {
           </div>
 
           {/* Partner & Community Logos */}
+          <hr /><p className="uppercase text-center font-bold">Press the icons below to view more</p>
           <div className="pt-2 flex flex-wrap items-center gap-3 sm:gap-4 justify-start">
             {/* MegDev Connect (white logo with dark container for optimal visibility) */}
             <a
@@ -440,6 +518,28 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({ onBack }) => {
               <div className="text-left">
                 <span className="block text-xs font-bold leading-tight">MegDev</span>
                 <span className="block text-[11px] text-slate-400">@meg.devconnect</span>
+              </div>
+            </a>
+
+            {/* All Apps */}
+            <a
+              href="https://apps.kyrshan.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center gap-3 p-2.5 pr-4 rounded-2xl bg-slate-50 hover:bg-slate-100 transition-all shadow-sm border border-slate-200 text-slate-900 cursor-pointer"
+              title="Apps"
+            >
+              <div className="w-10 h-10 rounded-xl bg-white flex items-center justify-center p-1 overflow-hidden border border-slate-200/80 shadow-xs shrink-0">
+                <img
+                  src="/icon-apps.png"
+                  alt="Apps"
+                  className="w-full h-full object-contain group-hover:scale-105 transition-transform"
+                />
+              </div>
+              <div className="text-left">
+                <span className="block text-xs font-bold leading-tight">Apps</span>
+                <span className="block text-[11px] text-slate-500 hidden md:block">View More</span>
+                <span className="block text-[11px] text-slate-500 md:hidden">View</span>
               </div>
             </a>
 
@@ -485,7 +585,7 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({ onBack }) => {
       </section >
 
       {/* SECTION: Report Mistakes in Clan Kinship */}
-      <section className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-4">
+      < section className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-4" >
         <div className="flex items-center gap-2.5 pb-2 border-b border-slate-100">
           <AlertTriangle className="w-5 h-5 text-amber-600" />
           <h2 className="font-serif font-bold text-lg text-slate-900">
@@ -514,7 +614,7 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({ onBack }) => {
             <span>{language === 'kha' ? 'Ujor Jingbakla' : 'Report a Mistake'}</span>
           </button>
         </div>
-      </section>
+      </section >
 
       {/* SECTION 4: Clear Data & Cache Button */}
       < section className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm" >
@@ -603,17 +703,17 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({ onBack }) => {
       </footer >
 
       {/* Modals for Privacy, Terms and Clear Cache Confirmation */}
-      <PrivacyModal
+      < PrivacyModal
         isOpen={isPrivacyOpen}
         onClose={() => setIsPrivacyOpen(false)}
       />
 
-      <TermsModal
+      < TermsModal
         isOpen={isTermsOpen}
         onClose={() => setIsTermsOpen(false)}
       />
 
-      <ConfirmClearModal
+      < ConfirmClearModal
         isOpen={isConfirmClearOpen}
         onClose={() => setIsConfirmClearOpen(false)}
         onConfirm={executeClearCache}

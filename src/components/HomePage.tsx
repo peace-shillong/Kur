@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { useClan } from '../context/ClanContext';
 import { useLanguage } from '../context/LanguageContext';
@@ -12,6 +12,21 @@ export const HomePage: React.FC = () => {
   const { palette, homeBg } = useTheme();
   const [jaitInput, setJaitInput] = useState<string>('');
   const [parallaxOffset, setParallaxOffset] = useState({ y: 0, scale: 1 });
+  const inputRef = useRef<HTMLInputElement | null>(null);
+
+  // Auto-focus management: Only focus on Desktop view (>= 768px).
+  // On Mobile view (< 768px) or when pressing Back, NEVER auto-open the soft keyboard.
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      if (window.innerWidth >= 768) {
+        inputRef.current?.focus({ preventScroll: true });
+      } else {
+        if (document.activeElement instanceof HTMLElement) {
+          document.activeElement.blur();
+        }
+      }
+    }
+  }, []);
 
   // Parallax calculation on screen resize
   useEffect(() => {
@@ -124,7 +139,7 @@ export const HomePage: React.FC = () => {
               onKeyDown={handleKeyDown}
               placeholder={language === 'kha' ? "Thoh ka jait jong phi hangne" : "Enter your surname (e.g Laloo)"}
               className="w-full pl-4 sm:pl-6 pr-4 py-3.5 sm:py-4 text-base sm:text-lg font-medium text-slate-900 dark:text-slate-100 placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:outline-none bg-transparent"
-              autoFocus
+              ref={inputRef}
               required
             />
 
