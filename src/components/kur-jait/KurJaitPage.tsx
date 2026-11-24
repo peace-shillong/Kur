@@ -23,6 +23,7 @@ interface KurJaitPageProps {
 export const KurJaitPage: React.FC<KurJaitPageProps> = ({ onBack, onOpenChecker }) => {
   const { language } = useLanguage();
   const [activeImageModal, setActiveImageModal] = useState<string | null>(null);
+  const [level3Tab, setLevel3Tab] = useState<'3.1' | '3.2' | 'both'>('3.1');
 
   return (
     <div className="w-full max-w-4xl mx-auto px-4 sm:px-6 py-8 sm:py-12 space-y-10 animate-in fade-in duration-300">
@@ -79,7 +80,7 @@ export const KurJaitPage: React.FC<KurJaitPageProps> = ({ onBack, onOpenChecker 
         </div>
 
         {/* Khasi Original Excerpt */}
-        <div className="p-4 sm:p-5 rounded-2xl bg-slate-50 dark:bg-[#15221d] border border-slate-200/80 dark:border-slate-800 space-y-2 text-xs sm:text-sm text-slate-800 dark:text-slate-200 leading-relaxed font-serif italic">
+        <div className="p-4 sm:p-5 rounded-2xl bg-slate-50 dark:bg-[#15221d] border border-slate-200/80 dark:border-slate-800 space-y-2 text-xs sm:text-sm text-slate-800 dark:text-slate-200 leading-relaxed font-serif">
           <p>
             "Ki Khun ki ksiew u Hynñiew Trep Hynñiew Skum ki long kiba riewspah ha ka liang ki kur ki jait. Kine ki jait ki khong ki wan da ka daw bad la pynskhem ïa ki da ka niam tynrai U Hynñiew Trep. Ngi ngeit ba ki kur ki jait ki mih na ka Ïawbei tynrai kaba long ka kmie nyngkong jong kawei pa kawei ka kur ha ka jait bynriew Hynñiew Trep. U shongkha ba nyngkong eh jong ka kur la khot kyrteng u Thawlang bad ia u longkñi nyngkong la ong u Suitnia."
           </p>
@@ -252,7 +253,7 @@ export const KurJaitPage: React.FC<KurJaitPageProps> = ({ onBack, onOpenChecker 
         </div>
 
         {/* Khasi Original Excerpt */}
-        <div className="p-4 sm:p-5 rounded-2xl bg-slate-50 dark:bg-[#15221d] border border-slate-200/80 dark:border-slate-800 space-y-2 text-xs sm:text-sm text-slate-800 dark:text-slate-200 leading-relaxed font-serif italic">
+        <div className="p-4 sm:p-5 rounded-2xl bg-slate-50 dark:bg-[#15221d] border border-slate-200/80 dark:border-slate-800 space-y-2 text-xs sm:text-sm text-slate-800 dark:text-slate-200 leading-relaxed font-serif">
           <p>
             "Shaphang ka shongkha shongman, u Hynñiew Trep u bat kyntang ïaka. Um ju shongkha shikur ne shipara kha. Dang lap ha kine ki snem ba hadien ba kano kano ka jait bynriew kaba shongkha jan than haba dang don jingïadei jan ha ka snam, kam juh lah neh slem. Ki khun ki kti jong ki, la ong, ki long anna ha ka met ka phad bad ki long kiba duna ba ka liang ka pyrkhat ka pyrdaiñ."
           </p>
@@ -425,6 +426,349 @@ export const KurJaitPage: React.FC<KurJaitPageProps> = ({ onBack, onOpenChecker 
               </div>
             </div>
           </div>
+
+          {/* 4 Photo Diagram Cards for the 4 App Levels */}
+          <div className="pt-6 border-t border-slate-100 dark:border-slate-800 space-y-3">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+              <div>
+                <span className="text-[11px] font-bold uppercase tracking-wider text-emerald-700 dark:text-emerald-400 block">
+                  {language === 'kha' ? 'Ki Dur Batai ia ki 4 Kyrdan' : 'Visual Kinship Reference Charts'}
+                </span>
+                <h4 className="text-base sm:text-lg font-serif font-bold text-slate-900 dark:text-slate-100 flex items-center gap-2">
+                  <Layers className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
+                  <span>
+                    {language === 'kha'
+                      ? 'Ki Dur Batai Kyrdan Bishar Sang (Kyrdan 1 – 4)'
+                      : 'Kinship Lineage & Restriction Diagrams (Levels 1 – 4)'}
+                  </span>
+                </h4>
+              </div>
+              <span className="text-[11px] text-slate-500 dark:text-slate-400 self-start sm:self-auto">
+                {language === 'kha' ? 'Khnjot ha ka dur ban pynheh (Click to zoom)' : 'Click any chart to zoom'}
+              </span>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-1">
+              {/* Photo Card 1: Kyrdan 1 */}
+              <div className="p-4 sm:p-5 rounded-2xl bg-slate-50 dark:bg-[#15221d] border border-slate-200/80 dark:border-slate-800 space-y-3 flex flex-col justify-between">
+                <div className="space-y-2">
+                  <div className="flex items-center justify-between gap-2 border-b border-slate-200/60 dark:border-slate-800 pb-2">
+                    <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-100 dark:bg-emerald-950/60 text-emerald-800 dark:text-emerald-300 text-[10px] font-bold uppercase tracking-wider">
+                      <Layers className="w-3 h-3" />
+                      <span>Level 1 Diagram</span>
+                    </span>
+                    <span className="text-[11px] font-medium text-slate-500 dark:text-slate-400">
+                      Kyrdan 1
+                    </span>
+                  </div>
+
+                  <div>
+                    <h5 className="font-serif font-bold text-sm sm:text-base text-slate-900 dark:text-slate-100">
+                      Dur 1: Para-ar-kmie (Maternal Parallel Cousins)
+                    </h5>
+                    <p className="text-xs text-slate-600 dark:text-slate-400 mt-0.5">
+                      {language === 'kha'
+                        ? 'Shipara-trai na kajuh ka kpoh / Ka juh ka Kur — Ka long kaba Sang ban ïashongkha.'
+                        : 'Full siblings from the same womb lineage / clan — Strictly taboo to marry.'}
+                    </p>
+                  </div>
+                </div>
+
+                <div className="space-y-2">
+                  <div
+                    onClick={() => setActiveImageModal('/assets/Kyrdan 1.png')}
+                    className="group relative rounded-xl overflow-hidden border border-slate-200/90 dark:border-slate-700/80 bg-white dark:bg-[#0c1410] shadow-xs cursor-pointer"
+                  >
+                    <img
+                      src="/assets/Kyrdan 1.png"
+                      alt="Dur 1: Para-ar-kmie (Maternal Parallel Cousins)"
+                      className="w-full h-auto max-h-[300px] object-contain mx-auto group-hover:scale-[1.01] transition-transform duration-300"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2 text-white font-medium text-xs">
+                      <ZoomIn className="w-4 h-4" />
+                      <span>{language === 'kha' ? 'Khnjot ban pynheh' : 'Click to enlarge'}</span>
+                    </div>
+                  </div>
+                  <p className="text-center text-[11px] text-slate-500 dark:text-slate-400 italic">
+                    Figure 1: Maternal Parallel Cousins Lineage & Exogamy Restriction
+                  </p>
+                </div>
+              </div>
+
+              {/* Photo Card 2: Kyrdan 2 */}
+              <div className="p-4 sm:p-5 rounded-2xl bg-slate-50 dark:bg-[#15221d] border border-slate-200/80 dark:border-slate-800 space-y-3 flex flex-col justify-between">
+                <div className="space-y-2">
+                  <div className="flex items-center justify-between gap-2 border-b border-slate-200/60 dark:border-slate-800 pb-2">
+                    <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-amber-100 dark:bg-amber-950/60 text-amber-800 dark:text-amber-300 text-[10px] font-bold uppercase tracking-wider">
+                      <Layers className="w-3 h-3" />
+                      <span>Level 2 Diagram</span>
+                    </span>
+                    <span className="text-[11px] font-medium text-slate-500 dark:text-slate-400">
+                      Kyrdan 2
+                    </span>
+                  </div>
+
+                  <div>
+                    <h5 className="font-serif font-bold text-sm sm:text-base text-slate-900 dark:text-slate-100">
+                      Dur 2: Kur u Kpa & Ai Khaw Kylliang (Paternal Lineage)
+                    </h5>
+                    <p className="text-xs text-slate-600 dark:text-slate-400 mt-0.5">
+                      {language === 'kha'
+                        ? 'Paternal Clan Lineage (Kur u Kpa) — Prohibited while father is alive.'
+                        : 'Restriction of paternal clan & cross-cousin marriage while the father lives.'}
+                    </p>
+                  </div>
+                </div>
+
+                <div className="space-y-2">
+                  <div
+                    onClick={() => setActiveImageModal('/assets/Kyrdan 2.png')}
+                    className="group relative rounded-xl overflow-hidden border border-slate-200/90 dark:border-slate-700/80 bg-white dark:bg-[#0c1410] shadow-xs cursor-pointer"
+                  >
+                    <img
+                      src="/assets/Kyrdan 2.png"
+                      alt="Dur 2: Kur u Kpa & Ai Khaw Kylliang"
+                      className="w-full h-auto max-h-[300px] object-contain mx-auto group-hover:scale-[1.01] transition-transform duration-300"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2 text-white font-medium text-xs">
+                      <ZoomIn className="w-4 h-4" />
+                      <span>{language === 'kha' ? 'Khnjot ban pynheh' : 'Click to enlarge'}</span>
+                    </div>
+                  </div>
+                  <p className="text-center text-[11px] text-slate-500 dark:text-slate-400 italic">
+                    Figure 2: Paternal Lineage & "Ai Khaw Kylliang" Restriction
+                  </p>
+                </div>
+              </div>
+
+              {/* Photo Card 3: Kyrdan 3 (Includes Kyrdan 3.1 & Kyrdan 3.2) */}
+              <div className="p-4 sm:p-5 rounded-2xl bg-slate-50 dark:bg-[#15221d] border border-slate-200/80 dark:border-slate-800 space-y-3 flex flex-col justify-between">
+                <div className="space-y-2">
+                  <div className="flex items-center justify-between gap-2 border-b border-slate-200/60 dark:border-slate-800 pb-2">
+                    <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-teal-100 dark:bg-teal-950/60 text-teal-800 dark:text-teal-300 text-[10px] font-bold uppercase tracking-wider">
+                      <Layers className="w-3 h-3" />
+                      <span>Level 3 Diagrams (2 Photos)</span>
+                    </span>
+                    <span className="text-[11px] font-medium text-slate-500 dark:text-slate-400">
+                      Kyrdan 3.1 & 3.2
+                    </span>
+                  </div>
+
+                  <div>
+                    <h5 className="font-serif font-bold text-sm sm:text-base text-slate-900 dark:text-slate-100">
+                      Dur 3: Shi-Parakha & Sohpet-Parakha (Uncle's Children)
+                    </h5>
+                    <p className="text-xs text-slate-600 dark:text-slate-400 mt-0.5">
+                      {language === 'kha'
+                        ? '3.1 Sohpet-Parakha (Ki khun u Kñi) bad 3.2 Shi-Parakha (Ki khun arngut ki shipara shynrang na ujuh u symbai kpa).'
+                        : '3.1 Cross-cousin marriage restriction & 3.2 Paternal cousin marriage restriction.'}
+                    </p>
+                  </div>
+
+                  {/* Toggle buttons */}
+                  <div className="flex flex-wrap items-center gap-1.5 pt-1">
+                    <button
+                      type="button"
+                      onClick={() => setLevel3Tab('3.1')}
+                      className={`px-2.5 py-1 rounded-lg text-xs font-semibold transition cursor-pointer ${
+                        level3Tab === '3.1'
+                          ? 'bg-teal-700 text-white shadow-xs'
+                          : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 hover:bg-slate-100'
+                      }`}
+                    >
+                      3.1 Sohpet-Parakha
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => setLevel3Tab('3.2')}
+                      className={`px-2.5 py-1 rounded-lg text-xs font-semibold transition cursor-pointer ${
+                        level3Tab === '3.2'
+                          ? 'bg-teal-700 text-white shadow-xs'
+                          : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 hover:bg-slate-100'
+                      }`}
+                    >
+                      3.2 Shi-Parakha
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => setLevel3Tab('both')}
+                      className={`px-2.5 py-1 rounded-lg text-xs font-semibold transition cursor-pointer ${
+                        level3Tab === 'both'
+                          ? 'bg-teal-700 text-white shadow-xs'
+                          : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 hover:bg-slate-100'
+                      }`}
+                    >
+                      {language === 'kha' ? 'Baroh Ar' : 'Both'}
+                    </button>
+                  </div>
+                </div>
+
+                <div className="space-y-2">
+                  {level3Tab === 'both' ? (
+                    <div className="space-y-3">
+                      <div
+                        onClick={() => setActiveImageModal('/assets/Kyrdan 3.1.png')}
+                        className="group relative rounded-xl overflow-hidden border border-slate-200/90 dark:border-slate-700/80 bg-white dark:bg-[#0c1410] shadow-xs cursor-pointer"
+                      >
+                        <img
+                          src="/assets/Kyrdan 3.1.png"
+                          alt="Dur 3.1: Sohpet-Parakha"
+                          className="w-full h-auto max-h-[220px] object-contain mx-auto group-hover:scale-[1.01] transition-transform duration-300"
+                          loading="lazy"
+                        />
+                        <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2 text-white font-medium text-xs">
+                          <ZoomIn className="w-4 h-4" />
+                          <span>3.1 Sohpet-Parakha (Zoom)</span>
+                        </div>
+                      </div>
+
+                      <div
+                        onClick={() => setActiveImageModal('/assets/Kyrdan 3.2.png')}
+                        className="group relative rounded-xl overflow-hidden border border-slate-200/90 dark:border-slate-700/80 bg-white dark:bg-[#0c1410] shadow-xs cursor-pointer"
+                      >
+                        <img
+                          src="/assets/Kyrdan 3.2.png"
+                          alt="Dur 3.2: Shi-Parakha"
+                          className="w-full h-auto max-h-[220px] object-contain mx-auto group-hover:scale-[1.01] transition-transform duration-300"
+                          loading="lazy"
+                        />
+                        <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2 text-white font-medium text-xs">
+                          <ZoomIn className="w-4 h-4" />
+                          <span>3.2 Shi-Parakha (Zoom)</span>
+                        </div>
+                      </div>
+                    </div>
+                  ) : (
+                    <div
+                      onClick={() => setActiveImageModal(level3Tab === '3.1' ? '/assets/Kyrdan 3.1.png' : '/assets/Kyrdan 3.2.png')}
+                      className="group relative rounded-xl overflow-hidden border border-slate-200/90 dark:border-slate-700/80 bg-white dark:bg-[#0c1410] shadow-xs cursor-pointer"
+                    >
+                      <img
+                        src={level3Tab === '3.1' ? '/assets/Kyrdan 3.1.png' : '/assets/Kyrdan 3.2.png'}
+                        alt={level3Tab === '3.1' ? 'Dur 3.1: Sohpet-Parakha' : 'Dur 3.2: Shi-Parakha'}
+                        className="w-full h-auto max-h-[300px] object-contain mx-auto group-hover:scale-[1.01] transition-transform duration-300"
+                        loading="lazy"
+                      />
+                      <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2 text-white font-medium text-xs">
+                        <ZoomIn className="w-4 h-4" />
+                        <span>{language === 'kha' ? 'Khnjot ban pynheh' : 'Click to enlarge'}</span>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Thumbnail previews */}
+                  {level3Tab !== 'both' && (
+                    <div className="grid grid-cols-2 gap-2 pt-1">
+                      <button
+                        type="button"
+                        onClick={() => setLevel3Tab('3.1')}
+                        className={`p-1.5 rounded-lg border text-left transition cursor-pointer flex items-center gap-2 ${
+                          level3Tab === '3.1'
+                            ? 'border-teal-600 bg-teal-50/50 dark:bg-teal-950/30'
+                            : 'border-slate-200 dark:border-slate-700 hover:border-slate-300 bg-white dark:bg-slate-800'
+                        }`}
+                      >
+                        <img
+                          src="/assets/Kyrdan 3.1.png"
+                          alt="Thumbnail 3.1"
+                          className="w-10 h-7 object-cover rounded border border-slate-200 dark:border-slate-700"
+                        />
+                        <div className="min-w-0 flex-1">
+                          <span className="block text-[10px] font-bold text-slate-800 dark:text-slate-200 truncate">
+                            3.1 Sohpet-Parakha
+                          </span>
+                          <span className="block text-[9px] text-slate-500 dark:text-slate-400 truncate">
+                            Cross-Cousins
+                          </span>
+                        </div>
+                      </button>
+
+                      <button
+                        type="button"
+                        onClick={() => setLevel3Tab('3.2')}
+                        className={`p-1.5 rounded-lg border text-left transition cursor-pointer flex items-center gap-2 ${
+                          level3Tab === '3.2'
+                            ? 'border-teal-600 bg-teal-50/50 dark:bg-teal-950/30'
+                            : 'border-slate-200 dark:border-slate-700 hover:border-slate-300 bg-white dark:bg-slate-800'
+                        }`}
+                      >
+                        <img
+                          src="/assets/Kyrdan 3.2.png"
+                          alt="Thumbnail 3.2"
+                          className="w-10 h-7 object-cover rounded border border-slate-200 dark:border-slate-700"
+                        />
+                        <div className="min-w-0 flex-1">
+                          <span className="block text-[10px] font-bold text-slate-800 dark:text-slate-200 truncate">
+                            3.2 Shi-Parakha
+                          </span>
+                          <span className="block text-[9px] text-slate-500 dark:text-slate-400 truncate">
+                            Symbai Kpa
+                          </span>
+                        </div>
+                      </button>
+                    </div>
+                  )}
+
+                  <p className="text-center text-[11px] text-slate-500 dark:text-slate-400 italic">
+                    {level3Tab === '3.1'
+                      ? "Figure 3.1: Sohpet-Parakha — Maternal Uncle's Children (Cross-Cousins)"
+                      : level3Tab === '3.2'
+                      ? "Figure 3.2: Shi-Parakha — Brothers' Children (Same Paternal Seed Ujuh u Symbai Kpa)"
+                      : "Figure 3: Cross-Cousin & Paternal Cousin Marriage Restrictions (Both Charts)"}
+                  </p>
+                </div>
+              </div>
+
+              {/* Photo Card 4: Kyrdan 4 */}
+              <div className="p-4 sm:p-5 rounded-2xl bg-slate-50 dark:bg-[#15221d] border border-slate-200/80 dark:border-slate-800 space-y-3 flex flex-col justify-between">
+                <div className="space-y-2">
+                  <div className="flex items-center justify-between gap-2 border-b border-slate-200/60 dark:border-slate-800 pb-2">
+                    <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-indigo-100 dark:bg-indigo-950/60 text-indigo-800 dark:text-indigo-300 text-[10px] font-bold uppercase tracking-wider">
+                      <Layers className="w-3 h-3" />
+                      <span>Level 4 Diagram</span>
+                    </span>
+                    <span className="text-[11px] font-medium text-slate-500 dark:text-slate-400">
+                      Kyrdan 4
+                    </span>
+                  </div>
+
+                  <div>
+                    <h5 className="font-serif font-bold text-sm sm:text-base text-slate-900 dark:text-slate-100">
+                      Dur 4: Ïakiew Ïahiar & Khleh Shynrang-Kynthei
+                    </h5>
+                    <p className="text-xs text-slate-600 dark:text-slate-400 mt-0.5">
+                      {language === 'kha'
+                        ? '1. Bud ryntih katkum ka rta bad 2. Sang ban ïapli shynrang-kynthei hapdeng ar ïing.'
+                        : '1. Age order compliance & 2. Prohibition of reciprocal sibling exchange between two clans.'}
+                    </p>
+                  </div>
+                </div>
+
+                <div className="space-y-2">
+                  <div
+                    onClick={() => setActiveImageModal('/assets/Kyrdan 4.png')}
+                    className="group relative rounded-xl overflow-hidden border border-slate-200/90 dark:border-slate-700/80 bg-white dark:bg-[#0c1410] shadow-xs cursor-pointer"
+                  >
+                    <img
+                      src="/assets/Kyrdan 4.png"
+                      alt="Dur 4: Ïakiew Ïahiar & Khleh Shynrang-Kynthei"
+                      className="w-full h-auto max-h-[300px] object-contain mx-auto group-hover:scale-[1.01] transition-transform duration-300"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2 text-white font-medium text-xs">
+                      <ZoomIn className="w-4 h-4" />
+                      <span>{language === 'kha' ? 'Khnjot ban pynheh' : 'Click to enlarge'}</span>
+                    </div>
+                  </div>
+                  <p className="text-center text-[11px] text-slate-500 dark:text-slate-400 italic">
+                    Figure 4: Age Order Rules & Clan Sibling-Exchange Restrictions
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Ka Ïawbei in Naming & Infancy */}
@@ -550,7 +894,7 @@ export const KurJaitPage: React.FC<KurJaitPageProps> = ({ onBack, onOpenChecker 
             <img
               src={activeImageModal}
               alt="Enlarged Illustration"
-              className="max-w-full max-h-[85vh] object-contain rounded-2xl shadow-2xl"
+              className="max-w-full max-h-[85vh] object-contain rounded-2xl shadow-2xl bg-white"
               onClick={e => e.stopPropagation()}
             />
           </div>

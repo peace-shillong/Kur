@@ -179,6 +179,7 @@ export const ClanSubmitModal: React.FC<ClanSubmitModalProps> = ({
                 </label>
                 <input
                   type="text"
+                  maxLength={100}
                   value={jait}
                   onChange={e => setJait(e.target.value)}
                   placeholder="kumba: Kharpran, Marngar..."
@@ -195,6 +196,7 @@ export const ClanSubmitModal: React.FC<ClanSubmitModalProps> = ({
                   </label>
                   <input
                     type="text"
+                    maxLength={100}
                     value={fullName}
                     onChange={e => setFullName(e.target.value)}
                     placeholder="Kyrteng"
@@ -209,6 +211,7 @@ export const ClanSubmitModal: React.FC<ClanSubmitModalProps> = ({
                   </label>
                   <input
                     type="email"
+                    maxLength={100}
                     value={email}
                     onChange={e => setEmail(e.target.value)}
                     placeholder="email@example.com"
@@ -225,6 +228,7 @@ export const ClanSubmitModal: React.FC<ClanSubmitModalProps> = ({
                 </label>
                 <input
                   type="text"
+                  maxLength={100}
                   value={shikurClans}
                   onChange={e => setShikurClans(e.target.value)}
                   placeholder="kumba: Jait A, Jait B, Jait C..."
@@ -240,6 +244,7 @@ export const ClanSubmitModal: React.FC<ClanSubmitModalProps> = ({
                 </label>
                 <input
                   type="text"
+                  maxLength={100}
                   value={tehKurClans}
                   onChange={e => setTehKurClans(e.target.value)}
                   placeholder="kumba: Jait X, Jait Y..."

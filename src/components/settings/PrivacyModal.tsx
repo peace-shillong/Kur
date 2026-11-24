@@ -92,10 +92,10 @@ export const PrivacyModal: React.FC<PrivacyModalProps> = ({ isOpen, onClose }) =
             • <strong>Local Processing:</strong> All clan link queries, compatibility calculations, and view preferences are handled directly in your browser memory and private <code>localStorage</code>.
           </p>
           <p>
-            • <strong>No Tracking / No Cookies:</strong> There are no advertising trackers, or personal identifier cookies embedded in this application. We only collect analytics data which are public and readily available from your end.
+            • <strong>No Tracking / No Cookies:</strong> There are no advertising trackers, or personal identifier cookies embedded in this application. We only collect app usage analytics data which are public and available from your end.
           </p>
           <p>
-            • <strong>Community Submissions:</strong> Any clan details voluntarily submitted via the "Ai Jingtip" form are archived solely for community genealogical review and shared with Tynrai, are never commercialized.
+            • <strong>Community Submissions:</strong> Any clan details voluntarily submitted via the "Ai Jingtip" or "Ujor jingbakla" forms are archived solely for community genealogical review and shared with Tynrai, are never commercialized.
           </p>
           <p>
             • <strong>Indian Data Protection (DPDPA 2023):</strong> Designed in full alignment with India's Digital Personal Data Protection Act, 2023. You have complete rights to data erasure and privacy, exercisable at any time using the "Pynduh lut ia ki Data & Cache" button.

@@ -253,6 +253,7 @@ export const ClanReportModal: React.FC<ClanReportModalProps> = ({
               </label>
               <input
                 type="text"
+                maxLength={100}
                 value={clanName}
                 onChange={(e) => setClanName(e.target.value)}
                 placeholder={language === 'kha' ? 'e.g. Nongkynrih, Dkhar, Laloo' : 'e.g. Nongkynrih, Dkhar, Laloo'}
@@ -268,6 +269,7 @@ export const ClanReportModal: React.FC<ClanReportModalProps> = ({
               </label>
               <input
                 type="text"
+                maxLength={100}
                 value={relatedClan}
                 onChange={(e) => setRelatedClan(e.target.value)}
                 placeholder={language === 'kha' ? 'e.g. Diengdoh, Kharkongor' : 'e.g. Diengdoh, Kharkongor'}
@@ -334,6 +336,7 @@ export const ClanReportModal: React.FC<ClanReportModalProps> = ({
                 </label>
                 <input
                   type="text"
+                  maxLength={100}
                   value={reporterName}
                   onChange={(e) => setReporterName(e.target.value)}
                   placeholder="U/Ka..."
@@ -347,6 +350,7 @@ export const ClanReportModal: React.FC<ClanReportModalProps> = ({
                 </label>
                 <input
                   type="text"
+                  maxLength={100}
                   value={reporterContact}
                   onChange={(e) => setReporterContact(e.target.value)}
                   placeholder="contact@..."

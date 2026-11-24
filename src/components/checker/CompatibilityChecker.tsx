@@ -732,7 +732,7 @@ export const CompatibilityChecker: React.FC = () => {
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 mt-1">
                   {language === 'kha'
-                    ? 'Ki khun jong u Kñii (maternal uncle\'s children) bad ki khun jong ki Pyrsa-kha (cousins from paternal side) kim bit ban ïashongkha. Thoh ia ka jait ki khun u kñii (lah ban thoh palat ban kawei da kaba pynbynta da ka comma).'
+                    ? 'Ki khun jong u Kñii (maternal uncle\'s children) bad ki khun jong ki Pyrsa-kha (cousins from paternal side) kim bit ban ïashongkha. Thoh ia ka jait ki khun u kñii (lah ban thoh palat ban kawei da kaba pynbynta da u comma).'
                     : 'Sohpet-Parakha: Maternal uncle\'s children and paternal cross-cousins cannot intermarry. Enter maternal uncle\'s children\'s surname(s) (comma-separated list supported).'}
                 </p>
               </div>
@@ -760,7 +760,7 @@ export const CompatibilityChecker: React.FC = () => {
                   />
                   <div className="text-[11px] text-slate-500 dark:text-slate-400">
                     {language === 'kha'
-                      ? 'Lada don bun ki jait, pynbynta da ka comma (,). Ka app kan bishar ia kawei pa kawei ka jait pyrshah ia ka jait ba-ar. Thoh "Em" lada i mei im don ki shynrang shipara.'
+                      ? 'Lada don bun ki jait, pynbynta da u comma (,). Ka app kan bishar ia kawei pa kawei ka jait pyrshah ia ka jait ba-ar. Thoh "Em" lada i mei im don ki shynrang shipara.'
                       : 'Enter one surname or comma-separated list. Each surname will be verified individually against Person 2\'s clan.  Enter "No" if you don\'t have any maternal uncle'}
                   </div>
                 </div>
@@ -812,7 +812,7 @@ export const CompatibilityChecker: React.FC = () => {
                 <h4 className="text-xl font-serif font-bold text-slate-900 dark:text-slate-100">
                   {language === 'kha' ? 'Ki Jait Khun u Kñii' : 'Maternal Uncle\'s Lineages'} vs {person2Clan}
                 </h4>
-                <h5 className="text-xs font-semibold text-slate-500 dark:text-slate-400 tracking-wider">This Level is not 100% ready, it needs Verification and may not be accurate, <br /><span className="uppercase text-red-700">kindly don't treat this as final.</span></h5>
+                <h5 className="text-xs font-semibold text-slate-500 dark:text-slate-400 tracking-wider">This Level 3 is not 100% ready, it needs verification and may not be accurate, You need to know if the person you are with is related to any one of your maternal uncles first, requires family verification for now<br /><span className="uppercase text-red-700">kindly don't treat this as final.</span></h5>
               </div>
 
               {/* List of checked uncle surnames */}
@@ -923,7 +923,7 @@ export const CompatibilityChecker: React.FC = () => {
                     : `No direct exogamous taboos detected across Maternal (${person1Clan}), Paternal (${fatherClan || 'Clear'}), or Uncle's children against ${person2Clan}.`}
                 </p>
                 <p className="text-xs sm:text-sm text-emerald-900 dark:text-emerald-200 max-w-md mx-auto uppercase font-bold">
-                  {language === 'kha' ? 'Phi lah ban ia kynduh baroh ar ing ban ia kren kham bha.' : 'You can meet each others family and discuss further.'}
+                  {language === 'kha' ? 'Phi lah ban ia kynduh baroh ar ïing ban ia kren kham bha bad peit phi dei Shi-Parakha ne Sohpet-Parakha ' : 'You can meet each others family and discuss further.'}
                 </p>
               </div>
 
