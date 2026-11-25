@@ -877,6 +877,7 @@ export const CompatibilityChecker: React.FC = () => {
                               ? 'Ka don ka jingiadei Sang Sohpet-Parakha bad ka jait ba la thoh. Katkum ka rukom Khasi ym bit ban bteng sha ka Kyrdan 4.'
                               : 'Sohpet-Parakha taboo detected among the uncle\'s lineages. Advance to Level 4 is prohibited.'}
                           </span>
+                          <h5 className="text-xs font-semibold text-slate-500 dark:text-slate-400 tracking-wider">This result needs verification and may not be accurate, You need to know how closely related is your maternal uncles with your friend<br /><span className="uppercase text-red-700">kindly don't treat this as final.</span></h5>
                         </div>
                         <div className="p-3.5 rounded-2xl bg-red-100/60 dark:bg-red-950/30 border border-red-200 dark:border-red-900/40 text-xs text-red-900 dark:text-red-300 flex items-center gap-2">
                           <span> {language === 'kha'

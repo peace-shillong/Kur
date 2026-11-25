@@ -107,9 +107,10 @@ export const BisharSangHub: React.FC = () => {
 
               <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 max-w-xl mx-auto leading-relaxed">
                 {language === 'kha'
-                  ? "Jied ia ka rukom bishar ba phi sngewbit ban bishar ia ka jingiadei kur bad shongkha shongman ha ki 4 tylli ki kyrdan (Jait kmie, Kur u kpa, Khun u kñii) katkum ka niam bad ka dustur Khasi: "
+                  ? "Jied ia ka rukom bishar ba phi sngewbit ban bishar ia ka jingiadei kur bad shongkha shongman ha ki 4 tylli ki kyrdan (Jait kmie, Kur u kpa, Khun u kñii) "
                   : 'Choose your preferred verification method to evaluate kinship and traditional Khasi exogamy rules across all 4 levels:'}
               </p>
+              <p className='text-amber-700'>Ka rai kaba khatduh halor ka Sang ka shong ha ki Longkñi, ki Tymmen ki San jong ka Kur, bad ka Seng Kur.<span className='text-xs sm:text-sm text-slate-600 dark:text-slate-400 max-w-xl mx-auto leading-relaxed'><br />Kane ka app ka shu iarap ia phi ban peit ioh don ka jingiadei kur, kam lah ban ia jingmut ia phi ban ai ka rai ba khatduh.</span></p>
             </div>
 
             {/* Two Selectable Option Cards */}

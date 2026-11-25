@@ -175,9 +175,15 @@ export const BisharSangGraphImage: React.FC<BisharSangGraphImageProps> = ({
       const initial = label ? label.charAt(0).toUpperCase() : '?';
       ctx.fillText(initial, x, y + 7);
 
-      // Label below circle (Surname)
+      // Label below circle (Surname) - scale font down if name is long
       ctx.fillStyle = isDark ? '#ffffff' : '#0f172a';
       ctx.font = 'bold 16px "Cinzel", "Playfair Display", Georgia, serif';
+      const nameWidth = ctx.measureText(label).width;
+      if (nameWidth > 130) {
+        ctx.font = 'bold 12px "Cinzel", "Playfair Display", Georgia, serif';
+      } else if (nameWidth > 105) {
+        ctx.font = 'bold 14px "Cinzel", "Playfair Display", Georgia, serif';
+      }
       ctx.fillText(label, x, y + radius + 22);
 
       // Sublabel below surname
@@ -186,40 +192,173 @@ export const BisharSangGraphImage: React.FC<BisharSangGraphImageProps> = ({
       ctx.fillText(sublabel, x, y + radius + 38);
     };
 
-    // Helper: Draw Pill on edge
+    // Helper: Wrap text into lines that fit within maxWidth without overflowing
+    const wrapPillText = (
+      text: string,
+      maxLineWidth: number,
+      font: string
+    ): string[] => {
+      ctx.font = font;
+      if (ctx.measureText(text).width <= maxLineWidth) {
+        return [text];
+      }
+
+      const words = text.split(' ');
+      const lines: string[] = [];
+      let currentLine = '';
+
+      for (let i = 0; i < words.length; i++) {
+        const word = words[i];
+        const testLine = currentLine ? `${currentLine} ${word}` : word;
+        if (ctx.measureText(testLine).width <= maxLineWidth) {
+          currentLine = testLine;
+        } else {
+          if (currentLine) {
+            lines.push(currentLine);
+            currentLine = word;
+          } else {
+            // Word itself is longer than maxLineWidth
+            let truncated = word;
+            while (truncated.length > 3 && ctx.measureText(truncated + '…').width > maxLineWidth) {
+              truncated = truncated.slice(0, -1);
+            }
+            lines.push(truncated + '…');
+            currentLine = '';
+          }
+        }
+      }
+
+      if (currentLine) {
+        lines.push(currentLine);
+      }
+
+      // Keep at most 2 lines, truncating line 2 if needed
+      if (lines.length > 2) {
+        lines.length = 2;
+        let last = lines[1];
+        while (last.length > 3 && ctx.measureText(last + '…').width > maxLineWidth) {
+          last = last.slice(0, -1);
+        }
+        lines[1] = last.endsWith('…') ? last : last + '…';
+      }
+
+      return lines;
+    };
+
+    // Helper: Clean and format relation text into a concise, readable pill subtitle
+    const formatRelationText = (rawText?: string, fallback = ''): string => {
+      if (!rawText) return fallback;
+      const trimmed = rawText.trim();
+
+      // If already a short concise clan/cluster title, return it
+      if (trimmed.length <= 32 && !trimmed.includes('.') && !trimmed.startsWith('Ki ') && !trimmed.startsWith('Ka ')) {
+        return trimmed;
+      }
+
+      const lower = trimmed.toLowerCase();
+      if (lower.includes('kajuh ka jait') || lower.includes('kajuh ka kpoh')) {
+        return 'Ka Juh ka Kpoh (Kajuh ka Jait)';
+      }
+      if (lower.includes('shikur') || lower.includes('shi-kur') || lower.includes('kawei ka kpoh')) {
+        return 'Shi-Kur (Kawei ka Kpoh)';
+      }
+      if (lower.includes('teh kur') || lower.includes('ïateh kur') || lower.includes('iateh kur')) {
+        return 'Teh Kur (Covenant Clanship)';
+      }
+      if (lower.includes('sohpet') || lower.includes('parakha')) {
+        return 'Sohpet-Parakha (Cross-Cousin)';
+      }
+      if (lower.includes('kpa') || lower.includes('kha trai') || lower.includes('ai khaw')) {
+        return 'Kur u Kpa (Paternal Lineage)';
+      }
+
+      // First clause before period/comma
+      const firstClause = trimmed.split(/[,.;]/)[0].trim();
+      if (firstClause.length > 0 && firstClause.length <= 34) {
+        return firstClause;
+      }
+
+      return trimmed.length > 34 ? trimmed.slice(0, 31) + '…' : trimmed;
+    };
+
+    // Helper: Draw Pill on edge with dynamic width, multi-line wrapping, and boundary clipping
     const drawEdgePill = (
       x: number,
       y: number,
       title: string,
       subtitle: string,
-      isSangPill: boolean
+      isSangPill: boolean,
+      maxAllowedWidth = 240
     ) => {
-      const pillWidth = 240;
-      const pillHeight = 44;
+      const titleFont = 'bold 11px "Plus Jakarta Sans", sans-serif';
+      const subFont = '10px "Plus Jakarta Sans", sans-serif';
+
+      // Measure title width
+      ctx.font = titleFont;
+      const titleWidth = ctx.measureText(title).width;
+
+      // Wrap subtitle within max allowable inner width (subtract 24px horizontal padding)
+      const maxInnerWidth = maxAllowedWidth - 24;
+      const subLines = wrapPillText(subtitle, maxInnerWidth, subFont);
+
+      // Measure max line width among all lines
+      ctx.font = subFont;
+      let maxSubWidth = 0;
+      for (const line of subLines) {
+        maxSubWidth = Math.max(maxSubWidth, ctx.measureText(line).width);
+      }
+
+      const textMax = Math.max(titleWidth, maxSubWidth);
+      const pillWidth = Math.min(maxAllowedWidth, Math.max(160, Math.ceil(textMax + 24)));
+      const hasTwoSubLines = subLines.length > 1;
+      const pillHeight = hasTwoSubLines ? 58 : 46;
+
       const px = x - pillWidth / 2;
       const py = y - pillHeight / 2;
 
+      ctx.save();
+
+      // Rounded rectangle path
+      ctx.beginPath();
+      ctx.roundRect(px, py, pillWidth, pillHeight, 10);
+
+      // Background fill
       ctx.fillStyle = isSangPill
-        ? isDark ? '#450a0a' : '#fef2f2'
+        ? isDark ? '#3b0d0d' : '#fef2f2'
         : isDark ? '#064e3b' : '#ecfdf5';
+      ctx.fill();
+
+      // Border stroke
       ctx.strokeStyle = isSangPill ? '#ef4444' : '#10b981';
       ctx.lineWidth = 1.5;
-
-      // Rounded rectangle
-      ctx.beginPath();
-      ctx.roundRect(px, py, pillWidth, pillHeight, 12);
-      ctx.fill();
       ctx.stroke();
 
-      // Pill Text
+      // Clip to interior of rounded rectangle to guarantee ZERO overflow
+      ctx.clip();
+
+      // Draw Title
       ctx.textAlign = 'center';
       ctx.fillStyle = isSangPill ? '#ef4444' : '#059669';
-      ctx.font = 'bold 11px "Plus Jakarta Sans", sans-serif';
-      ctx.fillText(title, x, y - 4);
+      ctx.font = titleFont;
 
-      ctx.fillStyle = isDark ? '#e2e8f0' : '#334155';
-      ctx.font = '10px "Plus Jakarta Sans", sans-serif';
-      ctx.fillText(subtitle, x, y + 12);
+      if (hasTwoSubLines) {
+        ctx.fillText(title, x, y - 13);
+
+        // Subtitle lines
+        ctx.fillStyle = isDark ? '#e2e8f0' : '#334155';
+        ctx.font = subFont;
+        ctx.fillText(subLines[0], x, y + 3);
+        ctx.fillText(subLines[1], x, y + 17);
+      } else {
+        ctx.fillText(title, x, y - 5);
+
+        // Subtitle single line
+        ctx.fillStyle = isDark ? '#e2e8f0' : '#334155';
+        ctx.font = subFont;
+        ctx.fillText(subLines[0] || '', x, y + 11);
+      }
+
+      ctx.restore();
     };
 
     // Helper: Draw Edge Line
@@ -249,8 +388,8 @@ export const BisharSangGraphImage: React.FC<BisharSangGraphImageProps> = ({
     // 3. Layout Rendering based on scenario
     if (status === 'cleared') {
       // NO LINK FOUND: Simply show the two main nodes side by side with NO connecting link
-      const p1X = 230;
-      const p2X = 630;
+      const p1X = 220;
+      const p2X = 640;
 
       // Draw Person 1 Node
       drawNode(p1X, centerY, person1Clan, '1st Person’s Surname', 'p1', 'emerald');
@@ -265,7 +404,8 @@ export const BisharSangGraphImage: React.FC<BisharSangGraphImageProps> = ({
         centerY,
         'YM DON JINGÏADEI (DISTINCT)',
         'No kinship or taboo link found',
-        false
+        false,
+        280
       );
 
       // Subtle dashed barrier indicating clan separation
@@ -275,17 +415,17 @@ export const BisharSangGraphImage: React.FC<BisharSangGraphImageProps> = ({
       ctx.lineWidth = 1.5;
       ctx.beginPath();
       ctx.moveTo(centerX, centerY - 65);
-      ctx.lineTo(centerX, centerY - 30);
+      ctx.lineTo(centerX, centerY - 35);
       ctx.stroke();
       ctx.beginPath();
-      ctx.moveTo(centerX, centerY + 30);
+      ctx.moveTo(centerX, centerY + 35);
       ctx.lineTo(centerX, centerY + 65);
       ctx.stroke();
       ctx.restore();
     } else if (level === 1) {
       // LEVEL 1 SANG: Direct Maternal Clan Match between Person 1 & Person 2
-      const p1X = 220;
-      const p2X = 640;
+      const p1X = 210;
+      const p2X = 650;
 
       // Connecting Sang Line
       drawLine(p1X + 50, centerY, p2X - 50, centerY, true);
@@ -294,23 +434,28 @@ export const BisharSangGraphImage: React.FC<BisharSangGraphImageProps> = ({
       drawNode(p1X, centerY, person1Clan, '1st Person (Maternal)', 'p1', 'crimson');
       drawNode(p2X, centerY, person2Clan, '2nd Person (Matching)', 'p2', 'crimson');
 
-      // Edge Pill
-      const relationText = matchingRelation || cluster || 'Ka Juh ka Kpoh / Ba ïadei Kur';
+      // Edge Pill with formatted relation text
+      const rawRelation = matchingRelation || cluster || 'Ka Juh ka Kpoh / Ba ïadei Kur';
+      const relationText = formatRelationText(rawRelation, 'Ka Juh ka Kpoh / Ba ïadei Kur');
+
       drawEdgePill(
         (p1X + p2X) / 2,
         centerY,
         'KA SANG (PROHIBITED)',
         relationText,
-        true
+        true,
+        300
       );
     } else if (level === 2) {
       // LEVEL 2 SANG: Father's Clan matches Person 2
       // Person 1 -> Father (Kur u Kpa) ===[SANG]===> Person 2
-      const p1X = 160;
-      const fatherX = 430;
-      const p2X = 700;
+      const p1X = 135;
+      const fatherX = 375;
+      const p2X = 725;
 
-      const fClan = matchingClan || 'Father Clan';
+      const rawFather = matchingClan || 'Father Clan';
+      // If multiple father clans entered, pick primary for display
+      const fClan = rawFather.includes(',') ? rawFather.split(',')[0].trim() : rawFather;
 
       // Line 1: Person 1 to Father (Paternal Lineage)
       drawLine(p1X + 50, centerY, fatherX - 44, centerY, false, true);
@@ -326,25 +471,30 @@ export const BisharSangGraphImage: React.FC<BisharSangGraphImageProps> = ({
       // Label on Line 1
       ctx.textAlign = 'center';
       ctx.fillStyle = isDark ? '#94a3b8' : '#64748b';
-      ctx.font = '10px "Plus Jakarta Sans", sans-serif';
+      ctx.font = 'bold 10px "Plus Jakarta Sans", sans-serif';
       ctx.fillText('Kur u Kpa', (p1X + fatherX) / 2, centerY - 14);
+
+      // Subtitle for Pill: show who matches with Person 2
+      const pillSubtitle = `${fClan} matches ${person2Clan}`;
 
       // Pill on Line 2 (Matching with Person 2)
       drawEdgePill(
         (fatherX + p2X) / 2,
         centerY,
         'SANG (KUR U KPA)',
-        `${fClan} matches ${person2Clan}`,
-        true
+        pillSubtitle,
+        true,
+        240
       );
     } else {
       // LEVEL 3 SANG: Uncle's Children (Khun u Kñii / Sohpet-Parakha) matches Person 2
       // Person 1 -> Uncle's Child ===[SANG]===> Person 2
-      const p1X = 160;
-      const uncleX = 430;
-      const p2X = 700;
+      const p1X = 135;
+      const uncleX = 375;
+      const p2X = 725;
 
-      const uClan = matchingClan || 'Uncle Clan';
+      const rawUncle = matchingClan || 'Uncle Clan';
+      const uClan = rawUncle.includes(',') ? rawUncle.split(',')[0].trim() : rawUncle;
 
       // Line 1: Person 1 to Uncle's Child
       drawLine(p1X + 50, centerY, uncleX - 44, centerY, false, true);
@@ -360,16 +510,20 @@ export const BisharSangGraphImage: React.FC<BisharSangGraphImageProps> = ({
       // Label on Line 1
       ctx.textAlign = 'center';
       ctx.fillStyle = isDark ? '#94a3b8' : '#64748b';
-      ctx.font = '10px "Plus Jakarta Sans", sans-serif';
+      ctx.font = 'bold 10px "Plus Jakarta Sans", sans-serif';
       ctx.fillText('Khun u Kñii', (p1X + uncleX) / 2, centerY - 14);
+
+      // Subtitle for Pill: show who matches with Person 2
+      const pillSubtitle = `${uClan} matches ${person2Clan}`;
 
       // Pill on Line 2 (Matching with Person 2)
       drawEdgePill(
         (uncleX + p2X) / 2,
         centerY,
         'SANG (SOHPET-PARAKHA)',
-        `${uClan} matches ${person2Clan}`,
-        true
+        pillSubtitle,
+        true,
+        240
       );
     }
 
