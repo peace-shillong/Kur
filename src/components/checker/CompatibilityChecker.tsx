@@ -4,6 +4,7 @@ import { useLanguage } from '../../context/LanguageContext';
 import { useClan } from '../../context/ClanContext';
 import { checkBisharSang } from '../../services/api';
 import { BisharSangResponse, Level3CheckItem } from '../../types';
+import { BisharSangGraphImage } from './BisharSangGraphImage';
 import {
   HeartHandshake,
   AlertOctagon,
@@ -473,6 +474,14 @@ export const CompatibilityChecker: React.FC = () => {
                 {isSang(level1Result) ? (
                   // SANG MATCH: Stop user from advancing to next levels!
                   <div className="w-full space-y-3">
+                    <BisharSangGraphImage
+                      person1Clan={person1Clan}
+                      person2Clan={person2Clan}
+                      status="sang"
+                      level={1}
+                      matchingRelation={level1Result.cluster || (language === 'kha' ? level1Result.reason_khasi : level1Result.reason_english)}
+                      cluster={level1Result.cluster}
+                    />
                     <div className="p-3.5 rounded-2xl bg-red-100/60 dark:bg-red-950/30 border border-red-200 dark:border-red-900/40 text-xs text-red-900 dark:text-red-300 flex items-center gap-2">
                       <ShieldAlert className="w-4 h-4 shrink-0 text-red-600" />
                       <span>
@@ -634,6 +643,7 @@ export const CompatibilityChecker: React.FC = () => {
                 <h4 className="text-xl font-serif font-bold text-slate-900 dark:text-slate-100">
                   {person1Clan} & {person2Clan}
                 </h4>
+                <h5 className="text-xs font-semibold text-slate-500 dark:text-slate-400 tracking-wider">This result needs verification and may not be accurate, You need to know how closely related is your father with your friend<br /><span className="uppercase text-red-700">kindly don't treat this as final.</span></h5>
               </div>
 
               {/* Level 1 Summary */}
@@ -648,6 +658,15 @@ export const CompatibilityChecker: React.FC = () => {
                 {isSang(level2Result) ? (
                   // LEVEL 2 FAILED (Paternal Sang): Stop user from advancing!
                   <div className="w-full space-y-3">
+                    <BisharSangGraphImage
+                      person1Clan={person1Clan}
+                      person2Clan={person2Clan}
+                      status="sang"
+                      level={2}
+                      matchingClan={fatherClan}
+                      matchingRelation={level2Result.cluster || (language === 'kha' ? level2Result.reason_khasi : level2Result.reason_english)}
+                      cluster={level2Result.cluster}
+                    />
                     <div className="p-3.5 rounded-2xl bg-red-100/60 dark:bg-red-950/30 border border-red-200 dark:border-red-900/40 text-xs text-red-900 dark:text-red-300 flex items-center gap-2">
                       <ShieldAlert className="w-4 h-4 shrink-0 text-red-600" />
                       <span>
@@ -655,6 +674,7 @@ export const CompatibilityChecker: React.FC = () => {
                           ? 'Ka jingiadei Sang u Kpa (Kha trai / Ai khaw kylliang) ka la mih ha ka Kyrdan 2. Ym bit ban bteng sha ka jingiashongkha.'
                           : 'Paternal Sang prohibition detected in Level 2. In traditional custom, advancement to Level 3 is prohibited.'}
                       </span>
+                      <h5 className="text-xs font-semibold text-slate-500 dark:text-slate-400 tracking-wider">This result needs verification and may not be accurate, You need to know how closely related is your father with your friend<br /><span className="uppercase text-red-700">kindly don't treat this as final.</span></h5>
                     </div>
                     <div className="p-3.5 rounded-2xl bg-red-100/60 dark:bg-red-950/30 border border-red-200 dark:border-red-900/40 text-xs text-red-900 dark:text-red-300 flex items-center gap-2">
                       <span> {language === 'kha'
@@ -836,6 +856,20 @@ export const CompatibilityChecker: React.FC = () => {
                     {hasLevel3Sang ? (
                       // LEVEL 3 FAILED: Do not allow to proceed to Level 4
                       <div className="w-full space-y-3">
+                        {(() => {
+                          const sangItem = level3Results.find(item => isSang(item.response));
+                          return (
+                            <BisharSangGraphImage
+                              person1Clan={person1Clan}
+                              person2Clan={person2Clan}
+                              status="sang"
+                              level={3}
+                              matchingClan={sangItem?.kñiiClan}
+                              matchingRelation={sangItem?.response.cluster || (language === 'kha' ? sangItem?.response.reason_khasi : sangItem?.response.reason_english)}
+                              cluster={sangItem?.response.cluster}
+                            />
+                          );
+                        })()}
                         <div className="p-3.5 rounded-2xl bg-red-100/60 dark:bg-red-950/30 border border-red-200 dark:border-red-900/40 text-xs text-red-900 dark:text-red-300 flex items-center gap-2">
                           <ShieldAlert className="w-4 h-4 shrink-0 text-red-600" />
                           <span>
@@ -926,6 +960,14 @@ export const CompatibilityChecker: React.FC = () => {
                   {language === 'kha' ? 'Phi lah ban ia kynduh baroh ar ïing ban ia kren kham bha bad peit phi dei Shi-Parakha ne Sohpet-Parakha ' : 'You can meet each others family and discuss further.'}
                 </p>
               </div>
+
+              {/* Clan Linkage Graph Image (Cleared - Two Main Nodes with No Link) */}
+              <BisharSangGraphImage
+                person1Clan={person1Clan}
+                person2Clan={person2Clan}
+                status="cleared"
+                level={4}
+              />
 
               {/* Level 4 Traditional Guidelines (Chapter 10 · Page 128) */}
               <div className="p-5 rounded-3xl bg-slate-50 dark:bg-[#15221d] border border-slate-200 dark:border-[#1f352c] space-y-4">

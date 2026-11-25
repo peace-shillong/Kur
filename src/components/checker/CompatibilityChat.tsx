@@ -25,6 +25,7 @@ import {
 } from 'lucide-react';
 import { sanitizeTextInput } from '../../utils/sanitize';
 import { extractSurnameFromText, extractUncleSurnamesFromText } from '../../utils/languageParser';
+import { BisharSangGraphImage } from './BisharSangGraphImage';
 
 export type ChatSender = 'app' | 'user';
 
@@ -47,6 +48,9 @@ export interface ChatMessage {
   text?: string;
   verdictData?: BisharSangResponse;
   level3Data?: Level3CheckItem[];
+  stopLevel?: 1 | 2 | 3;
+  matchingClan?: string;
+  matchingRelation?: string;
   timestamp: Date;
 }
 
@@ -296,6 +300,8 @@ export const CompatibilityChat: React.FC = () => {
           id: `app-stop-${Date.now() + 1}`,
           sender: 'app',
           type: 'courtship_stop',
+          stopLevel: 1,
+          matchingRelation: res.cluster || (language === 'kha' ? res.reason_khasi : res.reason_english),
           text:
             language === 'kha'
               ? 'Ka jingiadei kur ka la thikna hangne ha ka Kyrdan 1. Ha ka riti, dustur, bad ha ka niam Khasi ym bit ban bteng shuh sha kiwei ki kyrdan namar ka long ka Sang. Sngewbha ban ialait noh ka jingiadei jong phi, phi dang ia dei na kajuh ka kpoh. Ym bit ban bteng shuh sha ka jingïashongkha.'
@@ -367,10 +373,13 @@ export const CompatibilityChat: React.FC = () => {
           id: `app-stop-${Date.now() + 1}`,
           sender: 'app',
           type: 'courtship_stop',
+          stopLevel: 2,
+          matchingClan: father,
+          matchingRelation: res.cluster || (language === 'kha' ? res.reason_khasi : res.reason_english),
           text:
             language === 'kha'
-              ? 'Ka jingiadei Sang u Kpa (Kha trai / Ai khaw kylliang) ka la mih ha ka Kyrdan 2. Ha ka dustur Khasi ym bit ban bteng sha ka jingiashongkha. Sngewbha ban ialait noh mo, phi dang don jingiadei.'
-              : 'Paternal Sang prohibition detected in Level 2. In traditional custom, advancement to Level 3 is prohibited. Please refrain from proceeding further in courtship as you are related.',
+              ? 'Ka jingiadei Sang u Kpa (Kha trai / Ai khaw kylliang) ka la mih ha ka Kyrdan 2. Ha ka dustur Khasi ym bit ban bteng sha ka jingiashongkha. You need to know how closely related is your father with your friend, kindly don\'t treat this as final.'
+              : 'Paternal Sang prohibition detected in Level 2. In traditional custom, advancement to Level 3 is prohibited. This result needs verification and may not be accurate, You need to know how closely related is your father with your friend, kindly don\'t treat this as final',
           timestamp: new Date()
         };
         setMessages(prev => [...prev, resultMsg, stopMsg]);
@@ -481,14 +490,18 @@ export const CompatibilityChat: React.FC = () => {
 
       if (hasLevel3Sang) {
         // Stop courtship
+        const sangItem = results.find(item => isSang(item.response));
         const stopMsg: ChatMessage = {
           id: `app-stop-${Date.now() + 1}`,
           sender: 'app',
           type: 'courtship_stop',
+          stopLevel: 3,
+          matchingClan: sangItem?.kñiiClan,
+          matchingRelation: sangItem?.response.cluster || (language === 'kha' ? sangItem?.response.reason_khasi : sangItem?.response.reason_english),
           text:
             language === 'kha'
-              ? 'Ka don ka jingiadei Sang Sohpet-Parakha bad ka jait ba la thoh. Katkum ka rukom Khasi ym bit ban bteng sha ka jingiashongkha. Sngewbha ban ialait noh mo, phi dang don jingiadei.'
-              : "Sohpet-Parakha taboo detected among the uncle's lineages. Advancement to Level 4 is prohibited. Please refrain from proceeding further in courtship as you are related.",
+              ? 'Ka don ka jingiadei Sang Sohpet-Parakha bad ka jait ba la thoh. Katkum ka rukom Khasi ym bit ban bteng sha ka jingiashongkha. You need to know how closely related is your uncle with your friend, kindly don\'t treat this as final.'
+              : "Sohpet-Parakha taboo detected among the uncle's lineages. Advancement to Level 4 is prohibited. You need to know how closely related is your uncle with your friend, kindly don\'t treat this as final.",
           timestamp: new Date()
         };
         setMessages(prev => [...prev, resultMsg, stopMsg]);
@@ -750,34 +763,44 @@ export const CompatibilityChat: React.FC = () => {
                     </div>
                   )}
 
-                  {/* Courtship Stop Warning Banner */}
+                  {/* Courtship Stop Warning Banner & Graph Image */}
                   {msg.type === 'courtship_stop' && (
-                    <div className="p-3.5 rounded-xl bg-red-100/90 dark:bg-red-950/50 border border-red-200 dark:border-red-900/60 text-red-900 dark:text-red-200 text-xs space-y-2">
-                      <div className="flex items-center gap-1.5 font-bold">
-                        <ShieldAlert className="w-4 h-4 text-red-600" />
-                        <span>
+                    <div className="space-y-3">
+                      <BisharSangGraphImage
+                        person1Clan={userClan}
+                        person2Clan={friendClan}
+                        status="sang"
+                        level={msg.stopLevel || 1}
+                        matchingClan={msg.matchingClan}
+                        matchingRelation={msg.matchingRelation}
+                      />
+                      <div className="p-3.5 rounded-xl bg-red-100/90 dark:bg-red-950/50 border border-red-200 dark:border-red-900/60 text-red-900 dark:text-red-200 text-xs space-y-2">
+                        <div className="flex items-center gap-1.5 font-bold">
+                          <ShieldAlert className="w-4 h-4 text-red-600" />
+                          <span>
+                            {language === 'kha'
+                              ? 'Sngewbha ban ialait noh ka jingiadei jong phi.'
+                              : 'Refrain from proceeding further in courtship.'}
+                          </span>
+                        </div>
+                        <p className="leading-relaxed opacity-90 font-medium">
                           {language === 'kha'
-                            ? 'Sngewbha ban ialait noh ka jingiadei jong phi.'
-                            : 'Refrain from proceeding further in courtship.'}
-                        </span>
+                            ? 'Ym bit ban bteng shuh sha kiwei ki kyrdan namar ka long ka Sang ha ka niam bad ka dustur Khasi.'
+                            : 'Further relationship advancement is prohibited due to sacred clan kinship taboos.'}
+                        </p>
+                        <button
+                          type="button"
+                          onClick={initChat}
+                          className="w-full mt-2 py-2.5 px-3 rounded-lg bg-emerald-700 hover:bg-emerald-800 text-white font-semibold text-xs transition cursor-pointer flex items-center justify-center gap-1.5"
+                        >
+                          <RotateCcw className="w-3.5 h-3.5" />
+                          <span>
+                            {language === 'kha'
+                              ? 'Bishar biang da kiwei pat ki jait'
+                              : 'Start New Verification'}
+                          </span>
+                        </button>
                       </div>
-                      <p className="leading-relaxed opacity-90 font-medium">
-                        {language === 'kha'
-                          ? 'Ym bit ban bteng shuh sha kiwei ki kyrdan namar ka long ka Sang ha ka niam bad ka dustur Khasi.'
-                          : 'Further relationship advancement is prohibited due to sacred clan kinship taboos.'}
-                      </p>
-                      <button
-                        type="button"
-                        onClick={initChat}
-                        className="w-full mt-2 py-2.5 px-3 rounded-lg bg-emerald-700 hover:bg-emerald-800 text-white font-semibold text-xs transition cursor-pointer flex items-center justify-center gap-1.5"
-                      >
-                        <RotateCcw className="w-3.5 h-3.5" />
-                        <span>
-                          {language === 'kha'
-                            ? 'Bishar biang da kiwei pat ki jait'
-                            : 'Start New Verification'}
-                        </span>
-                      </button>
                     </div>
                   )}
 
@@ -805,6 +828,14 @@ export const CompatibilityChat: React.FC = () => {
                             : 'You can meet each other’s families and discuss further and check if you are Shi-Parakha ne Sohpet-Parakha.'}
                         </p>
                       </div>
+
+                      {/* Clan Linkage Graph Image (Cleared - Two Main Nodes with No Link) */}
+                      <BisharSangGraphImage
+                        person1Clan={userClan}
+                        person2Clan={friendClan}
+                        status="cleared"
+                        level={4}
+                      />
 
                       {/* Traditional Rules Breakdown */}
                       <div className="p-4 rounded-2xl bg-white dark:bg-[#111a16] border border-slate-200 dark:border-[#1f352c] space-y-3">
