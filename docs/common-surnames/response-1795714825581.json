@@ -1,0 +1,53 @@
+{
+  "mode": "wad-kur",
+  "query": "Pakynteiñ",
+  "normalized_query": "pakyntein",
+  "found": true,
+  "match_count": 1,
+  "clusters": [
+    {
+      "id": "so-kpoh-khatar-wyrnai",
+      "title": "So Kpoh Khatar Wyrnai (Bon / Teiñ / Wet / Doh)",
+      "shikur_clans": [
+        "Bon",
+        "Pasubon",
+        "Lipon",
+        "Rangad",
+        "Rngad",
+        "Teiñ",
+        "Pakynteiñ",
+        "War",
+        "Nikhla",
+        "Wet",
+        "Paswet",
+        "Kynjing",
+        "Lytan",
+        "Lywait",
+        "Muthyan",
+        "Lakiang",
+        "Niangliar",
+        "Lakhon",
+        "Katphoh",
+        "Gatphoh",
+        "Niangphoh",
+        "Siangphoh",
+        "Shyrmang Jowai",
+        "Lanong",
+        "Pyrdiang",
+        "Bleiñ",
+        "Kma",
+        "Doh",
+        "Lyngdoh",
+        "Syngkon",
+        "Kon",
+        "Siangbud",
+        "Nongbah"
+      ],
+      "teh_kur_clans": [],
+      "summary_khasi": "So Kpoh Khatar Wyrnai ha Jaiñtia: Bon, Teiñ, Wet, bad Doh lem bad ki tnad kpoh jong ki.",
+      "summary_english": "The historic 'So Kpoh Khatar Wyrnai' (Four Wombs, Twelve Branches) of Jaiñtia Hills.",
+      "citation": "Rev. I. Kharkongngor (2004) & Spiton Kharakor, Entries #3 (Page 86)"
+    }
+  ],
+  "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
+}

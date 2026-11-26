@@ -1,0 +1,28 @@
+{
+  "mode": "wad-kur",
+  "query": "Ryntathiang",
+  "normalized_query": "ryntathiang",
+  "found": true,
+  "match_count": 1,
+  "clusters": [
+    {
+      "id": "laitphlang-wahlang",
+      "title": "Laitphlang & Wahlang Pahsyntiew",
+      "shikur_clans": [
+        "Wahlang",
+        "Wahlang Pahsyntiew",
+        "Laitphlang",
+        "Wahlang Ryntathiang",
+        "Ryntathiang"
+      ],
+      "teh_kur_clans": [
+        "Aliya",
+        "Alia"
+      ],
+      "summary_khasi": "Ka Laitphlang ka dei ka kyrteng sin jong ka kpoh ba mih na ka Wahlang Pahsyntiew. Tangba ka kpoh Laitphlang kam shym la ïasoh ha ki jingïateh kur ba hadien jong ki Wahlang Pahsyntiew—kumta ka sang tang bad ki ïing tynrai Wahlang Pahsyntiew.",
+      "summary_english": "Laitphlang is a branch nickname of Wahlang Pahsyntiew. Laitphlang did not join external Teh Kur pacts, so it is strictly Sang only with original ancestral Wahlang Pahsyntiew houses.",
+      "citation": "Tbn. W.R. Laitphlang & Rev. I. Kharkongngor (2004), Entries #91, #110 (Pages 98, 100–102)"
+    }
+  ],
+  "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
+}

@@ -1,5 +1,6 @@
 import { ApiConfig, TipkurResponse, CompatibilityResult, CompatibilityCheckStep, BisharSangResponse } from '../types';
 import { findMockClan, MOCK_CLUSTERS } from './mockData';
+import { getCommonSurnameResponse } from '../data/commonSurnames';
 
 const CONFIG_KEY = 'tipkur-api-config';
 
@@ -25,9 +26,20 @@ export function saveApiConfig(config: ApiConfig): void {
 }
 
 /**
- * Searches for clan links using POST request or mock data fallback
+ * Searches for clan links using pre-cached common surnames dataset, POST request, or mock data fallback
  */
 export async function searchClanApi(jait: string): Promise<TipkurResponse & { fromMock?: boolean }> {
+  // 1. Check local pre-cached verified common surnames response for instant speed
+  const cachedCommon = getCommonSurnameResponse(jait);
+  if (cachedCommon) {
+    // Artificial small delay for smooth realistic UX animation
+    await new Promise(r => setTimeout(r, 120));
+    return {
+      ...cachedCommon,
+      fromMock: false
+    };
+  }
+
   const config = getStoredApiConfig();
 
   if (config.useMock) {

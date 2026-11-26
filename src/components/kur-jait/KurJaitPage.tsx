@@ -139,11 +139,11 @@ export const KurJaitPage: React.FC<KurJaitPageProps> = ({ onBack, onOpenChecker 
         {/* IMAGE 1: First Khasi Household */}
         <div className="space-y-2 pt-2">
           <div
-            onClick={() => setActiveImageModal('/assets/first-khasi-household.png')}
+            onClick={() => setActiveImageModal('/assets/first-khasi-household.webp')}
             className="group relative rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-slate-900 shadow-md cursor-pointer"
           >
             <img
-              src="/assets/first-khasi-household.png"
+              src="/assets/first-khasi-household.webp"
               alt="First Khasi Household — Ka Iawbei, U Thawlang, U Suitnia"
               className="w-full max-h-[460px] object-contain mx-auto group-hover:scale-[1.01] transition-transform duration-300"
               loading="lazy"
@@ -202,11 +202,11 @@ export const KurJaitPage: React.FC<KurJaitPageProps> = ({ onBack, onOpenChecker 
         {/* IMAGE 2: Roles and Responsibilities */}
         <div className="space-y-2 pt-2">
           <div
-            onClick={() => setActiveImageModal('/assets/role-responsibility.png')}
+            onClick={() => setActiveImageModal('/assets/role-responsibility.webp')}
             className="group relative rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-slate-900 shadow-md cursor-pointer"
           >
             <img
-              src="/assets/role-responsibility.png"
+              src="/assets/role-responsibility.webp"
               alt="Roles and Responsibilities of Men & Women in Khasi Family & Society"
               className="w-full max-h-[460px] object-contain mx-auto group-hover:scale-[1.01] transition-transform duration-300"
               loading="lazy"
@@ -476,11 +476,11 @@ export const KurJaitPage: React.FC<KurJaitPageProps> = ({ onBack, onOpenChecker 
 
                 <div className="space-y-2">
                   <div
-                    onClick={() => setActiveImageModal('/assets/Kyrdan 1.png')}
+                    onClick={() => setActiveImageModal('/assets/Kyrdan 1.webp')}
                     className="group relative rounded-xl overflow-hidden border border-slate-200/90 dark:border-slate-700/80 bg-white dark:bg-[#0c1410] shadow-xs cursor-pointer"
                   >
                     <img
-                      src="/assets/Kyrdan 1.png"
+                      src="/assets/Kyrdan 1.webp"
                       alt="Dur 1: Para-ar-kmie (Maternal Parallel Cousins)"
                       className="w-full h-auto max-h-[300px] object-contain mx-auto group-hover:scale-[1.01] transition-transform duration-300"
                       loading="lazy"
@@ -523,11 +523,11 @@ export const KurJaitPage: React.FC<KurJaitPageProps> = ({ onBack, onOpenChecker 
 
                 <div className="space-y-2">
                   <div
-                    onClick={() => setActiveImageModal('/assets/Kyrdan 2.png')}
+                    onClick={() => setActiveImageModal('/assets/Kyrdan 2.webp')}
                     className="group relative rounded-xl overflow-hidden border border-slate-200/90 dark:border-slate-700/80 bg-white dark:bg-[#0c1410] shadow-xs cursor-pointer"
                   >
                     <img
-                      src="/assets/Kyrdan 2.png"
+                      src="/assets/Kyrdan 2.webp"
                       alt="Dur 2: Kur u Kpa & Ai Khaw Kylliang"
                       className="w-full h-auto max-h-[300px] object-contain mx-auto group-hover:scale-[1.01] transition-transform duration-300"
                       loading="lazy"
@@ -572,33 +572,30 @@ export const KurJaitPage: React.FC<KurJaitPageProps> = ({ onBack, onOpenChecker 
                     <button
                       type="button"
                       onClick={() => setLevel3Tab('3.1')}
-                      className={`px-2.5 py-1 rounded-lg text-xs font-semibold transition cursor-pointer ${
-                        level3Tab === '3.1'
+                      className={`px-2.5 py-1 rounded-lg text-xs font-semibold transition cursor-pointer ${level3Tab === '3.1'
                           ? 'bg-teal-700 text-white shadow-xs'
                           : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 hover:bg-slate-100'
-                      }`}
+                        }`}
                     >
                       3.1 Sohpet-Parakha
                     </button>
                     <button
                       type="button"
                       onClick={() => setLevel3Tab('3.2')}
-                      className={`px-2.5 py-1 rounded-lg text-xs font-semibold transition cursor-pointer ${
-                        level3Tab === '3.2'
+                      className={`px-2.5 py-1 rounded-lg text-xs font-semibold transition cursor-pointer ${level3Tab === '3.2'
                           ? 'bg-teal-700 text-white shadow-xs'
                           : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 hover:bg-slate-100'
-                      }`}
+                        }`}
                     >
                       3.2 Shi-Parakha
                     </button>
                     <button
                       type="button"
                       onClick={() => setLevel3Tab('both')}
-                      className={`px-2.5 py-1 rounded-lg text-xs font-semibold transition cursor-pointer ${
-                        level3Tab === 'both'
+                      className={`px-2.5 py-1 rounded-lg text-xs font-semibold transition cursor-pointer ${level3Tab === 'both'
                           ? 'bg-teal-700 text-white shadow-xs'
                           : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 hover:bg-slate-100'
-                      }`}
+                        }`}
                     >
                       {language === 'kha' ? 'Baroh Ar' : 'Both'}
                     </button>
@@ -609,11 +606,11 @@ export const KurJaitPage: React.FC<KurJaitPageProps> = ({ onBack, onOpenChecker 
                   {level3Tab === 'both' ? (
                     <div className="space-y-3">
                       <div
-                        onClick={() => setActiveImageModal('/assets/Kyrdan 3.1.png')}
+                        onClick={() => setActiveImageModal('/assets/Kyrdan 3.1.webp')}
                         className="group relative rounded-xl overflow-hidden border border-slate-200/90 dark:border-slate-700/80 bg-white dark:bg-[#0c1410] shadow-xs cursor-pointer"
                       >
                         <img
-                          src="/assets/Kyrdan 3.1.png"
+                          src="/assets/Kyrdan 3.1.webp"
                           alt="Dur 3.1: Sohpet-Parakha"
                           className="w-full h-auto max-h-[220px] object-contain mx-auto group-hover:scale-[1.01] transition-transform duration-300"
                           loading="lazy"
@@ -625,11 +622,11 @@ export const KurJaitPage: React.FC<KurJaitPageProps> = ({ onBack, onOpenChecker 
                       </div>
 
                       <div
-                        onClick={() => setActiveImageModal('/assets/Kyrdan 3.2.png')}
+                        onClick={() => setActiveImageModal('/assets/Kyrdan 3.2.webp')}
                         className="group relative rounded-xl overflow-hidden border border-slate-200/90 dark:border-slate-700/80 bg-white dark:bg-[#0c1410] shadow-xs cursor-pointer"
                       >
                         <img
-                          src="/assets/Kyrdan 3.2.png"
+                          src="/assets/Kyrdan 3.2.webp"
                           alt="Dur 3.2: Shi-Parakha"
                           className="w-full h-auto max-h-[220px] object-contain mx-auto group-hover:scale-[1.01] transition-transform duration-300"
                           loading="lazy"
@@ -642,11 +639,11 @@ export const KurJaitPage: React.FC<KurJaitPageProps> = ({ onBack, onOpenChecker 
                     </div>
                   ) : (
                     <div
-                      onClick={() => setActiveImageModal(level3Tab === '3.1' ? '/assets/Kyrdan 3.1.png' : '/assets/Kyrdan 3.2.png')}
+                      onClick={() => setActiveImageModal(level3Tab === '3.1' ? '/assets/Kyrdan 3.1.webp' : '/assets/Kyrdan 3.2.webp')}
                       className="group relative rounded-xl overflow-hidden border border-slate-200/90 dark:border-slate-700/80 bg-white dark:bg-[#0c1410] shadow-xs cursor-pointer"
                     >
                       <img
-                        src={level3Tab === '3.1' ? '/assets/Kyrdan 3.1.png' : '/assets/Kyrdan 3.2.png'}
+                        src={level3Tab === '3.1' ? '/assets/Kyrdan 3.1.webp' : '/assets/Kyrdan 3.2.webp'}
                         alt={level3Tab === '3.1' ? 'Dur 3.1: Sohpet-Parakha' : 'Dur 3.2: Shi-Parakha'}
                         className="w-full h-auto max-h-[300px] object-contain mx-auto group-hover:scale-[1.01] transition-transform duration-300"
                         loading="lazy"
@@ -664,14 +661,13 @@ export const KurJaitPage: React.FC<KurJaitPageProps> = ({ onBack, onOpenChecker 
                       <button
                         type="button"
                         onClick={() => setLevel3Tab('3.1')}
-                        className={`p-1.5 rounded-lg border text-left transition cursor-pointer flex items-center gap-2 ${
-                          level3Tab === '3.1'
+                        className={`p-1.5 rounded-lg border text-left transition cursor-pointer flex items-center gap-2 ${level3Tab === '3.1'
                             ? 'border-teal-600 bg-teal-50/50 dark:bg-teal-950/30'
                             : 'border-slate-200 dark:border-slate-700 hover:border-slate-300 bg-white dark:bg-slate-800'
-                        }`}
+                          }`}
                       >
                         <img
-                          src="/assets/Kyrdan 3.1.png"
+                          src="/assets/Kyrdan 3.1.webp"
                           alt="Thumbnail 3.1"
                           className="w-10 h-7 object-cover rounded border border-slate-200 dark:border-slate-700"
                         />
@@ -688,14 +684,13 @@ export const KurJaitPage: React.FC<KurJaitPageProps> = ({ onBack, onOpenChecker 
                       <button
                         type="button"
                         onClick={() => setLevel3Tab('3.2')}
-                        className={`p-1.5 rounded-lg border text-left transition cursor-pointer flex items-center gap-2 ${
-                          level3Tab === '3.2'
+                        className={`p-1.5 rounded-lg border text-left transition cursor-pointer flex items-center gap-2 ${level3Tab === '3.2'
                             ? 'border-teal-600 bg-teal-50/50 dark:bg-teal-950/30'
                             : 'border-slate-200 dark:border-slate-700 hover:border-slate-300 bg-white dark:bg-slate-800'
-                        }`}
+                          }`}
                       >
                         <img
-                          src="/assets/Kyrdan 3.2.png"
+                          src="/assets/Kyrdan 3.2.webp"
                           alt="Thumbnail 3.2"
                           className="w-10 h-7 object-cover rounded border border-slate-200 dark:border-slate-700"
                         />
@@ -715,8 +710,8 @@ export const KurJaitPage: React.FC<KurJaitPageProps> = ({ onBack, onOpenChecker 
                     {level3Tab === '3.1'
                       ? "Figure 3.1: Sohpet-Parakha — Maternal Uncle's Children (Cross-Cousins)"
                       : level3Tab === '3.2'
-                      ? "Figure 3.2: Shi-Parakha — Brothers' Children (Same Paternal Seed Ujuh u Symbai Kpa)"
-                      : "Figure 3: Cross-Cousin & Paternal Cousin Marriage Restrictions (Both Charts)"}
+                        ? "Figure 3.2: Shi-Parakha — Brothers' Children (Same Paternal Seed Ujuh u Symbai Kpa)"
+                        : "Figure 3: Cross-Cousin & Paternal Cousin Marriage Restrictions (Both Charts)"}
                   </p>
                 </div>
               </div>
@@ -748,11 +743,11 @@ export const KurJaitPage: React.FC<KurJaitPageProps> = ({ onBack, onOpenChecker 
 
                 <div className="space-y-2">
                   <div
-                    onClick={() => setActiveImageModal('/assets/Kyrdan 4.png')}
+                    onClick={() => setActiveImageModal('/assets/Kyrdan 4.webp')}
                     className="group relative rounded-xl overflow-hidden border border-slate-200/90 dark:border-slate-700/80 bg-white dark:bg-[#0c1410] shadow-xs cursor-pointer"
                   >
                     <img
-                      src="/assets/Kyrdan 4.png"
+                      src="/assets/Kyrdan 4.webp"
                       alt="Dur 4: Ïakiew Ïahiar & Khleh Shynrang-Kynthei"
                       className="w-full h-auto max-h-[300px] object-contain mx-auto group-hover:scale-[1.01] transition-transform duration-300"
                       loading="lazy"

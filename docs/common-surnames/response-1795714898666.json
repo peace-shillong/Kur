@@ -1,0 +1,42 @@
+{
+  "mode": "wad-kur",
+  "query": "Hynñiewta",
+  "normalized_query": "hynniewta",
+  "found": true,
+  "match_count": 1,
+  "clusters": [
+    {
+      "id": "majaw-sangkli",
+      "title": "Majaw & Sangkli (16 Jait)",
+      "shikur_clans": [
+        "Majaw",
+        "Lyngdoh Peiñlang",
+        "Basaïawmoit",
+        "Basaïawmah",
+        "Basaïawsnai",
+        "Basaïawrit",
+        "Lyngwi",
+        "Nongbri Kynrut",
+        "Hynñiewta",
+        "Langpen",
+        "Kurbah",
+        "Rapsang Marbisu",
+        "Sangkli",
+        "Sankli",
+        "Sangkli Pator",
+        "Sangkli Lalung",
+        "Sangkli Rngi",
+        "Sangkli Mawïong",
+        "Sangkli Pardi",
+        "Muktieh",
+        "Khongji",
+        "Khongwar"
+      ],
+      "teh_kur_clans": [],
+      "summary_khasi": "Khathynriew (16) jait ki kpoh kiba la mih na ka kur Majaw. Baroh ki ïalong shikur bad sang ban ïashongkha.",
+      "summary_english": "Sixteen clans emerged from the Majaw clan. All 16 share the same ancestral lineage and cannot intermarry.",
+      "citation": "Ka Seng Kur Majaw & Rev. I. Kharkongngor (2004), Entries #65 (Page 96)"
+    }
+  ],
+  "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
+}

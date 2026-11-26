@@ -1,4 +1,5 @@
 import { ClanCluster, TipkurResponse } from '../types';
+import { getCommonSurnameResponse } from '../data/commonSurnames';
 
 export const MOCK_CLUSTERS: ClanCluster[] = [
   {
@@ -147,6 +148,12 @@ export const MOCK_CLUSTERS: ClanCluster[] = [
 ];
 
 export function findMockClan(jaitQuery: string): TipkurResponse {
+  // Check common surnames dataset first for fast verified match
+  const common = getCommonSurnameResponse(jaitQuery);
+  if (common) {
+    return common;
+  }
+
   const normalized = jaitQuery.trim().toLowerCase();
   
   // Find cluster containing the clan in any list

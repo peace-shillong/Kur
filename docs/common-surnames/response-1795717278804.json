@@ -1,0 +1,29 @@
+{
+  "mode": "wad-kur",
+  "query": "Shabong",
+  "normalized_query": "shabong",
+  "found": true,
+  "match_count": 1,
+  "clusters": [
+    {
+      "id": "mukhim-shabong-shallam",
+      "title": "Mukhim / Shabong / Shallam / Khonglam",
+      "shikur_clans": [
+        "Mukhim",
+        "Mukhim Bina",
+        "Mukhim Tangphar",
+        "Shabong",
+        "Shallam",
+        "Challam",
+        "Shalam"
+      ],
+      "teh_kur_clans": [
+        "Khonglam"
+      ],
+      "summary_khasi": "Lai ngut shipara na Umtangper: kiba leit sha Synteng la khot Shallam, sha War la khot Mukhim, sha Khyrim la khot Shabong. Kawei ka kpoh. Ki Khonglam na Nongblai ruh ki kam kur bad ki Shabong.",
+      "summary_english": "Three sisters from Umtangper settled in Synteng (Shallam), War (Mukhim), and Khyrim (Shabong)—one single womb. Khonglam also claims kinship with Shabong.",
+      "citation": "Rev. I. Kharkongngor (2004), Entries #72 (Pages 3, 96)"
+    }
+  ],
+  "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
+}

@@ -6,18 +6,47 @@ import { FeatureLockedModal } from './components/modals/FeatureLockedModal';
 import { BisharSangHub } from './components/checker/BisharSangHub';
 import { SettingsPage } from './components/settings/SettingsPage';
 import { KurJaitPage } from './components/kur-jait/KurJaitPage';
+import { ClanListPage } from './components/clans/ClanListPage';
 import { useClan } from './context/ClanContext';
 import { useLanguage } from './context/LanguageContext';
 import { useTheme } from './context/ThemeContext';
-import { HeartHandshake, ArrowLeft, Languages, Settings, BookOpen } from 'lucide-react';
+import { HeartHandshake, ArrowLeft, Languages, Settings, BookOpen, ListFilter } from 'lucide-react';
+
+// Environment variable guard: only enabled if VITE_ENABLE_DEV_API='true' or during local development
+const isDevApiEnabled = Boolean(
+  import.meta.env.DEV || import.meta.env.VITE_ENABLE_DEV_API === 'true'
+);
+
+// Lazy load DevApiPage so it is code-split and only fetched if accessed
+const DevApiPage = React.lazy(() =>
+  import('./components/dev/DevApiPage').then(module => ({ default: module.DevApiPage }))
+);
 
 export const App: React.FC = () => {
-  const { isGraphOpen, setIsGraphOpen, recentSearches, query } = useClan();
+  const { isGraphOpen, setIsGraphOpen, recentSearches, query, searchClan } = useClan();
   const { language, toggleLanguage, t } = useLanguage();
   const { homeBg } = useTheme();
   const [showChecker, setShowChecker] = useState<boolean>(false);
   const [showSettings, setShowSettings] = useState<boolean>(false);
   const [showKurJait, setShowKurJait] = useState<boolean>(false);
+  const [showClanList, setShowClanList] = useState<boolean>(() => {
+    if (typeof window === 'undefined') return false;
+    const hash = window.location.hash.toLowerCase();
+    return hash === '#clans' || hash === '#/clans' || hash === '#thup';
+  });
+  const [showDevPage, setShowDevPage] = useState<boolean>(() => {
+    if (!isDevApiEnabled || typeof window === 'undefined') return false;
+    const hash = window.location.hash.toLowerCase();
+    const search = window.location.search;
+    return (
+      hash === '#dev' ||
+      hash === '#/dev' ||
+      hash === '#api' ||
+      hash === '#/api' ||
+      window.location.pathname === '/dev' ||
+      new URLSearchParams(search).has('dev')
+    );
+  });
   const [showLockedModal, setShowLockedModal] = useState<boolean>(false);
 
   // Helper to ensure mobile virtual keyboard stays dismissed when returning to homepage
@@ -27,11 +56,15 @@ export const App: React.FC = () => {
     }
   };
 
-  // Handle Physical / Browser Back Press
+  // Handle Physical / Browser Back Press & Hash Navigation
   useEffect(() => {
     const handlePopState = () => {
       dismissMobileKeyboard();
-      if (showSettings) {
+      if (showClanList) {
+        setShowClanList(false);
+      } else if (showDevPage) {
+        setShowDevPage(false);
+      } else if (showSettings) {
         setShowSettings(false);
       } else if (showKurJait) {
         setShowKurJait(false);
@@ -42,9 +75,82 @@ export const App: React.FC = () => {
       }
     };
 
+    const handleHashChange = () => {
+      const hash = window.location.hash.toLowerCase();
+      if (hash === '#clans' || hash === '#/clans' || hash === '#thup') {
+        setShowClanList(true);
+        setShowSettings(false);
+        setShowKurJait(false);
+        setShowChecker(false);
+        setShowDevPage(false);
+      } else if (isDevApiEnabled && (hash === '#dev' || hash === '#/dev' || hash === '#api' || hash === '#/api')) {
+        setShowDevPage(true);
+        setShowSettings(false);
+        setShowKurJait(false);
+        setShowChecker(false);
+        setShowClanList(false);
+      }
+    };
+
     window.addEventListener('popstate', handlePopState);
-    return () => window.removeEventListener('popstate', handlePopState);
-  }, [showChecker, showSettings, showKurJait, isGraphOpen, setIsGraphOpen]);
+    window.addEventListener('hashchange', handleHashChange);
+    return () => {
+      window.removeEventListener('popstate', handlePopState);
+      window.removeEventListener('hashchange', handleHashChange);
+    };
+  }, [showChecker, showSettings, showKurJait, showClanList, showDevPage, isGraphOpen, setIsGraphOpen]);
+
+  const openClanList = () => {
+    setShowClanList(true);
+    setShowSettings(false);
+    setShowKurJait(false);
+    setShowChecker(false);
+    setShowDevPage(false);
+    if (typeof window !== 'undefined') {
+      window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    }
+    window.history.pushState({ page: 'clans' }, '', '#clans');
+  };
+
+  const closeClanList = () => {
+    dismissMobileKeyboard();
+    setShowClanList(false);
+    if (
+      window.location.hash === '#clans' ||
+      window.location.hash === '#/clans' ||
+      window.location.hash === '#thup'
+    ) {
+      window.history.replaceState(null, '', window.location.pathname + window.location.search);
+    }
+  };
+
+  const handleSelectClanFromList = (clanName: string) => {
+    closeClanList();
+    searchClan(clanName);
+  };
+
+  const openDevPage = () => {
+    if (!isDevApiEnabled) return;
+    setShowDevPage(true);
+    setShowSettings(false);
+    setShowChecker(false);
+    setShowKurJait(false);
+    setShowClanList(false);
+    window.history.pushState({ page: 'dev' }, '', '#dev');
+  };
+
+  const closeDevPage = () => {
+    dismissMobileKeyboard();
+    setShowDevPage(false);
+    if (
+      window.location.hash === '#dev' ||
+      window.location.hash === '#/dev' ||
+      window.location.hash === '#api' ||
+      window.location.hash === '#/api'
+    ) {
+      window.history.replaceState(null, '', window.location.pathname + window.location.search);
+    }
+  };
 
   const openChecker = () => {
     // When the user has not done any previous search and there is no recent search, show lock modal
@@ -56,6 +162,8 @@ export const App: React.FC = () => {
     setShowChecker(true);
     setShowSettings(false);
     setShowKurJait(false);
+    setShowClanList(false);
+    setShowDevPage(false);
     window.history.pushState({ page: 'checker' }, '');
   };
 
@@ -68,6 +176,8 @@ export const App: React.FC = () => {
     setShowSettings(true);
     setShowChecker(false);
     setShowKurJait(false);
+    setShowClanList(false);
+    setShowDevPage(false);
     window.history.pushState({ page: 'settings' }, '');
   };
 
@@ -80,6 +190,8 @@ export const App: React.FC = () => {
     setShowKurJait(true);
     setShowSettings(false);
     setShowChecker(false);
+    setShowClanList(false);
+    setShowDevPage(false);
     window.history.pushState({ page: 'kur-jait' }, '');
   };
 
@@ -89,7 +201,7 @@ export const App: React.FC = () => {
   };
 
   return (
-    <div className={`min-h-screen flex flex-col justify-between selection:bg-emerald-600 selection:text-white transition-colors ${!showSettings && !showKurJait && !showChecker ? 'dark:bg-black' : ''}`}>
+    <div className={`min-h-screen flex flex-col justify-between selection:bg-emerald-600 selection:text-white transition-colors ${!showSettings && !showKurJait && !showChecker && !showClanList && !(isDevApiEnabled && showDevPage) ? 'dark:bg-black' : ''}`}>
       {/* Accessibility Skip Link (WCAG 2.1 AA / GIGW standard for India) */}
       <a
         href="#main-content"
@@ -100,9 +212,27 @@ export const App: React.FC = () => {
 
       {/* Main Content Area */}
       <main id="main-content" className="flex-1 flex flex-col">
-        {showSettings ? (
+        {showClanList ? (
+          /* Public Clan Lists Page */
+          <ClanListPage onBack={closeClanList} onSelectClan={handleSelectClanFromList} />
+        ) : isDevApiEnabled && showDevPage ? (
+          /* Developer API Testing Console (Loaded lazily when enabled) */
+          <React.Suspense
+            fallback={
+              <div className="flex-1 flex items-center justify-center p-8 text-xs text-slate-400">
+                Loading developer console...
+              </div>
+            }
+          >
+            <DevApiPage onBack={closeDevPage} />
+          </React.Suspense>
+        ) : showSettings ? (
           /* Single Settings Page (Full Page / Fullscreen View, No Tabs) */
-          <SettingsPage onBack={closeSettings} />
+          <SettingsPage
+            onBack={closeSettings}
+            onOpenDev={isDevApiEnabled ? openDevPage : undefined}
+            onOpenClanList={openClanList}
+          />
         ) : showKurJait ? (
           /* Ka Kur Ka Jait Cultural Heritage Page */
           <KurJaitPage onBack={closeKurJait} onOpenChecker={openChecker} />
@@ -125,7 +255,7 @@ export const App: React.FC = () => {
         ) : (
           <>
             {/* Minimal Clean Home Page */}
-            <HomePage />
+            <HomePage onOpenClanList={openClanList} />
 
             {/* Fullscreen Interactive Graph (shown when user searches) */}
             {isGraphOpen && <ClanGraph />}
@@ -142,8 +272,8 @@ export const App: React.FC = () => {
         onClose={() => setShowLockedModal(false)}
       />
 
-      {/* Clean Minimalist Footer (Hidden when Settings, Kur Jait, or Graph is open) */}
-      {!showSettings && !showKurJait && (
+      {/* Clean Minimalist Footer (Hidden when Settings, Kur Jait, ClanList, Dev, or Graph is open) */}
+      {!showSettings && !showKurJait && !showClanList && !(isDevApiEnabled && showDevPage) && (
         <footer className={`w-full border-t py-6 px-4 text-xs text-center space-y-3 transition-colors ${homeBg !== 'none'
           ? 'bg-white/85 dark:bg-black/85 backdrop-blur-md border-slate-200/70 dark:border-neutral-900 text-slate-700 dark:text-slate-300 shadow-xs'
           : 'bg-slate-50/50 dark:bg-black/60 border-slate-100 dark:border-neutral-900 text-slate-500 dark:text-slate-400'
@@ -181,6 +311,17 @@ export const App: React.FC = () => {
             >
               <BookOpen className="w-3.5 h-3.5 text-emerald-600" />
               <span>Ka Kur Ka Jait</span>
+            </button>
+
+            {/* Clan Lists / Directory Button */}
+            <button
+              type="button"
+              onClick={openClanList}
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 font-medium text-xs transition cursor-pointer"
+              title="Thup ki Kur • Clan Lists (259 Documented Clans)"
+            >
+              <ListFilter className="w-3.5 h-3.5 text-emerald-600" />
+              <span>{language === 'kha' ? 'Thup ki Kur' : 'Clan Lists'}</span>
             </button>
 
             {/* Feature: Bishar ia ka Sang on the Footer Link */}

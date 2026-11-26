@@ -1,0 +1,25 @@
+{
+  "mode": "wad-kur",
+  "query": "Nongbsap Pyrtuh",
+  "normalized_query": "nongbsap pyrtuh",
+  "found": true,
+  "match_count": 1,
+  "clusters": [
+    {
+      "id": "nongbsap-vs-mylliem-pyrtuh",
+      "title": "Lyngdoh Nongbsap / Nongbsap Pyrtuh / Nongrang / Sohphoh",
+      "shikur_clans": [
+        "Lyngdoh Nongbsap",
+        "Nongbsap",
+        "Nongbsap Pyrtuh",
+        "Nongrang",
+        "Sohphoh"
+      ],
+      "teh_kur_clans": [],
+      "summary_khasi": "Lyngdoh Nongbsap, Nongbsap Pyrtuh, Nongrang, bad Sohphoh ki dei kawei ka kpoh. Hynrei ki Nongbsap Pyrtuh bad ki Mylliem Pyrtuh KIM DEI KI JUH (Page 96).",
+      "summary_english": "Lyngdoh Nongbsap, Nongbsap Pyrtuh, Nongrang, and Sohphoh are one womb. Explicitly distinct from Mylliem Pyrtuh (Page 96).",
+      "citation": "Rev. I. Kharkongngor (2004), Entries #62, #74 (Pages 95–97)"
+    }
+  ],
+  "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
+}

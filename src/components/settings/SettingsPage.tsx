@@ -28,14 +28,18 @@ import {
   AlertTriangle,
   Download,
   Smartphone,
-  CheckCircle2
+  CheckCircle2,
+  Code,
+  ListFilter
 } from 'lucide-react';
 
 interface SettingsPageProps {
   onBack: () => void;
+  onOpenDev?: () => void;
+  onOpenClanList?: () => void;
 }
 
-export const SettingsPage: React.FC<SettingsPageProps> = ({ onBack }) => {
+export const SettingsPage: React.FC<SettingsPageProps> = ({ onBack, onOpenDev, onOpenClanList }) => {
   const { clearAllAppData } = useClan();
   const { language, setLanguage } = useLanguage();
   const { themeMode, customVariant, setThemeMode, setCustomVariant, homeBg, setHomeBg } = useTheme();
@@ -430,6 +434,24 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({ onBack }) => {
           </div>
         </div>
 
+        {/* Action Button: View Full Clan Directory */}
+        {onOpenClanList && (
+          <div className="pt-1">
+            <button
+              type="button"
+              onClick={onOpenClanList}
+              className="w-full py-3 px-5 rounded-2xl bg-emerald-700 hover:bg-emerald-800 active:bg-emerald-900 text-white font-semibold text-xs sm:text-sm transition cursor-pointer shadow-sm flex items-center justify-center gap-2.5 active:scale-[0.99]"
+            >
+              <ListFilter className="w-4 h-4 text-emerald-200" />
+              <span>
+                {language === 'kha'
+                  ? 'Peit ia ka Thup ki 259 tylli ki Kur ba don ha ka App'
+                  : 'View all 259 Documented Clans in the App'}
+              </span>
+            </button>
+          </div>
+        )}
+
         <p className="text-xs sm:text-sm text-slate-700 leading-relaxed bg-slate-50 p-4 rounded-2xl border border-slate-200">
           {language === 'kha'
             ? 'Kane ka application ka don ka jingthmu ban pynneh pynsah ia ka dustur kyntang jong ka jaitbynriew Khasi ha kaba ia dei bad ka Tipkur Tipkha, ka Tipbriew Tipblei, bad ban pynsuk ia ka jingwad bad jingbishar ia ka Sang ka Ma.'
@@ -615,6 +637,32 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({ onBack }) => {
           </button>
         </div>
       </section >
+
+      {/* SECTION: Developer Tools (API Endpoint Testing Console) */}
+      {onOpenDev && (
+        <section className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm">
+          <div className="p-4 sm:p-5 rounded-2xl bg-emerald-50/70 border border-emerald-200 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div className="space-y-0.5">
+              <div className="text-sm font-bold text-emerald-950 flex items-center gap-2">
+                <Code className="w-4 h-4 text-emerald-600" />
+                <span>API Testing Console (Development Mode)</span>
+              </div>
+              <p className="text-xs text-emerald-800">
+                Send custom requests to API endpoints with Bearer Authorization, Content-Type, and JSON array payloads.
+              </p>
+            </div>
+
+            <button
+              type="button"
+              onClick={onOpenDev}
+              className="px-5 py-2.5 rounded-xl bg-emerald-700 hover:bg-emerald-800 text-white font-semibold text-xs transition cursor-pointer shrink-0 shadow-sm flex items-center gap-2"
+            >
+              <Code className="w-3.5 h-3.5" />
+              <span>Open Dev Console</span>
+            </button>
+          </div>
+        </section>
+      )}
 
       {/* SECTION 4: Clear Data & Cache Button */}
       < section className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm" >

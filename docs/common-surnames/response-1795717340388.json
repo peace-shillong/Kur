@@ -1,0 +1,36 @@
+{
+  "mode": "wad-kur",
+  "query": "Rapsang Nongpiur",
+  "normalized_query": "rapsang nongpiur",
+  "found": true,
+  "match_count": 1,
+  "clusters": [
+    {
+      "id": "khongsngi-lyngdoh-mawphlang",
+      "title": "Khongsngi / Lyngdoh Mawphlang / Rapthap / Thawmuit",
+      "shikur_clans": [
+        "Khongsngi",
+        "Lyngdoh Mawphlang",
+        "Lyngdoh Nonglwai",
+        "Lyngdoh Nongpiur",
+        "Rapthap",
+        "Lyngwa Rapthap",
+        "Thawmuit",
+        "Pom Pyrthat",
+        "Pompyrthat",
+        "Rapsang Nongpiur",
+        "Khongsti",
+        "Mawlieh",
+        "Khongnoh",
+        "Kyllang"
+      ],
+      "teh_kur_clans": [
+        "Lyngdoh Sangriang"
+      ],
+      "summary_khasi": "Baroh kine ki dei ki khun ka Khmah Lyngdoh Mawphlang (bad ha Riangmang la khot 'Kyllang'). Ki Lyngdoh Sangriang ruh ki ïadei kur bad ki.",
+      "summary_english": "All descend from Ka Khmah Lyngdoh Mawphlang, with Lyngdoh Sangriang also bound by clan kinship.",
+      "citation": "Rev. I. Kharkongngor (2004), Entries #29 (Page 89)"
+    }
+  ],
+  "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
+}

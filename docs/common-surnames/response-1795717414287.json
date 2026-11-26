@@ -1,0 +1,34 @@
+{
+  "mode": "wad-kur",
+  "query": "Pariat",
+  "normalized_query": "pariat",
+  "found": true,
+  "match_count": 1,
+  "clusters": [
+    {
+      "id": "slong-thangkhiew-pariat-blah",
+      "title": "Slong / Thangkhiew / Pariat / Shylla / Blah",
+      "shikur_clans": [
+        "Slong",
+        "Shylla",
+        "Chylla",
+        "Blah",
+        "Pariat",
+        "Pde",
+        "Thangkhiew",
+        "Tangliang",
+        "Sajem",
+        "Ïatam",
+        "Rabon"
+      ],
+      "teh_kur_clans": [
+        "Snaitang",
+        "Lartang"
+      ],
+      "summary_khasi": "Thangkhiew, Pariat, Shylla, Blah, Slong, bad Pde ki ïakam kur. Kumjuh Tangliang, Shylla, Sajem (Rabon), bad Ïatam.",
+      "summary_english": "Thangkhiew, Pariat, Shylla, Blah, Slong, and Pde share clan kinship, alongside Tangliang, Sajem, and Ïatam.",
+      "citation": "Rev. I. Kharkongngor (2004), Entries #94, #95, #103, #105 (Pages 98, 99)"
+    }
+  ],
+  "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
+}
