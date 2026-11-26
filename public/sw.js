@@ -1,6 +1,7 @@
 // Service Worker for Tipkur Tipkha PWA
-const CACHE_NAME = 'tipkur-pwa-v1';
+const CACHE_NAME = 'tipkur-pwa-v2';
 
+// Core essential static files to precache
 const STATIC_PRECACHE = [
   '/',
   '/index.html',
@@ -19,8 +20,21 @@ const STATIC_PRECACHE = [
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => {
-      return cache.addAll(STATIC_PRECACHE);
+    caches.open(CACHE_NAME).then(async (cache) => {
+      // Fetch assets individually and sequentially to prevent triggering 429 Too Many Requests
+      // rate limits on Cloudflare or CDN hosts, and ensure one failed asset does not abort SW installation.
+      for (const url of STATIC_PRECACHE) {
+        try {
+          const response = await fetch(url, { cache: 'no-cache' });
+          if (response && response.status >= 200 && response.status < 300) {
+            await cache.put(url, response);
+          } else {
+            console.warn(`[SW] Precache non-OK status (${response ? response.status : 'unknown'}) for ${url}`);
+          }
+        } catch (err) {
+          console.warn(`[SW] Precache fetch error for ${url}:`, err);
+        }
+      }
     }).then(() => self.skipWaiting())
   );
 });
@@ -88,4 +102,3 @@ self.addEventListener('fetch', (event) => {
     })
   );
 });
-
