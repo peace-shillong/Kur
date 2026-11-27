@@ -87,11 +87,12 @@ export const CompatibilityChat: React.FC = () => {
 
   // Quick test friend pairings
   const friendPresets = [
-    { p2: 'Nongbri', label: 'Nongbri (Sang)' },
-    { p2: 'Mylliem Pyrtuh', label: 'Mylliem Pyrtuh (Ym Sang)' },
-    { p2: 'Nongrum', label: 'Nongrum (Needs Verify)' },
-    { p2: 'Laloo', label: 'Laloo (Shikur Sang)' },
-    { p2: 'Syngngai', label: 'Syngngai (Teh Kur Sang)' }
+    { p2: 'Nongbri', label: 'Nongbri' },
+    { p2: 'Nongrum', label: 'Nongrum' },
+    { p2: 'Laloo', label: 'Laloo' },
+    { p2: 'Lyngdoh', label: 'Lyngdoh' },
+    { p2: 'Shylla', label: 'Shylla' },
+    { p2: 'Mylliem Pyrtuh', label: 'Mylliem Pyrtuh' }
   ];
 
   const scrollToBottom = (smooth = true) => {
