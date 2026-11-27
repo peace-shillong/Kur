@@ -463,6 +463,7 @@
         <li><a href="#data-contracts">API JSON Contracts & Metadata</a></li>
         <li><a href="#code-implementation">Full Code Implementation</a></li>
         <li><a href="#resilience">Resilience & 429 Mitigation</a></li>
+        <li><a href="12. Local API Backend Specification.md" style="color: var(--accent);">Backend Spec & Master Prompt</a></li>
       </ul>
     </nav>
 
@@ -740,7 +741,7 @@
       <section id="step-3">
         <h2>Step 3: Local API Endpoint &amp; Cloudflare D1</h2>
         <p>
-          When client-side caches miss, the frontend dispatches a <code>POST</code> request to the local API endpoint (e.g., <code>https://kur.kyrshan.com/api/wad-kur</code> or <code>/api/bishar-sang</code>), powered by a <strong>Cloudflare Worker</strong> connected to a <strong>Cloudflare D1 SQL Database</strong>.
+          When client-side caches miss, the frontend dispatches a <code>POST</code> request to the local API endpoint (e.g., <code>https://kur-api.kyrshan.com/api/wad-kur</code> or <code>/api/bishar-sang</code>), powered by a <strong>Cloudflare Worker</strong> connected to a <strong>Cloudflare D1 SQL Database</strong>.
         </p>
 
         <div class="callout">

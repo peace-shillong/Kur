@@ -8,7 +8,6 @@ import {
   Heart,
   Baby,
   Sparkles,
-  ExternalLink,
   ZoomIn,
   X,
   Layers
