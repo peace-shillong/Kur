@@ -223,6 +223,53 @@ console.log(`New clans appended from 81 links: ${addedClansCount}`);
 console.log(`Existing clans referenced in 81 links: ${attachedToExistingCount}`);
 console.log(`Total keys in combinedData: ${Object.keys(combinedData).length}`);
 
+// 3. Scan shikur_clans for each clan in combinedData, and if clan name in query is contained in array, extract to kpoh_clans
+let totalExtractedKpoh = 0;
+let entriesWithExtractedKpoh = 0;
+
+for (const [key, resp] of Object.entries(combinedData)) {
+  const query = resp.query;
+  const normQuery = normalizeKhasi(query);
+  let entryHasExtraction = false;
+
+  resp.clusters = resp.clusters.map(cluster => {
+    // Deep clone cluster so query-specific extraction does not mutate shared cluster references
+    const cloned = JSON.parse(JSON.stringify(cluster));
+    const shikur = cloned.shikur_clans || [];
+    const kpohSet = new Set(cloned.kpoh_clans || []);
+
+    const remainingShikur = [];
+    const extractedKpoh = [];
+
+    shikur.forEach(item => {
+      const normItem = normalizeKhasi(item);
+      if (normItem !== normQuery && normItem.includes(normQuery)) {
+        extractedKpoh.push(item);
+        kpohSet.add(item);
+      } else {
+        remainingShikur.push(item);
+      }
+    });
+
+    if (extractedKpoh.length > 0) {
+      entryHasExtraction = true;
+      totalExtractedKpoh += extractedKpoh.length;
+    }
+
+    // Ensure items in kpohSet are never duplicated in shikur_clans
+    cloned.shikur_clans = remainingShikur.filter(item => !kpohSet.has(item));
+    cloned.kpoh_clans = Array.from(kpohSet);
+
+    return cloned;
+  });
+
+  if (entryHasExtraction) {
+    entriesWithExtractedKpoh++;
+  }
+}
+
+console.log(`Extracted kpoh_clans for ${entriesWithExtractedKpoh} entries (${totalExtractedKpoh} total items moved).`);
+
 // Generate TypeScript source code
 let ts = `import { TipkurResponse } from "../types";\n\n`;
 ts += `// Primary common Khasi surnames cataloged (${commonSurnamesList.length} clans)\n`;

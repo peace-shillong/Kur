@@ -140,7 +140,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Wahlang Pahsyntiew, Alia, Laitphlang, Lyngdoh Lyngïong, Malang, Mawïong, Mawshai, Byrsat, Mawsor, Rangslang, Ryntathiang, Symbai, Tyrsa, Wahlang-Ryntathiang, Wallang ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Wahlang Pahsyntiew, Alia, Laitphlang, Lyngdoh Lyngïong, Malang, Mawïong, Mawshai, Byrsat, Mawsor, Rangslang, Ryntathiang, Symbai, Tyrsa, Wahlang-Ryntathiang, Wallang belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #77 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #77 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -208,7 +209,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -276,7 +278,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -299,7 +302,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Kharumlong, Babai, Kharmylliem ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Kharumlong, Babai, Kharmylliem belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #13 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #13 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -321,7 +325,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Bamon, Suja ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Bamon, Suja belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #1 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #1 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -353,7 +358,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Majaw, Basaïawmoit, Lyngdoh Peiñlang, Lyngwi, Khongji, Hynñiewta, Sangkli, Langi, Muktieh, Be, Kurbah, Rapsang Marbisu ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Majaw, Basaïawmoit, Lyngdoh Peiñlang, Lyngwi, Khongji, Hynñiewta, Sangkli, Langi, Muktieh, Be, Kurbah, Rapsang Marbisu belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #40 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #40 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -379,7 +385,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Lyngdoh Mylliem, Basaringaid Kurkajuh, Marbañiang, Massar, Mylliemumlong, Sangot ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Lyngdoh Mylliem, Basaringaid Kurkajuh, Marbañiang, Massar, Mylliemumlong, Sangot belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #33 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #33 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -411,7 +418,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Majaw, Basaïawmoit, Lyngdoh Peiñlang, Lyngwi, Khongji, Hynñiewta, Sangkli, Langi, Muktieh, Be, Kurbah, Rapsang Marbisu ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Majaw, Basaïawmoit, Lyngdoh Peiñlang, Lyngwi, Khongji, Hynñiewta, Sangkli, Langi, Muktieh, Be, Kurbah, Rapsang Marbisu belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #40 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #40 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -443,7 +451,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Majaw, Basaïawmoit, Lyngdoh Peiñlang, Lyngwi, Khongji, Hynñiewta, Sangkli, Langi, Muktieh, Be, Kurbah, Rapsang Marbisu ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Majaw, Basaïawmoit, Lyngdoh Peiñlang, Lyngwi, Khongji, Hynñiewta, Sangkli, Langi, Muktieh, Be, Kurbah, Rapsang Marbisu belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #40 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #40 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -487,7 +496,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Pakynteiñ, Bhoi So-Kpoh, War So-Kpoh, Nikhla, Bleiñ, Katphoh, Lipon, Liwait, Niangphoh, Pasubon, Rangat, Singphoh, Shyrmang So-Kpoh, Paswet, Kma, Kynjing, Lakiang, Lanong, Lytan, Mutyen, Pyrdiang, Langdoh-Jwai, Siangbud, Syngkon ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Pakynteiñ, Bhoi So-Kpoh, War So-Kpoh, Nikhla, Bleiñ, Katphoh, Lipon, Liwait, Niangphoh, Pasubon, Rangat, Singphoh, Shyrmang So-Kpoh, Paswet, Kma, Kynjing, Lakiang, Lanong, Lytan, Mutyen, Pyrdiang, Langdoh-Jwai, Siangbud, Syngkon belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #52 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #52 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -514,7 +524,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Slong, Blah, Pariat, Pde, Shylla, Thangkhiew, Norlong ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Slong, Blah, Pariat, Pde, Shylla, Thangkhiew, Norlong belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #59 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #59 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -558,7 +569,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Pakynteiñ, Bhoi So-Kpoh, War So-Kpoh, Nikhla, Bleiñ, Katphoh, Lipon, Liwait, Niangphoh, Pasubon, Rangat, Singphoh, Shyrmang So-Kpoh, Paswet, Kma, Kynjing, Lakiang, Lanong, Lytan, Mutyen, Pyrdiang, Langdoh-Jwai, Siangbud, Syngkon ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Pakynteiñ, Bhoi So-Kpoh, War So-Kpoh, Nikhla, Bleiñ, Katphoh, Lipon, Liwait, Niangphoh, Pasubon, Rangat, Singphoh, Shyrmang So-Kpoh, Paswet, Kma, Kynjing, Lakiang, Lanong, Lytan, Mutyen, Pyrdiang, Langdoh-Jwai, Siangbud, Syngkon belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #52 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #52 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -602,7 +614,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Pakynteiñ, Bhoi So-Kpoh, War So-Kpoh, Nikhla, Bleiñ, Katphoh, Lipon, Liwait, Niangphoh, Pasubon, Rangat, Singphoh, Shyrmang So-Kpoh, Paswet, Kma, Kynjing, Lakiang, Lanong, Lytan, Mutyen, Pyrdiang, Langdoh-Jwai, Siangbud, Syngkon ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Pakynteiñ, Bhoi So-Kpoh, War So-Kpoh, Nikhla, Bleiñ, Katphoh, Lipon, Liwait, Niangphoh, Pasubon, Rangat, Singphoh, Shyrmang So-Kpoh, Paswet, Kma, Kynjing, Lakiang, Lanong, Lytan, Mutyen, Pyrdiang, Langdoh-Jwai, Siangbud, Syngkon belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #52 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #52 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -637,7 +650,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Wahlang Pahsyntiew, Alia, Laitphlang, Lyngdoh Lyngïong, Malang, Mawïong, Mawshai, Byrsat, Mawsor, Rangslang, Ryntathiang, Symbai, Tyrsa, Wahlang-Ryntathiang, Wallang ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Wahlang Pahsyntiew, Alia, Laitphlang, Lyngdoh Lyngïong, Malang, Mawïong, Mawshai, Byrsat, Mawsor, Rangslang, Ryntathiang, Symbai, Tyrsa, Wahlang-Ryntathiang, Wallang belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #77 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #77 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -661,7 +675,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Shullai, Dhar, Mallai, Nonghulo ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Shullai, Dhar, Mallai, Nonghulo belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #58 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #58 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -691,11 +706,6 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
           "Kashngaiñ",
           "Katkeh",
           "Diengdoh",
-          "Diengdoh-Bah",
-          "Diengdoh-Kylla",
-          "Diengdoh-Shngaiñlang",
-          "Diengdoh Parïong",
-          "Diengdoh Nongstoiñ",
           "Doom",
           "Hek",
           "Ïongkjam",
@@ -734,7 +744,14 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         ],
         "summary_khasi": "Kine ki 40+ tylli ki kur (lait noh ki Syngngai) ki mih na ki 20 ngut ki khun kynthei ka Ïaw Shi Bdi bad u Riang Bareh. Ki Syngngai pat ki la ïateh kur bad ki Diengdoh ha Sohra.",
         "summary_english": "Over 40 clans across War Jaiñtia, Jowai, Khasi Hills, and Bhoi descend from the 20 daughters of Ka Ïaw Shi Bdi and U Riang Bareh. Syngngai bound themselves via ïateh kur with Diengdoh in Sohra.",
-        "citation": "Rev. I. Kharkongngor (2004) & Medro Singh Diengdoh, Entries #28, #44, #50, #67 (Pages 89, 91–92, 96)"
+        "citation": "Rev. I. Kharkongngor (2004) & Medro Singh Diengdoh, Entries #28, #44, #50, #67 (Pages 89, 91–92, 96)",
+        "kpoh_clans": [
+          "Diengdoh-Bah",
+          "Diengdoh-Kylla",
+          "Diengdoh-Shngaiñlang",
+          "Diengdoh Parïong",
+          "Diengdoh Nongstoiñ"
+        ]
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -807,7 +824,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         ],
         "summary_khasi": "Kine ki 40+ tylli ki kur (lait noh ki Syngngai) ki mih na ki 20 ngut ki khun kynthei ka Ïaw Shi Bdi bad u Riang Bareh. Ki Syngngai pat ki la ïateh kur bad ki Diengdoh ha Sohra.",
         "summary_english": "Over 40 clans across War Jaiñtia, Jowai, Khasi Hills, and Bhoi descend from the 20 daughters of Ka Ïaw Shi Bdi and U Riang Bareh. Syngngai bound themselves via ïateh kur with Diengdoh in Sohra.",
-        "citation": "Rev. I. Kharkongngor (2004) & Medro Singh Diengdoh, Entries #28, #44, #50, #67 (Pages 89, 91–92, 96)"
+        "citation": "Rev. I. Kharkongngor (2004) & Medro Singh Diengdoh, Entries #28, #44, #50, #67 (Pages 89, 91–92, 96)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -880,7 +898,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         ],
         "summary_khasi": "Kine ki 40+ tylli ki kur (lait noh ki Syngngai) ki mih na ki 20 ngut ki khun kynthei ka Ïaw Shi Bdi bad u Riang Bareh. Ki Syngngai pat ki la ïateh kur bad ki Diengdoh ha Sohra.",
         "summary_english": "Over 40 clans across War Jaiñtia, Jowai, Khasi Hills, and Bhoi descend from the 20 daughters of Ka Ïaw Shi Bdi and U Riang Bareh. Syngngai bound themselves via ïateh kur with Diengdoh in Sohra.",
-        "citation": "Rev. I. Kharkongngor (2004) & Medro Singh Diengdoh, Entries #28, #44, #50, #67 (Pages 89, 91–92, 96)"
+        "citation": "Rev. I. Kharkongngor (2004) & Medro Singh Diengdoh, Entries #28, #44, #50, #67 (Pages 89, 91–92, 96)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -948,7 +967,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -1016,7 +1036,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -1043,7 +1064,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Kharsyntiew, Kharngapkynta, Kharphanbuh, Kharsawian, Kharwanlang, Puiñdiwang, Dkhar ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Kharsyntiew, Kharngapkynta, Kharphanbuh, Kharsawian, Kharwanlang, Puiñdiwang, Dkhar belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #16 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #16 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -1111,7 +1133,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -1138,7 +1161,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Marweiñ, Hahshah Ïawshwar, Hahshah Nongiriang, Hahshah Shrieh, Nongdiangngan, Nongtynger, Shrieh ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Marweiñ, Hahshah Ïawshwar, Hahshah Nongiriang, Hahshah Shrieh, Nongdiangngan, Nongtynger, Shrieh belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #42 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #42 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -1165,7 +1189,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Marweiñ, Hahshah Ïawshwar, Hahshah Nongiriang, Hahshah Shrieh, Nongdiangngan, Nongtynger, Shrieh ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Marweiñ, Hahshah Ïawshwar, Hahshah Nongiriang, Hahshah Shrieh, Nongdiangngan, Nongtynger, Shrieh belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #42 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #42 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -1192,7 +1217,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Marweiñ, Hahshah Ïawshwar, Hahshah Nongiriang, Hahshah Shrieh, Nongdiangngan, Nongtynger, Shrieh ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Marweiñ, Hahshah Ïawshwar, Hahshah Nongiriang, Hahshah Shrieh, Nongdiangngan, Nongtynger, Shrieh belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #42 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #42 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -1219,7 +1245,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Marweiñ, Hahshah Ïawshwar, Hahshah Nongiriang, Hahshah Shrieh, Nongdiangngan, Nongtynger, Shrieh ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Marweiñ, Hahshah Ïawshwar, Hahshah Nongiriang, Hahshah Shrieh, Nongdiangngan, Nongtynger, Shrieh belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #42 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #42 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -1241,7 +1268,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Ñiewphantang, Hehkhlieh ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Ñiewphantang, Hehkhlieh belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #48 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #48 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -1314,7 +1342,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         ],
         "summary_khasi": "Kine ki 40+ tylli ki kur (lait noh ki Syngngai) ki mih na ki 20 ngut ki khun kynthei ka Ïaw Shi Bdi bad u Riang Bareh. Ki Syngngai pat ki la ïateh kur bad ki Diengdoh ha Sohra.",
         "summary_english": "Over 40 clans across War Jaiñtia, Jowai, Khasi Hills, and Bhoi descend from the 20 daughters of Ka Ïaw Shi Bdi and U Riang Bareh. Syngngai bound themselves via ïateh kur with Diengdoh in Sohra.",
-        "citation": "Rev. I. Kharkongngor (2004) & Medro Singh Diengdoh, Entries #28, #44, #50, #67 (Pages 89, 91–92, 96)"
+        "citation": "Rev. I. Kharkongngor (2004) & Medro Singh Diengdoh, Entries #28, #44, #50, #67 (Pages 89, 91–92, 96)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -1356,7 +1385,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Khathynriew (16) jait ki kpoh kiba la mih na ka kur Majaw. Baroh ki ïalong shikur bad sang ban ïashongkha.",
         "summary_english": "Sixteen clans emerged from the Majaw clan. All 16 share the same ancestral lineage and cannot intermarry.",
-        "citation": "Ka Seng Kur Majaw & Rev. I. Kharkongngor (2004), Entries #65 (Page 96)"
+        "citation": "Ka Seng Kur Majaw & Rev. I. Kharkongngor (2004), Entries #65 (Page 96)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -1398,7 +1428,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Khathynriew (16) jait ki kpoh kiba la mih na ka kur Majaw. Baroh ki ïalong shikur bad sang ban ïashongkha.",
         "summary_english": "Sixteen clans emerged from the Majaw clan. All 16 share the same ancestral lineage and cannot intermarry.",
-        "citation": "Ka Seng Kur Majaw & Rev. I. Kharkongngor (2004), Entries #65 (Page 96)"
+        "citation": "Ka Seng Kur Majaw & Rev. I. Kharkongngor (2004), Entries #65 (Page 96)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -1460,13 +1491,15 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
           "Suji",
           "Syngngai",
           "Tui",
-          "Wanpiat",
-          "War-Ïaw-shi-bdi"
+          "Wanpiat"
         ],
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)",
+        "kpoh_clans": [
+          "War-Ïaw-shi-bdi"
+        ]
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -1497,7 +1530,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         ],
         "summary_khasi": "Mih na ka Phñiaw ha Rymbai/Tongseng bad pur sha Shella, Sohra, bad Sepngi. Ki Nongneng/Nengnong bad Nongrum/Rumnong ki ïalong shikur bad ki Ïawphñiaw.",
         "summary_english": "Originates from Ka Phñiaw. Nongrum, Rumnong, Nongneng, Nengnong, and Nongrem share the same bloodline with Ïawphñiaw.",
-        "citation": "Rev. I. Kharkongngor (2004), Entries #43, #78 (Pages 90–91, 97)"
+        "citation": "Rev. I. Kharkongngor (2004), Entries #43, #78 (Pages 90–91, 97)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -1565,7 +1599,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -1584,13 +1619,15 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
           "Lyngdoh Mawnai",
           "Jaraiñ",
           "Mawnai",
-          "Lokhmi",
-          "Lyngdoh Jaraiñ"
+          "Lokhmi"
         ],
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Lyngdoh Mawnai, Jaraiñ, Mawnai, Lokhmi, Lyngdoh Jaraiñ ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Lyngdoh Mawnai, Jaraiñ, Mawnai, Lokhmi, Lyngdoh Jaraiñ belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #31 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #31 (Page 9)",
+        "kpoh_clans": [
+          "Lyngdoh Jaraiñ"
+        ]
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -1609,13 +1646,15 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
           "Lyngdoh Mawnai",
           "Jaraiñ",
           "Mawnai",
-          "Lokhmi",
-          "Lyngdoh Jaraiñ"
+          "Lokhmi"
         ],
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Lyngdoh Mawnai, Jaraiñ, Mawnai, Lokhmi, Lyngdoh Jaraiñ ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Lyngdoh Mawnai, Jaraiñ, Mawnai, Lokhmi, Lyngdoh Jaraiñ belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #31 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #31 (Page 9)",
+        "kpoh_clans": [
+          "Lyngdoh Jaraiñ"
+        ]
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -1683,7 +1722,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -1699,7 +1739,6 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "id": "link-25-jyrwa-nongsiej",
         "title": "Jyrwa Nongsiej (Jyrwa, Mawleiñ Nongsiej, Nongsiej, Pdah-Ka-Siej)",
         "shikur_clans": [
-          "Jyrwa Nongsiej",
           "Jyrwa",
           "Mawleiñ Nongsiej",
           "Nongsiej",
@@ -1708,7 +1747,10 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Jyrwa Nongsiej, Jyrwa, Mawleiñ Nongsiej, Nongsiej, Pdah-Ka-Siej ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Jyrwa Nongsiej, Jyrwa, Mawleiñ Nongsiej, Nongsiej, Pdah-Ka-Siej belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #25 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #25 (Page 8)",
+        "kpoh_clans": [
+          "Jyrwa Nongsiej"
+        ]
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -1733,7 +1775,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Jyrwa Nongsiej, Jyrwa, Mawleiñ Nongsiej, Nongsiej, Pdah-Ka-Siej ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Jyrwa Nongsiej, Jyrwa, Mawleiñ Nongsiej, Nongsiej, Pdah-Ka-Siej belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #25 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #25 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -1801,7 +1844,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -1869,7 +1913,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -1937,7 +1982,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -2005,7 +2051,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -2073,7 +2120,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -2098,7 +2146,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Nongneng Daloi, Lyngdoh Nongumlong, Shanprew, Nongneng Pator, Kapew ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Nongneng Daloi, Lyngdoh Nongumlong, Shanprew, Nongneng Pator, Kapew belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #50 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #50 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -2166,7 +2215,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -2234,7 +2284,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -2302,7 +2353,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -2370,7 +2422,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -2414,7 +2467,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Pakynteiñ, Bhoi So-Kpoh, War So-Kpoh, Nikhla, Bleiñ, Katphoh, Lipon, Liwait, Niangphoh, Pasubon, Rangat, Singphoh, Shyrmang So-Kpoh, Paswet, Kma, Kynjing, Lakiang, Lanong, Lytan, Mutyen, Pyrdiang, Langdoh-Jwai, Siangbud, Syngkon ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Pakynteiñ, Bhoi So-Kpoh, War So-Kpoh, Nikhla, Bleiñ, Katphoh, Lipon, Liwait, Niangphoh, Pasubon, Rangat, Singphoh, Shyrmang So-Kpoh, Paswet, Kma, Kynjing, Lakiang, Lanong, Lytan, Mutyen, Pyrdiang, Langdoh-Jwai, Siangbud, Syngkon belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #52 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #52 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -2436,7 +2490,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Khaiñ, Laitïam ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Khaiñ, Laitïam belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #2 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #2 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -2458,7 +2513,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Khaiñ, Laitïam ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Khaiñ, Laitïam belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #2 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #2 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -2481,7 +2537,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Kharbani, Kharrani, Kharsati ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Kharbani, Kharrani, Kharsati belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #3 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #3 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -2506,7 +2563,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Kharbuki, Kharbihkhiew, Kharbynnuid, Kharsawkmie, Kharumnuid ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Kharbuki, Kharbihkhiew, Kharbynnuid, Kharsawkmie, Kharumnuid belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #5 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #5 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -2528,7 +2586,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Kharbithai, Kharmithai ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Kharbithai, Kharmithai belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #4 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #4 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -2551,7 +2610,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Kharbudon, Kharmatpen, Kharmihpen ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Kharbudon, Kharmatpen, Kharmihpen belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #6 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #6 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -2576,7 +2636,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Kharbuki, Kharbihkhiew, Kharbynnuid, Kharsawkmie, Kharumnuid ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Kharbuki, Kharbihkhiew, Kharbynnuid, Kharsawkmie, Kharumnuid belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #5 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #5 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -2601,7 +2662,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Kharbuki, Kharbihkhiew, Kharbynnuid, Kharsawkmie, Kharumnuid ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Kharbuki, Kharbihkhiew, Kharbynnuid, Kharsawkmie, Kharumnuid belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #5 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #5 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -2626,7 +2688,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Khardohling, Khardympep, Kharsahnoh, Khonghat, Khongshei ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Khardohling, Khardympep, Kharsahnoh, Khonghat, Khongshei belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #9 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #9 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -2651,7 +2714,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Khardohling, Khardympep, Kharsahnoh, Khonghat, Khongshei ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Khardohling, Khardympep, Kharsahnoh, Khonghat, Khongshei belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #9 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #9 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -2674,7 +2738,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Kharraji, Kharhujon, Kharhuru ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Kharraji, Kharhujon, Kharhuru belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #14 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #14 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -2697,7 +2762,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Kharraji, Kharhujon, Kharhuru ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Kharraji, Kharhujon, Kharhuru belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #14 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #14 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -2722,7 +2788,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         ],
         "summary_khasi": "Mih na ka Mei-Ïawbei 'Mei Moh Kynhong' (~1450 AD) ha Nongkyntir kaba la shongkha bad u Step na ka kur Ryndem. Ki Kharkongngor ki ïakam kur bad ki Kharshi-ïing.",
         "summary_english": "Descends from 'Mei Moh Kynhong' (~1450 AD) in Nongkyntir. Kharkongngor maintains an ïakam kur pact with Kharshi-ïing.",
-        "citation": "Rev. I. Kharkongngor (2004), Entries #13 (Page 87)"
+        "citation": "Rev. I. Kharkongngor (2004), Entries #13 (Page 87)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -2744,7 +2811,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Kharkrang, Lyngdoh Sadew ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Kharkrang, Lyngdoh Sadew belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #8 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #8 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -2767,7 +2835,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Kharkongor, Kharlor, Kharshiïeng ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Kharkongor, Kharlor, Kharshiïeng belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #7 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #7 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -2790,7 +2859,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Kharlukhi, Kharsnabi, Tiewtabi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Kharlukhi, Kharsnabi, Tiewtabi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #10 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #10 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -2813,7 +2883,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Kharbudon, Kharmatpen, Kharmihpen ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Kharbudon, Kharmatpen, Kharmihpen belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #6 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #6 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -2836,7 +2907,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Kharbudon, Kharmatpen, Kharmihpen ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Kharbudon, Kharmatpen, Kharmihpen belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #6 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #6 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -2858,7 +2930,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Kharbithai, Kharmithai ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Kharbithai, Kharmithai belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #4 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #4 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -2880,7 +2953,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Kharmudai, Kharmyndai ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Kharmudai, Kharmyndai belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #11 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #11 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -2903,7 +2977,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Kharumlong, Babai, Kharmylliem ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Kharumlong, Babai, Kharmylliem belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #13 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #13 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -2925,7 +3000,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Kharmudai, Kharmyndai ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Kharmudai, Kharmyndai belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #11 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #11 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -2952,7 +3028,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Kharsyntiew, Kharngapkynta, Kharphanbuh, Kharsawian, Kharwanlang, Puiñdiwang, Dkhar ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Kharsyntiew, Kharngapkynta, Kharphanbuh, Kharsawian, Kharwanlang, Puiñdiwang, Dkhar belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #16 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #16 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -2979,7 +3056,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Kharsyntiew, Kharngapkynta, Kharphanbuh, Kharsawian, Kharwanlang, Puiñdiwang, Dkhar ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Kharsyntiew, Kharngapkynta, Kharphanbuh, Kharsawian, Kharwanlang, Puiñdiwang, Dkhar belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #16 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #16 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -3001,7 +3079,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Kharphur, Wankhar ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Kharphur, Wankhar belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #12 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #12 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -3024,7 +3103,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Kharraji, Kharhujon, Kharhuru ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Kharraji, Kharhujon, Kharhuru belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #14 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #14 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -3047,7 +3127,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Kharbani, Kharrani, Kharsati ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Kharbani, Kharrani, Kharsati belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #3 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #3 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -3069,7 +3150,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Kharryja, Langte ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Kharryja, Langte belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #15 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #15 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -3093,7 +3175,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Ryngngait Lyngdoh, Kharrymen, Diengdoh Nongstoiñ, Rymen ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Ryngngait Lyngdoh, Kharrymen, Diengdoh Nongstoiñ, Rymen belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #54 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #54 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -3118,7 +3201,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Khardohling, Khardympep, Kharsahnoh, Khonghat, Khongshei ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Khardohling, Khardympep, Kharsahnoh, Khonghat, Khongshei belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #9 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #9 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -3141,7 +3225,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Kharbani, Kharrani, Kharsati ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Kharbani, Kharrani, Kharsati belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #3 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #3 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -3168,7 +3253,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Kharsyntiew, Kharngapkynta, Kharphanbuh, Kharsawian, Kharwanlang, Puiñdiwang, Dkhar ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Kharsyntiew, Kharngapkynta, Kharphanbuh, Kharsawian, Kharwanlang, Puiñdiwang, Dkhar belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #16 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #16 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -3193,7 +3279,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Kharbuki, Kharbihkhiew, Kharbynnuid, Kharsawkmie, Kharumnuid ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Kharbuki, Kharbihkhiew, Kharbynnuid, Kharsawkmie, Kharumnuid belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #5 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #5 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -3216,7 +3303,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Kharkongor, Kharlor, Kharshiïeng ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Kharkongor, Kharlor, Kharshiïeng belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #7 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #7 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -3239,7 +3327,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Kharkongor, Kharlor, Kharshiïeng ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Kharkongor, Kharlor, Kharshiïeng belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #7 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #7 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -3262,7 +3351,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Kharlukhi, Kharsnabi, Tiewtabi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Kharlukhi, Kharsnabi, Tiewtabi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #10 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #10 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -3289,7 +3379,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Kharsyntiew, Kharngapkynta, Kharphanbuh, Kharsawian, Kharwanlang, Puiñdiwang, Dkhar ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Kharsyntiew, Kharngapkynta, Kharphanbuh, Kharsawian, Kharwanlang, Puiñdiwang, Dkhar belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #16 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #16 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -3312,7 +3403,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Kharumlong, Babai, Kharmylliem ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Kharumlong, Babai, Kharmylliem belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #13 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #13 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -3337,7 +3429,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Kharbuki, Kharbihkhiew, Kharbynnuid, Kharsawkmie, Kharumnuid ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Kharbuki, Kharbihkhiew, Kharbynnuid, Kharsawkmie, Kharumnuid belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #5 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #5 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -3364,7 +3457,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Kharsyntiew, Kharngapkynta, Kharphanbuh, Kharsawian, Kharwanlang, Puiñdiwang, Dkhar ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Kharsyntiew, Kharngapkynta, Kharphanbuh, Kharsawian, Kharwanlang, Puiñdiwang, Dkhar belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #16 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #16 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -3387,7 +3481,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Sun, Khlem, Lamare ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Sun, Khlem, Lamare belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #60 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #60 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -3409,7 +3504,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Khongbuh, Khongbeh ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Khongbuh, Khongbeh belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #17 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #17 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -3431,7 +3527,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Mawkon, Khongbinan ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Mawkon, Khongbinan belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #43 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #43 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -3461,7 +3558,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Lyngdoh Nongkrem, Khongblah, Khonglyngka, Khongpdah, Khonglyngkut, Khyrïem Basanlarkhra, Mawsharoh, Mawthoh, Nongtraw, Pyngrope ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Lyngdoh Nongkrem, Khongblah, Khonglyngka, Khongpdah, Khonglyngkut, Khyrïem Basanlarkhra, Mawsharoh, Mawthoh, Nongtraw, Pyngrope belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #35 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #35 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -3488,7 +3586,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Warlarpih, Langstieh, Nongkhlawmulong, Nongkhlawrngi, Khongbri, War Sadew, Warkhnang ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Warlarpih, Langstieh, Nongkhlawmulong, Nongkhlawrngi, Khongbri, War Sadew, Warkhnang belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #79 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #79 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -3510,7 +3609,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Khongbuh, Khongbeh ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Khongbuh, Khongbeh belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #17 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #17 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -3535,7 +3635,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Khardohling, Khardympep, Kharsahnoh, Khonghat, Khongshei ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Khardohling, Khardympep, Kharsahnoh, Khonghat, Khongshei belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #9 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #9 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -3557,7 +3658,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Khongwir, Khongjah ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Khongwir, Khongjah belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #21 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #21 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -3589,7 +3691,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Majaw, Basaïawmoit, Lyngdoh Peiñlang, Lyngwi, Khongji, Hynñiewta, Sangkli, Langi, Muktieh, Be, Kurbah, Rapsang Marbisu ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Majaw, Basaïawmoit, Lyngdoh Peiñlang, Lyngwi, Khongji, Hynñiewta, Sangkli, Langi, Muktieh, Be, Kurbah, Rapsang Marbisu belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #40 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #40 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -3611,7 +3714,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Khongjoh, Nongpluh ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Khongjoh, Nongpluh belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #18 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #18 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -3635,7 +3739,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Khonglah, Mynsong, Ryntong, Surong ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Khonglah, Mynsong, Ryntong, Surong belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #19 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #19 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -3665,7 +3770,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Lyngdoh Nongkrem, Khongblah, Khonglyngka, Khongpdah, Khonglyngkut, Khyrïem Basanlarkhra, Mawsharoh, Mawthoh, Nongtraw, Pyngrope ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Lyngdoh Nongkrem, Khongblah, Khonglyngka, Khongpdah, Khonglyngkut, Khyrïem Basanlarkhra, Mawsharoh, Mawthoh, Nongtraw, Pyngrope belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #35 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #35 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -3695,7 +3801,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Lyngdoh Nongkrem, Khongblah, Khonglyngka, Khongpdah, Khonglyngkut, Khyrïem Basanlarkhra, Mawsharoh, Mawthoh, Nongtraw, Pyngrope ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Lyngdoh Nongkrem, Khongblah, Khonglyngka, Khongpdah, Khonglyngkut, Khyrïem Basanlarkhra, Mawsharoh, Mawthoh, Nongtraw, Pyngrope belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #35 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #35 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -3720,7 +3827,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Thabah, Kyrsian, Lyngdoh Sohïong, Khongmawloh, Khongni-ur ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Thabah, Kyrsian, Lyngdoh Sohïong, Khongmawloh, Khongni-ur belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #72 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #72 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -3745,7 +3853,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Thabah, Kyrsian, Lyngdoh Sohïong, Khongmawloh, Khongni-ur ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Thabah, Kyrsian, Lyngdoh Sohïong, Khongmawloh, Khongni-ur belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #72 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #72 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -3774,7 +3883,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Lyngdoh Mawphlang, Khongsti, Khongstia, Khongnoh, Khongsngi, Lyngdoh Mawlieh, Lyngdoh Nongpyiur, Thawmuit, Rapsang Nongpyiur ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Lyngdoh Mawphlang, Khongsti, Khongstia, Khongnoh, Khongsngi, Lyngdoh Mawlieh, Lyngdoh Nongpyiur, Thawmuit, Rapsang Nongpyiur belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #32 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #32 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -3804,7 +3914,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Lyngdoh Nongkrem, Khongblah, Khonglyngka, Khongpdah, Khonglyngkut, Khyrïem Basanlarkhra, Mawsharoh, Mawthoh, Nongtraw, Pyngrope ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Lyngdoh Nongkrem, Khongblah, Khonglyngka, Khongpdah, Khonglyngkut, Khyrïem Basanlarkhra, Mawsharoh, Mawthoh, Nongtraw, Pyngrope belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #35 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #35 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -3872,7 +3983,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -3897,7 +4009,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Shallam, Khyrïem, Mukhim, Shabong, Khongshah ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Shallam, Khyrïem, Mukhim, Shabong, Khongshah belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #56 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #56 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -3922,7 +4035,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Khardohling, Khardympep, Kharsahnoh, Khonghat, Khongshei ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Khardohling, Khardympep, Kharsahnoh, Khonghat, Khongshei belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #9 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #9 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -3946,7 +4060,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Khongsit, Syngkrem, Tongper, Tynsong ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Khongsit, Syngkrem, Tongper, Tynsong belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #20 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #20 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -3975,7 +4090,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Lyngdoh Mawphlang, Khongsti, Khongstia, Khongnoh, Khongsngi, Lyngdoh Mawlieh, Lyngdoh Nongpyiur, Thawmuit, Rapsang Nongpyiur ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Lyngdoh Mawphlang, Khongsti, Khongstia, Khongnoh, Khongsngi, Lyngdoh Mawlieh, Lyngdoh Nongpyiur, Thawmuit, Rapsang Nongpyiur belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #32 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #32 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -3993,7 +4109,6 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "shikur_clans": [
           "Lyngdoh Mawphlang",
           "Khongsti",
-          "Khongstia",
           "Khongnoh",
           "Khongsngi",
           "Lyngdoh Mawlieh",
@@ -4004,7 +4119,10 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Lyngdoh Mawphlang, Khongsti, Khongstia, Khongnoh, Khongsngi, Lyngdoh Mawlieh, Lyngdoh Nongpyiur, Thawmuit, Rapsang Nongpyiur ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Lyngdoh Mawphlang, Khongsti, Khongstia, Khongnoh, Khongsngi, Lyngdoh Mawlieh, Lyngdoh Nongpyiur, Thawmuit, Rapsang Nongpyiur belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #32 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #32 (Page 9)",
+        "kpoh_clans": [
+          "Khongstia"
+        ]
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -4033,7 +4151,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Lyngdoh Mawphlang, Khongsti, Khongstia, Khongnoh, Khongsngi, Lyngdoh Mawlieh, Lyngdoh Nongpyiur, Thawmuit, Rapsang Nongpyiur ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Lyngdoh Mawphlang, Khongsti, Khongstia, Khongnoh, Khongsngi, Lyngdoh Mawlieh, Lyngdoh Nongpyiur, Thawmuit, Rapsang Nongpyiur belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #32 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #32 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -4055,7 +4174,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Khongwir, Khongjah ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Khongwir, Khongjah belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #21 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #21 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -4078,7 +4198,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Khyllait, Rani, Stepwar ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Khyllait, Rani, Stepwar belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #22 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #22 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -4102,7 +4223,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Khyllep, Tiewmon, Tiewsoh, Tiewla ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Khyllep, Tiewmon, Tiewsoh, Tiewla belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #23 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #23 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -4127,7 +4249,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Shallam, Khyrïem, Mukhim, Shabong, Khongshah ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Shallam, Khyrïem, Mukhim, Shabong, Khongshah belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #56 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #56 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -4157,7 +4280,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Lyngdoh Nongkrem, Khongblah, Khonglyngka, Khongpdah, Khonglyngkut, Khyrïem Basanlarkhra, Mawsharoh, Mawthoh, Nongtraw, Pyngrope ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Lyngdoh Nongkrem, Khongblah, Khonglyngka, Khongpdah, Khonglyngkut, Khyrïem Basanlarkhra, Mawsharoh, Mawthoh, Nongtraw, Pyngrope belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #35 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #35 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -4183,7 +4307,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Lyngdoh Nongrang, Nongrang, Lyngdoh Nongbsap, Nongbsap Pyrtuh, Nongbsap-Nongrang, Khyrïem Nongrang ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Lyngdoh Nongrang, Nongrang, Lyngdoh Nongbsap, Nongbsap Pyrtuh, Nongbsap-Nongrang, Khyrïem Nongrang belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #38 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #38 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -4209,7 +4334,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Langñiuh, Pathaw, Pathawbah, Khyrïemmujat, Pathaw-Lar-ïew, Pathawdih ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Langñiuh, Pathaw, Pathawbah, Khyrïemmujat, Pathaw-Lar-ïew, Pathawdih belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #26 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #26 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -4234,7 +4360,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Shallam, Khyrïem, Mukhim, Shabong, Khongshah ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Shallam, Khyrïem, Mukhim, Shabong, Khongshah belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #56 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #56 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -4264,7 +4391,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Lyngdoh Nongkrem, Khongblah, Khonglyngka, Khongpdah, Khonglyngkut, Khyrïem Basanlarkhra, Mawsharoh, Mawthoh, Nongtraw, Pyngrope ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Lyngdoh Nongkrem, Khongblah, Khonglyngka, Khongpdah, Khonglyngkut, Khyrïem Basanlarkhra, Mawsharoh, Mawthoh, Nongtraw, Pyngrope belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #35 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #35 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -4290,7 +4418,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Lyngdoh Nongrang, Nongrang, Lyngdoh Nongbsap, Nongbsap Pyrtuh, Nongbsap-Nongrang, Khyrïem Nongrang ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Lyngdoh Nongrang, Nongrang, Lyngdoh Nongbsap, Nongbsap Pyrtuh, Nongbsap-Nongrang, Khyrïem Nongrang belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #38 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #38 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -4316,7 +4445,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Langñiuh, Pathaw, Pathawbah, Khyrïemmujat, Pathaw-Lar-ïew, Pathawdih ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Langñiuh, Pathaw, Pathawbah, Khyrïemmujat, Pathaw-Lar-ïew, Pathawdih belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #26 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #26 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -4360,7 +4490,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Pakynteiñ, Bhoi So-Kpoh, War So-Kpoh, Nikhla, Bleiñ, Katphoh, Lipon, Liwait, Niangphoh, Pasubon, Rangat, Singphoh, Shyrmang So-Kpoh, Paswet, Kma, Kynjing, Lakiang, Lanong, Lytan, Mutyen, Pyrdiang, Langdoh-Jwai, Siangbud, Syngkon ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Pakynteiñ, Bhoi So-Kpoh, War So-Kpoh, Nikhla, Bleiñ, Katphoh, Lipon, Liwait, Niangphoh, Pasubon, Rangat, Singphoh, Shyrmang So-Kpoh, Paswet, Kma, Kynjing, Lakiang, Lanong, Lytan, Mutyen, Pyrdiang, Langdoh-Jwai, Siangbud, Syngkon belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #52 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #52 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -4402,7 +4533,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Khathynriew (16) jait ki kpoh kiba la mih na ka kur Majaw. Baroh ki ïalong shikur bad sang ban ïashongkha.",
         "summary_english": "Sixteen clans emerged from the Majaw clan. All 16 share the same ancestral lineage and cannot intermarry.",
-        "citation": "Ka Seng Kur Majaw & Rev. I. Kharkongngor (2004), Entries #65 (Page 96)"
+        "citation": "Ka Seng Kur Majaw & Rev. I. Kharkongngor (2004), Entries #65 (Page 96)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -4439,7 +4571,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Mih na ki 5 ngut ki khun kynthei Ka Li Dohkha (Ka Nga, Ka Teiñ, Ka Lieh, Ka Pung, Ka Lang).",
         "summary_english": "Descends from the five daughters of Ka Li Dohkha across Sutnga, Shangpung, Nongkhlaw, and Nongspung.",
-        "citation": "Rev. I. Kharkongngor (2004), Entries #102, #104 (Pages 8, 99)"
+        "citation": "Rev. I. Kharkongngor (2004), Entries #102, #104 (Pages 8, 99)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -4463,7 +4596,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Kyndiah, Najiar, Rymbai, Toi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Kyndiah, Najiar, Rymbai, Toi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #24 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #24 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -4507,7 +4641,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Pakynteiñ, Bhoi So-Kpoh, War So-Kpoh, Nikhla, Bleiñ, Katphoh, Lipon, Liwait, Niangphoh, Pasubon, Rangat, Singphoh, Shyrmang So-Kpoh, Paswet, Kma, Kynjing, Lakiang, Lanong, Lytan, Mutyen, Pyrdiang, Langdoh-Jwai, Siangbud, Syngkon ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Pakynteiñ, Bhoi So-Kpoh, War So-Kpoh, Nikhla, Bleiñ, Katphoh, Lipon, Liwait, Niangphoh, Pasubon, Rangat, Singphoh, Shyrmang So-Kpoh, Paswet, Kma, Kynjing, Lakiang, Lanong, Lytan, Mutyen, Pyrdiang, Langdoh-Jwai, Siangbud, Syngkon belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #52 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #52 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -4532,7 +4667,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Thabah, Kyrsian, Lyngdoh Sohïong, Khongmawloh, Khongni-ur ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Thabah, Kyrsian, Lyngdoh Sohïong, Khongmawloh, Khongni-ur belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #72 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #72 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -4554,7 +4690,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Lahong, Suchiang ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Lahong, Suchiang belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #27 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #27 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -4622,7 +4759,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -4644,7 +4782,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Khaiñ, Laitïam ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Khaiñ, Laitïam belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #2 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #2 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -4679,7 +4818,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Wahlang Pahsyntiew, Alia, Laitphlang, Lyngdoh Lyngïong, Malang, Mawïong, Mawshai, Byrsat, Mawsor, Rangslang, Ryntathiang, Symbai, Tyrsa, Wahlang-Ryntathiang, Wallang ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Wahlang Pahsyntiew, Alia, Laitphlang, Lyngdoh Lyngïong, Malang, Mawïong, Mawshai, Byrsat, Mawsor, Rangslang, Ryntathiang, Symbai, Tyrsa, Wahlang-Ryntathiang, Wallang belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #77 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #77 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -4701,7 +4841,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Khaiñ, Laitïam ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Khaiñ, Laitïam belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #2 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #2 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -4745,7 +4886,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Pakynteiñ, Bhoi So-Kpoh, War So-Kpoh, Nikhla, Bleiñ, Katphoh, Lipon, Liwait, Niangphoh, Pasubon, Rangat, Singphoh, Shyrmang So-Kpoh, Paswet, Kma, Kynjing, Lakiang, Lanong, Lytan, Mutyen, Pyrdiang, Langdoh-Jwai, Siangbud, Syngkon ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Pakynteiñ, Bhoi So-Kpoh, War So-Kpoh, Nikhla, Bleiñ, Katphoh, Lipon, Liwait, Niangphoh, Pasubon, Rangat, Singphoh, Shyrmang So-Kpoh, Paswet, Kma, Kynjing, Lakiang, Lanong, Lytan, Mutyen, Pyrdiang, Langdoh-Jwai, Siangbud, Syngkon belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #52 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #52 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -4818,7 +4960,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         ],
         "summary_khasi": "Kine ki 40+ tylli ki kur (lait noh ki Syngngai) ki mih na ki 20 ngut ki khun kynthei ka Ïaw Shi Bdi bad u Riang Bareh. Ki Syngngai pat ki la ïateh kur bad ki Diengdoh ha Sohra.",
         "summary_english": "Over 40 clans across War Jaiñtia, Jowai, Khasi Hills, and Bhoi descend from the 20 daughters of Ka Ïaw Shi Bdi and U Riang Bareh. Syngngai bound themselves via ïateh kur with Diengdoh in Sohra.",
-        "citation": "Rev. I. Kharkongngor (2004) & Medro Singh Diengdoh, Entries #28, #44, #50, #67 (Pages 89, 91–92, 96)"
+        "citation": "Rev. I. Kharkongngor (2004) & Medro Singh Diengdoh, Entries #28, #44, #50, #67 (Pages 89, 91–92, 96)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -4841,7 +4984,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Sun, Khlem, Lamare ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Sun, Khlem, Lamare belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #60 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #60 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -4879,7 +5023,6 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
           "Laithma",
           "Lamin",
           "Larom",
-          "Lyngdoh Lamin",
           "Marngor",
           "Marngar",
           "Marong",
@@ -4909,7 +5052,10 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)",
+        "kpoh_clans": [
+          "Lyngdoh Lamin"
+        ]
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -4953,7 +5099,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Pakynteiñ, Bhoi So-Kpoh, War So-Kpoh, Nikhla, Bleiñ, Katphoh, Lipon, Liwait, Niangphoh, Pasubon, Rangat, Singphoh, Shyrmang So-Kpoh, Paswet, Kma, Kynjing, Lakiang, Lanong, Lytan, Mutyen, Pyrdiang, Langdoh-Jwai, Siangbud, Syngkon ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Pakynteiñ, Bhoi So-Kpoh, War So-Kpoh, Nikhla, Bleiñ, Katphoh, Lipon, Liwait, Niangphoh, Pasubon, Rangat, Singphoh, Shyrmang So-Kpoh, Paswet, Kma, Kynjing, Lakiang, Lanong, Lytan, Mutyen, Pyrdiang, Langdoh-Jwai, Siangbud, Syngkon belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #52 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #52 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -4985,7 +5132,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Majaw, Basaïawmoit, Lyngdoh Peiñlang, Lyngwi, Khongji, Hynñiewta, Sangkli, Langi, Muktieh, Be, Kurbah, Rapsang Marbisu ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Majaw, Basaïawmoit, Lyngdoh Peiñlang, Lyngwi, Khongji, Hynñiewta, Sangkli, Langi, Muktieh, Be, Kurbah, Rapsang Marbisu belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #40 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #40 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -5011,7 +5159,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Langñiuh, Pathaw, Pathawbah, Khyrïemmujat, Pathaw-Lar-ïew, Pathawdih ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Langñiuh, Pathaw, Pathawbah, Khyrïemmujat, Pathaw-Lar-ïew, Pathawdih belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #26 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #26 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -5038,7 +5187,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Warlarpih, Langstieh, Nongkhlawmulong, Nongkhlawrngi, Khongbri, War Sadew, Warkhnang ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Warlarpih, Langstieh, Nongkhlawmulong, Nongkhlawrngi, Khongbri, War Sadew, Warkhnang belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #79 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #79 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -5060,7 +5210,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Kharryja, Langte ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Kharryja, Langte belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #15 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #15 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -5086,7 +5237,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Langñiuh, Pathaw, Pathawbah, Khyrïemmujat, Pathaw-Lar-ïew, Pathawdih ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Langñiuh, Pathaw, Pathawbah, Khyrïemmujat, Pathaw-Lar-ïew, Pathawdih belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #26 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #26 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -5130,7 +5282,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Pakynteiñ, Bhoi So-Kpoh, War So-Kpoh, Nikhla, Bleiñ, Katphoh, Lipon, Liwait, Niangphoh, Pasubon, Rangat, Singphoh, Shyrmang So-Kpoh, Paswet, Kma, Kynjing, Lakiang, Lanong, Lytan, Mutyen, Pyrdiang, Langdoh-Jwai, Siangbud, Syngkon ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Pakynteiñ, Bhoi So-Kpoh, War So-Kpoh, Nikhla, Bleiñ, Katphoh, Lipon, Liwait, Niangphoh, Pasubon, Rangat, Singphoh, Shyrmang So-Kpoh, Paswet, Kma, Kynjing, Lakiang, Lanong, Lytan, Mutyen, Pyrdiang, Langdoh-Jwai, Siangbud, Syngkon belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #52 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #52 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -5198,7 +5351,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -5220,7 +5374,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Mawpamkyi, Lartang ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Mawpamkyi, Lartang belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #45 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #45 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -5244,7 +5399,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Warbah, Lating, Suting, Warshong ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Warbah, Lating, Suting, Warshong belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #78 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #78 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -5288,7 +5444,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Pakynteiñ, Bhoi So-Kpoh, War So-Kpoh, Nikhla, Bleiñ, Katphoh, Lipon, Liwait, Niangphoh, Pasubon, Rangat, Singphoh, Shyrmang So-Kpoh, Paswet, Kma, Kynjing, Lakiang, Lanong, Lytan, Mutyen, Pyrdiang, Langdoh-Jwai, Siangbud, Syngkon ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Pakynteiñ, Bhoi So-Kpoh, War So-Kpoh, Nikhla, Bleiñ, Katphoh, Lipon, Liwait, Niangphoh, Pasubon, Rangat, Singphoh, Shyrmang So-Kpoh, Paswet, Kma, Kynjing, Lakiang, Lanong, Lytan, Mutyen, Pyrdiang, Langdoh-Jwai, Siangbud, Syngkon belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #52 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #52 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -5332,7 +5489,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Pakynteiñ, Bhoi So-Kpoh, War So-Kpoh, Nikhla, Bleiñ, Katphoh, Lipon, Liwait, Niangphoh, Pasubon, Rangat, Singphoh, Shyrmang So-Kpoh, Paswet, Kma, Kynjing, Lakiang, Lanong, Lytan, Mutyen, Pyrdiang, Langdoh-Jwai, Siangbud, Syngkon ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Pakynteiñ, Bhoi So-Kpoh, War So-Kpoh, Nikhla, Bleiñ, Katphoh, Lipon, Liwait, Niangphoh, Pasubon, Rangat, Singphoh, Shyrmang So-Kpoh, Paswet, Kma, Kynjing, Lakiang, Lanong, Lytan, Mutyen, Pyrdiang, Langdoh-Jwai, Siangbud, Syngkon belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #52 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #52 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -5357,7 +5515,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Lyngdoh Mawnai, Jaraiñ, Mawnai, Lokhmi, Lyngdoh Jaraiñ ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Lyngdoh Mawnai, Jaraiñ, Mawnai, Lokhmi, Lyngdoh Jaraiñ belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #31 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #31 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -5378,8 +5537,6 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
           "Passah",
           "Pasah",
           "Nongbri",
-          "Lyngdoh Kynshi",
-          "Lyngdoh Nongbri",
           "Marboh",
           "Namsheh",
           "Nongphod"
@@ -5392,7 +5549,11 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         ],
         "summary_khasi": "Ki kur Nongkynrih, Shadap, Passah, Nongbri, Lyngdoh Kynshi, Lyngdoh Nongbri, Marboh, bad Namsheh ki ïalong shikur (kawei ka kpoh) bad kim bit ban ïashongkha (Sang). Ha Riangmang (p. 93) ïa ki Nongkynrih la khot 'Nongphod'. Ki Pombah bad Wahbah ruh ki ïateh kur bad ki Shadap.",
         "summary_english": "Nongkynrih, Shadap, Passah, Nongbri, Lyngdoh Kynshi, Lyngdoh Nongbri, Marboh, and Namsheh share the same clan lineage (ïalong shikur) and cannot intermarry (Sang). Pombah and Wahbah are also prohibited from marrying Shadap.",
-        "citation": "Rev. I. Kharkongngor (2004), Entries #57, #76, #92 (Pages 93, 95, 97, 98)"
+        "citation": "Rev. I. Kharkongngor (2004), Entries #57, #76, #92 (Pages 93, 95, 97, 98)",
+        "kpoh_clans": [
+          "Lyngdoh Kynshi",
+          "Lyngdoh Nongbri"
+        ]
       },
       {
         "id": "iaw-shi-bdi",
@@ -5423,7 +5584,6 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
           "Jui",
           "Larom",
           "Lamin",
-          "Lyngdoh Lamin",
           "Marngar",
           "Marong",
           "Mesui",
@@ -5455,14 +5615,16 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         ],
         "summary_khasi": "Kine ki 40+ tylli ki kur (lait noh ki Syngngai) ki mih na ki 20 ngut ki khun kynthei ka Ïaw Shi Bdi bad u Riang Bareh. Ki Syngngai pat ki la ïateh kur bad ki Diengdoh ha Sohra.",
         "summary_english": "Over 40 clans across War Jaiñtia, Jowai, Khasi Hills, and Bhoi descend from the 20 daughters of Ka Ïaw Shi Bdi and U Riang Bareh. Syngngai bound themselves via ïateh kur with Diengdoh in Sohra.",
-        "citation": "Rev. I. Kharkongngor (2004) & Medro Singh Diengdoh, Entries #28, #44, #50, #67 (Pages 89, 91–92, 96)"
+        "citation": "Rev. I. Kharkongngor (2004) & Medro Singh Diengdoh, Entries #28, #44, #50, #67 (Pages 89, 91–92, 96)",
+        "kpoh_clans": [
+          "Lyngdoh Lamin"
+        ]
       },
       {
         "id": "majaw-sangkli",
         "title": "Majaw & Sangkli (16 Jait)",
         "shikur_clans": [
           "Majaw",
-          "Lyngdoh Peiñlang",
           "Basaïawmoit",
           "Basaïawmah",
           "Basaïawsnai",
@@ -5487,7 +5649,10 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Khathynriew (16) jait ki kpoh kiba la mih na ka kur Majaw. Baroh ki ïalong shikur bad sang ban ïashongkha.",
         "summary_english": "Sixteen clans emerged from the Majaw clan. All 16 share the same ancestral lineage and cannot intermarry.",
-        "citation": "Ka Seng Kur Majaw & Rev. I. Kharkongngor (2004), Entries #65 (Page 96)"
+        "citation": "Ka Seng Kur Majaw & Rev. I. Kharkongngor (2004), Entries #65 (Page 96)",
+        "kpoh_clans": [
+          "Lyngdoh Peiñlang"
+        ]
       },
       {
         "id": "so-kpoh-khatar-wyrnai",
@@ -5530,16 +5695,14 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "So Kpoh Khatar Wyrnai ha Jaiñtia: Bon, Teiñ, Wet, bad Doh lem bad ki tnad kpoh jong ki.",
         "summary_english": "The historic 'So Kpoh Khatar Wyrnai' (Four Wombs, Twelve Branches) of Jaiñtia Hills.",
-        "citation": "Rev. I. Kharkongngor (2004) & Spiton Kharakor, Entries #3 (Page 86)"
+        "citation": "Rev. I. Kharkongngor (2004) & Spiton Kharakor, Entries #3 (Page 86)",
+        "kpoh_clans": []
       },
       {
         "id": "khongsngi-lyngdoh-mawphlang",
         "title": "Khongsngi / Lyngdoh Mawphlang / Rapthap / Thawmuit",
         "shikur_clans": [
           "Khongsngi",
-          "Lyngdoh Mawphlang",
-          "Lyngdoh Nonglwai",
-          "Lyngdoh Nongpiur",
           "Rapthap",
           "Lyngwa Rapthap",
           "Thawmuit",
@@ -5556,7 +5719,12 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         ],
         "summary_khasi": "Baroh kine ki dei ki khun ka Khmah Lyngdoh Mawphlang (bad ha Riangmang la khot 'Kyllang'). Ki Lyngdoh Sangriang ruh ki ïadei kur bad ki.",
         "summary_english": "All descend from Ka Khmah Lyngdoh Mawphlang, with Lyngdoh Sangriang also bound by clan kinship.",
-        "citation": "Rev. I. Kharkongngor (2004), Entries #29 (Page 89)"
+        "citation": "Rev. I. Kharkongngor (2004), Entries #29 (Page 89)",
+        "kpoh_clans": [
+          "Lyngdoh Mawphlang",
+          "Lyngdoh Nonglwai",
+          "Lyngdoh Nongpiur"
+        ]
       },
       {
         "id": "lyngkhoi-cluster",
@@ -5564,7 +5732,6 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "shikur_clans": [
           "Lyngkhoi",
           "Langkhoi",
-          "Lyngdoh Nonglait",
           "Lyngkhoi Saw",
           "Sawkmie",
           "Lyngkhoi Ñiuh",
@@ -5580,13 +5747,15 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         ],
         "summary_khasi": "Mih na ki saw ngut ki khun kynthei ka kmie tymmen Lyngkhoi ha Nongsynrieh (Mawkyrwat): Lyngdoh Nonglait, Sawkmie, Lyngkhoi Ñiuh, bad Lyngkhoi Thangmyrsiang. Ki ïakam kur ruh bad ki Nongrum.",
         "summary_english": "Descends from four daughters of the first Lyngkhoi ancestress in Nongsynrieh: Lyngdoh Nonglait, Sawkmie, Lyngkhoi Ñiuh, and Lyngkhoi Thangmyrsiang. Also bound with Nongrum.",
-        "citation": "Rev. I. Kharkongngor (2004), Entries #55 (Pages 94–95)"
+        "citation": "Rev. I. Kharkongngor (2004), Entries #55 (Pages 94–95)",
+        "kpoh_clans": [
+          "Lyngdoh Nonglait"
+        ]
       },
       {
         "id": "nongbsap-vs-mylliem-pyrtuh",
         "title": "Lyngdoh Nongbsap / Nongbsap Pyrtuh / Nongrang / Sohphoh",
         "shikur_clans": [
-          "Lyngdoh Nongbsap",
           "Nongbsap",
           "Nongbsap Pyrtuh",
           "Nongrang",
@@ -5595,7 +5764,10 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Lyngdoh Nongbsap, Nongbsap Pyrtuh, Nongrang, bad Sohphoh ki dei kawei ka kpoh. Hynrei ki Nongbsap Pyrtuh bad ki Mylliem Pyrtuh KIM DEI KI JUH (Page 96).",
         "summary_english": "Lyngdoh Nongbsap, Nongbsap Pyrtuh, Nongrang, and Sohphoh are one womb. Explicitly distinct from Mylliem Pyrtuh (Page 96).",
-        "citation": "Rev. I. Kharkongngor (2004), Entries #62, #74 (Pages 95–97)"
+        "citation": "Rev. I. Kharkongngor (2004), Entries #62, #74 (Pages 95–97)",
+        "kpoh_clans": [
+          "Lyngdoh Nongbsap"
+        ]
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -5620,7 +5792,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Lyngdoh Mawnai, Jaraiñ, Mawnai, Lokhmi, Lyngdoh Jaraiñ ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Lyngdoh Mawnai, Jaraiñ, Mawnai, Lokhmi, Lyngdoh Jaraiñ belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #31 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #31 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -5645,7 +5818,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Lyngdoh Mawnai, Jaraiñ, Mawnai, Lokhmi, Lyngdoh Jaraiñ ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Lyngdoh Mawnai, Jaraiñ, Mawnai, Lokhmi, Lyngdoh Jaraiñ belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #31 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #31 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -5670,7 +5844,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Lyngdoh Nongbri, Lyngdoh Kynshi, Nongkynrih, Passah, Shadap ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Lyngdoh Nongbri, Lyngdoh Kynshi, Nongkynrih, Passah, Shadap belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #37 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #37 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -5738,7 +5913,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -5773,7 +5949,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Wahlang Pahsyntiew, Alia, Laitphlang, Lyngdoh Lyngïong, Malang, Mawïong, Mawshai, Byrsat, Mawsor, Rangslang, Ryntathiang, Symbai, Tyrsa, Wahlang-Ryntathiang, Wallang ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Wahlang Pahsyntiew, Alia, Laitphlang, Lyngdoh Lyngïong, Malang, Mawïong, Mawshai, Byrsat, Mawsor, Rangslang, Ryntathiang, Symbai, Tyrsa, Wahlang-Ryntathiang, Wallang belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #77 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #77 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -5797,7 +5974,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Sawkmie, Lyngdoh Lyngkhoi, Lyngdoh Nonglait, Thangmyrsiang ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Sawkmie, Lyngdoh Lyngkhoi, Lyngdoh Nonglait, Thangmyrsiang belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #55 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #55 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -5832,7 +6010,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Wahlang Pahsyntiew, Alia, Laitphlang, Lyngdoh Lyngïong, Malang, Mawïong, Mawshai, Byrsat, Mawsor, Rangslang, Ryntathiang, Symbai, Tyrsa, Wahlang-Ryntathiang, Wallang ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Wahlang Pahsyntiew, Alia, Laitphlang, Lyngdoh Lyngïong, Malang, Mawïong, Mawshai, Byrsat, Mawsor, Rangslang, Ryntathiang, Symbai, Tyrsa, Wahlang-Ryntathiang, Wallang belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #77 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #77 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -5855,7 +6034,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Lyngdoh Mawlong, Mawlong, Lyngdoh Marpna ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Lyngdoh Mawlong, Mawlong, Lyngdoh Marpna belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #30 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #30 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -5877,7 +6057,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Lyngdoh Mawdkhap, Lyngdoh Marshyllong ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Lyngdoh Mawdkhap, Lyngdoh Marshyllong belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #29 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #29 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -5899,7 +6080,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Lyngdoh Mawdkhap, Lyngdoh Marshyllong ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Lyngdoh Mawdkhap, Lyngdoh Marshyllong belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #29 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #29 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -5928,7 +6110,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Lyngdoh Mawphlang, Khongsti, Khongstia, Khongnoh, Khongsngi, Lyngdoh Mawlieh, Lyngdoh Nongpyiur, Thawmuit, Rapsang Nongpyiur ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Lyngdoh Mawphlang, Khongsti, Khongstia, Khongnoh, Khongsngi, Lyngdoh Mawlieh, Lyngdoh Nongpyiur, Thawmuit, Rapsang Nongpyiur belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #32 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #32 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -5951,7 +6134,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Lyngdoh Mawlong, Mawlong, Lyngdoh Marpna ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Lyngdoh Mawlong, Mawlong, Lyngdoh Marpna belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #30 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #30 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -5976,7 +6160,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Lyngdoh Mawnai, Jaraiñ, Mawnai, Lokhmi, Lyngdoh Jaraiñ ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Lyngdoh Mawnai, Jaraiñ, Mawnai, Lokhmi, Lyngdoh Jaraiñ belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #31 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #31 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -6005,7 +6190,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Lyngdoh Mawphlang, Khongsti, Khongstia, Khongnoh, Khongsngi, Lyngdoh Mawlieh, Lyngdoh Nongpyiur, Thawmuit, Rapsang Nongpyiur ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Lyngdoh Mawphlang, Khongsti, Khongstia, Khongnoh, Khongsngi, Lyngdoh Mawlieh, Lyngdoh Nongpyiur, Thawmuit, Rapsang Nongpyiur belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #32 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #32 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -6031,7 +6217,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Lyngdoh Mylliem, Basaringaid Kurkajuh, Marbañiang, Massar, Mylliemumlong, Sangot ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Lyngdoh Mylliem, Basaringaid Kurkajuh, Marbañiang, Massar, Mylliemumlong, Sangot belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #33 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #33 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -6053,7 +6240,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Lyngdoh Mynso, Shen ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Lyngdoh Mynso, Shen belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #34 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #34 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -6078,7 +6266,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Lyngdoh Nongbri, Lyngdoh Kynshi, Nongkynrih, Passah, Shadap ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Lyngdoh Nongbri, Lyngdoh Kynshi, Nongkynrih, Passah, Shadap belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #37 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #37 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -6104,7 +6293,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Lyngdoh Nongrang, Nongrang, Lyngdoh Nongbsap, Nongbsap Pyrtuh, Nongbsap-Nongrang, Khyrïem Nongrang ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Lyngdoh Nongrang, Nongrang, Lyngdoh Nongbsap, Nongbsap Pyrtuh, Nongbsap-Nongrang, Khyrïem Nongrang belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #38 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #38 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -6134,7 +6324,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Lyngdoh Nongkrem, Khongblah, Khonglyngka, Khongpdah, Khonglyngkut, Khyrïem Basanlarkhra, Mawsharoh, Mawthoh, Nongtraw, Pyngrope ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Lyngdoh Nongkrem, Khongblah, Khonglyngka, Khongpdah, Khonglyngkut, Khyrïem Basanlarkhra, Mawsharoh, Mawthoh, Nongtraw, Pyngrope belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #35 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #35 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -6156,7 +6347,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Lyngdoh Nongkseh Sohïong, Thawbri ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Lyngdoh Nongkseh Sohïong, Thawbri belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #36 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #36 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -6178,7 +6370,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Lyngdoh Nongkseh Sohïong, Thawbri ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Lyngdoh Nongkseh Sohïong, Thawbri belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #36 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #36 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -6202,7 +6395,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Sawkmie, Lyngdoh Lyngkhoi, Lyngdoh Nonglait, Thangmyrsiang ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Sawkmie, Lyngdoh Lyngkhoi, Lyngdoh Nonglait, Thangmyrsiang belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #55 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #55 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -6231,7 +6425,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Lyngdoh Mawphlang, Khongsti, Khongstia, Khongnoh, Khongsngi, Lyngdoh Mawlieh, Lyngdoh Nongpyiur, Thawmuit, Rapsang Nongpyiur ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Lyngdoh Mawphlang, Khongsti, Khongstia, Khongnoh, Khongsngi, Lyngdoh Mawlieh, Lyngdoh Nongpyiur, Thawmuit, Rapsang Nongpyiur belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #32 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #32 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -6257,7 +6452,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Lyngdoh Nongrang, Nongrang, Lyngdoh Nongbsap, Nongbsap Pyrtuh, Nongbsap-Nongrang, Khyrïem Nongrang ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Lyngdoh Nongrang, Nongrang, Lyngdoh Nongbsap, Nongbsap Pyrtuh, Nongbsap-Nongrang, Khyrïem Nongrang belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #38 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #38 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -6282,7 +6478,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Nongneng Daloi, Lyngdoh Nongumlong, Shanprew, Nongneng Pator, Kapew ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Nongneng Daloi, Lyngdoh Nongumlong, Shanprew, Nongneng Pator, Kapew belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #50 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #50 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -6314,7 +6511,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Majaw, Basaïawmoit, Lyngdoh Peiñlang, Lyngwi, Khongji, Hynñiewta, Sangkli, Langi, Muktieh, Be, Kurbah, Rapsang Marbisu ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Majaw, Basaïawmoit, Lyngdoh Peiñlang, Lyngwi, Khongji, Hynñiewta, Sangkli, Langi, Muktieh, Be, Kurbah, Rapsang Marbisu belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #40 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #40 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -6346,7 +6544,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Majaw, Basaïawmoit, Lyngdoh Peiñlang, Lyngwi, Khongji, Hynñiewta, Sangkli, Langi, Muktieh, Be, Kurbah, Rapsang Marbisu ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Majaw, Basaïawmoit, Lyngdoh Peiñlang, Lyngwi, Khongji, Hynñiewta, Sangkli, Langi, Muktieh, Be, Kurbah, Rapsang Marbisu belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #40 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #40 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -6369,7 +6568,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Lyngdoh Pyrtuh, Pyrtuh, Lyngkot ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Lyngdoh Pyrtuh, Pyrtuh, Lyngkot belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #39 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #39 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -6391,7 +6591,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Kharkrang, Lyngdoh Sadew ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Kharkrang, Lyngdoh Sadew belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #8 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #8 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -6416,7 +6617,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Thabah, Kyrsian, Lyngdoh Sohïong, Khongmawloh, Khongni-ur ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Thabah, Kyrsian, Lyngdoh Sohïong, Khongmawloh, Khongni-ur belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #72 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #72 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -6441,7 +6643,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Thabah, Kyrsian, Lyngdoh Sohïong, Khongmawloh, Khongni-ur ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Thabah, Kyrsian, Lyngdoh Sohïong, Khongmawloh, Khongni-ur belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #72 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #72 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -6464,7 +6667,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Lyngdoh Pyrtuh, Pyrtuh, Lyngkot ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Lyngdoh Pyrtuh, Pyrtuh, Lyngkot belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #39 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #39 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -6486,7 +6690,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Tymthai, Lyngskor Tymmeniang ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Tymthai, Lyngskor Tymmeniang belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #76 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #76 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -6518,7 +6723,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Majaw, Basaïawmoit, Lyngdoh Peiñlang, Lyngwi, Khongji, Hynñiewta, Sangkli, Langi, Muktieh, Be, Kurbah, Rapsang Marbisu ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Majaw, Basaïawmoit, Lyngdoh Peiñlang, Lyngwi, Khongji, Hynñiewta, Sangkli, Langi, Muktieh, Be, Kurbah, Rapsang Marbisu belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #40 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #40 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -6562,7 +6768,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Pakynteiñ, Bhoi So-Kpoh, War So-Kpoh, Nikhla, Bleiñ, Katphoh, Lipon, Liwait, Niangphoh, Pasubon, Rangat, Singphoh, Shyrmang So-Kpoh, Paswet, Kma, Kynjing, Lakiang, Lanong, Lytan, Mutyen, Pyrdiang, Langdoh-Jwai, Siangbud, Syngkon ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Pakynteiñ, Bhoi So-Kpoh, War So-Kpoh, Nikhla, Bleiñ, Katphoh, Lipon, Liwait, Niangphoh, Pasubon, Rangat, Singphoh, Shyrmang So-Kpoh, Paswet, Kma, Kynjing, Lakiang, Lanong, Lytan, Mutyen, Pyrdiang, Langdoh-Jwai, Siangbud, Syngkon belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #52 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #52 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -6594,7 +6801,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Majaw, Basaïawmoit, Lyngdoh Peiñlang, Lyngwi, Khongji, Hynñiewta, Sangkli, Langi, Muktieh, Be, Kurbah, Rapsang Marbisu ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Majaw, Basaïawmoit, Lyngdoh Peiñlang, Lyngwi, Khongji, Hynñiewta, Sangkli, Langi, Muktieh, Be, Kurbah, Rapsang Marbisu belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #40 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #40 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -6629,7 +6837,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Wahlang Pahsyntiew, Alia, Laitphlang, Lyngdoh Lyngïong, Malang, Mawïong, Mawshai, Byrsat, Mawsor, Rangslang, Ryntathiang, Symbai, Tyrsa, Wahlang-Ryntathiang, Wallang ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Wahlang Pahsyntiew, Alia, Laitphlang, Lyngdoh Lyngïong, Malang, Mawïong, Mawshai, Byrsat, Mawsor, Rangslang, Ryntathiang, Symbai, Tyrsa, Wahlang-Ryntathiang, Wallang belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #77 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #77 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -6653,7 +6862,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Shullai, Dhar, Mallai, Nonghulo ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Shullai, Dhar, Mallai, Nonghulo belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #58 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #58 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -6679,7 +6889,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Lyngdoh Mylliem, Basaringaid Kurkajuh, Marbañiang, Massar, Mylliemumlong, Sangot ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Lyngdoh Mylliem, Basaringaid Kurkajuh, Marbañiang, Massar, Mylliemumlong, Sangot belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #33 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #33 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -6705,7 +6916,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Lyngdoh Mylliem, Basaringaid Kurkajuh, Marbañiang, Massar, Mylliemumlong, Sangot ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Lyngdoh Mylliem, Basaringaid Kurkajuh, Marbañiang, Massar, Mylliemumlong, Sangot belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #33 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #33 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -6721,13 +6933,15 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "id": "link-61-syiem-maring-nonglyngdoh",
         "title": "Syiem Maring Nonglyngdoh (Maring)",
         "shikur_clans": [
-          "Syiem Maring Nonglyngdoh",
           "Maring"
         ],
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Syiem Maring Nonglyngdoh, Maring ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Syiem Maring Nonglyngdoh, Maring belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #61 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #61 (Page 11)",
+        "kpoh_clans": [
+          "Syiem Maring Nonglyngdoh"
+        ]
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -6800,7 +7014,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         ],
         "summary_khasi": "Kine ki 40+ tylli ki kur (lait noh ki Syngngai) ki mih na ki 20 ngut ki khun kynthei ka Ïaw Shi Bdi bad u Riang Bareh. Ki Syngngai pat ki la ïateh kur bad ki Diengdoh ha Sohra.",
         "summary_english": "Over 40 clans across War Jaiñtia, Jowai, Khasi Hills, and Bhoi descend from the 20 daughters of Ka Ïaw Shi Bdi and U Riang Bareh. Syngngai bound themselves via ïateh kur with Diengdoh in Sohra.",
-        "citation": "Rev. I. Kharkongngor (2004) & Medro Singh Diengdoh, Entries #28, #44, #50, #67 (Pages 89, 91–92, 96)"
+        "citation": "Rev. I. Kharkongngor (2004) & Medro Singh Diengdoh, Entries #28, #44, #50, #67 (Pages 89, 91–92, 96)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -6868,7 +7083,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -6936,7 +7152,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -6958,7 +7175,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Marpna, Mawlaitbnai ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Marpna, Mawlaitbnai belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #41 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #41 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -6985,7 +7203,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Marweiñ, Hahshah Ïawshwar, Hahshah Nongiriang, Hahshah Shrieh, Nongdiangngan, Nongtynger, Shrieh ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Marweiñ, Hahshah Ïawshwar, Hahshah Nongiriang, Hahshah Shrieh, Nongdiangngan, Nongtynger, Shrieh belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #42 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #42 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -7012,7 +7231,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Marweiñ, Hahshah Ïawshwar, Hahshah Nongiriang, Hahshah Shrieh, Nongdiangngan, Nongtynger, Shrieh ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Marweiñ, Hahshah Ïawshwar, Hahshah Nongiriang, Hahshah Shrieh, Nongdiangngan, Nongtynger, Shrieh belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #42 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #42 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -7038,7 +7258,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Lyngdoh Mylliem, Basaringaid Kurkajuh, Marbañiang, Massar, Mylliemumlong, Sangot ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Lyngdoh Mylliem, Basaringaid Kurkajuh, Marbañiang, Massar, Mylliemumlong, Sangot belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #33 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #33 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -7063,7 +7284,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Mawnai, Mawnai-aiñ, Mawnaibah, Mawblei, Nongkhlaw ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Mawnai, Mawnai-aiñ, Mawnaibah, Mawblei, Nongkhlaw belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #44 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #44 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -7088,7 +7310,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Mawri, Mawïong, Mawkhap, Nongbet, Sohlang ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Mawri, Mawïong, Mawkhap, Nongbet, Sohlang belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #46 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #46 (Page 10)",
+        "kpoh_clans": []
       },
       {
         "id": "link-77-wahlang-pahsyntiew",
@@ -7113,7 +7336,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Wahlang Pahsyntiew, Alia, Laitphlang, Lyngdoh Lyngïong, Malang, Mawïong, Mawshai, Byrsat, Mawsor, Rangslang, Ryntathiang, Symbai, Tyrsa, Wahlang-Ryntathiang, Wallang ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Wahlang Pahsyntiew, Alia, Laitphlang, Lyngdoh Lyngïong, Malang, Mawïong, Mawshai, Byrsat, Mawsor, Rangslang, Ryntathiang, Symbai, Tyrsa, Wahlang-Ryntathiang, Wallang belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #77 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #77 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -7138,7 +7362,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Mawri, Mawïong, Mawkhap, Nongbet, Sohlang ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Mawri, Mawïong, Mawkhap, Nongbet, Sohlang belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #46 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #46 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -7160,7 +7385,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Mawkon, Khongbinan ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Mawkon, Khongbinan belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #43 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #43 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -7182,7 +7408,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Marpna, Mawlaitbnai ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Marpna, Mawlaitbnai belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #41 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #41 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -7207,7 +7434,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Jyrwa Nongsiej, Jyrwa, Mawleiñ Nongsiej, Nongsiej, Pdah-Ka-Siej ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Jyrwa Nongsiej, Jyrwa, Mawleiñ Nongsiej, Nongsiej, Pdah-Ka-Siej belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #25 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #25 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -7232,7 +7460,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Jyrwa Nongsiej, Jyrwa, Mawleiñ Nongsiej, Nongsiej, Pdah-Ka-Siej ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Jyrwa Nongsiej, Jyrwa, Mawleiñ Nongsiej, Nongsiej, Pdah-Ka-Siej belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #25 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #25 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -7248,14 +7477,16 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "id": "link-30-lyngdoh-mawlong",
         "title": "Lyngdoh Mawlong (Mawlong, Lyngdoh Marpna)",
         "shikur_clans": [
-          "Lyngdoh Mawlong",
           "Mawlong",
           "Lyngdoh Marpna"
         ],
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Lyngdoh Mawlong, Mawlong, Lyngdoh Marpna ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Lyngdoh Mawlong, Mawlong, Lyngdoh Marpna belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #30 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #30 (Page 9)",
+        "kpoh_clans": [
+          "Lyngdoh Mawlong"
+        ]
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -7271,7 +7502,6 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "id": "link-31-lyngdoh-mawnai",
         "title": "Lyngdoh Mawnai (Jaraiñ, Mawnai, Lokhmi, Lyngdoh Jaraiñ)",
         "shikur_clans": [
-          "Lyngdoh Mawnai",
           "Jaraiñ",
           "Mawnai",
           "Lokhmi",
@@ -7280,22 +7510,27 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Lyngdoh Mawnai, Jaraiñ, Mawnai, Lokhmi, Lyngdoh Jaraiñ ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Lyngdoh Mawnai, Jaraiñ, Mawnai, Lokhmi, Lyngdoh Jaraiñ belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #31 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #31 (Page 9)",
+        "kpoh_clans": [
+          "Lyngdoh Mawnai"
+        ]
       },
       {
         "id": "link-44-mawnai",
         "title": "Mawnai (Mawnai-aiñ, Mawnaibah, Mawblei, Nongkhlaw)",
         "shikur_clans": [
           "Mawnai",
-          "Mawnai-aiñ",
-          "Mawnaibah",
           "Mawblei",
           "Nongkhlaw"
         ],
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Mawnai, Mawnai-aiñ, Mawnaibah, Mawblei, Nongkhlaw ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Mawnai, Mawnai-aiñ, Mawnaibah, Mawblei, Nongkhlaw belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #44 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #44 (Page 10)",
+        "kpoh_clans": [
+          "Mawnai-aiñ",
+          "Mawnaibah"
+        ]
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -7320,7 +7555,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Mawnai, Mawnai-aiñ, Mawnaibah, Mawblei, Nongkhlaw ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Mawnai, Mawnai-aiñ, Mawnaibah, Mawblei, Nongkhlaw belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #44 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #44 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -7345,7 +7581,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Mawnai, Mawnai-aiñ, Mawnaibah, Mawblei, Nongkhlaw ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Mawnai, Mawnai-aiñ, Mawnaibah, Mawblei, Nongkhlaw belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #44 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #44 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -7370,7 +7607,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Mawnai, Mawnai-aiñ, Mawnaibah, Mawblei, Nongkhlaw ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Mawnai, Mawnai-aiñ, Mawnaibah, Mawblei, Nongkhlaw belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #44 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #44 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -7392,7 +7630,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Mawpamkyi, Lartang ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Mawpamkyi, Lartang belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #45 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #45 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -7417,7 +7656,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Mawri, Mawïong, Mawkhap, Nongbet, Sohlang ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Mawri, Mawïong, Mawkhap, Nongbet, Sohlang belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #46 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #46 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -7452,7 +7692,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Wahlang Pahsyntiew, Alia, Laitphlang, Lyngdoh Lyngïong, Malang, Mawïong, Mawshai, Byrsat, Mawsor, Rangslang, Ryntathiang, Symbai, Tyrsa, Wahlang-Ryntathiang, Wallang ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Wahlang Pahsyntiew, Alia, Laitphlang, Lyngdoh Lyngïong, Malang, Mawïong, Mawshai, Byrsat, Mawsor, Rangslang, Ryntathiang, Symbai, Tyrsa, Wahlang-Ryntathiang, Wallang belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #77 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #77 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -7482,7 +7723,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Lyngdoh Nongkrem, Khongblah, Khonglyngka, Khongpdah, Khonglyngkut, Khyrïem Basanlarkhra, Mawsharoh, Mawthoh, Nongtraw, Pyngrope ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Lyngdoh Nongkrem, Khongblah, Khonglyngka, Khongpdah, Khonglyngkut, Khyrïem Basanlarkhra, Mawsharoh, Mawthoh, Nongtraw, Pyngrope belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #35 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #35 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -7517,7 +7759,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Wahlang Pahsyntiew, Alia, Laitphlang, Lyngdoh Lyngïong, Malang, Mawïong, Mawshai, Byrsat, Mawsor, Rangslang, Ryntathiang, Symbai, Tyrsa, Wahlang-Ryntathiang, Wallang ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Wahlang Pahsyntiew, Alia, Laitphlang, Lyngdoh Lyngïong, Malang, Mawïong, Mawshai, Byrsat, Mawsor, Rangslang, Ryntathiang, Symbai, Tyrsa, Wahlang-Ryntathiang, Wallang belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #77 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #77 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -7547,7 +7790,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Lyngdoh Nongkrem, Khongblah, Khonglyngka, Khongpdah, Khonglyngkut, Khyrïem Basanlarkhra, Mawsharoh, Mawthoh, Nongtraw, Pyngrope ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Lyngdoh Nongkrem, Khongblah, Khonglyngka, Khongpdah, Khonglyngkut, Khyrïem Basanlarkhra, Mawsharoh, Mawthoh, Nongtraw, Pyngrope belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #35 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #35 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -7572,7 +7816,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Mawri, Mawïong, Mawkhap, Nongbet, Sohlang ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Mawri, Mawïong, Mawkhap, Nongbet, Sohlang belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #46 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #46 (Page 10)",
+        "kpoh_clans": []
       },
       {
         "id": "link-77-wahlang-pahsyntiew",
@@ -7597,7 +7842,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Wahlang Pahsyntiew, Alia, Laitphlang, Lyngdoh Lyngïong, Malang, Mawïong, Mawshai, Byrsat, Mawsor, Rangslang, Ryntathiang, Symbai, Tyrsa, Wahlang-Ryntathiang, Wallang ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Wahlang Pahsyntiew, Alia, Laitphlang, Lyngdoh Lyngïong, Malang, Mawïong, Mawshai, Byrsat, Mawsor, Rangslang, Ryntathiang, Symbai, Tyrsa, Wahlang-Ryntathiang, Wallang belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #77 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #77 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -7665,7 +7911,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -7690,7 +7937,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Shallam, Khyrïem, Mukhim, Shabong, Khongshah ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Shallam, Khyrïem, Mukhim, Shabong, Khongshah belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #56 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #56 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -7722,7 +7970,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Majaw, Basaïawmoit, Lyngdoh Peiñlang, Lyngwi, Khongji, Hynñiewta, Sangkli, Langi, Muktieh, Be, Kurbah, Rapsang Marbisu ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Majaw, Basaïawmoit, Lyngdoh Peiñlang, Lyngwi, Khongji, Hynñiewta, Sangkli, Langi, Muktieh, Be, Kurbah, Rapsang Marbisu belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #40 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #40 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -7757,7 +8006,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Syiem Sutnga, Kurkalang, Muliar, Mynso Shangpung, Nongspung, Nongsteng, Pakem Pajuh, Pyrtuh Shangpung, Sutnga, Syiemïong Nongspung, Syiemlieh-Nongkhlaw, Syiemlieh Nongspung, Syiem Nongshai, Syiemsat, Syiem Umsaw Nongbri ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Syiem Sutnga, Kurkalang, Muliar, Mynso Shangpung, Nongspung, Nongsteng, Pakem Pajuh, Pyrtuh Shangpung, Sutnga, Syiemïong Nongspung, Syiemlieh-Nongkhlaw, Syiemlieh Nongspung, Syiem Nongshai, Syiemsat, Syiem Umsaw Nongbri belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #69 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #69 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -7801,7 +8051,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Pakynteiñ, Bhoi So-Kpoh, War So-Kpoh, Nikhla, Bleiñ, Katphoh, Lipon, Liwait, Niangphoh, Pasubon, Rangat, Singphoh, Shyrmang So-Kpoh, Paswet, Kma, Kynjing, Lakiang, Lanong, Lytan, Mutyen, Pyrdiang, Langdoh-Jwai, Siangbud, Syngkon ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Pakynteiñ, Bhoi So-Kpoh, War So-Kpoh, Nikhla, Bleiñ, Katphoh, Lipon, Liwait, Niangphoh, Pasubon, Rangat, Singphoh, Shyrmang So-Kpoh, Paswet, Kma, Kynjing, Lakiang, Lanong, Lytan, Mutyen, Pyrdiang, Langdoh-Jwai, Siangbud, Syngkon belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #52 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #52 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -7825,7 +8076,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Mylliemngap, Mylliempdah, Sohtun, Myrthong ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Mylliemngap, Mylliempdah, Sohtun, Myrthong belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #47 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #47 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -7849,7 +8101,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Mylliemngap, Mylliempdah, Sohtun, Myrthong ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Mylliemngap, Mylliempdah, Sohtun, Myrthong belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #47 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #47 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -7875,7 +8128,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Lyngdoh Mylliem, Basaringaid Kurkajuh, Marbañiang, Massar, Mylliemumlong, Sangot ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Lyngdoh Mylliem, Basaringaid Kurkajuh, Marbañiang, Massar, Mylliemumlong, Sangot belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #33 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #33 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -7910,7 +8164,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Syiem Sutnga, Kurkalang, Muliar, Mynso Shangpung, Nongspung, Nongsteng, Pakem Pajuh, Pyrtuh Shangpung, Sutnga, Syiemïong Nongspung, Syiemlieh-Nongkhlaw, Syiemlieh Nongspung, Syiem Nongshai, Syiemsat, Syiem Umsaw Nongbri ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Syiem Sutnga, Kurkalang, Muliar, Mynso Shangpung, Nongspung, Nongsteng, Pakem Pajuh, Pyrtuh Shangpung, Sutnga, Syiemïong Nongspung, Syiemlieh-Nongkhlaw, Syiemlieh Nongspung, Syiem Nongshai, Syiemsat, Syiem Umsaw Nongbri belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #69 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #69 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -7934,7 +8189,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Khonglah, Mynsong, Ryntong, Surong ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Khonglah, Mynsong, Ryntong, Surong belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #19 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #19 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -7958,7 +8214,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Mylliemngap, Mylliempdah, Sohtun, Myrthong ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Mylliemngap, Mylliempdah, Sohtun, Myrthong belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #47 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #47 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -7982,7 +8239,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Kyndiah, Najiar, Rymbai, Toi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Kyndiah, Najiar, Rymbai, Toi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #24 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #24 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -8050,7 +8308,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -8078,7 +8337,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Nongrum, Ïawphñiaw, Nengnong, Nongkyum, Nongneng, Nongrem, Pohnong, Rumnong ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Nongrum, Ïawphñiaw, Nengnong, Nongkyum, Nongneng, Nongrem, Pohnong, Rumnong belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #49 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #49 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -8122,7 +8382,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Pakynteiñ, Bhoi So-Kpoh, War So-Kpoh, Nikhla, Bleiñ, Katphoh, Lipon, Liwait, Niangphoh, Pasubon, Rangat, Singphoh, Shyrmang So-Kpoh, Paswet, Kma, Kynjing, Lakiang, Lanong, Lytan, Mutyen, Pyrdiang, Langdoh-Jwai, Siangbud, Syngkon ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Pakynteiñ, Bhoi So-Kpoh, War So-Kpoh, Nikhla, Bleiñ, Katphoh, Lipon, Liwait, Niangphoh, Pasubon, Rangat, Singphoh, Shyrmang So-Kpoh, Paswet, Kma, Kynjing, Lakiang, Lanong, Lytan, Mutyen, Pyrdiang, Langdoh-Jwai, Siangbud, Syngkon belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #52 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #52 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -8144,7 +8405,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Ñiewphantang, Hehkhlieh ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Ñiewphantang, Hehkhlieh belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #48 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #48 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -8188,7 +8450,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Pakynteiñ, Bhoi So-Kpoh, War So-Kpoh, Nikhla, Bleiñ, Katphoh, Lipon, Liwait, Niangphoh, Pasubon, Rangat, Singphoh, Shyrmang So-Kpoh, Paswet, Kma, Kynjing, Lakiang, Lanong, Lytan, Mutyen, Pyrdiang, Langdoh-Jwai, Siangbud, Syngkon ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Pakynteiñ, Bhoi So-Kpoh, War So-Kpoh, Nikhla, Bleiñ, Katphoh, Lipon, Liwait, Niangphoh, Pasubon, Rangat, Singphoh, Shyrmang So-Kpoh, Paswet, Kma, Kynjing, Lakiang, Lanong, Lytan, Mutyen, Pyrdiang, Langdoh-Jwai, Siangbud, Syngkon belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #52 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #52 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -8213,7 +8476,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Mawri, Mawïong, Mawkhap, Nongbet, Sohlang ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Mawri, Mawïong, Mawkhap, Nongbet, Sohlang belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #46 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #46 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -8235,7 +8499,6 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
           "Pasah",
           "Nongbri",
           "Lyngdoh Kynshi",
-          "Lyngdoh Nongbri",
           "Marboh",
           "Namsheh",
           "Nongphod"
@@ -8248,7 +8511,10 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         ],
         "summary_khasi": "Ki kur Nongkynrih, Shadap, Passah, Nongbri, Lyngdoh Kynshi, Lyngdoh Nongbri, Marboh, bad Namsheh ki ïalong shikur (kawei ka kpoh) bad kim bit ban ïashongkha (Sang). Ha Riangmang (p. 93) ïa ki Nongkynrih la khot 'Nongphod'. Ki Pombah bad Wahbah ruh ki ïateh kur bad ki Shadap.",
         "summary_english": "Nongkynrih, Shadap, Passah, Nongbri, Lyngdoh Kynshi, Lyngdoh Nongbri, Marboh, and Namsheh share the same clan lineage (ïalong shikur) and cannot intermarry (Sang). Pombah and Wahbah are also prohibited from marrying Shadap.",
-        "citation": "Rev. I. Kharkongngor (2004), Entries #57, #76, #92 (Pages 93, 95, 97, 98)"
+        "citation": "Rev. I. Kharkongngor (2004), Entries #57, #76, #92 (Pages 93, 95, 97, 98)",
+        "kpoh_clans": [
+          "Lyngdoh Nongbri"
+        ]
       },
       {
         "id": "majaw-sangkli",
@@ -8261,7 +8527,6 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
           "Basaïawsnai",
           "Basaïawrit",
           "Lyngwi",
-          "Nongbri Kynrut",
           "Hynñiewta",
           "Langpen",
           "Kurbah",
@@ -8280,7 +8545,10 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Khathynriew (16) jait ki kpoh kiba la mih na ka kur Majaw. Baroh ki ïalong shikur bad sang ban ïashongkha.",
         "summary_english": "Sixteen clans emerged from the Majaw clan. All 16 share the same ancestral lineage and cannot intermarry.",
-        "citation": "Ka Seng Kur Majaw & Rev. I. Kharkongngor (2004), Entries #65 (Page 96)"
+        "citation": "Ka Seng Kur Majaw & Rev. I. Kharkongngor (2004), Entries #65 (Page 96)",
+        "kpoh_clans": [
+          "Nongbri Kynrut"
+        ]
       },
       {
         "id": "syiem-sutnga-syiemlieh",
@@ -8294,7 +8562,6 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
           "Syiemïong Nongspung",
           "Syiem Nongshai",
           "Syiemsat",
-          "Syiem Umsaw Nongbri",
           "Mynso Shangpung",
           "Nongspung",
           "Nongsteng",
@@ -8307,7 +8574,10 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Mih na ki 5 ngut ki khun kynthei Ka Li Dohkha (Ka Nga, Ka Teiñ, Ka Lieh, Ka Pung, Ka Lang).",
         "summary_english": "Descends from the five daughters of Ka Li Dohkha across Sutnga, Shangpung, Nongkhlaw, and Nongspung.",
-        "citation": "Rev. I. Kharkongngor (2004), Entries #102, #104 (Pages 8, 99)"
+        "citation": "Rev. I. Kharkongngor (2004), Entries #102, #104 (Pages 8, 99)",
+        "kpoh_clans": [
+          "Syiem Umsaw Nongbri"
+        ]
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -8332,7 +8602,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Lyngdoh Nongbsap, Nongbsap Pyrtuh, Nongrang, bad Sohphoh ki dei kawei ka kpoh. Hynrei ki Nongbsap Pyrtuh bad ki Mylliem Pyrtuh KIM DEI KI JUH (Page 96).",
         "summary_english": "Lyngdoh Nongbsap, Nongbsap Pyrtuh, Nongrang, and Sohphoh are one womb. Explicitly distinct from Mylliem Pyrtuh (Page 96).",
-        "citation": "Rev. I. Kharkongngor (2004), Entries #62, #74 (Pages 95–97)"
+        "citation": "Rev. I. Kharkongngor (2004), Entries #62, #74 (Pages 95–97)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -8358,7 +8629,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Lyngdoh Nongrang, Nongrang, Lyngdoh Nongbsap, Nongbsap Pyrtuh, Nongbsap-Nongrang, Khyrïem Nongrang ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Lyngdoh Nongrang, Nongrang, Lyngdoh Nongbsap, Nongbsap Pyrtuh, Nongbsap-Nongrang, Khyrïem Nongrang belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #38 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #38 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -8374,13 +8646,15 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "id": "link-74-thongni-nongdiang",
         "title": "Thongni Nongdiang (Nongdiang)",
         "shikur_clans": [
-          "Thongni Nongdiang",
           "Nongdiang"
         ],
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Thongni Nongdiang, Nongdiang ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Thongni Nongdiang, Nongdiang belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #74 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #74 (Page 11)",
+        "kpoh_clans": [
+          "Thongni Nongdiang"
+        ]
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -8407,7 +8681,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Marweiñ, Hahshah Ïawshwar, Hahshah Nongiriang, Hahshah Shrieh, Nongdiangngan, Nongtynger, Shrieh ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Marweiñ, Hahshah Ïawshwar, Hahshah Nongiriang, Hahshah Shrieh, Nongdiangngan, Nongtynger, Shrieh belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #42 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #42 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -8431,7 +8706,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Shullai, Dhar, Mallai, Nonghulo ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Shullai, Dhar, Mallai, Nonghulo belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #58 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #58 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -8456,7 +8732,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Mawnai, Mawnai-aiñ, Mawnaibah, Mawblei, Nongkhlaw ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Mawnai, Mawnai-aiñ, Mawnaibah, Mawblei, Nongkhlaw belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #44 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #44 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -8483,7 +8760,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Warlarpih, Langstieh, Nongkhlawmulong, Nongkhlawrngi, Khongbri, War Sadew, Warkhnang ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Warlarpih, Langstieh, Nongkhlawmulong, Nongkhlawrngi, Khongbri, War Sadew, Warkhnang belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #79 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #79 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -8510,7 +8788,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Warlarpih, Langstieh, Nongkhlawmulong, Nongkhlawrngi, Khongbri, War Sadew, Warkhnang ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Warlarpih, Langstieh, Nongkhlawmulong, Nongkhlawrngi, Khongbri, War Sadew, Warkhnang belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #79 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #79 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -8545,7 +8824,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         ],
         "summary_khasi": "Ki kur Nongkynrih, Shadap, Passah, Nongbri, Lyngdoh Kynshi, Lyngdoh Nongbri, Marboh, bad Namsheh ki ïalong shikur (kawei ka kpoh) bad kim bit ban ïashongkha (Sang). Ha Riangmang (p. 93) ïa ki Nongkynrih la khot 'Nongphod'. Ki Pombah bad Wahbah ruh ki ïateh kur bad ki Shadap.",
         "summary_english": "Nongkynrih, Shadap, Passah, Nongbri, Lyngdoh Kynshi, Lyngdoh Nongbri, Marboh, and Namsheh share the same clan lineage (ïalong shikur) and cannot intermarry (Sang). Pombah and Wahbah are also prohibited from marrying Shadap.",
-        "citation": "Rev. I. Kharkongngor (2004), Entries #57, #76, #92 (Pages 93, 95, 97, 98)"
+        "citation": "Rev. I. Kharkongngor (2004), Entries #57, #76, #92 (Pages 93, 95, 97, 98)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -8573,7 +8853,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Nongrum, Ïawphñiaw, Nengnong, Nongkyum, Nongneng, Nongrem, Pohnong, Rumnong ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Nongrum, Ïawphñiaw, Nengnong, Nongkyum, Nongneng, Nongrem, Pohnong, Rumnong belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #49 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #49 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -8601,7 +8882,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Nongrum, Ïawphñiaw, Nengnong, Nongkyum, Nongneng, Nongrem, Pohnong, Rumnong ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Nongrum, Ïawphñiaw, Nengnong, Nongkyum, Nongneng, Nongrem, Pohnong, Rumnong belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #49 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #49 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -8626,7 +8908,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Nongneng Daloi, Lyngdoh Nongumlong, Shanprew, Nongneng Pator, Kapew ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Nongneng Daloi, Lyngdoh Nongumlong, Shanprew, Nongneng Pator, Kapew belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #50 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #50 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -8651,7 +8934,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Nongneng Daloi, Lyngdoh Nongumlong, Shanprew, Nongneng Pator, Kapew ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Nongneng Daloi, Lyngdoh Nongumlong, Shanprew, Nongneng Pator, Kapew belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #50 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #50 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -8673,7 +8957,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Khongjoh, Nongpluh ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Khongjoh, Nongpluh belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #18 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #18 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -8689,17 +8974,19 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "id": "link-38-lyngdoh-nongrang",
         "title": "Lyngdoh Nongrang (Nongrang, Lyngdoh Nongbsap, Nongbsap Pyrtuh, Nongbsap-Nongrang, Khyrïem Nongrang)",
         "shikur_clans": [
-          "Lyngdoh Nongrang",
           "Nongrang",
           "Lyngdoh Nongbsap",
-          "Nongbsap Pyrtuh",
-          "Nongbsap-Nongrang",
-          "Khyrïem Nongrang"
+          "Nongbsap Pyrtuh"
         ],
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Lyngdoh Nongrang, Nongrang, Lyngdoh Nongbsap, Nongbsap Pyrtuh, Nongbsap-Nongrang, Khyrïem Nongrang ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Lyngdoh Nongrang, Nongrang, Lyngdoh Nongbsap, Nongbsap Pyrtuh, Nongbsap-Nongrang, Khyrïem Nongrang belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #38 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #38 (Page 9)",
+        "kpoh_clans": [
+          "Lyngdoh Nongrang",
+          "Nongbsap-Nongrang",
+          "Khyrïem Nongrang"
+        ]
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -8727,7 +9014,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Nongrum, Ïawphñiaw, Nengnong, Nongkyum, Nongneng, Nongrem, Pohnong, Rumnong ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Nongrum, Ïawphñiaw, Nengnong, Nongkyum, Nongneng, Nongrem, Pohnong, Rumnong belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #49 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #49 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -8755,7 +9043,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Nongrum, Ïawphñiaw, Nengnong, Nongkyum, Nongneng, Nongrem, Pohnong, Rumnong ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Nongrum, Ïawphñiaw, Nengnong, Nongkyum, Nongneng, Nongrem, Pohnong, Rumnong belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #49 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #49 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -8771,16 +9060,18 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "id": "link-25-jyrwa-nongsiej",
         "title": "Jyrwa Nongsiej (Jyrwa, Mawleiñ Nongsiej, Nongsiej, Pdah-Ka-Siej)",
         "shikur_clans": [
-          "Jyrwa Nongsiej",
           "Jyrwa",
-          "Mawleiñ Nongsiej",
           "Nongsiej",
           "Pdah-Ka-Siej"
         ],
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Jyrwa Nongsiej, Jyrwa, Mawleiñ Nongsiej, Nongsiej, Pdah-Ka-Siej ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Jyrwa Nongsiej, Jyrwa, Mawleiñ Nongsiej, Nongsiej, Pdah-Ka-Siej belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #25 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #25 (Page 8)",
+        "kpoh_clans": [
+          "Jyrwa Nongsiej",
+          "Mawleiñ Nongsiej"
+        ]
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -8805,9 +9096,7 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
           "Pakem Pajuh",
           "Pyrtuh Shangpung",
           "Sutnga",
-          "Syiemïong Nongspung",
           "Syiemlieh-Nongkhlaw",
-          "Syiemlieh Nongspung",
           "Syiem Nongshai",
           "Syiemsat",
           "Syiem Umsaw Nongbri"
@@ -8815,7 +9104,11 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Syiem Sutnga, Kurkalang, Muliar, Mynso Shangpung, Nongspung, Nongsteng, Pakem Pajuh, Pyrtuh Shangpung, Sutnga, Syiemïong Nongspung, Syiemlieh-Nongkhlaw, Syiemlieh Nongspung, Syiem Nongshai, Syiemsat, Syiem Umsaw Nongbri ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Syiem Sutnga, Kurkalang, Muliar, Mynso Shangpung, Nongspung, Nongsteng, Pakem Pajuh, Pyrtuh Shangpung, Sutnga, Syiemïong Nongspung, Syiemlieh-Nongkhlaw, Syiemlieh Nongspung, Syiem Nongshai, Syiemsat, Syiem Umsaw Nongbri belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #69 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #69 (Page 11)",
+        "kpoh_clans": [
+          "Syiemïong Nongspung",
+          "Syiemlieh Nongspung"
+        ]
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -8850,7 +9143,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Syiem Sutnga, Kurkalang, Muliar, Mynso Shangpung, Nongspung, Nongsteng, Pakem Pajuh, Pyrtuh Shangpung, Sutnga, Syiemïong Nongspung, Syiemlieh-Nongkhlaw, Syiemlieh Nongspung, Syiem Nongshai, Syiemsat, Syiem Umsaw Nongbri ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Syiem Sutnga, Kurkalang, Muliar, Mynso Shangpung, Nongspung, Nongsteng, Pakem Pajuh, Pyrtuh Shangpung, Sutnga, Syiemïong Nongspung, Syiemlieh-Nongkhlaw, Syiemlieh Nongspung, Syiem Nongshai, Syiemsat, Syiem Umsaw Nongbri belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #69 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #69 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -8873,7 +9167,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Syiem Nongstoiñ, Nongstiñ, Rynñiaw ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Syiem Nongstoiñ, Nongstiñ, Rynñiaw belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #66 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #66 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -8896,7 +9191,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Syiem Nongstoiñ, Nongstiñ, Rynñiaw ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Syiem Nongstoiñ, Nongstiñ, Rynñiaw belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #66 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #66 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -8920,7 +9216,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Thaïang, Nongtariang, Tariang, Teron ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Thaïang, Nongtariang, Tariang, Teron belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #73 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #73 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -8942,7 +9239,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Nongtdu, Nongtdeh ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Nongtdu, Nongtdeh belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #51 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #51 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -8964,7 +9262,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Nongtdu, Nongtdeh ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Nongtdu, Nongtdeh belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #51 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #51 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -8994,7 +9293,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Lyngdoh Nongkrem, Khongblah, Khonglyngka, Khongpdah, Khonglyngkut, Khyrïem Basanlarkhra, Mawsharoh, Mawthoh, Nongtraw, Pyngrope ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Lyngdoh Nongkrem, Khongblah, Khonglyngka, Khongpdah, Khonglyngkut, Khyrïem Basanlarkhra, Mawsharoh, Mawthoh, Nongtraw, Pyngrope belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #35 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #35 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -9021,7 +9321,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Marweiñ, Hahshah Ïawshwar, Hahshah Nongiriang, Hahshah Shrieh, Nongdiangngan, Nongtynger, Shrieh ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Marweiñ, Hahshah Ïawshwar, Hahshah Nongiriang, Hahshah Shrieh, Nongdiangngan, Nongtynger, Shrieh belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #42 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #42 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -9048,7 +9349,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Slong, Blah, Pariat, Pde, Shylla, Thangkhiew, Norlong ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Slong, Blah, Pariat, Pde, Shylla, Thangkhiew, Norlong belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #59 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #59 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -9116,7 +9418,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -9151,7 +9454,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Syiem Sutnga, Kurkalang, Muliar, Mynso Shangpung, Nongspung, Nongsteng, Pakem Pajuh, Pyrtuh Shangpung, Sutnga, Syiemïong Nongspung, Syiemlieh-Nongkhlaw, Syiemlieh Nongspung, Syiem Nongshai, Syiemsat, Syiem Umsaw Nongbri ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Syiem Sutnga, Kurkalang, Muliar, Mynso Shangpung, Nongspung, Nongsteng, Pakem Pajuh, Pyrtuh Shangpung, Sutnga, Syiemïong Nongspung, Syiemlieh-Nongkhlaw, Syiemlieh Nongspung, Syiem Nongshai, Syiemsat, Syiem Umsaw Nongbri belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #69 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #69 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -9204,7 +9508,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "So Kpoh Khatar Wyrnai ha Jaiñtia: Bon, Teiñ, Wet, bad Doh lem bad ki tnad kpoh jong ki.",
         "summary_english": "The historic 'So Kpoh Khatar Wyrnai' (Four Wombs, Twelve Branches) of Jaiñtia Hills.",
-        "citation": "Rev. I. Kharkongngor (2004) & Spiton Kharakor, Entries #3 (Page 86)"
+        "citation": "Rev. I. Kharkongngor (2004) & Spiton Kharakor, Entries #3 (Page 86)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -9257,7 +9562,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "So Kpoh Khatar Wyrnai ha Jaiñtia: Bon, Teiñ, Wet, bad Doh lem bad ki tnad kpoh jong ki.",
         "summary_english": "The historic 'So Kpoh Khatar Wyrnai' (Four Wombs, Twelve Branches) of Jaiñtia Hills.",
-        "citation": "Rev. I. Kharkongngor (2004) & Spiton Kharakor, Entries #3 (Page 86)"
+        "citation": "Rev. I. Kharkongngor (2004) & Spiton Kharakor, Entries #3 (Page 86)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -9279,7 +9585,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Pala, Sutong ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Pala, Sutong belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #53 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #53 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -9313,7 +9620,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         ],
         "summary_khasi": "Thangkhiew, Pariat, Shylla, Blah, Slong, bad Pde ki ïakam kur. Kumjuh Tangliang, Shylla, Sajem (Rabon), bad Ïatam.",
         "summary_english": "Thangkhiew, Pariat, Shylla, Blah, Slong, and Pde share clan kinship, alongside Tangliang, Sajem, and Ïatam.",
-        "citation": "Rev. I. Kharkongngor (2004), Entries #94, #95, #103, #105 (Pages 98, 99)"
+        "citation": "Rev. I. Kharkongngor (2004), Entries #94, #95, #103, #105 (Pages 98, 99)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -9381,7 +9689,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -9449,7 +9758,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -9474,7 +9784,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Lyngdoh Nongbri, Lyngdoh Kynshi, Nongkynrih, Passah, Shadap ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Lyngdoh Nongbri, Lyngdoh Kynshi, Nongkynrih, Passah, Shadap belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #37 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #37 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -9518,7 +9829,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Pakynteiñ, Bhoi So-Kpoh, War So-Kpoh, Nikhla, Bleiñ, Katphoh, Lipon, Liwait, Niangphoh, Pasubon, Rangat, Singphoh, Shyrmang So-Kpoh, Paswet, Kma, Kynjing, Lakiang, Lanong, Lytan, Mutyen, Pyrdiang, Langdoh-Jwai, Siangbud, Syngkon ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Pakynteiñ, Bhoi So-Kpoh, War So-Kpoh, Nikhla, Bleiñ, Katphoh, Lipon, Liwait, Niangphoh, Pasubon, Rangat, Singphoh, Shyrmang So-Kpoh, Paswet, Kma, Kynjing, Lakiang, Lanong, Lytan, Mutyen, Pyrdiang, Langdoh-Jwai, Siangbud, Syngkon belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #52 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #52 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -9562,7 +9874,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Pakynteiñ, Bhoi So-Kpoh, War So-Kpoh, Nikhla, Bleiñ, Katphoh, Lipon, Liwait, Niangphoh, Pasubon, Rangat, Singphoh, Shyrmang So-Kpoh, Paswet, Kma, Kynjing, Lakiang, Lanong, Lytan, Mutyen, Pyrdiang, Langdoh-Jwai, Siangbud, Syngkon ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Pakynteiñ, Bhoi So-Kpoh, War So-Kpoh, Nikhla, Bleiñ, Katphoh, Lipon, Liwait, Niangphoh, Pasubon, Rangat, Singphoh, Shyrmang So-Kpoh, Paswet, Kma, Kynjing, Lakiang, Lanong, Lytan, Mutyen, Pyrdiang, Langdoh-Jwai, Siangbud, Syngkon belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #52 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #52 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -9580,15 +9893,17 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "shikur_clans": [
           "Langñiuh",
           "Pathaw",
-          "Pathawbah",
-          "Khyrïemmujat",
-          "Pathaw-Lar-ïew",
-          "Pathawdih"
+          "Khyrïemmujat"
         ],
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Langñiuh, Pathaw, Pathawbah, Khyrïemmujat, Pathaw-Lar-ïew, Pathawdih ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Langñiuh, Pathaw, Pathawbah, Khyrïemmujat, Pathaw-Lar-ïew, Pathawdih belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #26 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #26 (Page 8)",
+        "kpoh_clans": [
+          "Pathawbah",
+          "Pathaw-Lar-ïew",
+          "Pathawdih"
+        ]
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -9614,7 +9929,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Langñiuh, Pathaw, Pathawbah, Khyrïemmujat, Pathaw-Lar-ïew, Pathawdih ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Langñiuh, Pathaw, Pathawbah, Khyrïemmujat, Pathaw-Lar-ïew, Pathawdih belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #26 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #26 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -9640,7 +9956,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Langñiuh, Pathaw, Pathawbah, Khyrïemmujat, Pathaw-Lar-ïew, Pathawdih ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Langñiuh, Pathaw, Pathawbah, Khyrïemmujat, Pathaw-Lar-ïew, Pathawdih belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #26 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #26 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -9666,7 +9983,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Langñiuh, Pathaw, Pathawbah, Khyrïemmujat, Pathaw-Lar-ïew, Pathawdih ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Langñiuh, Pathaw, Pathawbah, Khyrïemmujat, Pathaw-Lar-ïew, Pathawdih belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #26 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #26 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -9692,7 +10010,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Langñiuh, Pathaw, Pathawbah, Khyrïemmujat, Pathaw-Lar-ïew, Pathawdih ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Langñiuh, Pathaw, Pathawbah, Khyrïemmujat, Pathaw-Lar-ïew, Pathawdih belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #26 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #26 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -9717,7 +10036,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Jyrwa Nongsiej, Jyrwa, Mawleiñ Nongsiej, Nongsiej, Pdah-Ka-Siej ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Jyrwa Nongsiej, Jyrwa, Mawleiñ Nongsiej, Nongsiej, Pdah-Ka-Siej belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #25 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #25 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -9744,7 +10064,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Slong, Blah, Pariat, Pde, Shylla, Thangkhiew, Norlong ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Slong, Blah, Pariat, Pde, Shylla, Thangkhiew, Norlong belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #59 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #59 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -9812,7 +10133,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -9874,13 +10196,15 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
           "Suji",
           "Syngngai",
           "Tui",
-          "Wanpiat",
           "War-Ïaw-shi-bdi"
         ],
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)",
+        "kpoh_clans": [
+          "Wanpiat"
+        ]
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -9948,7 +10272,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -10016,7 +10341,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -10084,7 +10410,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -10112,7 +10439,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Nongrum, Ïawphñiaw, Nengnong, Nongkyum, Nongneng, Nongrem, Pohnong, Rumnong ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Nongrum, Ïawphñiaw, Nengnong, Nongkyum, Nongneng, Nongrem, Pohnong, Rumnong belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #49 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #49 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -10180,7 +10508,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -10248,7 +10577,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -10316,7 +10646,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -10384,7 +10715,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -10452,7 +10784,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -10479,7 +10812,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Kharsyntiew, Kharngapkynta, Kharphanbuh, Kharsawian, Kharwanlang, Puiñdiwang, Dkhar ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Kharsyntiew, Kharngapkynta, Kharphanbuh, Kharsawian, Kharwanlang, Puiñdiwang, Dkhar belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #16 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #16 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -10506,7 +10840,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Kharsyntiew, Kharngapkynta, Kharphanbuh, Kharsawian, Kharwanlang, Puiñdiwang, Dkhar ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Kharsyntiew, Kharngapkynta, Kharphanbuh, Kharsawian, Kharwanlang, Puiñdiwang, Dkhar belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #16 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #16 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -10574,7 +10909,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -10604,7 +10940,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Lyngdoh Nongkrem, Khongblah, Khonglyngka, Khongpdah, Khonglyngkut, Khyrïem Basanlarkhra, Mawsharoh, Mawthoh, Nongtraw, Pyngrope ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Lyngdoh Nongkrem, Khongblah, Khonglyngka, Khongpdah, Khonglyngkut, Khyrïem Basanlarkhra, Mawsharoh, Mawthoh, Nongtraw, Pyngrope belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #35 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #35 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -10672,7 +11009,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -10716,7 +11054,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Pakynteiñ, Bhoi So-Kpoh, War So-Kpoh, Nikhla, Bleiñ, Katphoh, Lipon, Liwait, Niangphoh, Pasubon, Rangat, Singphoh, Shyrmang So-Kpoh, Paswet, Kma, Kynjing, Lakiang, Lanong, Lytan, Mutyen, Pyrdiang, Langdoh-Jwai, Siangbud, Syngkon ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Pakynteiñ, Bhoi So-Kpoh, War So-Kpoh, Nikhla, Bleiñ, Katphoh, Lipon, Liwait, Niangphoh, Pasubon, Rangat, Singphoh, Shyrmang So-Kpoh, Paswet, Kma, Kynjing, Lakiang, Lanong, Lytan, Mutyen, Pyrdiang, Langdoh-Jwai, Siangbud, Syngkon belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #52 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #52 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -10732,14 +11071,16 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "id": "link-39-lyngdoh-pyrtuh",
         "title": "Lyngdoh Pyrtuh (Pyrtuh, Lyngkot)",
         "shikur_clans": [
-          "Lyngdoh Pyrtuh",
           "Pyrtuh",
           "Lyngkot"
         ],
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Lyngdoh Pyrtuh, Pyrtuh, Lyngkot ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Lyngdoh Pyrtuh, Pyrtuh, Lyngkot belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #39 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #39 (Page 9)",
+        "kpoh_clans": [
+          "Lyngdoh Pyrtuh"
+        ]
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -10774,7 +11115,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Syiem Sutnga, Kurkalang, Muliar, Mynso Shangpung, Nongspung, Nongsteng, Pakem Pajuh, Pyrtuh Shangpung, Sutnga, Syiemïong Nongspung, Syiemlieh-Nongkhlaw, Syiemlieh Nongspung, Syiem Nongshai, Syiemsat, Syiem Umsaw Nongbri ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Syiem Sutnga, Kurkalang, Muliar, Mynso Shangpung, Nongspung, Nongsteng, Pakem Pajuh, Pyrtuh Shangpung, Sutnga, Syiemïong Nongspung, Syiemlieh-Nongkhlaw, Syiemlieh Nongspung, Syiem Nongshai, Syiemsat, Syiem Umsaw Nongbri belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #69 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #69 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -10818,7 +11160,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Pakynteiñ, Bhoi So-Kpoh, War So-Kpoh, Nikhla, Bleiñ, Katphoh, Lipon, Liwait, Niangphoh, Pasubon, Rangat, Singphoh, Shyrmang So-Kpoh, Paswet, Kma, Kynjing, Lakiang, Lanong, Lytan, Mutyen, Pyrdiang, Langdoh-Jwai, Siangbud, Syngkon ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Pakynteiñ, Bhoi So-Kpoh, War So-Kpoh, Nikhla, Bleiñ, Katphoh, Lipon, Liwait, Niangphoh, Pasubon, Rangat, Singphoh, Shyrmang So-Kpoh, Paswet, Kma, Kynjing, Lakiang, Lanong, Lytan, Mutyen, Pyrdiang, Langdoh-Jwai, Siangbud, Syngkon belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #52 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #52 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -10853,7 +11196,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Wahlang Pahsyntiew, Alia, Laitphlang, Lyngdoh Lyngïong, Malang, Mawïong, Mawshai, Byrsat, Mawsor, Rangslang, Ryntathiang, Symbai, Tyrsa, Wahlang-Ryntathiang, Wallang ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Wahlang Pahsyntiew, Alia, Laitphlang, Lyngdoh Lyngïong, Malang, Mawïong, Mawshai, Byrsat, Mawsor, Rangslang, Ryntathiang, Symbai, Tyrsa, Wahlang-Ryntathiang, Wallang belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #77 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #77 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -10876,7 +11220,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Khyllait, Rani, Stepwar ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Khyllait, Rani, Stepwar belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #22 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #22 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -10918,7 +11263,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Khathynriew (16) jait ki kpoh kiba la mih na ka kur Majaw. Baroh ki ïalong shikur bad sang ban ïashongkha.",
         "summary_english": "Sixteen clans emerged from the Majaw clan. All 16 share the same ancestral lineage and cannot intermarry.",
-        "citation": "Ka Seng Kur Majaw & Rev. I. Kharkongngor (2004), Entries #65 (Page 96)"
+        "citation": "Ka Seng Kur Majaw & Rev. I. Kharkongngor (2004), Entries #65 (Page 96)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -10954,7 +11300,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         ],
         "summary_khasi": "Baroh kine ki dei ki khun ka Khmah Lyngdoh Mawphlang (bad ha Riangmang la khot 'Kyllang'). Ki Lyngdoh Sangriang ruh ki ïadei kur bad ki.",
         "summary_english": "All descend from Ka Khmah Lyngdoh Mawphlang, with Lyngdoh Sangriang also bound by clan kinship.",
-        "citation": "Rev. I. Kharkongngor (2004), Entries #29 (Page 89)"
+        "citation": "Rev. I. Kharkongngor (2004), Entries #29 (Page 89)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -10983,7 +11330,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Lyngdoh Mawphlang, Khongsti, Khongstia, Khongnoh, Khongsngi, Lyngdoh Mawlieh, Lyngdoh Nongpyiur, Thawmuit, Rapsang Nongpyiur ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Lyngdoh Mawphlang, Khongsti, Khongstia, Khongnoh, Khongsngi, Lyngdoh Mawlieh, Lyngdoh Nongpyiur, Thawmuit, Rapsang Nongpyiur belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #32 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #32 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -11011,7 +11359,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Nongrum, Ïawphñiaw, Nengnong, Nongkyum, Nongneng, Nongrem, Pohnong, Rumnong ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Nongrum, Ïawphñiaw, Nengnong, Nongkyum, Nongneng, Nongrem, Pohnong, Rumnong belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #49 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #49 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -11035,7 +11384,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Kyndiah, Najiar, Rymbai, Toi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Kyndiah, Najiar, Rymbai, Toi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #24 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #24 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -11103,7 +11453,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -11120,14 +11471,16 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "title": "Ryngngait Lyngdoh (Kharrymen, Diengdoh Nongstoiñ, Rymen)",
         "shikur_clans": [
           "Ryngngait Lyngdoh",
-          "Kharrymen",
           "Diengdoh Nongstoiñ",
           "Rymen"
         ],
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Ryngngait Lyngdoh, Kharrymen, Diengdoh Nongstoiñ, Rymen ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Ryngngait Lyngdoh, Kharrymen, Diengdoh Nongstoiñ, Rymen belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #54 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #54 (Page 10)",
+        "kpoh_clans": [
+          "Kharrymen"
+        ]
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -11151,7 +11504,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Ryngngait Lyngdoh, Kharrymen, Diengdoh Nongstoiñ, Rymen ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Ryngngait Lyngdoh, Kharrymen, Diengdoh Nongstoiñ, Rymen belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #54 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #54 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -11174,7 +11528,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Syiem Nongstoiñ, Nongstiñ, Rynñiaw ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Syiem Nongstoiñ, Nongstiñ, Rynñiaw belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #66 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #66 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -11193,7 +11548,6 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
           "Wahlang",
           "Wahlang Pahsyntiew",
           "Laitphlang",
-          "Wahlang Ryntathiang",
           "Ryntathiang"
         ],
         "teh_kur_clans": [
@@ -11202,7 +11556,10 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         ],
         "summary_khasi": "Ka Laitphlang ka dei ka kyrteng sin jong ka kpoh ba mih na ka Wahlang Pahsyntiew. Tangba ka kpoh Laitphlang kam shym la ïasoh ha ki jingïateh kur ba hadien jong ki Wahlang Pahsyntiew—kumta ka sang tang bad ki ïing tynrai Wahlang Pahsyntiew.",
         "summary_english": "Laitphlang is a branch nickname of Wahlang Pahsyntiew. Laitphlang did not join external Teh Kur pacts, so it is strictly Sang only with original ancestral Wahlang Pahsyntiew houses.",
-        "citation": "Tbn. W.R. Laitphlang & Rev. I. Kharkongngor (2004), Entries #91, #110 (Pages 98, 100–102)"
+        "citation": "Tbn. W.R. Laitphlang & Rev. I. Kharkongngor (2004), Entries #91, #110 (Pages 98, 100–102)",
+        "kpoh_clans": [
+          "Wahlang Ryntathiang"
+        ]
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -11226,7 +11583,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Khonglah, Mynsong, Ryntong, Surong ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Khonglah, Mynsong, Ryntong, Surong belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #19 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #19 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -11249,7 +11607,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Syiem Nongstoiñ, Nongstiñ, Rynñiaw ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Syiem Nongstoiñ, Nongstiñ, Rynñiaw belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #66 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #66 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -11281,7 +11640,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Majaw, Basaïawmoit, Lyngdoh Peiñlang, Lyngwi, Khongji, Hynñiewta, Sangkli, Langi, Muktieh, Be, Kurbah, Rapsang Marbisu ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Majaw, Basaïawmoit, Lyngdoh Peiñlang, Lyngwi, Khongji, Hynñiewta, Sangkli, Langi, Muktieh, Be, Kurbah, Rapsang Marbisu belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #40 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #40 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -11307,7 +11667,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Lyngdoh Mylliem, Basaringaid Kurkajuh, Marbañiang, Massar, Mylliemumlong, Sangot ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Lyngdoh Mylliem, Basaringaid Kurkajuh, Marbañiang, Massar, Mylliemumlong, Sangot belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #33 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #33 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -11331,7 +11692,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Sawkmie, Lyngdoh Lyngkhoi, Lyngdoh Nonglait, Thangmyrsiang ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Sawkmie, Lyngdoh Lyngkhoi, Lyngdoh Nonglait, Thangmyrsiang belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #55 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #55 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -11360,7 +11722,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         ],
         "summary_khasi": "Lai ngut shipara na Umtangper: kiba leit sha Synteng la khot Shallam, sha War la khot Mukhim, sha Khyrim la khot Shabong. Kawei ka kpoh. Ki Khonglam na Nongblai ruh ki kam kur bad ki Shabong.",
         "summary_english": "Three sisters from Umtangper settled in Synteng (Shallam), War (Mukhim), and Khyrim (Shabong)—one single womb. Khonglam also claims kinship with Shabong.",
-        "citation": "Rev. I. Kharkongngor (2004), Entries #72 (Pages 3, 96)"
+        "citation": "Rev. I. Kharkongngor (2004), Entries #72 (Pages 3, 96)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -11395,7 +11758,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         ],
         "summary_khasi": "Ki kur Nongkynrih, Shadap, Passah, Nongbri, Lyngdoh Kynshi, Lyngdoh Nongbri, Marboh, bad Namsheh ki ïalong shikur (kawei ka kpoh) bad kim bit ban ïashongkha (Sang). Ha Riangmang (p. 93) ïa ki Nongkynrih la khot 'Nongphod'. Ki Pombah bad Wahbah ruh ki ïateh kur bad ki Shadap.",
         "summary_english": "Nongkynrih, Shadap, Passah, Nongbri, Lyngdoh Kynshi, Lyngdoh Nongbri, Marboh, and Namsheh share the same clan lineage (ïalong shikur) and cannot intermarry (Sang). Pombah and Wahbah are also prohibited from marrying Shadap.",
-        "citation": "Rev. I. Kharkongngor (2004), Entries #57, #76, #92 (Pages 93, 95, 97, 98)"
+        "citation": "Rev. I. Kharkongngor (2004), Entries #57, #76, #92 (Pages 93, 95, 97, 98)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -11420,7 +11784,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Shallam, Khyrïem, Mukhim, Shabong, Khongshah ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Shallam, Khyrïem, Mukhim, Shabong, Khongshah belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #56 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #56 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -11442,7 +11807,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Syiem Myriaw, Shangoi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Syiem Myriaw, Shangoi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #63 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #63 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -11467,7 +11833,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Nongneng Daloi, Lyngdoh Nongumlong, Shanprew, Nongneng Pator, Kapew ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Nongneng Daloi, Lyngdoh Nongumlong, Shanprew, Nongneng Pator, Kapew belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #50 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #50 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -11489,7 +11856,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Lyngdoh Mynso, Shen ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Lyngdoh Mynso, Shen belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #34 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #34 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -11511,7 +11879,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Shongwan, Wanphai ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Shongwan, Wanphai belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #57 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #57 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -11530,7 +11899,6 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
           "Marweiñ",
           "Hahshah Ïawshwar",
           "Hahshah Nongiriang",
-          "Hahshah Shrieh",
           "Nongdiangngan",
           "Nongtynger",
           "Shrieh"
@@ -11538,7 +11906,10 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Marweiñ, Hahshah Ïawshwar, Hahshah Nongiriang, Hahshah Shrieh, Nongdiangngan, Nongtynger, Shrieh ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Marweiñ, Hahshah Ïawshwar, Hahshah Nongiriang, Hahshah Shrieh, Nongdiangngan, Nongtynger, Shrieh belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #42 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #42 (Page 10)",
+        "kpoh_clans": [
+          "Hahshah Shrieh"
+        ]
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -11562,7 +11933,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Shullai, Dhar, Mallai, Nonghulo ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Shullai, Dhar, Mallai, Nonghulo belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #58 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #58 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -11596,7 +11968,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         ],
         "summary_khasi": "Thangkhiew, Pariat, Shylla, Blah, Slong, bad Pde ki ïakam kur. Kumjuh Tangliang, Shylla, Sajem (Rabon), bad Ïatam.",
         "summary_english": "Thangkhiew, Pariat, Shylla, Blah, Slong, and Pde share clan kinship, alongside Tangliang, Sajem, and Ïatam.",
-        "citation": "Rev. I. Kharkongngor (2004), Entries #94, #95, #103, #105 (Pages 98, 99)"
+        "citation": "Rev. I. Kharkongngor (2004), Entries #94, #95, #103, #105 (Pages 98, 99)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -11640,7 +12013,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Pakynteiñ, Bhoi So-Kpoh, War So-Kpoh, Nikhla, Bleiñ, Katphoh, Lipon, Liwait, Niangphoh, Pasubon, Rangat, Singphoh, Shyrmang So-Kpoh, Paswet, Kma, Kynjing, Lakiang, Lanong, Lytan, Mutyen, Pyrdiang, Langdoh-Jwai, Siangbud, Syngkon ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Pakynteiñ, Bhoi So-Kpoh, War So-Kpoh, Nikhla, Bleiñ, Katphoh, Lipon, Liwait, Niangphoh, Pasubon, Rangat, Singphoh, Shyrmang So-Kpoh, Paswet, Kma, Kynjing, Lakiang, Lanong, Lytan, Mutyen, Pyrdiang, Langdoh-Jwai, Siangbud, Syngkon belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #52 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #52 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -11684,7 +12058,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Pakynteiñ, Bhoi So-Kpoh, War So-Kpoh, Nikhla, Bleiñ, Katphoh, Lipon, Liwait, Niangphoh, Pasubon, Rangat, Singphoh, Shyrmang So-Kpoh, Paswet, Kma, Kynjing, Lakiang, Lanong, Lytan, Mutyen, Pyrdiang, Langdoh-Jwai, Siangbud, Syngkon ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Pakynteiñ, Bhoi So-Kpoh, War So-Kpoh, Nikhla, Bleiñ, Katphoh, Lipon, Liwait, Niangphoh, Pasubon, Rangat, Singphoh, Shyrmang So-Kpoh, Paswet, Kma, Kynjing, Lakiang, Lanong, Lytan, Mutyen, Pyrdiang, Langdoh-Jwai, Siangbud, Syngkon belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #52 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #52 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -11728,7 +12103,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Pakynteiñ, Bhoi So-Kpoh, War So-Kpoh, Nikhla, Bleiñ, Katphoh, Lipon, Liwait, Niangphoh, Pasubon, Rangat, Singphoh, Shyrmang So-Kpoh, Paswet, Kma, Kynjing, Lakiang, Lanong, Lytan, Mutyen, Pyrdiang, Langdoh-Jwai, Siangbud, Syngkon ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Pakynteiñ, Bhoi So-Kpoh, War So-Kpoh, Nikhla, Bleiñ, Katphoh, Lipon, Liwait, Niangphoh, Pasubon, Rangat, Singphoh, Shyrmang So-Kpoh, Paswet, Kma, Kynjing, Lakiang, Lanong, Lytan, Mutyen, Pyrdiang, Langdoh-Jwai, Siangbud, Syngkon belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #52 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #52 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -11755,7 +12131,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Slong, Blah, Pariat, Pde, Shylla, Thangkhiew, Norlong ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Slong, Blah, Pariat, Pde, Shylla, Thangkhiew, Norlong belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #59 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #59 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -11780,7 +12157,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         ],
         "summary_khasi": "Ki Kharphuli (bad Sohkhlet/Sohtun) ki ïakam kur bad ki Myrthong namar u parad Myrthong u la pynrieh bad pyllait im ïa ki ha ka thma ha Lyngngam.",
         "summary_english": "Kharphuli (and Sohkhlet/Sohtun) maintain an ïakam kur covenant with Myrthong after a Myrthong elder hid and saved them during a conflict in Lyngngam.",
-        "citation": "Rev. I. Kharkongngor (2004), Entries #17, #96 (Pages 88, 98)"
+        "citation": "Rev. I. Kharkongngor (2004), Entries #17, #96 (Pages 88, 98)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -11805,7 +12183,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Mawri, Mawïong, Mawkhap, Nongbet, Sohlang ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Mawri, Mawïong, Mawkhap, Nongbet, Sohlang belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #46 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #46 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -11821,13 +12200,15 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "id": "link-64-syiem-nobosohphoh",
         "title": "Syiem Nobosohphoh (Sohphoh)",
         "shikur_clans": [
-          "Syiem Nobosohphoh",
           "Sohphoh"
         ],
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Syiem Nobosohphoh, Sohphoh ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Syiem Nobosohphoh, Sohphoh belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #64 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #64 (Page 11)",
+        "kpoh_clans": [
+          "Syiem Nobosohphoh"
+        ]
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -11849,7 +12230,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Synteng, Sohsngi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Synteng, Sohsngi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #70 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #70 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -11874,7 +12256,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         ],
         "summary_khasi": "Ki Kharphuli (bad Sohkhlet/Sohtun) ki ïakam kur bad ki Myrthong namar u parad Myrthong u la pynrieh bad pyllait im ïa ki ha ka thma ha Lyngngam.",
         "summary_english": "Kharphuli (and Sohkhlet/Sohtun) maintain an ïakam kur covenant with Myrthong after a Myrthong elder hid and saved them during a conflict in Lyngngam.",
-        "citation": "Rev. I. Kharkongngor (2004), Entries #17, #96 (Pages 88, 98)"
+        "citation": "Rev. I. Kharkongngor (2004), Entries #17, #96 (Pages 88, 98)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -11897,7 +12280,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Khyllait, Rani, Stepwar ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Khyllait, Rani, Stepwar belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #22 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #22 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -11919,7 +12303,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Lahong, Suchiang ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Lahong, Suchiang belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #27 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #27 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -11941,7 +12326,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Bamon, Suja ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Bamon, Suja belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #1 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #1 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -12009,7 +12395,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -12032,7 +12419,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Sun, Khlem, Lamare ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Sun, Khlem, Lamare belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #60 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #60 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -12056,7 +12444,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Khonglah, Mynsong, Ryntong, Surong ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Khonglah, Mynsong, Ryntong, Surong belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #19 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #19 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -12080,7 +12469,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Warbah, Lating, Suting, Warshong ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Warbah, Lating, Suting, Warshong belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #78 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #78 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -12096,7 +12486,6 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "id": "link-69-syiem-sutnga",
         "title": "Syiem Sutnga (Kurkalang, Muliar, Mynso Shangpung, Nongspung, Nongsteng, Pakem Pajuh, Pyrtuh Shangpung, Sutnga, Syiemïong Nongspung, Syiemlieh-Nongkhlaw, Syiemlieh Nongspung, Syiem Nongshai, Syiemsat, Syiem Umsaw Nongbri)",
         "shikur_clans": [
-          "Syiem Sutnga",
           "Kurkalang",
           "Muliar",
           "Mynso Shangpung",
@@ -12115,7 +12504,10 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Syiem Sutnga, Kurkalang, Muliar, Mynso Shangpung, Nongspung, Nongsteng, Pakem Pajuh, Pyrtuh Shangpung, Sutnga, Syiemïong Nongspung, Syiemlieh-Nongkhlaw, Syiemlieh Nongspung, Syiem Nongshai, Syiemsat, Syiem Umsaw Nongbri ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Syiem Sutnga, Kurkalang, Muliar, Mynso Shangpung, Nongspung, Nongsteng, Pakem Pajuh, Pyrtuh Shangpung, Sutnga, Syiemïong Nongspung, Syiemlieh-Nongkhlaw, Syiemlieh Nongspung, Syiem Nongshai, Syiemsat, Syiem Umsaw Nongbri belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #69 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #69 (Page 11)",
+        "kpoh_clans": [
+          "Syiem Sutnga"
+        ]
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -12137,7 +12529,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Pala, Sutong ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Pala, Sutong belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #53 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #53 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -12160,7 +12553,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Syiem Sohra, Swer, Suwer ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Syiem Sohra, Swer, Suwer belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #68 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #68 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -12183,7 +12577,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Syiem Sohra, Swer, Suwer ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Syiem Sohra, Swer, Suwer belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #68 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #68 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -12205,7 +12600,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Syiem Maring Nonglyngdoh, Maring ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Syiem Maring Nonglyngdoh, Maring belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #61 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #61 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -12229,7 +12625,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Syiem Shyllong, Syiem Mawpdang, Syiem Mylliem, Syiem Nongkrem ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Syiem Shyllong, Syiem Mawpdang, Syiem Mylliem, Syiem Nongkrem belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #67 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #67 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -12251,7 +12648,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Syiem Mawthoh, Syiem Narleiñ ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Syiem Mawthoh, Syiem Narleiñ belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #62 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #62 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -12275,7 +12673,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Syiem Shyllong, Syiem Mawpdang, Syiem Mylliem, Syiem Nongkrem ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Syiem Shyllong, Syiem Mawpdang, Syiem Mylliem, Syiem Nongkrem belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #67 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #67 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -12297,7 +12696,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Syiem Myriaw, Shangoi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Syiem Myriaw, Shangoi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #63 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #63 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -12319,7 +12719,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Syiem Mawthoh, Syiem Narleiñ ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Syiem Mawthoh, Syiem Narleiñ belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #62 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #62 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -12341,7 +12742,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Syiem Mawthoh, Syiem Narleiñ ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Syiem Mawthoh, Syiem Narleiñ belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #62 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #62 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -12363,7 +12765,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Syiem Nobosohphoh, Sohphoh ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Syiem Nobosohphoh, Sohphoh belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #64 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #64 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -12385,7 +12788,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Syiem Nongbri, Syiem Nongtluh ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Syiem Nongbri, Syiem Nongtluh belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #65 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #65 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -12409,7 +12813,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Syiem Shyllong, Syiem Mawpdang, Syiem Mylliem, Syiem Nongkrem ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Syiem Shyllong, Syiem Mawpdang, Syiem Mylliem, Syiem Nongkrem belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #67 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #67 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -12444,7 +12849,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Syiem Sutnga, Kurkalang, Muliar, Mynso Shangpung, Nongspung, Nongsteng, Pakem Pajuh, Pyrtuh Shangpung, Sutnga, Syiemïong Nongspung, Syiemlieh-Nongkhlaw, Syiemlieh Nongspung, Syiem Nongshai, Syiemsat, Syiem Umsaw Nongbri ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Syiem Sutnga, Kurkalang, Muliar, Mynso Shangpung, Nongspung, Nongsteng, Pakem Pajuh, Pyrtuh Shangpung, Sutnga, Syiemïong Nongspung, Syiemlieh-Nongkhlaw, Syiemlieh Nongspung, Syiem Nongshai, Syiemsat, Syiem Umsaw Nongbri belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #69 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #69 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -12467,7 +12873,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Syiem Nongstoiñ, Nongstiñ, Rynñiaw ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Syiem Nongstoiñ, Nongstiñ, Rynñiaw belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #66 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #66 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -12490,7 +12897,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Syiem Nongstoiñ, Nongstiñ, Rynñiaw ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Syiem Nongstoiñ, Nongstiñ, Rynñiaw belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #66 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #66 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -12512,7 +12920,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Syiem Nongbri, Syiem Nongtluh ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Syiem Nongbri, Syiem Nongtluh belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #65 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #65 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -12536,7 +12945,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Syiem Shyllong, Syiem Mawpdang, Syiem Mylliem, Syiem Nongkrem ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Syiem Shyllong, Syiem Mawpdang, Syiem Mylliem, Syiem Nongkrem belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #67 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #67 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -12559,7 +12969,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Syiem Sohra, Swer, Suwer ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Syiem Sohra, Swer, Suwer belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #68 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #68 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -12594,7 +13005,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Syiem Sutnga, Kurkalang, Muliar, Mynso Shangpung, Nongspung, Nongsteng, Pakem Pajuh, Pyrtuh Shangpung, Sutnga, Syiemïong Nongspung, Syiemlieh-Nongkhlaw, Syiemlieh Nongspung, Syiem Nongshai, Syiemsat, Syiem Umsaw Nongbri ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Syiem Sutnga, Kurkalang, Muliar, Mynso Shangpung, Nongspung, Nongsteng, Pakem Pajuh, Pyrtuh Shangpung, Sutnga, Syiemïong Nongspung, Syiemlieh-Nongkhlaw, Syiemlieh Nongspung, Syiem Nongshai, Syiemsat, Syiem Umsaw Nongbri belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #69 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #69 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -12629,7 +13041,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Syiem Sutnga, Kurkalang, Muliar, Mynso Shangpung, Nongspung, Nongsteng, Pakem Pajuh, Pyrtuh Shangpung, Sutnga, Syiemïong Nongspung, Syiemlieh-Nongkhlaw, Syiemlieh Nongspung, Syiem Nongshai, Syiemsat, Syiem Umsaw Nongbri ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Syiem Sutnga, Kurkalang, Muliar, Mynso Shangpung, Nongspung, Nongsteng, Pakem Pajuh, Pyrtuh Shangpung, Sutnga, Syiemïong Nongspung, Syiemlieh-Nongkhlaw, Syiemlieh Nongspung, Syiem Nongshai, Syiemsat, Syiem Umsaw Nongbri belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #69 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #69 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -12664,7 +13077,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Syiem Sutnga, Kurkalang, Muliar, Mynso Shangpung, Nongspung, Nongsteng, Pakem Pajuh, Pyrtuh Shangpung, Sutnga, Syiemïong Nongspung, Syiemlieh-Nongkhlaw, Syiemlieh Nongspung, Syiem Nongshai, Syiemsat, Syiem Umsaw Nongbri ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Syiem Sutnga, Kurkalang, Muliar, Mynso Shangpung, Nongspung, Nongsteng, Pakem Pajuh, Pyrtuh Shangpung, Sutnga, Syiemïong Nongspung, Syiemlieh-Nongkhlaw, Syiemlieh Nongspung, Syiem Nongshai, Syiemsat, Syiem Umsaw Nongbri belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #69 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #69 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -12682,8 +13096,6 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "shikur_clans": [
           "Syiem Sutnga",
           "Syiemlieh",
-          "Syiemlieh Nongkhlaw",
-          "Syiemlieh Nongspung",
           "Syiem Kaitkuna",
           "Syiemïong Nongspung",
           "Syiem Nongshai",
@@ -12701,7 +13113,11 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Mih na ki 5 ngut ki khun kynthei Ka Li Dohkha (Ka Nga, Ka Teiñ, Ka Lieh, Ka Pung, Ka Lang).",
         "summary_english": "Descends from the five daughters of Ka Li Dohkha across Sutnga, Shangpung, Nongkhlaw, and Nongspung.",
-        "citation": "Rev. I. Kharkongngor (2004), Entries #102, #104 (Pages 8, 99)"
+        "citation": "Rev. I. Kharkongngor (2004), Entries #102, #104 (Pages 8, 99)",
+        "kpoh_clans": [
+          "Syiemlieh Nongkhlaw",
+          "Syiemlieh Nongspung"
+        ]
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -12736,7 +13152,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Syiem Sutnga, Kurkalang, Muliar, Mynso Shangpung, Nongspung, Nongsteng, Pakem Pajuh, Pyrtuh Shangpung, Sutnga, Syiemïong Nongspung, Syiemlieh-Nongkhlaw, Syiemlieh Nongspung, Syiem Nongshai, Syiemsat, Syiem Umsaw Nongbri ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Syiem Sutnga, Kurkalang, Muliar, Mynso Shangpung, Nongspung, Nongsteng, Pakem Pajuh, Pyrtuh Shangpung, Sutnga, Syiemïong Nongspung, Syiemlieh-Nongkhlaw, Syiemlieh Nongspung, Syiem Nongshai, Syiemsat, Syiem Umsaw Nongbri belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #69 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #69 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -12771,7 +13188,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Syiem Sutnga, Kurkalang, Muliar, Mynso Shangpung, Nongspung, Nongsteng, Pakem Pajuh, Pyrtuh Shangpung, Sutnga, Syiemïong Nongspung, Syiemlieh-Nongkhlaw, Syiemlieh Nongspung, Syiem Nongshai, Syiemsat, Syiem Umsaw Nongbri ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Syiem Sutnga, Kurkalang, Muliar, Mynso Shangpung, Nongspung, Nongsteng, Pakem Pajuh, Pyrtuh Shangpung, Sutnga, Syiemïong Nongspung, Syiemlieh-Nongkhlaw, Syiemlieh Nongspung, Syiem Nongshai, Syiemsat, Syiem Umsaw Nongbri belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #69 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #69 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -12806,7 +13224,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Syiem Sutnga, Kurkalang, Muliar, Mynso Shangpung, Nongspung, Nongsteng, Pakem Pajuh, Pyrtuh Shangpung, Sutnga, Syiemïong Nongspung, Syiemlieh-Nongkhlaw, Syiemlieh Nongspung, Syiem Nongshai, Syiemsat, Syiem Umsaw Nongbri ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Syiem Sutnga, Kurkalang, Muliar, Mynso Shangpung, Nongspung, Nongsteng, Pakem Pajuh, Pyrtuh Shangpung, Sutnga, Syiemïong Nongspung, Syiemlieh-Nongkhlaw, Syiemlieh Nongspung, Syiem Nongshai, Syiemsat, Syiem Umsaw Nongbri belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #69 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #69 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -12841,7 +13260,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Syiem Sutnga, Kurkalang, Muliar, Mynso Shangpung, Nongspung, Nongsteng, Pakem Pajuh, Pyrtuh Shangpung, Sutnga, Syiemïong Nongspung, Syiemlieh-Nongkhlaw, Syiemlieh Nongspung, Syiem Nongshai, Syiemsat, Syiem Umsaw Nongbri ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Syiem Sutnga, Kurkalang, Muliar, Mynso Shangpung, Nongspung, Nongsteng, Pakem Pajuh, Pyrtuh Shangpung, Sutnga, Syiemïong Nongspung, Syiemlieh-Nongkhlaw, Syiemlieh Nongspung, Syiem Nongshai, Syiemsat, Syiem Umsaw Nongbri belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #69 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #69 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -12876,7 +13296,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Wahlang Pahsyntiew, Alia, Laitphlang, Lyngdoh Lyngïong, Malang, Mawïong, Mawshai, Byrsat, Mawsor, Rangslang, Ryntathiang, Symbai, Tyrsa, Wahlang-Ryntathiang, Wallang ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Wahlang Pahsyntiew, Alia, Laitphlang, Lyngdoh Lyngïong, Malang, Mawïong, Mawshai, Byrsat, Mawsor, Rangslang, Ryntathiang, Symbai, Tyrsa, Wahlang-Ryntathiang, Wallang belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #77 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #77 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -12920,7 +13341,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Pakynteiñ, Bhoi So-Kpoh, War So-Kpoh, Nikhla, Bleiñ, Katphoh, Lipon, Liwait, Niangphoh, Pasubon, Rangat, Singphoh, Shyrmang So-Kpoh, Paswet, Kma, Kynjing, Lakiang, Lanong, Lytan, Mutyen, Pyrdiang, Langdoh-Jwai, Siangbud, Syngkon ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Pakynteiñ, Bhoi So-Kpoh, War So-Kpoh, Nikhla, Bleiñ, Katphoh, Lipon, Liwait, Niangphoh, Pasubon, Rangat, Singphoh, Shyrmang So-Kpoh, Paswet, Kma, Kynjing, Lakiang, Lanong, Lytan, Mutyen, Pyrdiang, Langdoh-Jwai, Siangbud, Syngkon belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #52 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #52 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -12944,7 +13366,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Khongsit, Syngkrem, Tongper, Tynsong ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Khongsit, Syngkrem, Tongper, Tynsong belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #20 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #20 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -13012,7 +13435,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -13034,7 +13458,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Synteng, Sohsngi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Synteng, Sohsngi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #70 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #70 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -13056,7 +13481,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Tangdhara, Tangsai ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Tangdhara, Tangsai belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #71 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #71 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -13078,7 +13504,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Tangdhara, Tangsai ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Tangdhara, Tangsai belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #71 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #71 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -13109,20 +13536,14 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         ],
         "summary_khasi": "Mih na ka Phñiaw ha Rymbai/Tongseng bad pur sha Shella, Sohra, bad Sepngi. Ki Nongneng/Nengnong bad Nongrum/Rumnong ki ïalong shikur bad ki Ïawphñiaw.",
         "summary_english": "Originates from Ka Phñiaw. Nongrum, Rumnong, Nongneng, Nengnong, and Nongrem share the same bloodline with Ïawphñiaw.",
-        "citation": "Rev. I. Kharkongngor (2004), Entries #43, #78 (Pages 90–91, 97)"
+        "citation": "Rev. I. Kharkongngor (2004), Entries #43, #78 (Pages 90–91, 97)",
+        "kpoh_clans": []
       },
       {
         "id": "tariang-cluster",
         "title": "Tariang / Nongtariang / Umdor / Nongrum",
         "shikur_clans": [
           "Tariang",
-          "Nongtariang",
-          "Tariang Lamarai",
-          "Tariang Lukoi",
-          "Tariang Mukhlen",
-          "Tariang Sohmatan",
-          "Tariang Pyrtuh",
-          "Tariang Bataw",
           "Umdor",
           "Binan",
           "Jait Binan"
@@ -13139,7 +13560,16 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         ],
         "summary_khasi": "Ka kur Tariang ka don 5 kpoh bad ki ïalong shikur bad ki Nongrum (ha Ri Khasi) bad Umdor (Jait Binan).",
         "summary_english": "Tariang has 5 internal kpoh and is shikur with Nongrum and Umdor (Jait Binan), with lineage-specific prohibitions in Jowai.",
-        "citation": "E.R. Tariang & Rev. I. Kharkongngor (2004), Entries #104, #114 (Pages 99, 102)"
+        "citation": "E.R. Tariang & Rev. I. Kharkongngor (2004), Entries #104, #114 (Pages 99, 102)",
+        "kpoh_clans": [
+          "Nongtariang",
+          "Tariang Lamarai",
+          "Tariang Lukoi",
+          "Tariang Mukhlen",
+          "Tariang Sohmatan",
+          "Tariang Pyrtuh",
+          "Tariang Bataw"
+        ]
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -13163,7 +13593,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Thaïang, Nongtariang, Tariang, Teron ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Thaïang, Nongtariang, Tariang, Teron belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #73 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #73 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -13188,7 +13619,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Thabah, Kyrsian, Lyngdoh Sohïong, Khongmawloh, Khongni-ur ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Thabah, Kyrsian, Lyngdoh Sohïong, Khongmawloh, Khongni-ur belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #72 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #72 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -13212,7 +13644,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Thaïang, Nongtariang, Tariang, Teron ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Thaïang, Nongtariang, Tariang, Teron belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #73 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #73 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -13239,7 +13672,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Slong, Blah, Pariat, Pde, Shylla, Thangkhiew, Norlong ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Slong, Blah, Pariat, Pde, Shylla, Thangkhiew, Norlong belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #59 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #59 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -13263,7 +13697,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Sawkmie, Lyngdoh Lyngkhoi, Lyngdoh Nonglait, Thangmyrsiang ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Sawkmie, Lyngdoh Lyngkhoi, Lyngdoh Nonglait, Thangmyrsiang belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #55 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #55 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -13285,7 +13720,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Lyngdoh Nongkseh Sohïong, Thawbri ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Lyngdoh Nongkseh Sohïong, Thawbri belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #36 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #36 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -13314,7 +13750,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Lyngdoh Mawphlang, Khongsti, Khongstia, Khongnoh, Khongsngi, Lyngdoh Mawlieh, Lyngdoh Nongpyiur, Thawmuit, Rapsang Nongpyiur ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Lyngdoh Mawphlang, Khongsti, Khongstia, Khongnoh, Khongsngi, Lyngdoh Mawlieh, Lyngdoh Nongpyiur, Thawmuit, Rapsang Nongpyiur belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #32 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #32 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -13338,7 +13775,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Thaïang, Nongtariang, Tariang, Teron ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Thaïang, Nongtariang, Tariang, Teron belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #73 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #73 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -13360,7 +13798,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Thongni Nongdiang, Nongdiang ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Thongni Nongdiang, Nongdiang belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #74 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #74 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -13382,7 +13821,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Thongnirit, Thongniïong ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Thongnirit, Thongniïong belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #75 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #75 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -13404,7 +13844,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Thongnirit, Thongniïong ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Thongnirit, Thongniïong belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #75 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #75 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -13426,7 +13867,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Thongnirit, Thongniïong ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Thongnirit, Thongniïong belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #75 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #75 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -13450,7 +13892,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Khyllep, Tiewmon, Tiewsoh, Tiewla ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Khyllep, Tiewmon, Tiewsoh, Tiewla belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #23 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #23 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -13474,7 +13917,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Khyllep, Tiewmon, Tiewsoh, Tiewla ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Khyllep, Tiewmon, Tiewsoh, Tiewla belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #23 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #23 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -13498,7 +13942,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Khyllep, Tiewmon, Tiewsoh, Tiewla ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Khyllep, Tiewmon, Tiewsoh, Tiewla belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #23 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #23 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -13521,7 +13966,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Kharlukhi, Kharsnabi, Tiewtabi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Kharlukhi, Kharsnabi, Tiewtabi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #10 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #10 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -13545,7 +13991,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Kyndiah, Najiar, Rymbai, Toi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Kyndiah, Najiar, Rymbai, Toi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #24 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #24 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -13569,7 +14016,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Khongsit, Syngkrem, Tongper, Tynsong ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Khongsit, Syngkrem, Tongper, Tynsong belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #20 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #20 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -13637,7 +14085,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -13659,7 +14108,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Tymthai, Lyngskor Tymmeniang ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Tymthai, Lyngskor Tymmeniang belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #76 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #76 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -13683,7 +14133,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Khongsit, Syngkrem, Tongper, Tynsong ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Khongsit, Syngkrem, Tongper, Tynsong belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #20 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #20 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -13718,7 +14169,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Wahlang Pahsyntiew, Alia, Laitphlang, Lyngdoh Lyngïong, Malang, Mawïong, Mawshai, Byrsat, Mawsor, Rangslang, Ryntathiang, Symbai, Tyrsa, Wahlang-Ryntathiang, Wallang ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Wahlang Pahsyntiew, Alia, Laitphlang, Lyngdoh Lyngïong, Malang, Mawïong, Mawshai, Byrsat, Mawsor, Rangslang, Ryntathiang, Symbai, Tyrsa, Wahlang-Ryntathiang, Wallang belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #77 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #77 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -13753,7 +14205,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Wahlang Pahsyntiew, Alia, Laitphlang, Lyngdoh Lyngïong, Malang, Mawïong, Mawshai, Byrsat, Mawsor, Rangslang, Ryntathiang, Symbai, Tyrsa, Wahlang-Ryntathiang, Wallang ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Wahlang Pahsyntiew, Alia, Laitphlang, Lyngdoh Lyngïong, Malang, Mawïong, Mawshai, Byrsat, Mawsor, Rangslang, Ryntathiang, Symbai, Tyrsa, Wahlang-Ryntathiang, Wallang belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #77 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #77 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -13788,7 +14241,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Wahlang Pahsyntiew, Alia, Laitphlang, Lyngdoh Lyngïong, Malang, Mawïong, Mawshai, Byrsat, Mawsor, Rangslang, Ryntathiang, Symbai, Tyrsa, Wahlang-Ryntathiang, Wallang ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Wahlang Pahsyntiew, Alia, Laitphlang, Lyngdoh Lyngïong, Malang, Mawïong, Mawshai, Byrsat, Mawsor, Rangslang, Ryntathiang, Symbai, Tyrsa, Wahlang-Ryntathiang, Wallang belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #77 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #77 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -13823,7 +14277,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Wahlang Pahsyntiew, Alia, Laitphlang, Lyngdoh Lyngïong, Malang, Mawïong, Mawshai, Byrsat, Mawsor, Rangslang, Ryntathiang, Symbai, Tyrsa, Wahlang-Ryntathiang, Wallang ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Wahlang Pahsyntiew, Alia, Laitphlang, Lyngdoh Lyngïong, Malang, Mawïong, Mawshai, Byrsat, Mawsor, Rangslang, Ryntathiang, Symbai, Tyrsa, Wahlang-Ryntathiang, Wallang belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #77 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #77 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -13845,7 +14300,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Kharphur, Wankhar ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Kharphur, Wankhar belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #12 (Page 8)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #12 (Page 8)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -13867,7 +14323,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Shongwan, Wanphai ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Shongwan, Wanphai belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #57 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #57 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -13935,7 +14392,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -13958,7 +14416,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur War Nongjri, Warjri, War Nongbri ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans War Nongjri, Warjri, War Nongbri belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #80 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #80 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -13981,7 +14440,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur War Nongjri, Warjri, War Nongbri ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans War Nongjri, Warjri, War Nongbri belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #80 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #80 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -14008,7 +14468,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Warlarpih, Langstieh, Nongkhlawmulong, Nongkhlawrngi, Khongbri, War Sadew, Warkhnang ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Warlarpih, Langstieh, Nongkhlawmulong, Nongkhlawrngi, Khongbri, War Sadew, Warkhnang belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #79 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #79 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -14030,7 +14491,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur War Wahksing, War Shabong ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans War Wahksing, War Shabong belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #81 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #81 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -14074,7 +14536,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Pakynteiñ, Bhoi So-Kpoh, War So-Kpoh, Nikhla, Bleiñ, Katphoh, Lipon, Liwait, Niangphoh, Pasubon, Rangat, Singphoh, Shyrmang So-Kpoh, Paswet, Kma, Kynjing, Lakiang, Lanong, Lytan, Mutyen, Pyrdiang, Langdoh-Jwai, Siangbud, Syngkon ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Pakynteiñ, Bhoi So-Kpoh, War So-Kpoh, Nikhla, Bleiñ, Katphoh, Lipon, Liwait, Niangphoh, Pasubon, Rangat, Singphoh, Shyrmang So-Kpoh, Paswet, Kma, Kynjing, Lakiang, Lanong, Lytan, Mutyen, Pyrdiang, Langdoh-Jwai, Siangbud, Syngkon belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #52 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #52 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -14096,7 +14559,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur War Wahksing, War Shabong ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans War Wahksing, War Shabong belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #81 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #81 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -14164,7 +14628,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -14232,7 +14697,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -14256,7 +14722,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Warbah, Lating, Suting, Warshong ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Warbah, Lating, Suting, Warshong belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #78 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #78 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -14279,7 +14746,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur War Nongjri, Warjri, War Nongbri ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans War Nongjri, Warjri, War Nongbri belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #80 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #80 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -14306,7 +14774,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Warlarpih, Langstieh, Nongkhlawmulong, Nongkhlawrngi, Khongbri, War Sadew, Warkhnang ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Warlarpih, Langstieh, Nongkhlawmulong, Nongkhlawrngi, Khongbri, War Sadew, Warkhnang belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #79 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #79 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -14333,7 +14802,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Warlarpih, Langstieh, Nongkhlawmulong, Nongkhlawrngi, Khongbri, War Sadew, Warkhnang ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Warlarpih, Langstieh, Nongkhlawmulong, Nongkhlawrngi, Khongbri, War Sadew, Warkhnang belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #79 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #79 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -14357,7 +14827,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Warbah, Lating, Suting, Warshong ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Warbah, Lating, Suting, Warshong belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #78 (Page 11)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #78 (Page 11)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -14419,13 +14890,15 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
           "Suji",
           "Syngngai",
           "Tui",
-          "Wanpiat",
-          "War-Ïaw-shi-bdi"
+          "Wanpiat"
         ],
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)",
+        "kpoh_clans": [
+          "War-Ïaw-shi-bdi"
+        ]
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -14456,7 +14929,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         ],
         "summary_khasi": "Mih na ka Phñiaw ha Rymbai/Tongseng bad pur sha Shella, Sohra, bad Sepngi. Ki Nongneng/Nengnong bad Nongrum/Rumnong ki ïalong shikur bad ki Ïawphñiaw.",
         "summary_english": "Originates from Ka Phñiaw. Nongrum, Rumnong, Nongneng, Nengnong, and Nongrem share the same bloodline with Ïawphñiaw.",
-        "citation": "Rev. I. Kharkongngor (2004), Entries #43, #78 (Pages 90–91, 97)"
+        "citation": "Rev. I. Kharkongngor (2004), Entries #43, #78 (Pages 90–91, 97)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -14524,7 +14998,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Laloo, Ïaw-shi-bdi, Amkoi, Amdep, Kadep, Kadew, Kadiang, Kaiang, Kanai, Kasah, Kashngaiñ, Katkeh, Khongsdoh, Diengdohbah, Diengdohkylla, Doom, Hek, Ïongkjam, Jui, Laithma, Lamin, Larom, Lyngdoh Lamin, Marngor, Marngar, Marong, Mesui, Nartiang, Nui, Parïong, Phup, Piat, Pohkhloo, Pohduna, Pohlynjar, Pohriej, Pohrmen, Pohshen, Pohsnem, Pohtam, Put, Pyrbot, Rymbui, Suji, Syngngai, Tui, Wanpiat, War-Ïaw-shi-bdi belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #28 (Page 9)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
@@ -14546,7 +15021,8 @@ export const COMMON_SURNAMES_DATA: Record<string, TipkurResponse> = {
         "teh_kur_clans": [],
         "summary_khasi": "Ki kur Ñiewphantang, Hehkhlieh ki ïalong shi-kur (kawei ka jait/kpoh) katkum ka kot 'Ki Khun Ki Ksiew U Hynñiew Trep' bad kim bit ban ïashongkha (Sang).",
         "summary_english": "The clans Ñiewphantang, Hehkhlieh belong to the same ancestral clan lineage (shikur) according to 'Ki Khun Ki Ksiew U Hynñiew Trep', and intermarriage between them is strictly prohibited (Sang).",
-        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #48 (Page 10)"
+        "citation": "Ki Khun Ki Ksiew U Hynñiew Trep (Spiton Kharakor, 1981), Link #48 (Page 10)",
+        "kpoh_clans": []
       }
     ],
     "disclaimer": "Final authority on Ka Sang rests with your Longkñii and registered Seng Kur."
