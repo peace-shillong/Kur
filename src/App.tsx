@@ -6,11 +6,12 @@ import { FeatureLockedModal } from './components/modals/FeatureLockedModal';
 import { BisharSangHub } from './components/checker/BisharSangHub';
 import { SettingsPage } from './components/settings/SettingsPage';
 import { KurJaitPage } from './components/kur-jait/KurJaitPage';
+import { ShongkhaShongmanPage } from './components/shongkha/ShongkhaShongmanPage';
 import { ClanListPage } from './components/clans/ClanListPage';
 import { useClan } from './context/ClanContext';
 import { useLanguage } from './context/LanguageContext';
 import { useTheme } from './context/ThemeContext';
-import { HeartHandshake, ArrowLeft, Languages, Settings, BookOpen, ListFilter } from 'lucide-react';
+import { HeartHandshake, ArrowLeft, Languages, Settings, BookOpen, ListFilter, Heart } from 'lucide-react';
 
 // Environment variable guard: only enabled if VITE_ENABLE_DEV_API='true' or during local development
 const isDevApiEnabled = Boolean(
@@ -29,6 +30,11 @@ export const App: React.FC = () => {
   const [showChecker, setShowChecker] = useState<boolean>(false);
   const [showSettings, setShowSettings] = useState<boolean>(false);
   const [showKurJait, setShowKurJait] = useState<boolean>(false);
+  const [showShongkha, setShowShongkha] = useState<boolean>(() => {
+    if (typeof window === 'undefined') return false;
+    const hash = window.location.hash.toLowerCase();
+    return hash === '#shongkha' || hash === '#/shongkha';
+  });
   const [showClanList, setShowClanList] = useState<boolean>(() => {
     if (typeof window === 'undefined') return false;
     const hash = window.location.hash.toLowerCase();
@@ -68,6 +74,8 @@ export const App: React.FC = () => {
         setShowSettings(false);
       } else if (showKurJait) {
         setShowKurJait(false);
+      } else if (showShongkha) {
+        setShowShongkha(false);
       } else if (showChecker) {
         setShowChecker(false);
       } else if (isGraphOpen) {
@@ -81,12 +89,28 @@ export const App: React.FC = () => {
         setShowClanList(true);
         setShowSettings(false);
         setShowKurJait(false);
+        setShowShongkha(false);
+        setShowChecker(false);
+        setShowDevPage(false);
+      } else if (hash === '#shongkha' || hash === '#/shongkha') {
+        setShowShongkha(true);
+        setShowClanList(false);
+        setShowSettings(false);
+        setShowKurJait(false);
+        setShowChecker(false);
+        setShowDevPage(false);
+      } else if (hash === '#kur-jait' || hash === '#/kur-jait') {
+        setShowKurJait(true);
+        setShowClanList(false);
+        setShowSettings(false);
+        setShowShongkha(false);
         setShowChecker(false);
         setShowDevPage(false);
       } else if (isDevApiEnabled && (hash === '#dev' || hash === '#/dev' || hash === '#api' || hash === '#/api')) {
         setShowDevPage(true);
         setShowSettings(false);
         setShowKurJait(false);
+        setShowShongkha(false);
         setShowChecker(false);
         setShowClanList(false);
       }
@@ -98,12 +122,13 @@ export const App: React.FC = () => {
       window.removeEventListener('popstate', handlePopState);
       window.removeEventListener('hashchange', handleHashChange);
     };
-  }, [showChecker, showSettings, showKurJait, showClanList, showDevPage, isGraphOpen, setIsGraphOpen]);
+  }, [showChecker, showSettings, showKurJait, showShongkha, showClanList, showDevPage, isGraphOpen, setIsGraphOpen]);
 
   const openClanList = () => {
     setShowClanList(true);
     setShowSettings(false);
     setShowKurJait(false);
+    setShowShongkha(false);
     setShowChecker(false);
     setShowDevPage(false);
     if (typeof window !== 'undefined') {
@@ -135,6 +160,7 @@ export const App: React.FC = () => {
     setShowSettings(false);
     setShowChecker(false);
     setShowKurJait(false);
+    setShowShongkha(false);
     setShowClanList(false);
     window.history.pushState({ page: 'dev' }, '', '#dev');
   };
@@ -162,6 +188,7 @@ export const App: React.FC = () => {
     setShowChecker(true);
     setShowSettings(false);
     setShowKurJait(false);
+    setShowShongkha(false);
     setShowClanList(false);
     setShowDevPage(false);
     window.history.pushState({ page: 'checker' }, '');
@@ -176,6 +203,7 @@ export const App: React.FC = () => {
     setShowSettings(true);
     setShowChecker(false);
     setShowKurJait(false);
+    setShowShongkha(false);
     setShowClanList(false);
     setShowDevPage(false);
     window.history.pushState({ page: 'settings' }, '');
@@ -188,20 +216,48 @@ export const App: React.FC = () => {
 
   const openKurJait = () => {
     setShowKurJait(true);
+    setShowShongkha(false);
     setShowSettings(false);
     setShowChecker(false);
     setShowClanList(false);
     setShowDevPage(false);
-    window.history.pushState({ page: 'kur-jait' }, '');
+    if (typeof window !== 'undefined') {
+      window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    }
+    window.history.pushState({ page: 'kur-jait' }, '', '#kur-jait');
   };
 
   const closeKurJait = () => {
     dismissMobileKeyboard();
     setShowKurJait(false);
+    if (window.location.hash === '#kur-jait' || window.location.hash === '#/kur-jait') {
+      window.history.replaceState(null, '', window.location.pathname + window.location.search);
+    }
+  };
+
+  const openShongkha = () => {
+    setShowShongkha(true);
+    setShowKurJait(false);
+    setShowSettings(false);
+    setShowChecker(false);
+    setShowClanList(false);
+    setShowDevPage(false);
+    if (typeof window !== 'undefined') {
+      window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    }
+    window.history.pushState({ page: 'shongkha' }, '', '#shongkha');
+  };
+
+  const closeShongkha = () => {
+    dismissMobileKeyboard();
+    setShowShongkha(false);
+    if (window.location.hash === '#shongkha' || window.location.hash === '#/shongkha') {
+      window.history.replaceState(null, '', window.location.pathname + window.location.search);
+    }
   };
 
   return (
-    <div className={`min-h-screen flex flex-col justify-between selection:bg-emerald-600 selection:text-white transition-colors ${!showSettings && !showKurJait && !showChecker && !showClanList && !(isDevApiEnabled && showDevPage) ? 'dark:bg-black' : ''}`}>
+    <div className={`min-h-screen flex flex-col justify-between selection:bg-emerald-600 selection:text-white transition-colors ${!showSettings && !showKurJait && !showShongkha && !showChecker && !showClanList && !(isDevApiEnabled && showDevPage) ? 'dark:bg-black' : ''}`}>
       {/* Accessibility Skip Link (WCAG 2.1 AA / GIGW standard for India) */}
       <a
         href="#main-content"
@@ -235,7 +291,10 @@ export const App: React.FC = () => {
           />
         ) : showKurJait ? (
           /* Ka Kur Ka Jait Cultural Heritage Page */
-          <KurJaitPage onBack={closeKurJait} onOpenChecker={openChecker} />
+          <KurJaitPage onBack={closeKurJait} onOpenChecker={openChecker} onOpenShongkha={openShongkha} />
+        ) : showShongkha ? (
+          /* Ka Shongkha Shongman Dedicated Page */
+          <ShongkhaShongmanPage onBack={closeShongkha} onOpenChecker={openChecker} onOpenKurJait={openKurJait} />
         ) : showChecker ? (
           /* Sang Compatibility Checker View */
           <div className="flex-1 max-w-4xl mx-auto px-4 py-8 sm:py-12 w-full space-y-6">
@@ -272,8 +331,8 @@ export const App: React.FC = () => {
         onClose={() => setShowLockedModal(false)}
       />
 
-      {/* Clean Minimalist Footer (Hidden when Settings, Kur Jait, ClanList, Dev, or Graph is open) */}
-      {!showSettings && !showKurJait && !showClanList && !(isDevApiEnabled && showDevPage) && (
+      {/* Clean Minimalist Footer (Hidden when Settings, Kur Jait, Shongkha, ClanList, Dev, or Graph is open) */}
+      {!showSettings && !showKurJait && !showShongkha && !showClanList && !(isDevApiEnabled && showDevPage) && (
         <footer className={`w-full border-t py-6 px-4 text-xs text-center space-y-3 transition-colors ${homeBg !== 'none'
           ? 'bg-white/85 dark:bg-black/85 backdrop-blur-md border-slate-200/70 dark:border-neutral-900 text-slate-700 dark:text-slate-300 shadow-xs'
           : 'bg-slate-50/50 dark:bg-black/60 border-slate-100 dark:border-neutral-900 text-slate-500 dark:text-slate-400'
@@ -311,6 +370,17 @@ export const App: React.FC = () => {
             >
               <BookOpen className="w-3.5 h-3.5 text-emerald-600" />
               <span>Ka Kur Ka Jait</span>
+            </button>
+
+            {/* Ka Shongkha Shongman Link (Marriage Sanctity & Kinship Degrees) */}
+            <button
+              type="button"
+              onClick={openShongkha}
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 font-medium text-xs transition cursor-pointer"
+              title="Ka Shongkha Shongman • Sanctity of Marriage & Strict Exogamy"
+            >
+              <Heart className="w-3.5 h-3.5 text-rose-500 fill-rose-500/20" />
+              <span>Ka Shongkha Shongman</span>
             </button>
 
             {/* Clan Lists / Directory Button */}
