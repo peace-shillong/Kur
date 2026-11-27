@@ -505,7 +505,7 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({ onBack, onOpenDev, o
             <ul className="text-xs text-slate-600 space-y-1.5 list-disc list-inside">
               <li className="text-emerald-800 underline"><a href="https://archive.org/details/in.ernet.dli.2015.464609/mode/2up" target="_blank"><span>Rev. I. Kharkongngor (2004), Ka Jymbriew Bad Ka Thymmei Longkur Longjait U Khasi</span></a></li>
               <li className="text-emerald-800 underline"><a href="https://archive.org/details/in.ernet.dli.2015.464891/mode/2up" target="_blank">Paper (1983), <em>Ka Kolshor U Khasi</em></a></li>
-              <li className='text-emerald-800 underline'><a href="https://ia601406.us.archive.org/22/items/in.ernet.dli.2015.464918/2015.464918.Ki-Khun-Ki-Ksiew-U-Hynniew-Trep_text.pdf" target="_blank"> Spiton Kharakor (1931), Ki Khun Ki Ksiew U Hynñiew Trep<em></em></a></li>
+              <li className='text-emerald-800 underline'><a href="https://ia601406.us.archive.org/22/items/in.ernet.dli.2015.464918/2015.464918.Ki-Khun-Ki-Ksiew-U-Hynniew-Trep_text.pdf" target="_blank"> Spiton Kharakor (1981), Ki Khun Ki Ksiew U Hynñiew Trep<em></em></a></li>
               <li className='text-emerald-800 underline'><a href="https://archive.org/stream/in.ernet.dli.2015.462529/2015.462529.The-History_djvu.txt" target="_blank">Hamlet Bareh (1964), <em>The History and Culture of the Khasi People</em></a></li>
               <li className='text-emerald-800 '>Dr. Homiwell Lyngdoh (1937), Ka Niam Khasi</li>
               <li className='text-emerald-800 underline'><a href="https://archive.org/details/dli.ministry.26143">P.R.T. Gurdon (1914), The Khasis</a></li>

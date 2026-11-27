@@ -1,4 +1,4 @@
-# Spiton Kharakor (1931), Ki Khun Ki Ksiew U Hynñiew Trep
+# Spiton Kharakor (1981), Ki Khun Ki Ksiew U Hynñiew Trep
 
 ## LYNNONG-II  
 Page 6 - 7

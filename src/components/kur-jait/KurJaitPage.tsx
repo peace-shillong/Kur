@@ -43,7 +43,7 @@ export const KurJaitPage: React.FC<KurJaitPageProps> = ({ onBack, onOpenChecker 
             Ka Kur Ka Jait
           </h1>
           <p className="text-xs text-slate-500 dark:text-slate-400">
-            Ki Khun Ki Ksiew U Hynñiew Trep • Spiton Kharakor (1931)
+            Ki Khun Ki Ksiew U Hynñiew Trep • Spiton Kharakor (1981)
           </p>
         </div>
       </div>
@@ -55,7 +55,7 @@ export const KurJaitPage: React.FC<KurJaitPageProps> = ({ onBack, onOpenChecker 
         </div>
         <div className="flex-1 text-xs sm:text-sm">
           <span className="font-bold text-emerald-950 dark:text-emerald-100 block">
-            Spiton Kharakor (1931), <em>Ki Khun Ki Ksiew U Hynñiew Trep</em>
+            Spiton Kharakor (1981), <em>Ki Khun Ki Ksiew U Hynñiew Trep</em>
           </span>
           <span className="text-emerald-800 dark:text-emerald-300 text-xs">
             Lynnong-II (Page 6 – 7) • Ki Nongrim Tynrai ka Longkur Longjait bad ka Shongkha Shongman
@@ -573,8 +573,8 @@ export const KurJaitPage: React.FC<KurJaitPageProps> = ({ onBack, onOpenChecker 
                       type="button"
                       onClick={() => setLevel3Tab('3.1')}
                       className={`px-2.5 py-1 rounded-lg text-xs font-semibold transition cursor-pointer ${level3Tab === '3.1'
-                          ? 'bg-teal-700 text-white shadow-xs'
-                          : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 hover:bg-slate-100'
+                        ? 'bg-teal-700 text-white shadow-xs'
+                        : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 hover:bg-slate-100'
                         }`}
                     >
                       3.1 Sohpet-Parakha
@@ -583,8 +583,8 @@ export const KurJaitPage: React.FC<KurJaitPageProps> = ({ onBack, onOpenChecker 
                       type="button"
                       onClick={() => setLevel3Tab('3.2')}
                       className={`px-2.5 py-1 rounded-lg text-xs font-semibold transition cursor-pointer ${level3Tab === '3.2'
-                          ? 'bg-teal-700 text-white shadow-xs'
-                          : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 hover:bg-slate-100'
+                        ? 'bg-teal-700 text-white shadow-xs'
+                        : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 hover:bg-slate-100'
                         }`}
                     >
                       3.2 Shi-Parakha
@@ -593,8 +593,8 @@ export const KurJaitPage: React.FC<KurJaitPageProps> = ({ onBack, onOpenChecker 
                       type="button"
                       onClick={() => setLevel3Tab('both')}
                       className={`px-2.5 py-1 rounded-lg text-xs font-semibold transition cursor-pointer ${level3Tab === 'both'
-                          ? 'bg-teal-700 text-white shadow-xs'
-                          : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 hover:bg-slate-100'
+                        ? 'bg-teal-700 text-white shadow-xs'
+                        : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 hover:bg-slate-100'
                         }`}
                     >
                       {language === 'kha' ? 'Baroh Ar' : 'Both'}
@@ -662,8 +662,8 @@ export const KurJaitPage: React.FC<KurJaitPageProps> = ({ onBack, onOpenChecker 
                         type="button"
                         onClick={() => setLevel3Tab('3.1')}
                         className={`p-1.5 rounded-lg border text-left transition cursor-pointer flex items-center gap-2 ${level3Tab === '3.1'
-                            ? 'border-teal-600 bg-teal-50/50 dark:bg-teal-950/30'
-                            : 'border-slate-200 dark:border-slate-700 hover:border-slate-300 bg-white dark:bg-slate-800'
+                          ? 'border-teal-600 bg-teal-50/50 dark:bg-teal-950/30'
+                          : 'border-slate-200 dark:border-slate-700 hover:border-slate-300 bg-white dark:bg-slate-800'
                           }`}
                       >
                         <img
@@ -685,8 +685,8 @@ export const KurJaitPage: React.FC<KurJaitPageProps> = ({ onBack, onOpenChecker 
                         type="button"
                         onClick={() => setLevel3Tab('3.2')}
                         className={`p-1.5 rounded-lg border text-left transition cursor-pointer flex items-center gap-2 ${level3Tab === '3.2'
-                            ? 'border-teal-600 bg-teal-50/50 dark:bg-teal-950/30'
-                            : 'border-slate-200 dark:border-slate-700 hover:border-slate-300 bg-white dark:bg-slate-800'
+                          ? 'border-teal-600 bg-teal-50/50 dark:bg-teal-950/30'
+                          : 'border-slate-200 dark:border-slate-700 hover:border-slate-300 bg-white dark:bg-slate-800'
                           }`}
                       >
                         <img
@@ -853,7 +853,7 @@ export const KurJaitPage: React.FC<KurJaitPageProps> = ({ onBack, onOpenChecker 
       {/* FOOTER OF KUR JAIT PAGE */}
       <footer className="pt-4 pb-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 border-t border-slate-200 dark:border-slate-800">
         <div className="flex items-center gap-2 text-[11px] text-slate-400">
-          <span>Spiton Kharakor (1931)</span>
+          <span>Spiton Kharakor (1981)</span>
           <span>•</span>
           <a
             href="https://ia601406.us.archive.org/22/items/in.ernet.dli.2015.464918/2015.464918.Ki-Khun-Ki-Ksiew-U-Hynniew-Trep_text.pdf"
