@@ -318,7 +318,7 @@ export const App: React.FC = () => {
               type="button"
               onClick={openClanList}
               className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 font-medium text-xs transition cursor-pointer"
-              title="Thup ki Kur • Clan Lists (259 Documented Clans)"
+              title="Thup ki Kur • Clan Lists (516 Documented Clans)"
             >
               <ListFilter className="w-3.5 h-3.5 text-emerald-600" />
               <span>{language === 'kha' ? 'Thup ki Kur' : 'Clan Lists'}</span>

@@ -189,7 +189,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenClanList }) => {
             ))}
           </div>
 
-          {/* Quick link to view all 259 Documented Clans */}
+          {/* Quick link to view all 516 Documented Clans */}
           {onOpenClanList && (
             <div className="pt-2">
               <button
@@ -200,8 +200,8 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenClanList }) => {
                 <ListFilter className="w-3.5 h-3.5" />
                 <span>
                   {language === 'kha'
-                    ? 'Peit baroh ki 259 tylli ki Kur ba don ha ka App →'
-                    : 'View all 259 Documented Clans in the App →'}
+                    ? 'Peit baroh ki 516 tylli ki Kur ba don ha ka App →'
+                    : 'View all 516 Documented Clans in the App →'}
                 </span>
               </button>
             </div>
@@ -234,44 +234,39 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenClanList }) => {
       {homeBg !== 'none' && (
         <div
           aria-hidden="true"
-          className={`fixed pointer-events-none z-0 transition-transform duration-500 ease-out overflow-hidden flex ${
-            homeBg === 'mawbynna'
+          className={`fixed pointer-events-none z-0 transition-transform duration-500 ease-out overflow-hidden flex ${homeBg === 'mawbynna'
               ? 'inset-x-0 bottom-16 sm:bottom-20 md:bottom-0 justify-center items-end max-h-[42vh] sm:max-h-[50vh] md:inset-x-auto md:left-0 md:w-[42vw] md:max-w-xl md:max-h-[68vh] md:justify-start'
               : 'inset-x-0 bottom-16 sm:bottom-20 max-h-[42vh] sm:max-h-[50vh] justify-center items-end md:inset-x-auto md:right-0 md:bottom-auto md:inset-y-0 md:h-screen md:max-h-none md:w-auto md:items-center md:justify-end'
-          }`}
+            }`}
           style={{
             transform: `translate3d(0, ${parallaxOffset.y}px, 0) scale(${parallaxOffset.scale})`
           }}
         >
           {/* Framed container: bottom-anchored on mobile, center-right on desktop */}
-          <div className={`relative flex ${
-            homeBg === 'mawbynna'
+          <div className={`relative flex ${homeBg === 'mawbynna'
               ? 'w-full h-full items-end justify-center md:justify-start'
               : 'w-full h-full items-end justify-center md:h-[72vh] md:aspect-[1/2] md:overflow-hidden md:items-center md:justify-end'
-          }`}>
+            }`}>
             {/* Subtle gradient overlay to blend seamlessly into page background */}
             <div
-              className={`absolute inset-0 z-10 ${
-                homeBg === 'mawbynna'
+              className={`absolute inset-0 z-10 ${homeBg === 'mawbynna'
                   ? 'bg-gradient-to-t from-transparent via-white/30 to-white dark:via-black/40 dark:to-black md:bg-gradient-to-r md:from-transparent md:via-white/20 md:to-white dark:md:via-black/30 dark:md:to-black'
                   : 'bg-gradient-to-t from-transparent via-white/30 to-white dark:via-black/40 dark:to-black md:bg-gradient-to-r md:from-white md:via-white/20 md:to-transparent dark:md:from-black dark:md:via-black/30 dark:md:to-transparent'
-              }`}
+                }`}
             />
 
             {/* Image Wrapper: Mirrored/Reflected horizontally on Desktop only for Jingkieng-jri */}
-            <div className={`w-full h-full flex ${
-              homeBg === 'jingkieng-jri'
+            <div className={`w-full h-full flex ${homeBg === 'jingkieng-jri'
                 ? 'items-end justify-center md:items-center md:justify-end md:scale-x-[-1]'
                 : 'items-end justify-center md:justify-start'
-            }`}>
+              }`}>
               <img
                 src={homeBg === 'mawbynna' ? '/Mawbynna.webp' : '/jingkieng-jri.webp'}
                 alt=""
-                className={`opacity-35 dark:opacity-30 dark:invert dark:mix-blend-screen select-none pointer-events-none transition-all duration-700 ${
-                  homeBg === 'mawbynna'
+                className={`opacity-35 dark:opacity-30 dark:invert dark:mix-blend-screen select-none pointer-events-none transition-all duration-700 ${homeBg === 'mawbynna'
                     ? 'w-full max-w-5xl object-contain object-bottom md:object-left-bottom md:w-full md:h-full'
                     : 'w-full max-w-5xl object-contain object-bottom md:w-[200%] md:max-w-none md:h-full md:object-cover md:object-right'
-                }`}
+                  }`}
               />
             </div>
           </div>

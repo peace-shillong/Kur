@@ -1,264 +1,100 @@
-// Auto-generated from docs/surnames.html - 259 Documented Khasi Clans/Surnames
-export const CLAN_NAMES: string[] = [
-  "Alia",
-  "Aliya",
-  "Amdep",
-  "Amkoi",
-  "Babai",
-  "Bareh",
-  "Bareh Pohkshang",
-  "Basaïawmah",
-  "Basaïawmoit",
-  "Basaïawrit",
-  "Basaïawsnai",
-  "Biam",
-  "Binan",
-  "Blah",
-  "Bleiñ",
-  "Bon",
-  "Bula",
-  "Challam",
-  "Chylla",
-  "Dan",
-  "Diengdoh",
-  "Diengdoh Nongstoiñ",
-  "Diengdoh Parïong",
-  "Diengdoh-Bah",
-  "Diengdoh-Kylla",
-  "Diengdoh-Shngaiñlang",
-  "Doh",
-  "Doom",
-  "Gatphoh",
-  "Hadia",
-  "Hek",
-  "Hinge",
-  "Hodia",
-  "Hynñiewta",
-  "Jait Binan",
-  "Jui",
-  "Kadep",
-  "Kadew",
-  "Kadiang",
-  "Kahit",
-  "Kalang",
-  "Kanai",
-  "Karod",
-  "Kasah",
-  "Kashngaiñ",
-  "Kassar",
-  "Katkeh",
-  "Katphoh",
-  "Kharkongngor",
-  "Kharkongor",
-  "Kharmylliem",
-  "Kharphuli",
-  "Kharshi-ïing",
-  "Kharshiing",
-  "Khongji",
-  "Khonglam",
-  "Khongnoh",
-  "Khongsdoh",
-  "Khongsngi",
-  "Khongsti",
-  "Khongwar",
-  "Kma",
-  "Kon",
-  "Korod",
-  "Kurbah",
-  "Kurkalang",
-  "Kyllang",
-  "Kynjing",
-  "Laitphlang",
-  "Lakhon",
-  "Lakiang",
-  "Laloo",
-  "Lamin",
-  "Langkhoi",
-  "Langpen",
-  "Lanong",
-  "Larom",
-  "Lartang",
-  "Laskor",
-  "Lipon",
-  "Lymbri",
-  "Lyngdoh",
-  "Lyngdoh Kynshi",
-  "Lyngdoh Lamin",
-  "Lyngdoh Mawphlang",
-  "Lyngdoh Nongbri",
-  "Lyngdoh Nongbsap",
-  "Lyngdoh Nonglait",
-  "Lyngdoh Nonglwai",
-  "Lyngdoh Nongpiur",
-  "Lyngdoh Peiñlang",
-  "Lyngdoh Sangriang",
-  "Lyngkhoi",
-  "Lyngkhoi Dewsaw",
-  "Lyngkhoi Ladew",
-  "Lyngkhoi Ritiang",
-  "Lyngkhoi Saw",
-  "Lyngkhoi Thangmyrsiang",
-  "Lyngkhoi War Shrieh",
-  "Lyngkhoi Ñiuh",
-  "Lyngwa Rapthap",
-  "Lyngwi",
-  "Lytan",
-  "Lywait",
-  "Majaw",
-  "Manar",
-  "Marboh",
-  "Marngar",
-  "Marong",
-  "Mawlieh",
-  "Mesui",
-  "Mukhim",
-  "Mukhim Bina",
-  "Mukhim Tangphar",
-  "Muknung",
-  "Mukroh",
-  "Muktieh",
-  "Muliar",
-  "Muthyan",
-  "Mylliem Pyrtuh",
-  "Mynso Shangpung",
-  "Myntong",
-  "Myrthong",
-  "Namsheh",
-  "Nartiang",
-  "Nengnong",
-  "Niangliar",
-  "Niangphoh",
-  "Nikhla",
-  "Nongbah",
-  "Nongbri",
-  "Nongbri Kynrut",
-  "Nongbsap",
-  "Nongbsap Pyrtuh",
-  "Nongkynrih",
-  "Nongneng",
-  "Nongphod",
-  "Nongrang",
-  "Nongrem",
-  "Nongrum",
-  "Nongrum Sohra",
-  "Nongspung",
-  "Nongsteng",
-  "Nongtariang",
-  "Nui",
-  "Padoh",
-  "Pakem Kajuh",
-  "Pakynteiñ",
-  "Pale",
-  "Pariat",
-  "Parïong",
-  "Pasah",
-  "Pasdoh",
-  "Pasi",
-  "Passah",
-  "Pasubon",
-  "Paswet",
-  "Pde",
-  "Phup",
-  "Phñiaw",
-  "Piat",
-  "Plain",
-  "Plaiñ",
-  "Pohbai",
-  "Pohduna",
-  "Pohkhloo",
-  "Pohlong",
-  "Pohlynjar",
-  "Pohriej",
-  "Pohrmen",
-  "Pohshen",
-  "Pohsnem",
-  "Pohtam",
-  "Pohti Lynrum",
-  "Pom Pyrthat",
-  "Pombah",
-  "Pompyrthat",
-  "Prat",
-  "Put",
-  "Pyrbot",
-  "Pyrdiang",
-  "Pyrtuh Shangpung",
-  "Rabon",
-  "Rangad",
-  "Rapsang Marbisu",
-  "Rapsang Nongpiur",
-  "Rapthap",
-  "Rngad",
-  "Rumnong",
-  "Rymbui",
-  "Ryntathiang",
-  "Sajem",
-  "Sangkli",
-  "Sangkli Lalung",
-  "Sangkli Mawïong",
-  "Sangkli Pardi",
-  "Sangkli Pator",
-  "Sangkli Rngi",
-  "Sankli",
-  "Sawkmie",
-  "Shabong",
-  "Shadap",
-  "Shadap Manner",
-  "Shadap Sabit",
-  "Shalam",
-  "Shallam",
-  "Shilliang",
-  "Shylla",
-  "Shyrmang Jowai",
-  "Siangbud",
-  "Sianglong",
-  "Siangphoh",
-  "Slong",
-  "Snaitang",
-  "Sohkhlet",
-  "Sohphoh",
-  "Sohtun",
-  "Suji",
-  "Sutnga",
-  "Syiem Kaitkuna",
-  "Syiem Nongshai",
-  "Syiem Sutnga",
-  "Syiem Umsaw Nongbri",
-  "Syiemlieh",
-  "Syiemlieh Nongkhlaw",
-  "Syiemlieh Nongspung",
-  "Syiemsat",
-  "Syiemïong Nongspung",
-  "Syngkon",
-  "Syngngai",
-  "Tai",
-  "Tamah",
-  "Tangliang",
-  "Tariang",
-  "Tariang Bataw",
-  "Tariang Lamarai",
-  "Tariang Lukoi",
-  "Tariang Mukhlen",
-  "Tariang Pyrtuh",
-  "Tariang Sohmatan",
-  "Teiñ",
-  "Thangkhiew",
-  "Thangmyrsiang",
-  "Thawmuit",
-  "Thmoo",
-  "Tongnai",
-  "Tui",
-  "Umdor",
-  "Wahbah",
-  "Wahlang",
-  "Wahlang Pahsyntiew",
-  "Wahlang Ryntathiang",
-  "Wanpiat",
-  "War",
-  "Wet",
-  "Ïatam",
-  "Ïaw Shi Bdi",
-  "Ïawphñiaw",
-  "Ïongkjam"
+/**
+ * Documented Khasi Clans Service
+ * 
+ * Historical Sources & Credits:
+ * 1. Rev. I. Kharkongngor (2004), "Ka Jymbriew Bad Ka Thymmei Longkur Longjait U Khasi"
+ * 2. Babu Spiton Kharakor (1981), "Ki Khun Ki Ksiew U Hynñiew Trep"
+ * Sincere credit and heartfelt appreciation are accorded to both authors for their
+ * invaluable documentation preserving Khasi kinship, clan names, and cultural identity.
+ * 
+ * Architecture:
+ * The complete catalog of 516 documented Khasi clan names is stored in the compressed
+ * JSON asset at /assets/clanList.json and loaded dynamically into Device LocalStorage
+ * and memory, preventing main bundle bloat.
+ */
+
+export const TOTAL_DOCUMENTED_CLANS = 516;
+
+let cachedClanList: string[] | null = null;
+let fetchPromise: Promise<string[]> | null = null;
+
+// Core initial fallback set of well-known clans in case of offline first boot
+export const FALLBACK_CLAN_NAMES: string[] = [
+  "Alia", "Aliya", "Amdep", "Amkoi", "Babai", "Bamon", "Bareh", "Bareh Pohkshang",
+  "Basaïawmah", "Basaïawmoit", "Basaïawrit", "Basaïawsnai", "Biam", "Binan", "Blah", "Bleiñ",
+  "Bon", "Bula", "Byrsat", "Challam", "Chylla", "Dan", "Dhar", "Diengdoh", "Diengdoh Nongstoiñ",
+  "Diengdoh Parïong", "Diengdoh-Bah", "Diengdoh-Kylla", "Diengdoh-Shngaiñlang", "Doh", "Doom",
+  "Gatphoh", "Giri", "Giri Chyne", "Hajong", "Hek", "Hynniewta", "Ïatam", "Ïaw Shi Bdi",
+  "Ïawphñiaw", "Ïongkjam", "Jyrwa", "Khaiñ", "Kharbani", "Kharbhih", "Kharbuki", "Khardohling",
+  "Kharkongor", "Kharkrang", "Kharlukhi", "Kharmalki", "Kharmudai", "Kharphanbuh", "Kharphur",
+  "Kharraji", "Kharryja", "Kharsyntiew", "Kharumlong", "Khongbuh", "Khongjoh", "Khonglah",
+  "Khongsit", "Khongwir", "Khyllait", "Khyllep", "Kurbah", "Kurkalang", "Kyndiah", "Laloo",
+  "Lamare", "Langñiuh", "Lyngdoh", "Majaw", "Marngar", "Marpna", "Marweiñ", "Mawri",
+  "Mylliemngap", "Ñiewphantang", "Nongbri", "Nongkynrih", "Nongrum", "Nongtdu", "Pakynteiñ",
+  "Pala", "Pariat", "Pyngrope", "Rani", "Rapsang", "Ryntathiang", "Sawkmie", "Shabong",
+  "Shadap", "Shallam", "Shongwan", "Shullai", "Shylla", "Slong", "Sohtun", "Sun", "Sutnga",
+  "Swer", "Syiem", "Syiemlieh", "Synteng", "Tariang", "Thabah", "Thaïang", "Thongni", "Tynsong",
+  "Wankhar", "War", "Warbah", "Warjri", "Warlarpih"
 ];
 
-export const TOTAL_DOCUMENTED_CLANS = 259;
+// Deprecated export for backward compatibility; prefer fetchClanList()
+export const CLAN_NAMES: string[] = FALLBACK_CLAN_NAMES;
+
+/**
+ * Loads the full 516 documented Khasi clan list.
+ * Order: Memory Cache -> Device LocalStorage -> Compressed Asset /assets/clanList.json -> Fallback
+ */
+export async function fetchClanList(): Promise<string[]> {
+  if (cachedClanList && cachedClanList.length > 0) {
+    return cachedClanList;
+  }
+
+  // 1. Device LocalStorage Cache
+  if (typeof window !== 'undefined' && window.localStorage) {
+    try {
+      const local = localStorage.getItem('kur_cache_clan_list');
+      if (local) {
+        const parsed = JSON.parse(local);
+        if (Array.isArray(parsed) && parsed.length > 0) {
+          cachedClanList = parsed;
+          return cachedClanList;
+        }
+      }
+    } catch (_) {
+      // LocalStorage access fail ignored
+    }
+  }
+
+  if (fetchPromise) {
+    return fetchPromise;
+  }
+
+  fetchPromise = (async (): Promise<string[]> => {
+    // 2. Fetch compressed JSON asset
+    try {
+      let res = await fetch('/assets/clanList.json');
+      if (!res.ok) {
+        res = await fetch('/data/clanList.json');
+      }
+      if (res.ok) {
+        const data = await res.json();
+        if (data && Array.isArray(data.clans) && data.clans.length > 0) {
+          cachedClanList = data.clans;
+          if (typeof window !== 'undefined' && window.localStorage) {
+            try {
+              localStorage.setItem('kur_cache_clan_list', JSON.stringify(data.clans));
+            } catch (_) {}
+          }
+          return data.clans as string[];
+        }
+      }
+    } catch (err) {
+      console.warn('[clanList] Failed to load /assets/clanList.json, using fallback:', err);
+    }
+
+    cachedClanList = FALLBACK_CLAN_NAMES;
+    return FALLBACK_CLAN_NAMES;
+  })();
+
+  return fetchPromise;
+}

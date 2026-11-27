@@ -1,6 +1,6 @@
 import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { useLanguage } from '../../context/LanguageContext';
-import { CLAN_NAMES, TOTAL_DOCUMENTED_CLANS } from '../../data/clanList';
+import { fetchClanList, TOTAL_DOCUMENTED_CLANS, FALLBACK_CLAN_NAMES } from '../../data/clanList';
 import {
   ArrowLeft,
   Search,
@@ -56,14 +56,29 @@ export const ClanListPage: React.FC<ClanListPageProps> = ({ onBack, onSelectClan
   const [sortDirection, setSortDirection] = useState<SortDirection>('asc');
   const [copiedClan, setCopiedClan] = useState<string | null>(null);
 
+  const [clans, setClans] = useState<string[]>(FALLBACK_CLAN_NAMES);
+
+  // Load complete clan catalog from compressed asset / device cache
+  useEffect(() => {
+    let isMounted = true;
+    fetchClanList().then((list) => {
+      if (isMounted && list && list.length > 0) {
+        setClans(list);
+      }
+    });
+    return () => {
+      isMounted = false;
+    };
+  }, []);
+
   // Pre-indexed items with their original sequence number
   const originalItems = useMemo(() => {
-    return CLAN_NAMES.map((name, idx) => ({
+    return clans.map((name, idx) => ({
       originalIndex: idx + 1,
       name,
       firstLetter: name.charAt(0).toUpperCase()
     }));
-  }, []);
+  }, [clans]);
 
   // Compute available initial letters with item counts
   const letterCounts = useMemo(() => {
@@ -190,8 +205,8 @@ export const ClanListPage: React.FC<ClanListPageProps> = ({ onBack, onSelectClan
         </h1>
         <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 max-w-2xl leading-relaxed">
           {language === 'kha'
-            ? 'Kane ka dei ka thup jong ki 259 tylli ki jait kur ba la dep kynthup bad pynkheiñ jingïadei ha kane ka platform. Phi lah ban wad, bishar, ne jied ban pyni ha ka graph.'
-            : 'Explore all 259 Khasi clans and surnames currently cataloged in this application. Search by name, filter by initial letter, sort alphabetically, or click to explore connections.'}
+            ? 'Kane ka dei ka thup jong ki 516 tylli ki jait kur ba la dep kynthup bad pynkheiñ jingïadei ha kane ka platform. Phi lah ban wad, bishar, ne jied ban pyni ha ka graph.'
+            : 'Explore all 516 Khasi clans and surnames currently cataloged in this application. Search by name, filter by initial letter, sort alphabetically, or click to explore connections.'}
         </p>
       </div>
 
@@ -239,8 +254,8 @@ export const ClanListPage: React.FC<ClanListPageProps> = ({ onBack, onSelectClan
               type="button"
               onClick={() => setSelectedLetter('ALL')}
               className={`px-3 py-1 rounded-xl text-xs font-semibold transition cursor-pointer ${selectedLetter === 'ALL'
-                  ? 'bg-emerald-700 text-white shadow-xs'
-                  : 'bg-slate-100 dark:bg-[#1a2b24] hover:bg-slate-200 dark:hover:bg-[#223930] text-slate-700 dark:text-slate-300'
+                ? 'bg-emerald-700 text-white shadow-xs'
+                : 'bg-slate-100 dark:bg-[#1a2b24] hover:bg-slate-200 dark:hover:bg-[#223930] text-slate-700 dark:text-slate-300'
                 }`}
             >
               {language === 'kha' ? 'Baroh (All)' : 'All'}
@@ -255,8 +270,8 @@ export const ClanListPage: React.FC<ClanListPageProps> = ({ onBack, onSelectClan
                   type="button"
                   onClick={() => setSelectedLetter(isSelected ? 'ALL' : letter)}
                   className={`px-2.5 py-1 rounded-xl text-xs font-semibold transition cursor-pointer flex items-center gap-1 ${isSelected
-                      ? 'bg-emerald-700 text-white shadow-xs'
-                      : 'bg-slate-100 dark:bg-[#1a2b24] hover:bg-slate-200 dark:hover:bg-[#223930] text-slate-700 dark:text-slate-300'
+                    ? 'bg-emerald-700 text-white shadow-xs'
+                    : 'bg-slate-100 dark:bg-[#1a2b24] hover:bg-slate-200 dark:hover:bg-[#223930] text-slate-700 dark:text-slate-300'
                     }`}
                   title={`${count} clans starting with ${letter}`}
                 >
@@ -440,8 +455,8 @@ export const ClanListPage: React.FC<ClanListPageProps> = ({ onBack, onSelectClan
         </div>
         <p className="leading-relaxed">
           {language === 'kha'
-            ? 'Kine ki 259 tylli ki jait kur ki dei kiba la pynshisha lyngba ki kot tynrai kum ka "Ka Jymbriew Bad Ka Thymmei Longkur Longjait U Khasi" da Rev. I. Kharkongngor (2004), ka Khasi Social Custom of Lineage Act 1997, bad ki rekhor na Tynrai-AI. Lada phi shem ba don ka kur ba dang sah ne bakla, sngewbha pyntip lem ia ngi.'
-            : 'These 259 clans are cataloged based on historical Khasi ethnographic texts including Rev. I. Kharkongngor (2004), the KHADC Lineage Act of 1997, and oral lineage archives from Tynrai-AI. If your clan or lineage branch is missing or has inaccurate links, please submit a correction in Settings.'}
+            ? 'Kine ki 516 tylli ki jait kur ki dei kiba la pynshisha lyngba ki kot tynrai kum ka "Ka Jymbriew Bad Ka Thymmei Longkur Longjait U Khasi" da Rev. I. Kharkongngor (2004), ka Khasi Social Custom of Lineage Act 1997, bad ki rekhor na Tynrai-AI. Lada phi shem ba don ka kur ba dang sah ne bakla, sngewbha pyntip lem ia ngi.'
+            : 'These 516 clans are cataloged based on historical Khasi ethnographic texts including Rev. I. Kharkongngor (2004), the KHADC Lineage Act of 1997, and oral lineage archives from Tynrai-AI. If your clan or lineage branch is missing or has inaccurate links, please submit a correction in Settings.'}
         </p>
       </div>
     </div>

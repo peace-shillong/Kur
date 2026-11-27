@@ -1,5 +1,5 @@
 // Service Worker for Tipkur Tipkha PWA
-const CACHE_NAME = 'tipkur-pwa-v3';
+const CACHE_NAME = 'tipkur-pwa-v4';
 
 // Core essential static files to precache
 const STATIC_PRECACHE = [

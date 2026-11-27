@@ -411,7 +411,7 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({ onBack, onOpenDev, o
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div className="p-5 rounded-2xl bg-emerald-50/60 border border-emerald-200/80 text-center space-y-1">
             <div className="text-3xl sm:text-4xl font-serif font-black text-emerald-800">
-              250+
+              516
             </div>
             <div className="text-xs font-bold text-emerald-950 uppercase tracking-wider">
               {language === 'kha' ? 'Na 5,204 ki Kur ba la kynthup hangne' : 'out of 5,204 Documented Khasi Kurs'}
@@ -423,7 +423,7 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({ onBack, onOpenDev, o
 
           <div className="p-5 rounded-2xl bg-emerald-50/60 border border-emerald-200/80 text-center space-y-1">
             <div className="text-3xl sm:text-4xl font-serif font-black text-emerald-800">
-              114
+              446
             </div>
             <div className="text-xs font-bold text-emerald-950 uppercase tracking-wider">
               {language === 'kha' ? 'Ki Jingiadei (Connections)' : 'Lineage Clusters'}
@@ -445,8 +445,8 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({ onBack, onOpenDev, o
               <ListFilter className="w-4 h-4 text-emerald-200" />
               <span>
                 {language === 'kha'
-                  ? 'Peit ia ka Thup ki 259 tylli ki Kur ba don ha ka App'
-                  : 'View all 259 Documented Clans in the App'}
+                  ? 'Peit ia ka Thup ki 516 tylli ki Kur ba don ha ka App'
+                  : 'View all 516 Documented Clans in the App'}
               </span>
             </button>
           </div>

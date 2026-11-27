@@ -2,6 +2,12 @@ import { ApiConfig, TipkurResponse, CompatibilityResult, CompatibilityCheckStep,
 import { findMockClan, MOCK_CLUSTERS } from './mockData';
 import { getCommonSurnameResponse } from '../data/commonSurnames';
 import { getCachedBisharSang } from '../data/bisharSang';
+import {
+  getDeviceCachedWadKur,
+  saveDeviceCachedWadKur,
+  getDeviceCachedBishar,
+  saveDeviceCachedBishar
+} from '../utils/deviceCache';
 
 const CONFIG_KEY = 'tipkur-api-config';
 
@@ -30,24 +36,39 @@ export function saveApiConfig(config: ApiConfig): void {
  * Searches for clan links using pre-cached common surnames dataset, POST request, or mock data fallback
  */
 export async function searchClanApi(jait: string): Promise<TipkurResponse & { fromMock?: boolean }> {
-  // 1. Check local pre-cached verified common surnames response for instant speed
-  const cachedCommon = getCommonSurnameResponse(jait);
+  const clean = jait.trim();
+
+  // 1. TIER 1: Check device LocalStorage cache for instant offline retrieval (<2ms)
+  const deviceCached = getDeviceCachedWadKur(clean);
+  if (deviceCached) {
+    await new Promise(r => setTimeout(r, 60));
+    return {
+      ...deviceCached,
+      fromMock: false
+    };
+  }
+
+  // 2. TIER 2: Check compressed JSON asset (/assets/commonSurnames.json)
+  const cachedCommon = await getCommonSurnameResponse(clean);
   if (cachedCommon) {
-    // Artificial small delay for smooth realistic UX animation
-    await new Promise(r => setTimeout(r, 120));
+    // Hydrate device LocalStorage for immediate future hits
+    saveDeviceCachedWadKur(clean, cachedCommon);
+    await new Promise(r => setTimeout(r, 100));
     return {
       ...cachedCommon,
       fromMock: false
     };
   }
 
+  // 3. TIER 3: Local API Endpoint (Cloudflare Worker + Cloudflare D1)
   const config = getStoredApiConfig();
 
   if (config.useMock) {
     // Artificial small delay for realistic UX animation
     await new Promise(r => setTimeout(r, 250));
+    const mock = findMockClan(clean);
     return {
-      ...findMockClan(jait),
+      ...mock,
       fromMock: true
     };
   }
@@ -65,7 +86,7 @@ export async function searchClanApi(jait: string): Promise<TipkurResponse & { fr
       headers,
       body: JSON.stringify({
         mode: 'wad-kur',
-        jait: jait.trim()
+        jait: clean
       })
     });
 
@@ -74,13 +95,17 @@ export async function searchClanApi(jait: string): Promise<TipkurResponse & { fr
     }
 
     const data: TipkurResponse = await response.json();
+    
+    // Save to Device LocalStorage Cache
+    saveDeviceCachedWadKur(clean, data);
+
     return {
       ...data,
       fromMock: false
     };
   } catch (error) {
-    console.warn('API request failed, falling back to mock data dataset:', error);
-    const mock = findMockClan(jait);
+    console.warn('API request failed, falling back to mock / upstream dataset:', error);
+    const mock = findMockClan(clean);
     return {
       ...mock,
       fromMock: true
@@ -116,11 +141,21 @@ export async function checkBisharSang(
     };
   }
 
-  // 2. Check local verified 5 sample surname combinations cache
+  // 2. TIER 1: Check device LocalStorage cache for instant offline retrieval
+  const deviceCached = getDeviceCachedBishar(cleanA, cleanB);
+  if (deviceCached) {
+    await new Promise(r => setTimeout(r, 60));
+    return {
+      ...deviceCached,
+      fromMock: false
+    };
+  }
+
+  // 3. TIER 2: Check local verified sample surname combinations cache
   const cached = getCachedBisharSang(cleanA, cleanB);
   if (cached) {
-    // Artificial small delay for smooth realistic UX animation
-    await new Promise(r => setTimeout(r, 120));
+    saveDeviceCachedBishar(cleanA, cleanB, cached);
+    await new Promise(r => setTimeout(r, 100));
     return {
       ...cached,
       fromMock: false
@@ -129,7 +164,7 @@ export async function checkBisharSang(
 
   const config = getStoredApiConfig();
 
-  // Try live API if not in forced mock mode
+  // 4. TIER 3: Try live Local API if not in forced mock mode
   if (!config.useMock) {
     try {
       const headers: Record<string, string> = {
@@ -151,6 +186,7 @@ export async function checkBisharSang(
 
       if (response.ok) {
         const data: BisharSangResponse = await response.json();
+        saveDeviceCachedBishar(cleanA, cleanB, data);
         return {
           ...data,
           fromMock: false
